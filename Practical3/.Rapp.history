@@ -1,0 +1,3 @@
+load("/Users/yuyanlin/Desktop/ST344/Practical3/myStopSearch.rda")
+myStopSearch
+load("/Users/yuyanlin/Desktop/ST344/Practical3/myStopSearch.rda")

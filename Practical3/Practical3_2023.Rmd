@@ -1,0 +1,189 @@
+---
+title: "ST344 2023-2024 Practical 3"
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+
+## Exploratory Data Analysis
+
+In this lab session you will do exploratory data analysis on a small data set to help gain some familiarity with the stop and search data which will be used in the individual coursework. You can find further background information from https://data.police.uk/ which is the site for open data about crime and policing in England, Wales and Northern Ireland.  The coursework will be released by the end of week 6. 
+
+As well as getting an initial feel for the stop and search data, you will get practice in producing tables and graphs in _R_.
+
+This sheet is laid out in several steps, for ease of navigation. **Step 3** below is where the data-analytic substance is, and where you should spend most of your lab and homework time.
+
+###  Step 1: Set up libraries, read in the data
+
+From this point on, at least, **be sure to maintain a record of everything you do**, in a `.Rmd` file.  Not all of what you do will be needed for the lab report. However, you will find a record useful when you do your individual project.
+
+```{r get_data, warning=FALSE, message=FALSE}
+library(dplyr)
+library(rio)
+library(magrittr)
+library(readxl)
+StopS <- read_excel("StopSearchWk3.xlsx")
+names(StopS)   # check what is in the file.
+```
+
+### Step 2: Make a new dataset and simplify names
+
+The StopSearchWk3 dataset includes variables which will not be used in this practical:
+two on policing operation, latitude and longitude. The new dataset drops these. Check that you understand the approach taken. You might consider alternative approaches.
+```{r new}
+ StopS <- StopS[,c(1,2,7:15)]
+ names(StopS)  # I check that I have achieved what I intended
+```
+Some of the variables names have spaces in them, so we rename these for ease of use.
+```{r}
+names(StopS)[c(4:6,8,10,11)] <- c('AgeRange', 'SelfEthnicity', 'OfficerDefEthnic',
+                                  'AimSearch','OutcomeLinkAim','RemovalMoreClothing')
+```
+We can now take a closer look at each of the variables in the StopS tibble.
+```{r}
+str(StopS)
+```
+Some variables need to be set as factors, for instance **Type**. 
+We also have to make sure that R knows how to correctly interpret the **Date** variable. 
+First set the factors. I find it more convenient to have **Gender** as a factor, though table(Stops$Gender) with **Gender** as character will give sensible results. The code below uses the pipe operator.
+```{r set the factors}
+StopS<- StopS%>% mutate(Gender=factor(Gender),AgeRange=factor(AgeRange),
+            Legislation = factor(Legislation), Outcome = factor(Outcome),Type=factor(Type),
+            AimSearch=factor(AimSearch),
+            SelfEthnicity=factor(SelfEthnicity),OfficerDefEthnic=factor(OfficerDefEthnic))
+```
+Check number of levels of the factors.
+```{r}
+str(StopS)
+```
+Factors with many levels, such as **SelfEthnicity** which has 17 levels, will often need to be simplified to perhaps 5 or 6 levels. Some levels might have few, or no, individuals. You should use summaries and tables of factors to consider suitable levels to combine. For example, consider what the output of 'summary(StopS)' does, and does not show. 
+```{r,check factors, results = 'hide'} 
+summary(StopS)
+```
+The labels for various levels of some factors are rather long, and it might be easier to shorten them. For example, we can shorten the labels for **Type**.
+```{r type labels}
+ Types <- factor(StopS$Type,labels=c("PersonVehicle","Person"))
+ table(Types,StopS$Type) # This is an example of checking you have got it right!
+ StopS <- StopS %>% mutate(Type=factor(StopS$Type,labels=c("PersonVehicle","Person")) )
+```
+Legislation also has long labels, and the summary suggests that we combine the two levels which have few individuals. I show two approaches, with only the second being used to update the data frame. The first version is more explicit, but requires more typing. The second makes use of the knowledge that levels of a factor are numbered from 1 up.
+```{r legislation combine and relabel}
+legis <- StopS$Legislation
+levels(legis) <- list("JusticeFirearms"=c("Crimil Justice Act 1988 (section 139B)",
+          "Firearms Act 1968 (section 47)"),
+          "DrugsMisuse"="Misuse of Drugs Act 1971 (section 23)",
+          "Evidence"="Police and Crimil Evidence Act 1984 (section 1)")
+table(legis) # to show what has been done
+ StopS <- StopS %>% mutate(Legislation=factor(as.numeric(Legislation), 
+                                              levels=c(1,2,3,4),                                             labels=c("JusticeFirearms","JusticeFirearms","DrugsMisuse","Evidence")))
+```
+
+For use in your individual project, you might put these and other changes in to the r chunk above labelled 'set the factors'.
+
+Now consider the **Date** variable. We use the "lubridate" package. First define a new variable, dateDay, which contains the date of the stop-and-search, without the time of the day. I have also extracted the hour from the date. You might find an alternative way, by reading more about "lubridate".
+
+```{r revise_date, warning=FALSE, message=FALSE}
+library(lubridate)
+help("lubridate")  # You can find out about lubridate this way, or through CRAN.
+ StopS$dayDate = date(StopS$Date)
+StopS$hourDay = as.numeric(substring(StopS$Date,12,13)) # Find a better way?
+save(StopS, file='myStopSearch.rda') # save for future use.
+```
+Check each variable to see whether you find any problems, and  decide how to deal them.
+What might a suitable summary be for each of the variables? 
+
+### Step 3: Create a good summary table.
+
+It is essential to provide an overview of the dataset. You should never assume that the reader already knows how many units there are, what fields are included, and what the distribution of the demographic or other baseline characteristics are.
+Consider some tables. First, compare the output of 'table()', with variations.
+```{r, results = 'hide'}
+ table(StopS$Gender,StopS$AgeRange)
+ table(StopS$AgeRange,StopS$Gender)
+ proportions(table(StopS$Gender,StopS$AgeRange),1)
+ 100*proportions(table(StopS$Gender,StopS$AgeRange),2)
+```
+What do the tables show? Which do you find easier to read, and why?
+You can produced nicer tables with 'kable'.
+```{r, results = 'hide'}
+knitr::kable(table(StopS$Gender,StopS$AgeRange),
+  caption = "Gender by Age; 401 people stopped")
+knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),2),
+             digits=0,
+  caption = "Percentage sex by age; 401 people stopped")
+knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),2),
+             digits=1,
+  caption = "Percentage sex by age; 401 people stopped")
+knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),1),
+             digits=1,
+  caption = "Percentage sex by age; 401 people stopped")
+```
+
+Explore 'kable'. It is simple, and there are other R packages for making tables. 
+
+Create a summary table which includes the type of search, date, hour of the day, sex, age and legislation. For hour of the day, think carefully about what the sensible summary statistics. 
+
+Consider some contingency tables with gender, age,  type and aim of search, outcome. These can have two or more variables. A Chi-squared test chisq.test() for independence between 2 variables in a contingency table could be useful. Using  chisq.test()$expected, calculate the expected values to reflect on whether it would be legitimate to use a χ2  analysis to test this association? Why or why not?  
+
+Use a table to compare self defined and office defined ethnicity. If you do not first consider some data tiding, you are likely to find the output of _R_ commands difficult to read. 
+
+### Step 4: Make a stand-alone graphics file
+-----
+
+It can be interesting to plot tables.
+```{r, fig.show = 'hide'}
+ plot(table(StopS$Legislation,StopS$AgeRange),
+      main="Distribution of age by legislation for 401 people stopped")
+```
+It can also produce figures which are quite hard to read.
+```{r, fig.show = 'hide'}
+ plot(table(StopS$Legislation,StopS$AgeRange,StopS$Gender),
+      main="Distribution of age by legislation for 401 people stopped")
+```
+Choose one plot of a table which you think is a good summary of an aspect of the data set. 
+
+After making the figure in RStudio, if you wish to include it in a report that is not written in R markdown, then you need to export it to a file.
+
+If you wish to use the figure in a document that is to be printed, exporting the image to a `PDF` is a sensible option (this format is designed for this purpose).
+
+If we were producing the figure for a document that will only appear only on the web, it makes sense to use a file format that works in this medium. Recommended formats for the web are `PNG` (portable network graphics, a bitmap format, good for photographs and other plots with many thousands or millions of points/colours), and `SVG` (scalable vector graphics, good for simple drawings because it scales well and is economical).  Here we will use `SVG`, with a nominal file width of 8 (inches).  
+
+**Note:** It's a good idea to include code at the top of your file to take control of the size of the graphs you will draw.  For example, a chunk like this gives the nominal width of 8 inches.
+
+```{r, warning=FALSE, message=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width = 8, fig.height = 5)
+```
+
+Another advantage of `SVG` files is that they are object-oriented, and therefore hand-editable afterwards using widely available software such as *Inkscape*.  
+
+```{r make_svg, warning=FALSE, message=FALSE}
+ svg(file = "JLH.svg", width = 8, height = 5)
+ print( plot(table(StopS$Legislation,StopS$AgeRange),
+      main="Distribution of age by legislation for 401 people stopped"))
+        ##  This writes the graph to the file
+ invisible(dev.off())          ##  This is essential, to close the file
+```
+
+You can look at the file you have made, by opening it in a web browser for example.
+
+### Step 5: Share your figure 
+
+As a part of your lab report, please add your image file (from Step 4) to the submission area entitled "ST344 Lab Report 2 figure submission" on moodle. You must do this submission *as well as* the submission of the Lab Report (which is a different submission portal). The submission of this file will form part of your marks for the Lab Report.
+
+Do not include your name or student number as part of the submission. All submitted images will be shared with the entire class on MS Teams. The reason for this is so that every member of the class can benefit by seeing the EDA done by everybody else.
+
+### Step 6: Tidy up your .Rmd file
+
+See the requirements of 'Lab report 2', below.
+
+## Lab report 2
+
+For the second lab report, which is to be written from this third practical, please use *R Markdown* to produce a HTML document that gives your Student ID as author, and submit the HTML file to Moodle.
+
+The document should show the summary table, and two other tables of your choice, and the figure which you shared in Step 5, finished to a professional standard. In particular, the title and labels must be properly descriptive. 
+
+For each table, and the figure there should be complete source code, and brief descriptive commentary, of no more than 200 words for the summary table, and 100 words each for the other two tables and the figure. Please do make sure to provide word count for each!
+
+If you find something *interesting* in the data, then do report it!  (But that's *not essential*: you can get full marks for this exercise without being 'interesting'.) 
+
+Deadline for submission on Moodle, is Thursday week 4, 26 October 2023 13:00. **Please ensure you complete Step 5 well before the deadline in case of technical problems**

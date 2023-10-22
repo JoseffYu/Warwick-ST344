@@ -1,0 +1,245 @@
+---
+title: "ST344u2140365Week1"
+author: "2140365"
+date: "2023-10-09"
+output: 
+  pdf_document:
+    latex_engine: xelatex
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This is the first lab report of ST344 Professional Practice of Data Analysis. This report will contain 2 parts, First part is data analysis of four different human-made data; Second part is the analysis for Speed Data Study
+
+## PartI Initial Data Analysis
+
+```{r InitialData,echo=FALSE}
+ST344y2023Week1 <- read.csv("ST344y2023Week1.csv")
+```
+
+```{r PhysicsDataCleaning,echo=FALSE}
+PhysicsExam <- ST344y2023Week1$PhysicsExam
+PhysicsExam <- na.omit(PhysicsExam)
+Heights <- ST344y2023Week1$Heights
+Heights <- na.omit(Heights)
+NurseDays <- ST344y2023Week1$NurseDays
+NurseDays <- na.omit(NurseDays)
+Magazine <- ST344y2023Week1$Magazine
+Magazine <- na.omit(Magazine)
+```
+
+#### For PhysicsExam
+
+```{r PhysicsExamSummary, echo=FALSE}
+summary(PhysicsExam)
+```
+
+```{r PhysicsExam, echo=FALSE}
+hist(PhysicsExam, main="Physics Exams Marks", xlab="Exam Marks", ylab="Number of people in this range")
+legend("topright",legend=c(
+  paste("Highest Mark:",max(PhysicsExam)),
+  paste("Average Mark:",round(mean(PhysicsExam),2),
+  paste("\nLowest Mark:",min(PhysicsExam))
+  )))
+```
+Many students scored between 60-70, potentially influencing the average of 60.38. Nevertheless, extreme high and low scores could impact the average. Eliminating these extreme values might enhance the accuracy of the average score.
+
+
+#### For Height
+
+```{r HeightSummary, echo=FALSE}
+summary(Heights)
+```
+
+```{r HeightData, echo=FALSE}
+hist(Heights, main="Height of Cricket Players", xlab="Height of Cricket Players (cm)", ylab="Number of people in this range")
+legend(178,60,legend=c(
+  paste("Greatest Height:",max(Heights)),
+  paste("Average Height:",round(mean(Heights),2),
+  paste("\nLowest Height:",min(Heights))
+  )))
+```
+Players' heights range from 208cm (tallest) to 125cm (shortest), with most falling between 150cm to 170cm. Interestingly, height might not be a key factor in selecting cricket players.
+
+
+#### For Nurse Days
+```{r NurseDayTable, echo=FALSE}
+FreqTab <- table(NurseDays,dnn = "Days off with frequencies")
+FreqTab
+```
+
+
+```{r NurseDayFigure, echo=FALSE}
+hist(NurseDays, freq=TRUE,main = "Number of days work missed due to illness in 2022", xlab="Days missed work", ylab="frequencies")
+CountMajority <- (sum(NurseDays < max(NurseDays))) / length(NurseDays)
+CountLess <- 1/109
+text(x=10,50,labels = round(CountMajority,3))
+text(130,5,labels=round(CountLess,3))
+```
+Almost all nurses missed work between 0-20 days, takes 99% of all. 67people did not miss any workdays in 2022. Miss 120 workdays is quite unusual may be due to serious illness.
+
+
+#### For Magazine
+```{r MagazineTable, echo=FALSE}
+table(Magazine,dnn = "Number of Magazines read and frequencies")
+
+```
+
+```{r MagazineFigure, echo=FALSE}
+hist(Magazine,
+     main ="The number of issues of the magazine Football Monthly read in 2022",
+     xlab = "Number of Magazines have read",
+     ylab = "Number of people"
+     )
+
+```
+
+There are many people who read 'Football Monthly' regularly and many who don't read it at all. It is rarely to see people read halfway and then stop. 
+
+---
+
+#### Poor Data：Nurse
+
+```{r PoorDataTable, echo=FALSE}
+summary(NurseDays)
+```
+
+
+```{r PoorDataFigure, echo=FALSE}
+
+plot(NurseDays, xlab ="Nurse Order" ,ylab = "Number of Off Days")
+
+```
+It is hard to define the meaning of Xlab, calculation of Mean and median makes no sense because of the extreme value.
+
+---
+
+## PartII Speed Data
+
+```{r SpeedDateData,echo=FALSE}
+SpeedData <- read.csv("SpeedDatingRawData.csv")
+```
+
+```{r SpeedDateGroupByGender,echo=FALSE}
+SplitGroup <- split(SpeedData, SpeedData$gender==0)
+AllMale <- SplitGroup$`FALSE`
+AllFemale <- SplitGroup$`TRUE`
+
+AllAttenders <- data.frame()
+for (iid in unique(SpeedData$iid)){
+  AllAttenders <- rbind(AllAttenders,SpeedData[SpeedData$iid == iid,][1,])
+}
+
+```
+
+
+```{r FindEachSingleAttender, echo=FALSE}
+UniqueMale <- data.frame()
+for (MaleIid in unique(AllMale$iid)){
+  UniqueMale <- rbind(UniqueMale,AllMale[AllMale$iid == MaleIid,][1,])
+}
+
+UniqueFemale <- data.frame()
+for (FemaleIid in unique(AllFemale$iid)){
+  UniqueFemale <- rbind(UniqueFemale,AllFemale[AllFemale$iid == FemaleIid,][1,])
+}
+
+```
+
+```{r Activities,echo=FALSE}
+
+ManActivities <- data.frame()
+for (MaleOrder in (1:277)){
+  ManActivities <- rbind(ManActivities,(which.max(UniqueMale[MaleOrder,51:67]))+50)
+}
+MaleFrequencies <- table(ManActivities[1])
+
+FemaleActivities <- data.frame()
+for (FemaleOrder in (1:274)){
+  FemaleActivities <- rbind(FemaleActivities,(which.max(UniqueFemale[FemaleOrder,51:67]))+50)
+}
+FemaleFrequencies <- table(FemaleActivities[1])
+```
+
+
+
+```{r AgeAnalysis,echo=FALSE}
+
+MaleAgeSummary <- summary(UniqueMale$age)
+FemaleAgeSummary <- summary(UniqueFemale$age)
+
+```
+```{r PopulationPercentage, echo=FALSE}
+
+MalePercentage <- round(dim(UniqueMale)[1] / 552,2)
+FemalePercentage <- round(dim(UniqueFemale)[1] / 552,2)
+
+```
+
+```{r FindMostInterest, echo=FALSE}
+MaleWithInterest <- UniqueMale[,c("iid","shar_o")]
+FemaleWithInterest <- UniqueFemale[,c("iid","shar_o")]
+PercentageWithHighMarkMale <- length(which(MaleWithInterest$shar_o > 5)) / dim(UniqueMale)[1]
+PercentageWithHighMarkFemale <- length(which(FemaleWithInterest$shar_o > 5)) / dim(UniqueMale)[1]
+```
+
+```{r MostcommonActivitiesPreferredbyHighestSharedInterestScorers,echo=FALSE}
+
+MaleWithHighMark <- which(UniqueMale$shar_o == 10, arr.ind = TRUE)
+MaleHighActivities <- data.frame()
+for (Male in MaleWithHighMark){
+  MaleHighActivities <- rbind(MaleHighActivities,(which.max(UniqueMale[Male,51:67]))+50)
+}
+HighScoreMaleActivities <- table(MaleHighActivities)
+
+FemaleWithHighMark <- which(UniqueFemale$shar_o == 10, arr.ind = TRUE)
+FemaleHighActivities <- data.frame()
+for (Female in FemaleWithHighMark){
+  FemaleHighActivities <- rbind(FemaleHighActivities,(which.max(UniqueFemale[Female,51:67]))+50)
+}
+HighScoreFemaleActivities <- table(FemaleHighActivities)
+
+```
+
+
+
+```{r Table, echo=FALSE}
+FinalTable <- data.frame(
+  "Gender" = c(),
+  "Average Age" = c(),
+  "NUmber of People" = c(),
+  "Population percentage" = c(),
+  "Most Popular Activity" = c(),
+  "Percentage of High Scores in Shared Interest" = c(),
+  "Activities Preferred by High Scorers" = c()
+  )
+FinalTable[1,1] <- "Male"
+FinalTable[2,1] <- "Female"
+FinalTable[1,2] <- round(MaleAgeSummary["Mean"],1)
+FinalTable[2,2] <- round(FemaleAgeSummary["Mean"],1)
+FinalTable[1,3] <- dim(UniqueMale)[1]
+FinalTable[2,3] <- dim(UniqueFemale)[1]
+FinalTable[1,4] <- MalePercentage
+FinalTable[2,4] <- FemalePercentage
+FinalTable[1,5] <- names(UniqueMale)[51]
+FinalTable[2,5] <- names(UniqueFemale)[54]
+FinalTable[1,6] <- round(PercentageWithHighMarkMale,3)
+FinalTable[2,6] <- round(PercentageWithHighMarkFemale,3)
+FinalTable[1,7] <- names(UniqueMale)[54]
+FinalTable[2,7] <- names(UniqueMale)[54]
+```
+
+
+```{r FinalTable, echo=FALSE}
+names(FinalTable) <- c("Gender,","Average Age,","NUmber of People,","Population Percentage,","Most Popular Activity,","Percentage of High Scores in Shared Interest,","Most common Activities Preferred by Highest Shared Interest Scorers")
+FinalTable
+```
+
+
+From the data, it's evident that male and female participants in Speed Dating share similar average ages, around 26 years old, with comparable numbers. However, males favour sports, while females prefer dining, influencing their shared interests. High-scoring males commonly enjoy dining, aligning with females' preferences. Top-scoring females still favour dining, potentially influenced by other factors. Moreover, the percentage of males scoring high in shared interests is lower, likely tied to their different activity preferences.
+
+---
+

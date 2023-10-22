@@ -1,0 +1,132 @@
+---
+title: "ST344 Practical Lab 1"
+fontsize: 11pt
+geometry: margin = 1in
+output:
+  html_document: default
+  pdf_document: default
+bibliography: Practical.bib
+urlcolor: blue
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r chunk1, include = FALSE}
+SpeedRawData <- read.csv("SpeedDatingRawData.csv")
+ind <- (SpeedRawData$partner == 1)&(SpeedRawData$wave %in% c(1:5, 10:21))
+SpeedData <- SpeedRawData[ind, c("iid", "gender", "attr1_1")]
+SpeedData$gender<-factor(SpeedData$gender, labels = c("female", "male"))
+```
+
+```{r chunk 2, include = FALSE}
+rinline <- function(code){
+  html <- '<code  class = "r">``` `r CODE` ```</code>'
+  sub("CODE", code, html)
+}
+```
+
+
+## Reproducible data analysis using R Markdown
+
+----
+
+This computer lab provides an introduction to using R Markdown. Due to time restrictions this can be an introduction only. You are expected to learn more about R Markdown in independent study. Further details and a tutorial can be found at this [website](http://rmarkdown.rstudio.com/lesson-1.html) by RStudio which also links to the reference guide and to cheat sheets for R Markdown.
+
+The [dataset](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating/Speed%20Dating%20Data.csv) used in this lab comes from a study at Columbia Business school [@FismanEtAl-2006] and is available from Andrew Gelman's [website](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating). A description of the data can be found in this [data key document](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating/Speed%20Dating%20Data%20Key.doc). 
+
+Follow the instructions below. 
+
+
+1. In a data analysis project it is advisable to have a plan of how to organise your files, so create a directory named `SpeedDating` that will contain all files related to the analysis of this particular data set. Note how the directory name avoids blanks but instead uses what is known as CamelBack, that is capitalisation to enhance readability of names given to directories, files and similar. Create further sub-directories as appropriate.
+
+3. Download the following three files from moodle and save them in the directory `SpeedDating`. When downloading a file make sure to save it with the correct name and file extension.
+
+     * Save the raw data as `SpeedDatingRawData.csv` 
+     * Save the data key as `SpeedDatingDataKey.doc`
+     * Save `Example.Rmd` 
+
+4. Start RStudio and set `SpeedDating` as your current working directory by choosing from the top bar menu `Session > Set Working Directory > Choose Directory ...`.  If you do this you will notice a command similar to `setwd("~SpeedDating")` appearing in the Console and in the History window.
+
+1. Open the `Example.Rmd` file in the RStudio editor window. This file contains an example R Markdown document. You should see the command `Knit` in the toolbar of the editor window. Click on `Knit` which will compile the R Markdown file to produce a pdf file that contains text, R code and plots. If the file does not compile it is likely that your desktop does not have Latex installed.
+
+    - If you want to install LaTeX on **your own computer**, then the following website https://www.latex-project.org/get/ gives instructions: for a Mac it's *MacTeX* that you want, otherwise *TeXLive* or *MiKTeX*.
+
+    - To install LaTeX on **one of the PCs in MB0.01**, or another Warwick managed desktop PC, go to the *Software center* application and select *TeXLive* there.
+
+      Be prepared for a long wait, in either case: it's a large software package, and can take around an hour to install --- or maybe more, if you have a slow network connection. Meanwhile continue with the lab following the instructions below.
+
+6. Examine the file `Example.Rmd` in the RStudio editor. At the top of the file you will find the so-called YAML header. 
+The header specifies various document parameters such as the  title and the output format. Change the output format to html as given below. 
+    ```{r eval = FALSE}
+    ---
+    title: "Example"
+    output: html_document
+    urlcolor: blue
+    ---
+    ```
+Now click `Knit` which produces an html document with the title "Example".  There are further options that you can specify here, for example including the line `author: Name` will include the author's name in the final document. The line `urlcolor: blue` ensures that weblinks appear in blue font. For further options see the [R Markdown reference guide](https://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf). Add your name as author, then knit the document and examine the result. 
+
+7. Aside from the header the document contains some text and R code chunks. The latter are highlighted by RStudio. They start with ` ```{r} ` and end with ` ``` `.
+In the top right corner of each highlighted area there is a little green triangle which if clicked runs the relevant chunk of code. Run the code chunk containing the command  `SpeedRawData <- read.csv("SpeedDatingRawData.csv")`. 
+This will import the speed dating data set. Note the line ` ```{r chunk1, eval = FALSE}` which defines a chunk of R code and gives it the name chunk1. Assigning a name to a chunk is optional but good practice as the chunk may then be reused elsewhere.  The option `eval = FALSE` specifies that the code of the chunk should be included in the output document but not executed in R.
+
+8. To insert a new R code chunk underneath `chunk1` click on the line underneath the chunk. Then click  the `Insert` button on the right of the editor menu bar and choose `R`. Call this chunk2 and enter the command `dim(SpeedRawData)` between the delimiters. Then knit the document. You should get an error message as chunk1 was not executed and so the data frame `SpeedRawData` was not loaded. 
+
+9. Now remove the option `eval = FALSE` from chunk1 and knit the document again. This time it should compile without error and include in the output the dimensions of the data frame `SpeedRawData`. For more chunk options read the reference guide or cheat sheets.
+
+10. We can also use inline code which displays the output but not the code itself. Under chunk2 insert the following sentence: The raw data has `r rinline("nrow(SpeedRawData)")` rows and `r rinline("ncol(SpeedRawData)")` columns. Then knit the document again and see what happens.
+
+11. The example R Markdown file illustrates some simple text formatting commands. Examine the file and find out how to make section titles of different sizes, bullet point lists and numbered lists, how to write in italics or boldface, include a quote or insert a weblink. 
+
+12. You can also format tables. First use R help to find out about the function `kable` from the knitr package. Remove the `eval = FALSE` option from chunk3 and then define a chunk4 with the following options: `{r TableChunk, echo = FALSE, results = 'asis'}` and insert the following code.
+
+    ```{r TableChunk, eval = FALSE, results = 'asis', message = FALSE}
+    library(knitr)
+    kable(SpeedData[1:5, ], 
+         col.names = c("Participant ID", "Gender", "Attractiveness Importance %"), 
+         align = c('l', 'c', 'r'), caption = "A knitr kable table")
+    ```
+ Knit the document and inspect the results. 
+
+13. Finally, Latex equations can be used.  **In-line** maths is produced with `$ ... $` or `\( ... \)` 
+and **display** maths with `$$ ... $$` or `\[ ... \]`. For example, 
+
+    `\(e^{i\pi}\)` gives \(e^{i\pi}\) and
+
+    ```latex
+    \[ f(x) =
+    \frac{1}{\sigma\sqrt{2\pi}}
+    e^{\frac{(x-\mu)^2}{2\sigma^2}} \]
+    ```
+    gives
+    \[ f(x) =
+    \frac{1}{\sigma\sqrt{2\pi}}
+    e^{\frac{(x-\mu)^2}{2\sigma^2}} \]
+    
+ ----
+ 
+## Practice exercise for Lab Report 1
+ 
+ For your first exercise in writing a report, consult the speed dating data key to find 
+ 
+ * a variable that describes the self-perception of attractiveness for each participant;
+ * a variable that measures how likely a participant believes that the people they meet at the speed dating event are interested in dating them.
+ 
+We will refer to the latter variable as the *date likelihood*. Your lab report should examine the relationship between self-perceived attractiveness and date likelihood. 
+
+Produce a report using R Markdown and save it as a pdf file. Your report should include the following items:
+
+ * your Student ID as the author of the report;
+ * relevant background to the data to allow the reader to follow the discussion including a reference to the source of the data; 
+ * a plot illustrating the relationship between self-perceived attractiveness and date likelihood;
+ * a brief interpretation of the plot;
+ * any R-code needed for the reader to reproduce the plot;
+
+Discuss your report with a friend. **This is not the report you hand in.**
+
+----
+## Reference
+

@@ -1,0 +1,148 @@
+---
+title: "ST344 Practical 2"
+output: html_document
+fontsize: 11pt
+geometry: margin = 1in
+urlcolor: blue
+---
+  
+  ```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+It is a vital skill to learn how to use unfamiliar R functions. So in this practical the R commands are presented as pseudocode which you are expected to adapt to perform the various tasks.
+
+## Data Handling
+
+
+1. Create a new R Markdown file in RStudio and save it as “Lab2.Rmd” in the `SpeedDating` directory. As you work through the remainder of this practical, create an R code chunk for each task and write notes in the .Rmd file on what the code is doing. 
+
+2. At the start of the document add a short reference for the source of the data.
+
+
+
+    The R package **rio** simplifies the import and export of data, for example by recognizing file extensions.  The function `import` from the **rio** package can be used to read data into the R workspace as below.
+    ```{r chunk import, eval = FALSE}
+    library(rio)
+    data <- import("DataFile.xlsx", setclass = "tibble")
+    ```
+The option `setclass = "tibble"` will store the data in a **tibble** which is an enhanced data frame. 
+
+    **Task:** Load the speed dating raw data into the tibble `SpeedDatingRawData`.
+
+4. Tibbles behave slightly differently to traditional data frames. (For more information on tibbles read this [vignette](https://cran.r-project.org/web/packages/tibble/vignettes/tibble.html) and [Chapter 10](http://r4ds.had.co.nz/tibbles.html) in Wickham, H., & Grolemund, G. (2016). *R for Data Science*. O'Reilly.) Subsetting a tibble always creates another tibble, unlike traditional data frames which may create a vector. Also a tibble produces a warning if you are trying to access a column that does not exist.
+Furthermore, tibbles have more sophisticated printing options than traditional data frames. The command `print(data, n = k)` will print the first k rows of the tibble `data` and as many columns as fit on the screen. It also provides the data type for each column, such as integer or double. 
+
+    **Task:** Subselect columns 41 to 60 of the speed dating raw data and print the first 3 rows and as many columns as fit on the screen.
+
+5. Due to time constraints  we concentrate on a subset of the original raw data set. The R package **dplyr** provides a set of commands for data manipulation such as subsetting.
+To select the variables `var1`, `var2`, `var3` from the tibble `data`, that is the columns `data$var1`, `data$var2`, and `data$var3`, we can use the `select` command as below. 
+    ```{r selection, eval = FALSE}
+    library(dplyr)
+    DataSubset <- select(data, var1, var2, var3)
+    ```
+  
+    **Task:** Use `select` to create a new data frame containing the variables `iid`, `partner` and the ratings of the participants for the attributes attractiveness, sincerity, intelligence, fun and ambition as a response to the question *"How do you think you measure up? Please rate your opinion of your own attributes, on a scale of 1-10 (be honest!)"*. Assign the results to `SpeedData`. Use `colnames()` on `SpeedData` to check the result.
+
+6. In the following we will operate on `SpeedData` to obtain the variables we wish to work with. Unless directed otherwise, update the data frame rather than creating a new one. That is to say, operate on `SpeedData` and assign the result also to `SpeedData`; in pseudocode,
+    ```{r select, eval = FALSE}
+    SpeedData <- operate(SpeedData, an_argument, another_argument)
+    ```
+    The `filter` command in the **dplyr** package selects rows from a data frame according to a specified criterion, see the syntax in the pseudocode below. The criterion can be anything that returns a logical vector. The pseudocode below selects the rows in `data` for which `var1` takes value "yes" and `var2` takes a value less than 10.
+    ```{r filtering, eval = FALSE}
+    library(dplyr)
+    DataSubset <- filter(data, (var1 == "yes") & (var2 < 10))
+    ```
+    
+    **Task:** Filter `SpeedData` such that it contains only the first speed date of each individual. Check its dimensions.
+
+7. **Task:** Remove the column `partner` from `SpeedData`.
+
+8. At this stage it is useful to perform some basic checks on the data. The `View` command allows you to see the data frame in the editor window and check that it has been imported as expected. The command `dim` provides the dimensions of the data frame, while `head` and `tail` print the first and last rows respectively. Moreover, `summary` provides a summary of each variable which is a useful check for any data entry errors. 
+ 
+    **Task:** Apply the function `summary` to `SpeedData` and describe the results in 3-4 sentences.
+    
+8. If observations have missing values then we need to consider carefully whether it is justified to remove these and what effect their removal may have. 
+
+    **Task:** Identify whether the missing values across the five attributes occur for the same participants. Then remove any observations with missing values from `SpeedData` using the function `na.omit()`. 
+
+9. The function `mutate` from the **dplyr** package computes new columns (or variables) from the existing ones. For example, to add a column  that is the average of `var1` and `var2` to the tibble `data` we may use
+    ```{r mutating, eval = FALSE}
+    library(dplyr)
+    data<- mutate(data, rowMeans(select(data, var1, var2)))
+    ```
+The function `transmute` operates similar to `mutate`, but it only retains the computed columns. To replace `var1` in `data` by the average of `var1` and `var2` we use the syntax:
+    ```{r transmuting, eval = FALSE}
+    library(dplyr)
+    data$var1<- transmute(data, rowMeans(select(data,var1, var2)))
+    ```
+When importing data, categorical variables may be stored as character or numeric. However, for modelling, it is best to convert these into factors. For example, to convert `var1` to a factor with levels "upper class", "middle class" and "lower class" and labels "u", "m" and "l" use
+    ```{r factorise, eval = FALSE}
+    library(dplyr)
+    data<- mutate(data, var1 = factor(var1, levels = c("upper class",
+                                                       "middle class", 
+                                                       "lower class"), 
+                                      labels = c("u","m","l")) )
+    ```
+
+**Task:** Using `rowSums()` compute the total points awarded by each participant across the five attributes and store the result in the vector `AttributeSums`. Use `summary` to provide a summary of the total scores. 
+
+10. Various functions from the **dplyr** package have a version that allows scoping, that is applying an operation to a selection of variables. For example consider the following scoping version of `mutate`:
+    ```{r eval = FALSE}
+    data <- mutate_at(data, .vars = vars(var1:var3), .funs = (~.+1))
+    ```
+    Here `.vars` is the collection of variables that the functions specified in `.funs` should be applied to. In the syntax above the variables selected are the columns from `var1` up to and including `var3` of the tibble `data`.  Then `.funs` specifies that 1 should be added to each value of the selected variables. 
+    
+    **Task:** Use `mutate_at` to normalise the attribute ratings in `SpeedData` such that for each participant they add up to a total of 100 points. Check that your code has implemented the normalisation correctly.
+
+11. The  `export` function from the **rio** package can be used to save data in various file formats using the syntax:     
+    ```{r exporting, eval = FALSE}
+    library(rio)
+    export(data, "file.xlsx")
+    ```
+    **Task:** Use `export` to save the tibble `SpeedData` in the file `Lab2Data.csv`.
+    
+----
+
+The following instructions are not part of Lab Report 2 but are included as a further illustration of the concepts of messy and tidy data. 
+
+This section utilises tidying commands provided by the package **tidyr**. The function `gather` tidies a variable that is spread over several columns into two columns, one for the original column name (the key) and one for the value. The following example is taken from the help function for `gather`. It uses the **iris** data which, for a number of different iris species, provides various measurements of the flower. Run the example and examine the results.
+```{r gathering, eval = FALSE}
+    library(tidyr)
+    mini_iris <- iris[c(1, 51, 101), ]
+    new_iris <- gather(mini_iris, key = Flower_att, value = Measurement,
+                       Sepal.Length, Sepal.Width, Petal.Length, Petal.Width)
+    ```
+Rather than specifying the columns that should be gathered we may alternatively specify which columns should be excluded from being gathered:
+```{r gathering2, eval = FALSE}
+    new_iris <- gather(mini_iris, key = Flower_att, value = Measurement, -Species)
+    ```
+Note that in the `new_iris` data frame the column `Flower_att` contains two variables: the part of the flower that is being measured and the type of measurement. 
+We can use the command `separate` from the **tidyr** package so split this column into two separate columns. 
+```{r separating, eval = FALSE}
+    tidy_iris <- separate(new_iris, col = Flower_att, into = c("Flower part", "Dimension"))
+    ```
+
+For further practice load the data from the file `MessyData.csv` on the Moodle into a tibble. The data set is derived from the speed dating set. It contains information about students that study either Business, Law or for an MBA and are intending a career either in Banking or Law. 
+Now tidy the data using the commands above. 
+
+---
+
+## Lab report 
+ 
+Use R Markdown to produce a document which should contain 
+
+* an R chunk for each of the tasks above, 
+* the output (if any) produced by the R chunk (exclude any warnings or messages by setting appropriate chunk options!) 
+* a brief explanation of the code. 
+ 
+ Exchange the report with a study friend. Now mark each other (Be very critical!) using the
+marking scheme [Total 5 marks]:
+
+* correct implementation of code (reasonably efficiently) [2 marks];
+* sufficient background for the reader to follow the code  [2 marks];
+* professional presentation, structure and language [1 mark].
+ 
+  Discuss your mark with your friend and give feedback.
+

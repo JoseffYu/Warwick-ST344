@@ -1,0 +1,43 @@
+---
+title: "Lab2"
+author: "2140365 Yanlin Yu"
+date: "2023-10-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## R Markdown
+
+```{r TibbleSpeedData,echo=FALSE}
+library(rio)
+SpeedDatingRawData <- import("SpeedDatingRawData.csv", setclass = "tibble")
+```
+
+
+```{r First3Rows,echo=FALSE}
+head(SpeedDatingRawData[,41:60],n=3)
+```
+
+```{r SelectRows,echo=FALSE}
+library(dplyr)
+SpeedData <- SpeedDatingRawData %>%
+  select(
+    iid, 
+    partner, 
+    attr3_1,    
+    sinc3_1,
+    intel3_1,
+    fun3_1,
+    amb3_1
+    )
+
+SpeedData <- SpeedData %>%
+  filter(partner==1) %>%
+  select(-partner)
+
+summary(SpeedData)
+```
+
