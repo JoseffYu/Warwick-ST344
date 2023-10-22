@@ -1,0 +1,118 @@
+---
+title: "Practical3Exercise"
+author: "2140365 Yanlin Yu"
+date: "2023-10-20"
+output: html_document
+---
+
+```{r LoadLib, echo=FALSE}
+library(dplyr)
+library(rio)
+library(magrittr)
+library(readxl)
+StopS <- read_excel("StopSearchWk3.xlsx")
+names(StopS)   # check what is in the file.
+```
+
+
+```{r GetCols,echo=FALSE}
+StopS <- StopS[,c(1,2,7:15)]
+names(StopS)
+```
+
+
+```{r RenameCols, echo=FALSE}
+names(StopS)[c(4:6,8,10,11)] <- c('AgeRange', 'SelfEthnicity', 'OfficerDefEthnic', 'AimSearch','OutcomeLinkAim','RemovalMoreClothing')
+names(StopS)
+```
+
+
+```{r ShowTableDetail, echo=FALSE}
+str(StopS)
+```
+
+
+```{r}
+StopS <- StopS %>% mutate(
+  Gender=factor(Gender), Type=factor(Type), AgeRange=factor(AgeRange),
+  SelfEthnicity=factor(SelfEthnicity),OfficerDefEthnic=factor(OfficerDefEthnic),
+  Legislation=factor(Legislation),AimSearch=factor(AimSearch),Outcome=factor(Outcome),
+)
+str(StopS)
+```
+
+
+```{r FactorSummary, echo=FALSE}
+summary(StopS)
+```
+
+
+```{r TypeTable, echo=FALSE}
+ Types <- factor(StopS$Type,labels=c("PersonVehicle","Person"))
+ table(Types,StopS$Type) # This is an example of checking you have got it right!
+```
+
+
+```{r}
+StopS <- StopS %>% mutate(Type=factor(StopS$Type,labels=c("PersonVehicle","Person")) )
+summary(StopS)
+```
+
+
+```{r SetLabels, echo=FALSE}
+StopS <- StopS %>% mutate(Legislation=factor(as.numeric(Legislation), 
+                                              levels=c(1,2,3,4),                                             labels=c("JusticeFirearms","JusticeFirearms","DrugsMisuse","Evidence")))
+summary(StopS)
+```
+
+
+```{r Lubridate, echo=FALSE}
+library(lubridate)
+ StopS$dayDate = date(StopS$Date)
+StopS$hourDay = as.numeric(substring(StopS$Date,12,13)) # Find a better way?
+save(StopS, file='myStopSearch.rda') # save for future use.
+```
+
+
+```{r TableFunc, echo=FALSE}
+table(StopS$Gender,StopS$AgeRange)
+ table(StopS$AgeRange,StopS$Gender)
+ proportions(table(StopS$Gender,StopS$AgeRange),1)
+ 100*proportions(table(StopS$Gender,StopS$AgeRange),2)
+```
+
+
+```{r KableFunc, echo=FALSE}
+knitr::kable(table(StopS$Gender,StopS$AgeRange),
+  caption = "Gender by Age; 401 people stopped")
+knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),2),
+             digits=0,
+  caption = "Percentage sex by age; 401 people stopped")
+knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),2),
+             digits=1,
+  caption = "Percentage sex by age; 401 people stopped")
+knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),1),
+             digits=1,
+  caption = "Percentage sex by age; 401 people stopped")
+```
+
+
+```{r PlotAgeDistn, echo=FALSE}
+ plot(table(StopS$Legislation,StopS$AgeRange),
+      main="Distribution of age by legislation for 401 people stopped")
+```
+
+
+```{r PlotAnother, echo=FALSE}
+ plot(table(StopS$Legislation,StopS$AgeRange,StopS$Gender),
+      main="Distribution of age by legislation for 401 people stopped")
+```
+
+
+```{r}
+knitr::opts_chunk$set(echo = TRUE, fig.width = 8, fig.height = 5)
+```
+
+
+
+
