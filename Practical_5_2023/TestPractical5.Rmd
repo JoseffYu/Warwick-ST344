@@ -1,0 +1,96 @@
+---
+title: "TestPractical5"
+author: '2140365'
+date: "2023-11-01"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r laodData}
+library(dplyr)
+library(tidyverse)
+library(ggthemes)
+library(readxl)
+CovidData <- read.csv("tidycovid19.csv")
+
+library(lubridate)
+CovidData <- CovidData %>%
+  mutate(date = as.Date(parse_date_time(CovidData$date, orders = c("y","ym","ymd","dmy"))))
+
+UKCaseData <- {CovidData %>%
+    filter(country == "United Kingdom") %>%
+    select(date,confirmed)
+    }
+```
+
+
+```{r DailyNew}
+firstdiff <- function(x) {
+  shifted <- c(0,x[1:(length(x)-1)])
+  result = x -shifted
+  which_negative = which(result<0)
+  result[which_negative] = NA
+  return (result)
+}
+
+UKCaseData <- UKCaseData %>%
+  mutate(daily_confirmed = firstdiff(confirmed))
+
+#plot figure for New confirmed against date
+library(ggplot2)
+plot_confirmed_date <- {UKCaseData %>% ggplot(aes(x = date, y = daily_confirmed))} + 
+  geom_point()+scale_x_date(date_breaks = "months", date_labels = "%b-%y")
+print(plot_confirmed_date)
+```
+
+
+```{r RegresAnalysis}
+FirstStageUKCaseData <- {UKCaseData %>%
+    filter( (date > as.Date("2020-02-23")) & (date < as.Date("2020-03-24")) )}
+
+early_plot_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date, y =daily_confirmed))} + geom_point() + scale_x_date(date_breaks = "weeks", date_labels = "%b-%m-%y")
+print(early_plot_confirmed_date)
+
+```
+
+
+```{r expGrowth}
+early_plot_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date, y = log(daily_confirmed)))} + geom_point() + scale_x_date(breaks = "weeks",date_labels = "%b-%m-%y")
+print(early_plot_confirmed_date)
+
+```
+
+
+```{r}
+FirstStageUKCaseData <- FirstStageUKCaseData %>% mutate(date = yday(date))
+#yday()convert day of the day to days,start from the first day of the year
+
+#fit data to poison model
+poisson_fit <- glm(daily_confirmed ~ 1 + date, family = poisson, data = FirstStageUKCaseData)
+#glm() 函数用于拟合广义线性模型，这是一种比普通线性回归（ordinary linear regression）更为灵活的模型。广义线性模型可以处理因变量不满足正态分布、离散分布（例如二项分布）或其他非正态分布的情况
+summary(poisson_fit)
+```
+
+
+```{r prediction}
+FirstStageUKCaseData$pred_poisson = predict(poisson_fit)
+
+early_plot_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date,y = daily_confirmed))} + geom_point() + geom_line(aes(y = exp(pred_poisson)), size = 1)
+
+print(early_plot_confirmed_date)
+
+```
+
+
+```{r logPlot}
+early_plot_log_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date, y = log(daily_confirmed)))} + geom_point() + geom_line(aes(y = pred_poisson),size = 1)
+
+print(early_plot_log_confirmed_date)
+```
+
+
+

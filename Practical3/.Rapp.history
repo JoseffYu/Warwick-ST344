@@ -1,3 +1,5 @@
 load("/Users/yuyanlin/Desktop/ST344/Practical3/myStopSearch.rda")
 myStopSearch
 load("/Users/yuyanlin/Desktop/ST344/Practical3/myStopSearch.rda")
+load("/Users/yuyanlin/Desktop/ST344/Practical3/StopSearch.rda")
+StopS

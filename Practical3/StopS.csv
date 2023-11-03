@@ -1,0 +1,402 @@
+"";"Type";"Date";"Gender";"AgeRange";"SelfEthnicity";"OfficerDefEthnic";"Legislation";"AimSearch";"Outcome";"OutcomeLinkAim";"RemovalMoreClothing";"dayDate";"hourDay"
+"1";"Person";"2021-09-01T07:35:01+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;1;2021-09-01;7
+"2";"Person";"2021-09-02T10:42:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;1;2021-09-02;10
+"3";"PersonVehicle";"2021-09-02T11:48:39+00:00";"Male";"over 34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-02;11
+"4";"Person";"2021-09-02T12:20:34+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-02;12
+"5";"Person";"2021-09-02T14:17:24+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-02;14
+"6";"Person";"2021-09-02T18:54:38+00:00";"Male";"25-34";NA;"Mixed";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-02;18
+"7";"Person";"2021-09-02T20:35:13+00:00";"Male";"18-24";"Other ethnic group - Not stated";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-02;20
+"8";"Person";"2021-09-02T20:37:12+00:00";"Male";"25-34";"Other ethnic group - Not stated";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-02;20
+"9";"Person";"2021-09-03T20:51:48+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-03;20
+"10";"Person";"2021-09-03T21:56:43+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-03;21
+"11";"Person";"2021-09-04T03:33:26+00:00";"Male";"10-17";"Asian/Asian British - Any other Asian background";"Asian";"Evidence";"Article for use in theft";"Khat or Canbis warning";0;NA;2021-09-04;3
+"12";"Person";"2021-09-04T03:38:13+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-04;3
+"13";"PersonVehicle";"2021-09-04T09:56:37+00:00";"Male";"25-34";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-09-04;9
+"14";"PersonVehicle";"2021-09-04T09:57:32+00:00";"Male";"25-34";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2021-09-04;9
+"15";"Person";"2021-09-04T20:56:29+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-04;20
+"16";"Person";"2021-09-05T00:08:02+00:00";"Male";"25-34";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-05;0
+"17";"Person";"2021-09-05T00:36:15+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-05;0
+"18";"Person";"2021-09-05T00:36:15+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-05;0
+"19";"Person";"2021-09-05T01:36:59+00:00";"Male";"18-24";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-05;1
+"20";"Person";"2021-09-05T02:17:38+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-05;2
+"21";"Person";"2021-09-05T02:18:52+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-05;2
+"22";"Person";"2021-09-05T14:51:40+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Controlled drugs";"A no further action disposal";1;0;2021-09-05;14
+"23";"Person";"2021-09-05T21:00:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-05;21
+"24";"Person";"2021-09-06T17:40:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-06;17
+"25";"Person";"2021-09-06T17:40:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-06;17
+"26";"Person";"2021-09-06T17:40:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-06;17
+"27";"Person";"2021-09-06T17:40:22+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-06;17
+"28";"Person";"2021-09-06T17:40:28+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-06;17
+"29";"PersonVehicle";"2021-09-07T10:13:01+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-07;10
+"30";"PersonVehicle";"2021-09-07T16:22:28+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-07;16
+"31";"Person";"2021-09-07T17:53:26+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Asian";"Evidence";"Controlled drugs";"A no further action disposal";1;NA;2021-09-07;17
+"32";"Person";"2023-09-07T17:53:26+00:00";"Male";NA;"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2023-09-07;17
+"33";"Person";"2021-09-08T22:32:00+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2021-09-08;22
+"34";"Person";"2021-09-08T23:51:59+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Arrest";1;NA;2021-09-08;23
+"35";"PersonVehicle";"2021-09-09T13:55:00+00:00";"Male";"over 34";"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-09;13
+"36";"Person";"2021-09-09T17:33:42+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-09;17
+"37";"Person";"2021-09-10T15:38:01+00:00";"Male";"over 34";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-10;15
+"38";"Person";"2021-09-10T15:57:29+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Arrest";1;NA;2021-09-10;15
+"39";"Person";"2021-09-10T17:20:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-10;17
+"40";"Person";"2021-09-10T23:10:53+00:00";"Male";"18-24";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";1;NA;2021-09-10;23
+"41";"Person";"2021-09-10T23:14:02+00:00";"Male";"18-24";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-10;23
+"42";"PersonVehicle";"2021-09-11T00:42:13+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-11;0
+"43";"PersonVehicle";"2021-09-11T00:42:13+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-11;0
+"44";"PersonVehicle";"2021-09-11T00:49:23+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-11;0
+"45";"Person";"2021-09-11T01:11:01+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-11;1
+"46";"Person";"2021-09-11T01:43:54+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"Arrest";1;0;2021-09-11;1
+"47";"PersonVehicle";"2021-09-11T11:57:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Caution (simple or conditiol)";1;NA;2021-09-11;11
+"48";"PersonVehicle";"2021-09-11T11:57:00+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-11;11
+"49";"PersonVehicle";"2021-09-11T12:06:23+00:00";"Female";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-11;12
+"50";"PersonVehicle";"2021-09-12T04:00:41+00:00";"Male";"over 34";"Other ethnic group - Not stated";"Asian";"Evidence";"Stolen goods";"Pelty Notice for Disorder";1;NA;2021-09-12;4
+"51";"Person";"2021-09-12T04:00:41+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Asian";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-12;4
+"52";"Person";"2021-09-12T16:15:00+00:00";"Male";"10-17";"Mixed/Multiple ethnic groups - Any other Mixed/Multiple ethnic background";"Mixed";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-12;16
+"53";"Person";"2021-09-12T17:20:24+00:00";"Male";"10-17";"Mixed/Multiple ethnic groups - Any other Mixed/Multiple ethnic background";"Mixed";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-12;17
+"54";"Person";"2021-09-12T17:27:56+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-12;17
+"55";"Person";"2021-09-12T18:38:06+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-12;18
+"56";"Person";"2021-09-12T18:52:12+00:00";"Male";"10-17";"Mixed/Multiple ethnic groups - Any other Mixed/Multiple ethnic background";"Mixed";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-12;18
+"57";"Person";"2021-09-12T22:57:02+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";0;NA;2021-09-12;22
+"58";"Person";"2021-09-12T23:04:46+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-09-12;23
+"59";"Person";"2021-09-12T23:04:46+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2021-09-12;23
+"60";"PersonVehicle";"2021-09-12T23:13:49+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-09-12;23
+"61";"Person";"2021-09-13T00:30:50+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-13;0
+"62";"Person";"2021-09-13T00:33:02+00:00";"Male";"18-24";"Asian/Asian British - Indian";"Asian";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-13;0
+"63";"Person";"2021-09-13T11:46:24+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-13;11
+"64";"PersonVehicle";"2021-09-13T12:52:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Controlled drugs";"Arrest";1;NA;2021-09-13;12
+"65";"Person";"2021-09-13T13:51:42+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-13;13
+"66";"Person";"2021-09-14T17:03:32+00:00";"Male";"18-24";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-14;17
+"67";"Person";"2021-09-14T17:05:08+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-14;17
+"68";"Person";"2021-09-15T12:45:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-15;12
+"69";"Person";"2021-09-15T13:11:17+00:00";"Female";"over 34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-15;13
+"70";"Person";"2021-09-15T13:13:48+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-15;13
+"71";"Person";"2021-09-15T13:21:59+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-15;13
+"72";"PersonVehicle";"2021-09-15T14:34:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";1;NA;2021-09-15;14
+"73";"Person";"2021-09-16T13:40:00+00:00";"Male";"25-34";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-09-16;13
+"74";"Person";"2021-09-16T14:04:07+00:00";"Male";"18-24";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-16;14
+"75";"PersonVehicle";"2021-09-17T01:00:56+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";0;0;2021-09-17;1
+"76";"Person";"2021-09-17T11:08:46+00:00";"Male";"over 34";"White - Any other White background";"White";"JusticeFirearms";"Controlled drugs";"A no further action disposal";1;1;2021-09-17;11
+"77";"Person";"2021-09-17T18:51:36+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Arrest";0;NA;2021-09-17;18
+"78";"Person";"2021-09-17T23:15:45+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-09-17;23
+"79";"Person";"2021-09-17T23:15:45+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-17;23
+"80";"Person";"2021-09-18T14:38:29+00:00";"Male";"18-24";"Other ethnic group - Not stated";"White";"Evidence";"Offensive weapons";"Arrest";1;NA;2021-09-18;14
+"81";"Person";"2021-09-18T14:59:12+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Summons / charged by post";1;NA;2021-09-18;14
+"82";"Person";"2021-09-18T22:37:18+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;0;2021-09-18;22
+"83";"Person";"2021-09-18T22:38:37+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-18;22
+"84";"PersonVehicle";"2021-09-18T23:56:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2021-09-18;23
+"85";"Person";"2021-09-19T03:03:50+00:00";"Male";"18-24";"Asian/Asian British - Pakistani";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-19;3
+"86";"Person";"2021-09-19T03:05:16+00:00";"Male";"18-24";"Asian/Asian British - Pakistani";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-09-19;3
+"87";"Person";"2021-09-19T03:37:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-19;3
+"88";"Person";"2021-09-19T04:03:37+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-19;4
+"89";"Person";"2021-09-19T04:05:47+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-19;4
+"90";"Person";"2021-09-19T04:07:02+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-19;4
+"91";"Person";"2021-09-19T12:30:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-19;12
+"92";"Person";"2021-09-19T13:03:21+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-19;13
+"93";"Person";"2021-09-19T16:25:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";1;NA;2021-09-19;16
+"94";"Person";"2021-09-19T16:25:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-19;16
+"95";"PersonVehicle";"2021-09-20T00:12:58+00:00";"Male";"25-34";"White - Any other White background";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-20;0
+"96";"PersonVehicle";"2021-09-20T00:15:22+00:00";"Male";"18-24";"White - Any other White background";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-20;0
+"97";"Person";"2021-09-20T00:18:30+00:00";"Male";"18-24";"Other ethnic group - Any other ethnic group";"Other";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-20;0
+"98";"PersonVehicle";"2021-09-20T11:03:07+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-20;11
+"99";"Person";"2021-09-20T16:14:34+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-20;16
+"100";"Person";"2021-09-20T16:17:42+00:00";"Male";"10-17";"Mixed/Multiple ethnic groups - White and Asian";"Mixed";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-20;16
+"101";"Person";"2021-09-20T19:24:54+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-20;19
+"102";"PersonVehicle";"2021-09-20T23:20:00+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Mixed";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-09-20;23
+"103";"Person";"2021-09-20T23:35:22+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;0;2021-09-20;23
+"104";"PersonVehicle";"2021-09-21T02:13:05+00:00";"Male";"18-24";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-09-21;2
+"105";"Person";"2021-09-21T04:07:53+00:00";"Male";"18-24";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-21;4
+"106";"Person";"2021-09-21T18:48:34+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2021-09-21;18
+"107";"Person";"2021-09-21T23:30:24+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-21;23
+"108";"PersonVehicle";"2021-09-22T00:08:25+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-22;0
+"109";"PersonVehicle";"2021-09-22T00:08:25+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-22;0
+"110";"PersonVehicle";"2021-09-22T09:47:13+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-22;9
+"111";"Person";"2021-09-22T15:42:27+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2021-09-22;15
+"112";"Person";"2021-09-22T17:15:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-22;17
+"113";"Person";"2021-09-22T17:19:21+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-22;17
+"114";"PersonVehicle";"2021-09-22T19:03:58+00:00";"Male";"25-34";"Other ethnic group - Arab";"Other";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-22;19
+"115";"Person";"2021-09-22T22:50:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-22;22
+"116";"Person";"2021-09-23T00:40:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-23;0
+"117";"PersonVehicle";"2021-09-23T13:00:00+00:00";"Male";"over 34";"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-23;13
+"118";"Person";"2021-09-23T13:00:00+00:00";"Male";"18-24";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-23;13
+"119";"Person";"2021-09-23T13:00:00+00:00";"Male";"18-24";"Mixed/Multiple ethnic groups - White and Asian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-09-23;13
+"120";"Person";"2021-09-23T13:40:18+00:00";"Male";"over 34";"Other ethnic group - Not stated";"Mixed";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-23;13
+"121";"Person";"2021-09-23T13:42:13+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-23;13
+"122";"Person";"2021-09-23T13:56:18+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";0;NA;2021-09-23;13
+"123";"Person";"2021-09-23T15:42:55+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-23;15
+"124";"Person";"2021-09-23T21:20:19+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Article for use in theft";"Arrest";1;NA;2021-09-23;21
+"125";"Person";"2021-09-23T21:21:26+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-23;21
+"126";"Person";"2021-09-23T21:22:18+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-23;21
+"127";"PersonVehicle";"2021-09-24T19:53:32+00:00";"Male";"over 34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Mixed";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-24;19
+"128";"Person";"2021-09-24T20:09:43+00:00";"Male";"25-34";"White - Irish";"Mixed";"JusticeFirearms";"Articles for use in crimil damage";"Khat or Canbis warning";1;NA;2021-09-24;20
+"129";"Person";"2021-09-25T02:46:33+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"Arrest";0;NA;2021-09-25;2
+"130";"Person";"2021-09-25T03:46:52+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-25;3
+"131";"Person";"2021-09-26T00:50:13+00:00";"Male";"18-24";"Asian/Asian British - Pakistani";"Asian";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-26;0
+"132";"Person";"2021-09-26T02:40:38+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-26;2
+"133";"Person";"2021-09-26T02:40:38+00:00";"Male";"18-24";"Asian/Asian British - Indian";"Asian";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-26;2
+"134";"Person";"2021-09-26T10:40:34+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-26;10
+"135";"PersonVehicle";"2021-09-26T13:08:32+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-26;13
+"136";"Person";"2021-09-26T20:36:02+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-26;20
+"137";"Person";"2021-09-27T13:51:37+00:00";"Male";"over 34";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-27;13
+"138";"Person";"2021-09-27T14:06:34+00:00";"Female";"10-17";"Other ethnic group - Not stated";"Mixed";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-09-27;14
+"139";"Person";"2021-09-07T14:09:31+00:00";"Female";"10-17";"Other ethnic group - Not stated";"Black";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-09-07;14
+"140";"Person";"2021-09-27T14:11:54+00:00";"Female";"10-17";"Other ethnic group - Not stated";"White";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-09-27;14
+"141";"Person";"2021-09-27T14:13:23+00:00";"Female";"10-17";"Other ethnic group - Not stated";"Asian";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-27;14
+"142";"Person";"2021-09-27T14:14:43+00:00";"Female";"10-17";"Other ethnic group - Not stated";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-27;14
+"143";"Person";"2021-09-28T09:50:00+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-09-28;9
+"144";"Person";"2021-09-28T12:49:23+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-28;12
+"145";"Person";"2021-09-28T15:10:00+00:00";"Female";"25-34";"Black/African/Caribbean/Black British - African";"Black";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-28;15
+"146";"Person";"2021-09-28T15:10:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-28;15
+"147";"Person";"2021-09-28T15:10:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-28;15
+"148";"Person";"2021-09-28T15:25:35+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-09-28;15
+"149";"Person";"2021-09-28T15:25:35+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-28;15
+"150";"Person";"2021-09-28T16:07:20+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Articles for use in crimil damage";"A no further action disposal";1;NA;2021-09-28;16
+"151";"Person";"2021-09-28T16:07:20+00:00";"Male";"18-24";NA;"Mixed";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-28;16
+"152";"Person";"2021-09-28T16:07:20+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-09-28;16
+"153";"Person";"2021-09-28T16:10:58+00:00";"Male";NA;"Black/African/Caribbean/Black British - Caribbean";"Black";"Evidence";"Anything to threaten or harm anyone";"Arrest";0;NA;2021-09-28;16
+"154";"Person";"2021-09-28T16:12:52+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"Arrest";0;NA;2021-09-28;16
+"155";"Person";"2021-09-28T16:35:40+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-28;16
+"156";"Person";"2021-09-28T17:42:29+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Stolen goods";"A no further action disposal";1;0;2021-09-28;17
+"157";"Person";"2021-09-29T02:45:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-09-29;2
+"158";"Person";"2021-09-29T10:10:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";1;NA;2021-09-29;10
+"159";"Person";"2021-09-29T10:10:00+00:00";"Male";"25-34";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-29;10
+"160";"Person";"2021-09-29T10:55:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-29;10
+"161";"Person";"2021-09-29T17:00:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-29;17
+"162";"Person";"2021-09-29T17:01:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;0;2021-09-29;17
+"163";"Person";"2021-09-29T17:03:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;0;2021-09-29;17
+"164";"Person";"2021-09-29T17:57:58+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-09-29;17
+"165";"Person";"2021-09-29T18:36:20+00:00";"Male";"10-17";"Other ethnic group - Not stated";"White";"Evidence";"Anything to threaten or harm anyone";"Khat or Canbis warning";0;NA;2021-09-29;18
+"166";"PersonVehicle";"2021-09-29T22:47:06+00:00";"Male";"18-24";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-29;22
+"167";"Person";"2021-09-29T22:55:00+00:00";"Female";"25-34";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"Pelty Notice for Disorder";1;NA;2021-09-29;22
+"168";"Person";"2021-09-30T03:10:06+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-09-30;3
+"169";"Person";"2021-09-30T06:12:44+00:00";"Male";"25-34";"Asian/Asian British - Indian";"Asian";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-09-30;6
+"170";"PersonVehicle";"2021-09-30T10:30:00+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";1;1;2021-09-30;10
+"171";"Person";"2021-09-30T14:17:53+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-09-30;14
+"172";"Person";"2021-09-30T14:18:14+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Caution (simple or conditiol)";0;NA;2021-09-30;14
+"173";"PersonVehicle";"2021-09-30T14:29:22+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-30;14
+"174";"Person";"2021-09-30T19:16:36+00:00";"Male";"25-34";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-30;19
+"175";"PersonVehicle";"2021-09-30T19:19:20+00:00";"Male";"18-24";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-09-30;19
+"176";"Person";"2020-11-30T01:21:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2020-11-30;1
+"177";"Person";"2020-11-01T01:21:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2020-11-01;1
+"178";"PersonVehicle";"2020-11-01T03:25:57+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-01;3
+"179";"PersonVehicle";"2020-11-01T03:28:38+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-01;3
+"180";"PersonVehicle";"2020-11-01T03:30:37+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-01;3
+"181";"Person";"2020-11-01T09:15:06+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"Arrest";0;NA;2020-11-01;9
+"182";"PersonVehicle";"2020-11-01T10:45:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-01;10
+"183";"PersonVehicle";"2020-11-01T10:45:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-01;10
+"184";"PersonVehicle";"2020-11-01T17:16:14+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2020-11-01;17
+"185";"Person";"2020-11-01T17:22:04+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2020-11-01;17
+"186";"Person";"2020-11-02T17:07:24+00:00";"Male";"over 34";"Other ethnic group - Not stated";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2020-11-02;17
+"187";"Person";"2020-11-02T20:08:19+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Other";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2020-11-02;20
+"188";"Person";"2020-11-03T14:21:33+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2020-11-03;14
+"189";"Person";"2020-11-03T19:32:48+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;0;2020-11-03;19
+"190";"Person";"2020-11-04T16:37:22+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-04;16
+"191";"Person";"2024-11-04T16:38:56+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2024-11-04;16
+"192";"Person";"2020-11-04T17:01:39+00:00";"Male";"over 34";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-04;17
+"193";"Person";"2020-11-04T17:53:36+00:00";"Male";"25-34";"Other ethnic group - Not stated";"White";"Evidence";"Article for use in theft";"Arrest";0;NA;2020-11-04;17
+"194";"Person";"2020-11-06T07:48:05+00:00";"Male";"over 34";"Asian/Asian British - Chinese";"Asian";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2020-11-06;7
+"195";"Person";"2020-11-07T21:05:29+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Fireworks";"A no further action disposal";1;NA;2020-11-07;21
+"196";"Person";"2020-11-10T13:45:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;0;2020-11-10;13
+"197";"Person";"2020-11-11T11:40:00+00:00";"Male";"18-24";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2020-11-11;11
+"198";"Person";"2020-11-11T13:10:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-11;13
+"199";"Person";"2020-11-11T13:12:02+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2020-11-11;13
+"200";"Person";"2020-11-19T00:30:00+00:00";"Female";"10-17";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-19;0
+"201";"Person";"2020-11-19T00:30:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2020-11-19;0
+"202";"Person";"2020-11-19T01:43:05+00:00";"Male";"25-34";"Asian/Asian British - Indian";"Asian";"JusticeFirearms";"Firearms";"A no further action disposal";1;NA;2020-11-19;1
+"203";"Person";"2020-11-19T01:46:13+00:00";"Male";"25-34";"Asian/Asian British - Pakistani";"Asian";"JusticeFirearms";"Firearms";"A no further action disposal";1;NA;2020-11-19;1
+"204";"Person";"2020-11-20T02:00:00+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;0;2020-11-20;2
+"205";"Person";"2020-11-20T13:46:58+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2020-11-20;13
+"206";"Person";"2020-11-21T03:10:00+00:00";"Male";"18-24";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2020-11-21;3
+"207";"Person";"2020-11-22T00:25:10+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2020-11-22;0
+"208";"Person";"2020-11-25T03:21:15+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;0;2020-11-25;3
+"209";"Person";"2020-11-25T18:46:39+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-25;18
+"210";"Person";"2020-11-25T18:47:50+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Caution (simple or conditiol)";1;NA;2020-11-25;18
+"211";"Person";"2020-11-25T18:49:40+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Controlled drugs";"Arrest";1;NA;2020-11-25;18
+"212";"Person";"2020-11-27T18:45:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2020-11-27;18
+"213";"Person";"2020-11-27T21:55:44+00:00";"Male";"18-24";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-27;21
+"214";"Person";"2020-11-27T21:59:21+00:00";"Male";"18-24";"Mixed/Multiple ethnic groups - Any other Mixed/Multiple ethnic background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-27;21
+"215";"Person";"2020-11-27T23:34:41+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;1;2020-11-27;23
+"216";"Person";"2020-11-27T23:38:46+00:00";"Female";"10-17";NA;"Mixed";"JusticeFirearms";"Controlled drugs";"A no further action disposal";1;NA;2020-11-27;23
+"217";"Person";"2020-11-27T23:41:19+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2020-11-27;23
+"218";"PersonVehicle";"2020-11-28T01:06:18+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";0;NA;2020-11-28;1
+"219";"Person";"2020-11-28T07:04:00+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Caribbean";"Black";"Evidence";"Firearms";"Arrest";1;NA;2020-11-28;7
+"220";"PersonVehicle";"2021-05-01T16:38:42+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Caution (simple or conditiol)";1;NA;2021-05-01;16
+"221";"PersonVehicle";"2021-05-02T00:42:24+00:00";"Male";"over 34";"Other ethnic group - Any other ethnic group";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-02;0
+"222";"PersonVehicle";"2021-05-02T00:45:16+00:00";"Male";"18-24";"Asian/Asian British - Any other Asian background";"Asian";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-02;0
+"223";"Person";"2021-05-02T12:00:58+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-02;12
+"224";"PersonVehicle";"2021-05-02T18:42:44+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-02;18
+"225";"PersonVehicle";"2021-05-02T18:44:11+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-02;18
+"226";"Person";"2021-05-02T19:31:17+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-02;19
+"227";"PersonVehicle";"2021-05-03T09:14:53+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-03;9
+"228";"PersonVehicle";"2021-05-03T13:31:33+00:00";"Male";"18-24";"White - Irish";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-05-03;13
+"229";"PersonVehicle";"2021-05-03T13:36:29+00:00";"Male";"18-24";"White - Gypsy or Irish Traveller";"White";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-05-03;13
+"230";"Person";"2021-05-04T09:21:51+00:00";"Female";"over 34";"White - Any other White background";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-04;9
+"231";"Person";"2021-05-04T09:22:43+00:00";"Male";"over 34";"White - Any other White background";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-05-04;9
+"232";"Person";"2021-05-04T11:45:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-04;11
+"233";"Person";"2021-05-04T12:39:00+00:00";"Male";"10-17";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-04;12
+"234";"Person";"2021-05-04T12:39:00+00:00";"Male";"10-17";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-04;12
+"235";"Person";"2021-05-04T12:46:00+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-04;12
+"236";"Person";"2021-05-04T14:51:21+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-04;14
+"237";"Person";"2021-05-04T16:00:00+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Offensive weapons";"Arrest";0;NA;2021-05-04;16
+"238";"PersonVehicle";"2021-05-05T11:40:00+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-05;11
+"239";"PersonVehicle";"2021-05-05T11:40:14+00:00";"Male";"18-24";"Asian/Asian British - Pakistani";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-05;11
+"240";"Person";"2021-05-05T12:00:06+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-05;12
+"241";"Person";"2021-05-05T12:15:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-05;12
+"242";"Person";"2021-05-05T12:15:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-05;12
+"243";"Person";"2021-05-05T17:24:08+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-05;17
+"244";"Person";"2021-05-06T06:26:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Arrest";0;NA;2021-05-06;6
+"245";"Person";"2021-05-06T11:57:21+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;0;2021-05-06;11
+"246";"Person";"2021-05-06T14:06:55+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-06;14
+"247";"PersonVehicle";"2021-05-06T14:53:00+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"Caution (simple or conditiol)";1;NA;2021-05-06;14
+"248";"Person";"2021-05-06T15:06:46+00:00";"Male";"10-17";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-06;15
+"249";"Person";"2021-05-06T18:25:00+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Asian";"Evidence";"Anything to threaten or harm anyone";"Arrest";1;NA;2021-05-06;18
+"250";"Person";"2021-05-07T01:46:13+00:00";"Male";"10-17";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-07;1
+"251";"Person";"2021-05-07T19:59:12+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"Summons / charged by post";1;NA;2021-05-07;19
+"252";"Person";"2021-05-07T22:00:00+00:00";"Male";"18-24";NA;"Asian";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-07;22
+"253";"Person";"2021-05-07T23:26:45+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Arrest";0;NA;2021-05-07;23
+"254";"Person";"2021-05-08T11:15:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Stolen goods";"Arrest";0;NA;2021-05-08;11
+"255";"PersonVehicle";"2021-05-08T14:59:03+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-08;14
+"256";"PersonVehicle";"2021-05-08T15:58:03+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-08;15
+"257";"PersonVehicle";"2021-05-08T18:38:02+00:00";"Male";"18-24";"White - Gypsy or Irish Traveller";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-08;18
+"258";"Person";"2021-05-08T20:11:27+00:00";"Male";"10-17";"Other ethnic group - Not stated";"Asian";"JusticeFirearms";"Anything to threaten or harm anyone";"Arrest";0;NA;2021-05-08;20
+"259";"Person";"2021-05-08T21:23:39+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-08;21
+"260";"Person";"2021-05-08T22:38:59+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-08;22
+"261";"Person";"2021-05-09T09:41:58+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Article for use in theft";"Arrest";1;NA;2021-05-09;9
+"262";"Person";"2021-05-09T09:43:26+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-05-09;9
+"263";"PersonVehicle";"2021-05-09T11:25:34+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Caution (simple or conditiol)";1;NA;2021-05-09;11
+"264";"Person";"2021-05-09T15:58:00+00:00";"Male";"10-17";NA;"Mixed";"DrugsMisuse";"Controlled drugs";"Community resolution";1;0;2021-05-09;15
+"265";"Person";"2021-05-09T16:00:00+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-09;16
+"266";"Person";"2021-05-09T16:00:00+00:00";"Male";"10-17";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-09;16
+"267";"Person";"2021-05-09T16:55:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;0;2021-05-09;16
+"268";"PersonVehicle";"2021-05-09T17:20:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-09;17
+"269";"PersonVehicle";"2021-05-09T17:24:08+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";0;0;2021-05-09;17
+"270";"Person";"2021-05-10T11:13:09+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-10;11
+"271";"Person";"2021-05-10T12:00:00+00:00";"Male";"over 34";"Other ethnic group - Not stated";"Black";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-10;12
+"272";"Person";"2021-05-10T13:18:09+00:00";"Male";"10-17";"White - Irish";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-10;13
+"273";"PersonVehicle";"2021-05-10T19:00:00+00:00";"Male";"over 34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-10;19
+"274";"Person";"2021-05-11T12:27:17+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"Community resolution";0;1;2021-05-11;12
+"275";"PersonVehicle";"2021-05-11T13:50:00+00:00";"Male";"18-24";"Other ethnic group - Not stated";"White";"Evidence";"Article for use in theft";"Arrest";1;NA;2021-05-11;13
+"276";"PersonVehicle";"2021-05-11T14:50:36+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-11;14
+"277";"PersonVehicle";"2021-05-11T14:52:34+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-11;14
+"278";"PersonVehicle";"2021-05-11T15:41:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Summons / charged by post";1;NA;2021-05-11;15
+"279";"Person";"2021-05-11T15:59:27+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"Arrest";0;NA;2021-05-11;15
+"280";"PersonVehicle";"2021-05-12T13:09:38+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-12;13
+"281";"Person";"2021-05-12T13:10:00+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-12;13
+"282";"Person";"2021-05-12T13:40:00+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-12;13
+"283";"Person";"2021-05-12T16:27:23+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-12;16
+"284";"Person";"2021-05-12T16:41:04+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-12;16
+"285";"PersonVehicle";"2021-05-12T18:08:15+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-12;18
+"286";"Person";"2021-05-12T19:50:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-12;19
+"287";"PersonVehicle";"2021-05-12T20:32:12+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"Arrest";0;NA;2021-05-12;20
+"288";"Person";"2021-05-12T20:59:12+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-12;20
+"289";"PersonVehicle";"2021-05-13T00:46:04+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-13;0
+"290";"Person";"2021-05-13T00:52:55+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Psychoactive substances";"Summons / charged by post";0;NA;2021-05-13;0
+"291";"Person";"2021-05-13T01:01:31+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"A no further action disposal";1;NA;2021-05-13;1
+"292";"Person";"2021-05-13T12:21:28+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-13;12
+"293";"Person";"2021-05-13T12:23:25+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-13;12
+"294";"Person";"2021-05-13T16:35:43+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Article for use in theft";"Arrest";1;NA;2021-05-13;16
+"295";"Person";"2021-05-13T22:16:57+00:00";"Male";"25-34";"Asian/Asian British - Pakistani";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-13;22
+"296";"PersonVehicle";"2021-05-14T00:17:58+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-14;0
+"297";"Person";"2021-05-14T16:34:15+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-14;16
+"298";"Person";"2021-05-14T23:00:00+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"Arrest";0;0;2021-05-14;23
+"299";"Person";"2021-05-14T23:00:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Article for use in theft";"A no further action disposal";1;NA;2021-05-14;23
+"300";"PersonVehicle";"2021-05-15T00:50:27+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-15;0
+"301";"PersonVehicle";"2021-05-17T09:16:31+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-17;9
+"302";"PersonVehicle";"2021-05-17T13:14:00+00:00";"Male";"18-24";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-17;13
+"303";"Person";"2021-05-17T13:40:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-17;13
+"304";"PersonVehicle";"2021-05-17T15:01:24+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-17;15
+"305";"Person";"2021-05-17T19:36:26+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-17;19
+"306";"Person";"2021-05-18T09:17:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-18;9
+"307";"Person";"2021-05-18T10:56:19+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Pelty Notice for Disorder";1;NA;2021-05-18;10
+"308";"Person";"2021-05-18T11:00:00+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-18;11
+"309";"PersonVehicle";"2021-05-18T11:43:54+00:00";"Male";"over 34";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-18;11
+"310";"PersonVehicle";"2021-05-18T11:48:12+00:00";"Male";"10-17";"Other ethnic group - Not stated";"Mixed";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-18;11
+"311";"PersonVehicle";"2021-05-18T12:00:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-18;12
+"312";"Person";"2021-05-18T12:09:55+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-18;12
+"313";"Person";"2021-05-18T12:16:56+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;1;2021-05-18;12
+"314";"Person";"2021-05-18T12:24:12+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-18;12
+"315";"Person";"2021-05-18T12:25:30+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Controlled drugs";"Arrest";1;NA;2021-05-18;12
+"316";"Person";"2021-05-18T12:28:09+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"JusticeFirearms";"Controlled drugs";"Arrest";1;NA;2021-05-18;12
+"317";"Person";"2021-05-19T08:50:00+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-19;8
+"318";"Person";"2021-05-19T09:01:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-19;9
+"319";"Person";"2021-05-19T09:01:00+00:00";"Male";"over 34";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;9
+"320";"PersonVehicle";"2021-05-19T09:23:45+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;9
+"321";"Person";"2021-05-19T09:42:54+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;9
+"322";"Person";"2021-05-19T09:43:57+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;9
+"323";"Person";"2021-05-19T09:48:31+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-19;9
+"324";"PersonVehicle";"2021-05-19T09:51:54+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-19;9
+"325";"Person";"2021-05-19T10:12:42+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;10
+"326";"PersonVehicle";"2021-05-19T10:13:44+00:00";"Male";"18-24";"White - Any other White background";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-05-19;10
+"327";"Person";"2021-05-19T10:14:28+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-19;10
+"328";"Person";"2021-05-19T10:29:06+00:00";"Male";"over 34";"Other ethnic group - Not stated";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;10
+"329";"Person";"2021-05-19T10:49:20+00:00";"Male";"over 34";"Asian/Asian British - Indian";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;10
+"330";"Person";"2021-05-19T10:50:00+00:00";"Male";"25-34";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;10
+"331";"Person";"2021-05-19T11:01:18+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-19;11
+"332";"Person";"2021-05-19T11:21:16+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"Mixed";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-19;11
+"333";"Person";"2021-05-19T11:26:10+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-19;11
+"334";"Person";"2021-05-19T11:44:48+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-19;11
+"335";"Person";"2021-05-19T12:26:52+00:00";"Male";"over 34";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;12
+"336";"Person";"2021-05-19T12:46:53+00:00";"Male";"over 34";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;12
+"337";"Person";"2021-05-19T13:21:51+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;13
+"338";"PersonVehicle";"2021-05-19T13:27:18+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;13
+"339";"Person";"2021-05-19T14:02:51+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;14
+"340";"Person";"2021-05-19T14:09:04+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-19;14
+"341";"PersonVehicle";"2021-05-19T15:27:00+00:00";"Male";"25-34";"White - Any other White background";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-19;15
+"342";"Person";"2021-05-19T15:35:00+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;15
+"343";"Person";"2021-05-19T15:41:16+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-19;15
+"344";"Person";"2021-05-19T15:49:09+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;15
+"345";"Person";"2021-05-19T16:19:31+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;16
+"346";"Person";"2021-05-19T16:30:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;16
+"347";"Person";"2023-05-19T16:30:17+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2023-05-19;16
+"348";"Person";"2021-05-19T16:55:59+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;16
+"349";"Person";"2021-05-19T16:59:10+00:00";"Male";"18-24";"Asian/Asian British - Pakistani";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;16
+"350";"Person";"2021-05-19T17:24:39+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;17
+"351";"Person";"2021-05-19T18:44:06+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-19;18
+"352";"Person";"2021-05-19T19:00:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-19;19
+"353";"Person";"2021-05-19T21:12:09+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-19;21
+"354";"Person";"2021-05-19T22:55:26+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-05-19;22
+"355";"Person";"2021-05-19T22:58:24+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-05-19;22
+"356";"Person";"2021-05-19T23:39:34+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-19;23
+"357";"Person";"2031-05-20T11:10:32+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2031-05-20;11
+"358";"Person";"2021-05-20T11:14:50+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-20;11
+"359";"PersonVehicle";"2021-05-20T11:25:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-20;11
+"360";"Person";"2021-05-20T11:50:00+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - Caribbean";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;0;2021-05-20;11
+"361";"Person";"2021-05-20T12:12:43+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-20;12
+"362";"PersonVehicle";"2021-05-20T12:34:48+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-20;12
+"363";"Person";"2021-05-20T12:45:00+00:00";"Male";"10-17";NA;"Mixed";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-20;12
+"364";"Person";"2021-05-20T13:38:39+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-20;13
+"365";"Person";"2021-05-20T13:41:03+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-20;13
+"366";"Person";"2021-05-20T17:05:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Arrest";1;NA;2021-05-20;17
+"367";"Person";"2021-05-20T19:02:00+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - Any other Black/African/Caribbean background";"Black";"DrugsMisuse";"Controlled drugs";"Arrest";1;1;2021-05-20;19
+"368";"Person";"2021-05-20T19:25:44+00:00";"Male";"10-17";"Other ethnic group - Arab";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-20;19
+"369";"Person";"2021-05-21T21:21:00+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;0;2021-05-21;21
+"370";"Person";"2021-05-24T12:45:00+00:00";"Male";"10-17";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-24;12
+"371";"Person";"2021-05-24T13:30:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-24;13
+"372";"Person";"2021-05-24T13:30:00+00:00";"Male";"25-34";"Mixed/Multiple ethnic groups - Any other Mixed/Multiple ethnic background";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-24;13
+"373";"Person";"2021-05-24T13:30:00+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-24;13
+"374";"Person";"2021-05-24T13:30:00+00:00";"Female";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;1;2021-05-24;13
+"375";"Person";"2021-05-24T16:48:16+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";0;NA;2021-05-24;16
+"376";"Person";"2021-05-25T11:11:25+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-25;11
+"377";"Person";"2021-05-25T11:12:32+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-25;11
+"378";"PersonVehicle";"2021-05-25T12:27:24+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Black";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-25;12
+"379";"Person";"2021-05-25T15:30:00+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Anything to threaten or harm anyone";"Arrest";0;NA;2021-05-25;15
+"380";"Person";"2021-05-25T19:38:06+00:00";"Female";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;0;2021-05-25;19
+"381";"Person";"2021-05-25T22:05:58+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Article for use in theft";"A no further action disposal";1;NA;2021-05-25;22
+"382";"PersonVehicle";"2021-05-26T16:28:56+00:00";"Male";"25-34";"Asian/Asian British - Indian";"Asian";"JusticeFirearms";"Article for use in theft";"Arrest";1;NA;2021-05-26;16
+"383";"PersonVehicle";"2021-05-26T16:35:12+00:00";"Female";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Stolen goods";"A no further action disposal";1;NA;2021-05-26;16
+"384";"Person";"2021-05-27T00:56:37+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-27;0
+"385";"Person";"2021-05-27T01:00:40+00:00";"Male";"over 34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-27;1
+"386";"Person";"2021-05-27T11:18:10+00:00";"Male";"25-34";"White - Any other White background";"Other";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-27;11
+"387";"Person";"2021-05-27T11:48:12+00:00";"Female";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Community resolution";1;0;2021-05-27;11
+"388";"PersonVehicle";"2021-05-28T15:39:09+00:00";"Male";"18-24";"Other ethnic group - Not stated";"Asian";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-28;15
+"389";"Person";"2021-05-28T15:43:33+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-28;15
+"390";"Person";"2021-05-28T17:55:12+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Articles for use in crimil damage";"A no further action disposal";1;NA;2021-05-28;17
+"391";"Person";"2021-05-28T17:55:12+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Articles for use in crimil damage";"A no further action disposal";1;NA;2021-05-28;17
+"392";"Person";"2021-05-28T17:58:23+00:00";"Male";"1-7";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Articles for use in crimil damage";"A no further action disposal";1;0;2021-05-28;17
+"393";"Person";"2021-05-28T17:58:23+00:00";"Male";"10-17";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Articles for use in crimil damage";"A no further action disposal";1;NA;2021-05-28;17
+"394";"Person";"2021-05-29T22:59:58+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"A no further action disposal";1;NA;2021-05-29;22
+"395";"Person";"2021-05-29T23:04:13+00:00";"Male";"18-24";"White - English/Welsh/Scottish/Northern Irish/British";"White";"DrugsMisuse";"Controlled drugs";"Khat or Canbis warning";1;NA;2021-05-29;23
+"396";"Person";"2021-05-30T01:21:43+00:00";"Male";"25-34";"Black/African/Caribbean/Black British - African";"Black";"JusticeFirearms";"Controlled drugs";"Arrest";0;0;2021-05-30;1
+"397";"Person";"2021-05-30T17:12:31+00:00";"Male";"10-17";NA;"Mixed";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-30;17
+"398";"Person";"2021-05-30T17:17:30+00:00";"Male";"10-17";"Mixed/Multiple ethnic groups - White and Black African";"Mixed";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-30;17
+"399";"Person";"2021-05-30T17:17:53+00:00";"Male";"10-17";"Black/African/Caribbean/Black British - African";"Black";"Evidence";"Article for use in theft";"A no further action disposal";1;0;2021-05-30;17
+"400";"Person";"2021-05-30T17:21:32+00:00";"Male";"18-24";"Black/African/Caribbean/Black British - African";"Black";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-30;17
+"401";"Person";"2021-05-31T04:48:38+00:00";"Male";"25-34";"White - English/Welsh/Scottish/Northern Irish/British";"White";"Evidence";"Offensive weapons";"A no further action disposal";1;NA;2021-05-31;4

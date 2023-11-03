@@ -1,0 +1,125 @@
+---
+title: "AnalysisData"
+author: '2140365'
+date: "2023-10-28"
+output: html_document
+---
+
+```{r GDP-povertyDt, echo=FALSE,include=FALSE}
+library(rio)
+library(dplyr)
+GDP_poverty <- read.csv("SDG1_2023/GDP-povertyPercentages.csv")
+GDP_poverty <- GDP_poverty%>%mutate(
+  country = factor(country),
+  code = factor(code),
+  year = factor(year)
+)
+GDP_poverty_5 <- filter(GDP_poverty, country %in% c(
+  "Germany","Egypt, Arab Rep.","Nigeria","Australia","United Kingdom"
+)) 
+```
+'GDP_poverty' listed the the percentage_poverty of the country, and its GDP in given year, i dont really understand what 'pct_poverty' refers to. We can compare 5 countries' GDP trend in years and the relationship with 'pct_poverty'
+
+
+```{r poverty-surveysdt ,echo=FALSE,include=FALSE}
+poverty_survey <- read.csv("SDG1_2023/Poverty-surveys-per-decade.csv")
+poverty_survey <- poverty_survey%>%mutate(
+  Entity = factor(Entity),
+  Code = factor(Code),
+  Year = factor(Year)
+)
+poverty_survey_5 <- filter(poverty_survey, Entity %in% c(
+  "Germany","Egypt","Nigeria","Australia","United Kingdom"
+)) 
+```
+'poverty_survey' mainly listed the number of. surveys have done, maybe can explain why some of them have survey and some of them not?
+
+
+```{r share-extreme-poverty,echo=FALSE,include=FALSE}
+share_poverty <- read.csv("SDG1_2023/share-extreme-poverty3.65dollarDay.csv")
+share_poverty <- share_poverty%>%mutate(
+  Entity = factor(Entity),
+  Code = factor(Code),
+  Year = factor(Year)
+)
+share_poverty_5 <- filter(share_poverty,Entity%in% c(
+  "Germany","Egypt","Nigeria","Australia","United Kingdom"
+))
+```
+'pctBelowPovertyLine' can be discussed in this dataset, talk about its trend with years
+
+
+```{r countryStuntingData,echo=FALSE,include=FALSE}
+load("SDG2/StuntingCountryOview.Rda")
+```
+record of the detailds of Stunting data, identified by Code,
+
+
+```{r metaData-country,echo=FALSE,include=FALSE}
+metadata_country <- read.csv("SDG2/Metadata-Country-Stunting.csv")
+metadata_country <- metadata_country%>%mutate(
+  CountryCode = factor(CountryCode),
+  CountryName = factor(CountryName),
+  Region = factor(Region),
+  IncomeGroup = factor(IncomeGroup)
+)
+metadate_country_5 <- filter(metadata_country, CountryName%in% c(
+  "Fiji","Egypt, Arab Rep.","Nigeria","Australia","United Kingdom"
+))
+```
+we should mainly read the Special notes, find the relation between regions and IncomeGroup?
+
+
+```{r metadata-underfed,echo=FALSE,include=FALSE}
+country_underFed<- read.csv("SDG2/Metadata-Country-UnderFed.csv")
+country_underFed <- country_underFed%>%mutate(
+  CountryCode = factor(CountryCode),
+  CountryName = factor(CountryName),
+  Region = factor(Region),
+  IncomeGroup = factor(IncomeGroup)
+)
+country_underFed_5 <- filter(country_underFed, CountryName%in% c(
+  "Fiji","Egypt, Arab Rep.","Nigeria","Australia","United Kingdom"
+))
+```
+I dont understand this actually
+
+
+```{r metadata-region,echo=FALSE,include=FALSE}
+metadata_region <- read.csv("SDG2/Metadata-Regions-Stunting.csv")
+colnames(metadata_region) <- c("Code","IncomeGroup","Region","SpecialNotes")
+metadata_region <- metadata_region%>%mutate(
+  Code = factor(Code),
+  IncomeGroup = factor(IncomeGroup),
+  Region = factor(Region)
+)
+metadata_region_5 <- filter(metadata_country, CountryName%in% c(
+  "Fiji","Egypt, Arab Rep.","Nigeria","Australia","United Kingdom"
+))
+```
+just read the special notes i think
+
+
+```{r StuntingU5, echo=FALSE, include=FALSE}
+StuntingU5yrs <- read.csv("SDG2/StuntingU5yrs2023.csv")
+StuntingU5yrs <- StuntingU5yrs%>%mutate(
+  Country = factor(Country),
+  Code = factor(Code),
+  year = factor(year)
+)
+StuntingU5yrs_5 <- filter(StuntingU5yrs, Country%in% c(
+  "Fiji","Egypt, Arab Rep.","Nigeria","Australia","United Kingdom"
+))
+```
+Talk about the rate of StuntingU5yrs wrt years, but idk why there is no UK
+
+
+```{r UnderFed, echo=FALSE, include=FALSE}
+Underfed <- read.csv("SDG2/Underfed.csv")
+Underfed_5 <- filter(Underfed, Entity%in%c("Fiji","Egypt","Nigeria","Australia","United Kingdom of Great Britain and Northern Ireland"))
+```
+Underfed.csv considered whole continent as a entity. we may need to consider the comparison between countries with Continent. 
+
+
+
+

@@ -1,0 +1,50 @@
+GroupCode,CountryEntity,SpecialNotes
+AFE,Africa Eastern and Southern,"26 countries, stretching from the Red Sea in the North to the Cape of Good Hope in the South (https://www.worldbank.org/en/region/afr/eastern-and-southern-africa)"
+AFW,Africa Western and Central,"22 countries, stretching from the westernmost point of Africa, across the equator, and partly along the Atlantic Ocean till the Republic of Congo in the South (https://www.worldbank.org/en/region/afr/western-and-central-africa)"
+ARB,Arab World,Arab World aggregate. Arab World is composed of members of the League of Arab States.
+CEB,Central Europe and the Baltics,Central Europe and the Baltics aggregate.
+CSS,Caribbean small states,
+EAP,East Asia & Pacific (excluding high income),
+EAR,Early-demographic dividend,Early-dividend countries are mostly lower-middle-income countries further along the fertility transition. Fertility rates have fallen below four births per woman and the working-age share of the population is likely rising considerably.
+EAS,East Asia & Pacific,East Asia and Pacific regional aggregate (includes all income levels).
+ECA,Europe & Central Asia (excluding high income),
+ECS,Europe & Central Asia,Europe and Central Asia regional aggregate (includes all income levels).
+EMU,Euro area,Euro area aggregate.
+EUU,European Union,European Union aggregate.
+FCS,Fragile and conflict affected situations,"Fragile and conflict-affected situations aggregate. Countries are distinguished based on the nature and severity of issues they face. The classification uses the following categories: - Countries with high levels of institutional and social fragility, identified based on publicly available indicators that measure the quality of policy and institutions and manifestations of fragility. - Countries affected by violent conflict, identified based on a threshold number of conflict-related deaths relative to the population. This category includes two sub-categories based on the intensity of violence: countries in high-intensity conflict and countries in medium-intensity conflict. For more information, please visit https://www.worldbank.org/en/topic/fragilityconflictviolence/brief/harmonized-list-of-fragile-situations."
+HIC,High income,"High income group aggregate. High-income economies are those in which 2021 GNI per capita was more than $13,205."
+HPC,Heavily indebted poor countries (HIPC),"The Heavily Indebted Poor Countries (HIPC) refer to countries that participated in the HIPC Initiative, launched in 1996 by the IMF and World Bank to reduce external debt burdens of the most heavily indebted poor countries at that time to sustainable levels. To date, the majority of the countries completed the program, receiving 76 billion in debt-service relief over time. For more details, visit https://www.imf.org/en/About/Factsheets/Sheets/2016/08/01/16/11/Debt-Relief-Under-the-Heavily-Indebted-Poor-Countries-Initiative.
+Data are aggregates for HIPC."
+IBD,IBRD only,IBRD only group aggregate.
+IBT,IDA & IBRD total,"IDA and IBRD total group aggregate (includes IDA only, IDA blend, and IBRD only)."
+IDA,IDA total,IDA total group aggregate (includes IDA only and IDA blend).
+IDB,IDA blend,IDA blend group aggregate.
+IDX,IDA only,IDA only group aggregate.
+LAC,Latin America & Caribbean (excluding high income),
+LCN,Latin America & Caribbean,
+LDC,Least developed countries: UN classification,
+LIC,Low income,"Low income group aggregate. Low-income economies are those in which 2021 GNI per capita was $1,085 or less."
+LMC,Lower middle income,"Lower middle income group aggregate. Lower-middle-income economies are those in which 2021 GNI per capita was between $1,086 and $4,255."
+LMY,Low & middle income,"Low and middle-income group aggregate. Low and middle-income economies are those in which 2021 GNI per capita was less than $13,205."
+LTE,Late-demographic dividend,Late-dividend countries are mostly upper middle-income countries. Fertility rates are typically above replacement levels of 2.1 births per woman but continue to decline with shrinking working-age shares and rapid aging.
+MEA,Middle East & North Africa,Middle East and North Africa regional aggregate (includes all income levels).
+MIC,Middle income,"Middle income group aggregate. Middle-income economies are those in which 2021 GNI per capita was between $1,086 and $13,205."
+MNA,Middle East & North Africa (excluding high income),
+NAC,North America,North America regional aggregate. There are no economies in North America classified as low or middle income.
+OED,OECD members,
+OSS,Other small states,
+PRE,Pre-demographic dividend,"Pre-dividend countries are mostly low-income countries, lagging in key human development indicators and with current fertility levels above four births per woman. They face very rapid population growth."
+PSS,Pacific island small states,Pacific island small states aggregate.
+PST,Post-demographic dividend,Post-dividend countries are mostly high-income countries where fertility has transitioned below replacement levels.
+SAS,South Asia,
+SSA,Sub-Saharan Africa (excluding high income),
+SSF,Sub-Saharan Africa,Sub-Saharan Africa regional aggregate (includes all income levels).
+SST,Small states,Small states (members of the Small States Forum) aggregate.
+TEA,East Asia & Pacific (IDA & IBRD),East Asia & Pacific (IDA & IBRD countries) aggregate.
+TEC,Europe & Central Asia (IDA & IBRD),Europe & Central Asia (IDA & IBRD countries) aggregate.
+TLA,Latin America & Caribbean (IDA & IBRD),Latin America & the Caribbean (IDA & IBRD countries) aggregate.
+TMN,Middle East & North Africa (IDA & IBRD),Middle East & North Africa (IDA & IBRD countries) aggregate.
+TSA,South Asia (IDA & IBRD),South Asia (IDA & IBRD countries) aggregate.
+TSS,Sub-Saharan Africa (IDA & IBRD),Sub-Saharan Africa (IDA & IBRD countries) aggregate.
+UMC,Upper middle income,"Upper middle income group aggregate. Upper-middle-income economies are those in which 2021 GNI per capita was between $4,256 and $13,205."
+WLD,World,World aggregate.

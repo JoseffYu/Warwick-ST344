@@ -1,0 +1,405 @@
+---
+title: "ST344 Practical 5, 2023 (Thanks to colleagues)"
+output:
+  html_document: default
+  pdf_document: default
+bibliography: lab5.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, fig.width=8, fig.height=5)
+knitr::opts_chunk$set(eval = TRUE)
+```
+
+## Regression models for COVID-19 data
+
+In this practical we will discuss regression models. Here they are employed for modelling time changing means in time series. The practical uses confirmed cases of COVID-19, as found in the **confirmed** variable in the tidycovid19 data (provided in the zip folder).
+
+ **You do not need to work through the whole Lab in order to work on Lab Report 3.**
+This is rather a long exercise, but it will be very useful for a more hands-on experience of some possible methods. Please bear in mind that, although you might find some of them useful, the methods introduced here are not intended to give you a recipe that you should follow for your team or individual course work. The instructions for Lab Report 3 (submitted on Thursday week 6) will be provided in a separate zip file on the Moodle page. It will use different data but the analysis you do in this practical will prepare you for it.
+
+
+We will begin by examining the confirmed cases of COVID-19 in the UK. 
+The following code loads in the data, converts the **date** variable to a format that R recognises as a date, then extracts the cases for the UK.
+
+
+```{r get_data1, warning=FALSE, message=FALSE}
+library(dplyr)
+library(tidyverse)
+library(ggthemes)
+library(readxl)
+CovidData <- read.csv("tidycovid19.csv")
+
+library(lubridate)
+CovidData <- CovidData %>%
+  mutate(date = as.Date(parse_date_time(CovidData$date,orders=c("y","ym","ymd", "dmy"))))
+
+# I have used table(CovidData$country) to see all countries and the number of observations per country. I can see spellings of the country names and that "United Kingdom" has 246 entries. Now I extract the confirmed cases and dates for the UK
+
+UKCaseData <- {CovidData %>% 
+    filter(country == "United Kingdom") %>%
+    select(date, confirmed) }
+```
+
+We would like to plot daily cases against date, but the data gives us cumulative cases. We create the  function ```firstdiff``` which converts cumulative cases to daily (new) cases: this function returns NA for changes that are negative, that are sometimes found in the data (although not for the UK). We introduce a new variable to give us the daily cases. Then we do the plot.
+
+```{r get_data2, warning=FALSE, message=FALSE}
+firstdiff <- function(x) {
+  shifted <- c(0,x[1:(length(x)-1)])
+  result = x-shifted
+  which_negative = which(result<0)
+  result[which_negative] = NA
+  return(result)
+}
+
+UKCaseData <- UKCaseData %>%
+  mutate(daily_confirmed = firstdiff(confirmed))
+
+library(ggplot2)
+plot_confirmed_date <- {UKCaseData %>% ggplot(aes(x = date,
+                                                y = daily_confirmed))} +
+  geom_point() +
+  scale_x_date(date_breaks = "months", date_labels = "%b-%y")
+print(plot_confirmed_date)
+
+```
+
+
+
+### Step 1: Regression for the initial phase of the epidemic
+
+To begin with we will focus on regression models for the early stage of the outbreak, where cases increase exponentially. Let's restrict our attention to the first stage of the epidemic in the UK, which for the sake of argument, we will take to be 24th February - 23rd March. We first extract the cases between these dates, then plot the data.
+
+```{r first_stage, warning=FALSE, message=FALSE}
+
+FirstStageUKCaseData <- {UKCaseData %>% 
+    filter( (date > as.Date("2020-02-23")) & (date < as.Date("2020-03-24")) )}
+
+library(ggplot2)
+early_plot_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = daily_confirmed))} +
+  geom_point() +
+  scale_x_date(date_breaks = "weeks", date_labels = "%d-%m-%y")
+print(early_plot_confirmed_date)
+
+```
+
+Before we begin studying this data, we need to know a little about epidemiology. We start with a definition. The *basic reproduction number* $R_0$ is the expected number of secondary infections that arise from a typical primary case in a population that is completely susceptible to the disease. In practice, for many diseases there is some immunity in the population, so instead the *effective reproduction number* $R$ is what matters in practice: this is the expected number of secondary infections that arise from a typical primary case in the population through which the disease is spreading. The value of $R$ is of great practical importance in understanding the dynamics of the epidemic: if $R>1$, under the simplest model the number of infections will grow exponentially in time; if $R<1$ the number of infections will decrease exponentially.
+
+For the sake of simplicity, we examine the most straightforward model possible, where an individual infects $R$ individuals at a time $T_c$ after they got infected themselves (the "generation interval"). This is, of course, not realistic in practice. In more complex models, a probability distribution is used on the generation interval, whose mean $T_c$ is sometimes known as the "serial interval". We chose the simplest case of this distribution: a Dirac delta distribution (a point mass; see [Wikipedia](https://en.wikipedia.org/wiki/Dirac_delta_function)) at $T_c$ (so that the generation interval is not random - it takes the value $T_c$). In this case, we model the number $I(t)$ of infected individuals at time $t$ using the equation
+$$I(t) = I(0) R^{t / T_c},$$
+where $I(0)$ is the initial number of infected individuals. Also, note that here we are measuring time (and hence, $T_c$) in days.
+
+We can rewrite this as
+$$I(t) = I(0) \exp(r t)$$ where $r = \log (R) / T_c$ is the rate of exponential growth of infections. Clearly $R$ can be found from $r$ using $R = \exp(r T_c)$. @wallinga_lipsitch_2006 show how to find $R$ from $r$ for any distribution on the generation interval. We also note that the doubling time for infections is given by $\log(2) / r$.
+
+For our purposes, we will stick to the simple model. For COVID-19, we take $T_c = 4$: this mean is roughly that which has been found from studies of COVID-19, although the distribution is in practice far from being a point mass citation [@nishura_2020].
+
+When the vast majority of the population is susceptible to the infection, $R$ is close to $R_0$, and we will see exponential growth if $R_0 > 1$. $R_0$ for COVID-19 is estimated to be 2-6 in normal circumstances [@sanche_2020]. As immunity grows in the population, $R$ will decrease, eventually to below 1 as long as immunity lasts long enough. An alternative way that $R$ may decrease is to note that $R_0$ depends on the number of contacts that each infectious person has: reducing this can reduce $R_0$, hence reduce $R$.
+
+This model for the growth in infections gives a linear model for the log of infections
+$$\log \left[ I(t) \right] = \log \left[ I(0) \right] + r t.$$
+If this model holds, we might expect to see a linear trend in the log of the infections. 
+Let's have a look. We plot the log of the daily cases.
+
+```{r log_first_stage, warning=FALSE, message=FALSE}
+early_plot_log_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = log(daily_confirmed)))} +
+  geom_point() +
+  scale_x_date(date_breaks = "weeks", date_labels = "%d-%m-%y")
+print(early_plot_log_confirmed_date)
+
+```
+It looks as though this model may be reasonable. Clearly the data is noisy: we need to use a statistical model. 
+The case data are counts, so maybe we should use a Poisson distribution with rate (mean) $I(t)$. Since we are using a linear model for the $\log$ of this Poisson rate, we have ended up proposing a Poisson generalised linear model (GLM) for the data. We have a log link function, with (changing notation slightly) the log expectation $\log \left( \mathbb{E}\left[ I \mid t \right] \right)$ of the Poisson being given by $a + rt$, with parameters $a$ and $r$.
+
+To start using the regression models, I'm first going to convert the date to "day" format.
+
+```{r convert_date, warning=FALSE, message=FALSE}
+FirstStageUKCaseData <- FirstStageUKCaseData %>%
+  mutate(date = yday(date))
+```
+
+Let's fit this model to the data and take a look at the fit through R's standard output.
+
+```{r poisson, warning=FALSE, message=FALSE}
+poisson_fit <- glm(daily_confirmed ~ 1 + date, family = poisson, data = FirstStageUKCaseData)
+summary(poisson_fit)
+```
+We can also look at a plot of the mean function, in the space of the observations, and also in log-space. The use of ``predict`` here illustrates something you can do for all (generalised) linear models fits in R.
+
+```{r poisson2, warning=FALSE, message=FALSE}
+FirstStageUKCaseData$pred_poisson = predict(poisson_fit)
+
+early_plot_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = daily_confirmed))} +
+  geom_point() +
+  geom_line(aes(y = exp(pred_poisson)), size = 1)
+
+print(early_plot_confirmed_date)
+
+early_plot_log_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = log(daily_confirmed)))} +
+  geom_point() +
+  geom_line(aes(y = pred_poisson), size = 1)
+print(early_plot_log_confirmed_date)
+
+```
+This fit gives an estimated value $\hat{r} = 0.18247$, **which corresponds to a doubling time of just under 4 days, and an estimated $R$ of 2.07 (2 decimal places).**
+
+Is this as good as we can do? Maybe not. See @zeileis_2007 for a discussion of regression models for count data. An immediate problem with the Poisson model is that the mean of a Poisson is the same as the variance, so the mean function is fit to satisfy this constraint. There are two ways of getting around this. One method is to fit a "quasi-Poisson" model, which incorporates a "dispersion" parameter that allows for the variance to be different to the mean. Often the variance will be larger than expected when using the Poisson, giving *over-dispersion*. Another is a negative binomial model, which we fit below using the ``MASS`` package.
+
+```{r negative_binomial, warning=FALSE, message=FALSE}
+library(MASS)
+negative_binomial_fit <- glm.nb(daily_confirmed ~ 1 + date, data = FirstStageUKCaseData)
+summary(negative_binomial_fit)
+```
+
+Let's look at the fit, only in log-space this time.
+
+```{r negative_binomial2, warning=FALSE, message=FALSE}
+FirstStageUKCaseData$pred_negative_binomial = predict(negative_binomial_fit)
+
+early_plot_log_confirmed_date <- {FirstStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = log(daily_confirmed)))} +
+  geom_point() +
+  geom_line(aes(y = pred_negative_binomial), size = 1)
+print(early_plot_log_confirmed_date)
+
+```
+This looks like a better fit visually, and we also see that the AIC (Akaike Information Criterion; read more [here](https://en.wikipedia.org/wiki/Akaike_information_criterion)) is much less, indicating a better fit.
+
+This fit gives $\hat{r} = 0.223726$, **which corresponds to a doubling time of just over 3 days, and an estimated $R$ of 2.45 (2 decimal places).**
+
+### Step 2: Regression for a different phase of the epidemic
+
+On 24th March 2020, the government introduced strict "lockdown" measures to control the spread of the virus. Following this, cases eventually began to clearly decrease. We will now study a different phase of the epidemic in the UK, which we will (somewhat arbitrarily) define as being from 19th April - 10th July. Let's first extract the data we need.
+
+```{r next_stage, warning=FALSE, message=FALSE}
+
+NextStageUKCaseData <- {UKCaseData %>% 
+    filter( (date > as.Date("2020-04-18")) & (date < as.Date("2020-07-11")) )}
+
+next_plot_confirmed_date <- {NextStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = daily_confirmed))} +
+  geom_point() +
+  scale_x_date(date_breaks = "months", date_labels = "%b-%y")
+print(next_plot_confirmed_date)
+
+NextStageUKCaseData <- NextStageUKCaseData %>%
+  mutate(date = yday(date))
+```
+
+Now we will again fit the negative binomial model...
+
+```{r next_stage2, warning=FALSE, message=FALSE}
+negative_binomial_fit <- glm.nb(daily_confirmed ~ 1 + date, data = NextStageUKCaseData)
+summary(negative_binomial_fit)
+```
+
+... and plot the results.
+
+```{r next_stage3, warning=FALSE, message=FALSE}
+
+NextStageUKCaseData$pred_negative_binomial = predict(negative_binomial_fit)
+
+next_plot_log_confirmed_date <- {NextStageUKCaseData %>% ggplot(aes(x = date,
+                                                y = log(daily_confirmed)))} +
+  geom_point() +
+  geom_line(aes(y = pred_negative_binomial), size = 1)
+print(next_plot_log_confirmed_date)
+
+```
+
+Visually this looks like a good fit - we could, of course, compare this with the Poisson and the quasi-Poisson. The fit gives $\hat{r} = -0.032101$, **which corresponds to a halving time about 22.5 days, and an estimated $R$ of 0.88 (2 decimal places).**
+
+
+
+### Step 3: Regression for the first wave in the UK
+
+Clearly it does not make sense to fit this model to the cases between 24th February and 10th July. Let's take another look at this data.
+
+```{r skewed, warning=FALSE, message=FALSE}
+
+FirstWaveUKCaseData <- {UKCaseData %>% 
+    filter( (date > as.Date("2020-02-23")) & (date < as.Date("2020-07-11")) )}
+
+first_wave_plot_confirmed_date <- {FirstWaveUKCaseData %>% ggplot(aes(x = date,
+                                                y = daily_confirmed))} +
+  geom_point() +
+  scale_x_date(date_breaks = "months", date_labels = "%b-%y")
+print(first_wave_plot_confirmed_date)
+
+```
+
+How could we fit this data? One option would be to add higher order terms into the linear predictor. Quadratic alone might not be enough, since that would give us a symmetric curve. We could try adding in a $\log$ term to make the curve asymmetric. Let's see how well this performs, using the same type of output as before.
+
+```{r skewed2, warning=FALSE, message=FALSE}
+
+FirstWaveUKCaseData <- FirstWaveUKCaseData %>%
+  mutate(date = yday(date))
+
+skewed_fit <- glm.nb(daily_confirmed ~ 1 + date + I(date^2) + I(log(date)), data = FirstWaveUKCaseData)
+
+summary(skewed_fit)
+
+FirstWaveUKCaseData$pred_skewed = predict(skewed_fit)
+
+skewed_plot_log_confirmed_date <- {FirstWaveUKCaseData %>% ggplot(aes(x = date,
+                                                y = (daily_confirmed)))} +
+  geom_point() +
+  geom_line(aes(y = exp(pred_skewed)), size = 1)
+print(skewed_plot_log_confirmed_date)
+
+```
+This looks like it fits the data well.
+
+Another approach would be to use a non-parametric regression. We will use the **splines** package to provide spline basis functions, specifically the functions `bs` (for B-splines) and `ns` (for natural cubic splines).  These will be used below in conjunction with `glm`, to fit smooth curves.  If you don't know about spline functions, then you should find out the basics for yourself: there are plenty of good books in the library about this (also internet resources, of varying quality).  In essence, each of the functions `bs` and `ns` provides a model matrix for use with `glm` --- a matrix whose linearly independent columns span a specified space of smooth (usually piecewise cubic) functions.  Here we try using natural cubic splines, which again seems to work well.
+
+```{r splines, warning=FALSE, message=FALSE}
+library(splines)
+
+splines_fit <- glm.nb(daily_confirmed ~ 1 + ns(date, knots = c(60,100,140,180)), data = FirstWaveUKCaseData)
+
+FirstWaveUKCaseData$pred_splines= predict(splines_fit)
+
+summary(splines_fit)
+
+splines_plot_log_confirmed_date <- {FirstWaveUKCaseData %>% ggplot(aes(x = date,
+                                                y = (daily_confirmed)))} +
+  geom_point() +
+  geom_line(aes(y = exp(pred_splines)), size = 1)
+print(splines_plot_log_confirmed_date)
+
+```
+
+Think about the following:
+
++ What has been achieved by fitting these regressions? Do they help us interpret the data? Could we use these fits to predict future cases? What are their limitations?
+
+To help you think about these questions, you might want to have a go at looking at the future predictions of one of the fits using the code below (here the first model in this section was used). (The figure 262 here was chosen arbitrarily.)
+
+```{r prediction, warning=FALSE, message=FALSE, eval=TRUE}
+PredictUKCaseData = tibble(date = 55:262, fit_confirmed = predict(skewed_fit, newdata = data.frame(date=55:262)))
+print({PredictUKCaseData %>% ggplot(aes(x = date,y = (fit_confirmed)))} +
+       geom_line(aes(y = exp(fit_confirmed)), size = 1))
+```
+
+Yet another option would be to fit a locally linear negative binomial GLM, the code for which is given below.
+
+```{r time_varying_r, warning=FALSE, message=FALSE, eval=TRUE}
+library(MASS)
+local_r <- function(cases, window_width) {
+  local_r <- sapply((window_width/2+1):(length(cases)-window_width/2), function(t) {
+    index <- (t-window_width/2):(t+window_width/2)
+    data <- data.frame(date=1:length(cases), y=as.numeric(cases))
+    negative_binomial_fit <- glm.nb(y ~ 1 + date, data  %>% slice(index))
+    r <- as.numeric(coef(negative_binomial_fit)["date"])
+    return(r)
+  })
+  return(c(rep(local_r[1],window_width/2),local_r,rep(local_r[length(local_r)],window_width/2)))
+}
+
+window_width = 14 # local regression over a two week window
+UKCaseData <- UKCaseData %>%
+  mutate(local_R = exp(4*local_r(UKCaseData$daily_confirmed, window_width)))
+
+plot({UKCaseData %>% ggplot(aes(x = date,
+                                y = local_R))} +
+  geom_line() +
+  scale_x_date(date_breaks = "months", date_labels = "%b-%y"))
+```
+
+### Step 4: How does the time evolution of cases differ in the UK and Germany?
+
+Let’s explore this question by using the type of model fitted above as our starting point.
+
+Consider fitting a nested sequence of models, with increasing complexity, as follows:
+
++ spline-curve dependence of the predictor upon date, as above (but this time looking at two countries at once)
+
++ a second model in which spline-curves for the two countries have the same shape, but proportional to one another, rather than equal
+
++ a third model in which the spline curves for the two countries have different shapes (i.e., there is interaction between the effects of data and country).
+
+Here we go (using natural cubic splines here — you might want to vary). Make sure you understand broadly what is being specified here, and also how we constructed the data FirstWaveCaseData, before trying it out yourself:
+
+
+```{r comparing_first_wave, warning=FALSE, message=FALSE}
+FirstWaveCaseData <- {CovidData %>% 
+    filter( ((country == "United Kingdom") | (country == "Germany") ) & (date > as.Date("2020-02-23")) & (date < as.Date("2020-07-11")) ) %>%
+    dplyr::select(date, country, confirmed) }
+
+FirstWaveCaseData <- FirstWaveCaseData %>%
+  mutate(date = yday(date))
+
+FirstWaveCaseData <- FirstWaveCaseData %>%
+  group_by(country) %>%
+  mutate(daily_confirmed = firstdiff(confirmed)) %>%
+  ungroup()
+
+
+# plot with different color for each countr,  manual colour scale using hexcodes for colours from colour blind scheme
+
+first_wave_plot_confirmed_date <- {FirstWaveCaseData %>% ggplot(aes(x = date,
+                                                y = daily_confirmed))} +
+    geom_point(mapping = aes(color = country)) +
+  scale_color_manual(values = c("United Kingdom"="#d55e00", "Germany"="#0072b2"))
+print(first_wave_plot_confirmed_date)
+
+library(splines)
+library(MASS)
+
+model1 = glm.nb(daily_confirmed ~ ns(date, knots = c(60,100,140,180)), data = FirstWaveCaseData)
+
+model2 = glm.nb(daily_confirmed ~ country + ns(date, knots = c(60,100,140,180)), data = FirstWaveCaseData)
+
+model3 = glm.nb(daily_confirmed ~ -1 + country + country:ns(date, knots = c(60,100,140,180)), data = FirstWaveCaseData)
+```
+Let’s take a look at what parameters each of those models has:
+
+```{r comparing_first_wave2, warning=FALSE, message=FALSE}
+model1
+model2
+model3
+```
+
+Note:
+
++ ``model1`` and ``model2`` have just one set of spline-curve coefficients, whereas ``model3`` has completely separate spline curves for the different countries.
+
++ in ``model2`` the difference between the countries is expressed in a single parameter, which is useful.
+
++ the use of -1 in the formula for model3 gives us a neat parameterisation of the two separate curves that appear in that model.
+
+If we want to assess the significance of the apparent evidence that we see for difference between the sexes, we can either...
+
+(a) Look at, for example, `summary(model2)` to see the estimated standard error for the parameter of interest there.
+
+```{r comparing_first_wave3, warning=FALSE, message=FALSE}
+
+summary(model2)
+
+```
+
+(b) Or, more generally (and certainly more helpfully for ``model3``, since there we want to assess the evidence on several parameters simultaneously) we can analyse this small sequence of models through an analysis of variance table.
+
+```{r comparing_first_wave4, warning=FALSE, message=FALSE}
+
+anova(model1, model2, model3)
+
+```
+
+Think about the following:
+
++ From fitting this sequence of models, what do you conclude about how the relationship between dates and confirmed cases differs between the UK and Germany?
+How about comparing UK to various other countries (France, Italy, Spain, etc)? You can quickly run the same analysis for other countries.
++ Is the most complex of these three models (i.e., ``model3``) a useful description of the available data, or are there other approaches that would be more useful?
+
+
+-----
+
+
+# References
+
+

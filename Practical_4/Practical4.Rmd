@@ -1,0 +1,298 @@
+---
+title: "ST344 Practical 4"
+output:
+  html_document:
+    df_print: paged
+fontsize: 11pt
+geometry: margin = 1in
+urlcolor: blue
+bibliography: Practical.bib
+---
+  
+  ```{r setup, include = FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy=FALSE, fig.pos = 'h')
+```
+## Visualisation
+
+This practical gives an introduction to some basic visualisation techniques in R using `ggplot2`. In the .Rmd file for this practical I chose the global options as below. Setting `tidy` to FALSE ensures that the formatting of code in the output document remains faithful to the formatting in the .Rmd file. 
+```{r, eval=FALSE}
+knitr::opts_chunk$set(echo = TRUE, tidy=FALSE)
+```
+
+Much of what is discussed here is covered in Chapter 2 in @Wickham-2016b which is available as an [online book](http://encore.lib.warwick.ac.uk/iii/encore/record/C__Rb3019880) from the university library.
+
+### Instructions
+
+Create a new R Markdown file in RStudio to record the code of the data analysis that you are asked to carry out in Steps 1-5. 
+
+### Step 1: Download and import data from Gapminder
+
+Gapminder is a non-profit organisation that aims to inform on global development through the use of reliable statistics.  The [Gapminder data website](https://www.gapminder.org/data/) has a list of 519 social indicators collected from various sources. Download the data for one of these indicators. I have chosen  **hourly compensation in USD** (available also as an excel spreadsheet on moodle), but for your practice lab report you should choose a different social indicator. 
+
+```{r , message=FALSE, warning=FALSE}
+library(rio)
+library(dplyr)
+Comp_Data <- import("indicator_hour compensation.xlsx", setclass = "tibble")
+colnames(Comp_Data) <- c("country", 1980:2006) 
+# Use head() or summary() to have a quick look at the data
+library(knitr)
+Country_Matrix <- matrix(c(Comp_Data$country,""),5,7)
+kable(t(Country_Matrix), table.attr = "style='width:80%;'", 
+      caption="Countries represented in the data set")
+```
+
+The data comprises the hourly compensation rate in US Dollars of 34 countries across the world. The rate gives the average cost of a working hour of an employee. Additional to wages, this includes costs such as social security payments and other benefits. The data provides yearly averages from 1980 to 2006 and there are `r sum(is.na(Comp_Data))` missing values.
+
+### Step 2: Tidy the data
+
+If you used `head()` or `summary()` on the data set you will have noticed that the year variable is split over various columns, so we first tidy the data.
+
+```{r, fig.width=6, fig.asp=0.618, fig.align="center", warning=FALSE, message=FALSE}
+library(tidyr)
+Tidy_Data <- gather(Comp_Data, key = 'year', value = 'compensation', -country)
+# Use head() or summary () to check the result
+```
+
+We then implement `country` as a factor and `year` as a numerical variable. Moreover, we sort the data according to `country` using the `arrange` function and then remove any missing values. (There are more sophisticated ways of dealing with missing data, such as imputation methods, but for this practical we will not pursue these further). We code this in a sequential fashion using the pipe operatore `%>%. 
+
+```{r, warning=FALSE, message=FALSE}
+Tidy_Data <- Tidy_Data %>% 
+  mutate(country = factor(country), year = as.numeric(year)) %>% 
+  arrange(country) %>% na.omit
+```
+
+
+### Step 3: Explore the chosen social indicator and produce two graphs to illustrate it. 
+
+Below are some illustrations of common graphs, but, for your lab report, feel free to choose any graphs that are effective in illustrating interesting features of your chosen social indicator. However you must use `ggplot2` to produce the visualisations.
+
+The `ggplot` function in the package `ggplot2` is normally based on three parts:
+
+* the data;
+* a mapping between the data and features in the plot;
+* at least one layer that determines how to render each observation in the plot. 
+
+For example, consider the following code which produces a scatterplot of the hourly compensation cost in Singapore for a selection of years:
+
+```{r, fig.width=4, fig.asp=0.5, fig.align="center", warning=FALSE, message=FALSE}
+# Select relevant subset of data
+Sub_Data <- filter(Tidy_Data, (country == "Singapore") & 
+                     (year %in% c(1980,1985,1990,1995,2000,2005)))
+# Produce a scatterplot
+library(ggplot2)
+ggplot(Sub_Data, aes(x = factor(year), y = compensation)) + geom_point()
+```
+
+Here the data for the plot is specified as `Sub_Data`. The aesthetic mapping `aes(x = factor(year), y = compensation)` determines that the year is displayed on the x-axis and the hourly compensation cost on the y-axis. Both are supplied within `ggplot()`. The layer is added using `+` and specifies that the observations are rendered as points. 
+
+Let us look at some alternatives to point plots. 
+
+#### Bar plots
+
+Bar plots are not often used for time series data, but for a short time series they can be a simple, but effective illustration tool. For example, suppose we would like to compare and contrast the hourly compensation cost of Australia in 2006 with the cost in 1980, 1990 and 2000. 
+
+```{r fig.width=6, fig.asp=0.618, out.width="50%", eval=FALSE}
+# Select the relevant data
+Sub_Data <- filter(Tidy_Data, (country == "Australia") & 
+                     (year %in% c(1980,1990,2000,2005)))
+# An example bar plot
+ggplot(Sub_Data, aes(x = factor(year), y = compensation)) +
+    geom_bar(stat = "identity", fill = "lightblue") + 
+    coord_cartesian(ylim = c(8.5, 27)) +
+    ggtitle("Hourly compensation in Australia has risen substantially.") 
+``` 
+
+In the above code notice, the three components: data, aesthetics and mapping. The data is provided as `Sub_Data` and the aesthetic mapping specifies the year to be displayed on the x-axis and the hourly compensation rate on the y-axis. The command `geom_bar` specifies that the observations are rendered as bars. Here we want the height of each bar to indicate the hourly compensation cost of the respective year, and thus the values of the y-aesthetic. This is achieved through `stat = "identity"`. (This is omitted if we use `geom_bar` to produce a plot where the height of each bar is equal to the number of cases in the respective group of the discrete x-aesthetic.) We then add two more layers, one which specifies the limits of the y-axis and one that specifies the title of the plot. The bar chart is displayed on the left in the figure below.
+
+We can improve the plot using the following code:
+
+```{r fig.width=6, fig.asp=0.618, out.width="50%", eval=FALSE}
+# An improved bar plot    
+ggplot(Sub_Data, aes(x = factor(year), y = compensation, fill = factor(year))) +
+    geom_bar(colour = "black",  stat = "identity") +
+    scale_fill_manual(values = c("steelblue", "steelblue", "steelblue", "red")) + 
+   labs(x = "Year", y = "Hourly compensation cost", 
+         title = "Hourly compensation in Australia has risen substantially.") + 
+    guides(fill = FALSE)
+    
+```
+
+Here the layer `guides(fill = FALSE)` prevents ggplot from plotting a legend for the colour-coding of the bars. Compare the two bar charts and identify why the plot on the right is better than the one on the left. (Hint: there is more than one reason! Optional: post your suggestions on the discussion forum.) 
+
+```{r fig.width=6, fig.asp=0.618, out.width="50%", echo=FALSE, warning=FALSE}
+Sub_Data <- filter(Tidy_Data,(country == "Australia") 
+                   & (year %in% c(1980,1990,2000,2005)))
+
+library(ggplot2)
+ggplot(Sub_Data, aes(x = factor(year), y = compensation)) +
+    geom_bar(stat = "identity", fill = "lightblue") + coord_cartesian(ylim = c(8.5, 27)) +
+    ggtitle("Hourly compensation in Australia has risen significantly.")
+    
+ggplot(Sub_Data, aes(x = factor(year), y = compensation, fill = factor(year))) +
+    geom_bar(colour = "black",  stat = "identity") +
+    scale_fill_manual(values = c("steelblue", "steelblue", "steelblue", "red")) + 
+    labs(x = "Year", y = "Hourly compensation cost", 
+         title = "Hourly compensation in Australia has risen substantially.") + 
+    guides(fill = FALSE)
+```
+
+To display both plots in one row I used the code chunk option `out.width="50%"` together with `fig.width=6` and `fig.asp=0.618` (the golden ratio). Take the opportunity to play around with the code to identify what the individual parts of the code do.
+
+
+Suppose we would like to compare the hourly compensation costs of Australia with that of the UK in the years 1980, 1990 and 2000. We can use a grouping variable for this as follows.
+
+```{r fig.width=5, fig.asp=0.618, fig.align="center"}
+# Select relevant data
+Sub_Data <- filter(Tidy_Data, (country %in% c("Australia","United Kingdom")) 
+                   & (year %in% c(1980,1990,2000)))
+# Grouped boxplot
+ggplot(Sub_Data, aes(x = factor(year), y = compensation, fill = country)) +
+    geom_bar(colour = "black", position = "dodge", stat = "identity") +
+    labs(x = "Year", y = "Hourly compensation cost", 
+         title = "British hourly cost overtakes Australian hourly cost.",
+         subtitle = "Data source: www.gapminder.org") 
+```
+
+Specifying `position = "dodge"` displays the bars side-by-side. 
+
+More examples of bar plots, including stacked bar plots, can be found in [Chapter 3](http://r4ds.had.co.nz/data-visualisation.html) in @Wickham-2016a.
+
+#### Violin plots
+
+To examine the distribution of the hourly compensation cost for all countries, we can use boxplots grouped by year. But this only illustrates quartiles (and outliers). To illustrate the shape of the distribution we may use violin plots instead. These are based on density estimates which assume that the underlying data distribution is continuous, unbounded and smooth. The compensation cost is bounded below and so care has to be taken in interpreting the violin plots.
+
+As the sample sizes differ across years we scale the maximum width of each violin according to the sample size for the respective year (using `scale = count` in the `geom_violin` command). Moreover, we add the observations as points which are jittered to enhance visibility.
+
+```{r fig.width=4, fig.asp=0.6,fig.align="center", fig.pos='h', fig.cap="\\label{fig:violin} The range of compensation costs across countries is increasing."}
+# Select the relevant data
+Sub_Data <- filter(Tidy_Data,year %in% c(1980,1990,2000,2006))
+# Violin plot
+ggplot(Sub_Data, aes(x = factor(year), y = compensation, fill = factor(year))) + 
+  geom_violin(scale = "count") + geom_jitter(height = 0, width = 0.05) +
+  guides(fill = FALSE) + labs(x = "Year", y = "Hourly compensation cost",
+                              subtitle = "Data source: www.gapminder.org")
+```
+
+The earlier figures had titles, but in a report, numbered figures with captions often work better. For the violin plot we included the code chunk option `fig.cap="\\label{fig:violin} The range of compensation costs across countries is increasing."` so that a caption is produced. If the output is a pdf file then this automatically assigns a number which can then be referred to as Figure \ref{fig:violin} using the command `\ref{fig:violin}`. To ensure that the figure appears close to the relevant text use the option `fig.pos='h'`. For numbered figures in an html document use the `bookdown` package.
+
+### Line plots
+
+Line plots are commonly  used for time series data as they connect points across time. We can display the temporal development of the hourly compensation cost for each country using a superposition of line plots. This is aptly named a **spaghetti plot**. Initially we are only interested in the overall trend, so we use the same colour/line-type for all countries. The aesthetic `group` specifies that the observations of each country specify a time series to be represented by a line.
+
+To give a better illustration of the general pattern amongst the lines we add a  loess curve in green. The loess smoother is a non-parametric method that uses least squares on local subsets of the observations to fit a polynomial curve. (If you would like to find out more about smoothers, do an internet search.) 
+The option `group = 1` overrides the earlier grouping according to country that was needed to plot the time series for each country.
+
+```{r, fig.width=4, fig.asp=0.6, fi.pos='h', fig.align="center",fig.pos='h', message=FALSE, fig.cap="\\label{fig:line2} The hourly compensation cost across the world from 1980 to 2006. The green line illustrates the average trend."}
+myplot <- ggplot(Tidy_Data, aes(x = year, y = compensation, group = country)) + 
+  geom_line() + labs( x = "Year", y = "Hourly compensation cost", 
+                       subtitle = "Data source: www.gapminder.org") + 
+  geom_smooth(colour = "green", method = "loess", group = 1)
+print(myplot)
+```
+
+
+There is a general trend of increasing hourly compensation costs over time, albeit with a small dip in the late 1990s. 
+We suspect that the patterns are different for different continents, so let us annotate each country with its respective continent. To do this we import the file `Countries.xlsx` (on moodle) which contains a table of countries and their continents. We  join this data set with `Tidy_Data`. The commands are given below, but if you would like further details about joining data frames see [Chapter 13](http://r4ds.had.co.nz/relational-data.html) in  @Wickham-2016a.
+
+```{r, warning=FALSE, mesage=FALSE}
+# Read in data and select relevant subset
+Countries <- import("Countries.xlsx", setclass = "tibble")
+Countries <- filter(Countries, country %in% Tidy_Data$country)
+# Join the data frames and implement categorical data as factors
+Tidy_Data <- left_join(Tidy_Data, Countries, by = "country")
+Tidy_Data <- mutate(Tidy_Data, country = factor(country), 
+                    continent = factor(continent))
+```
+
+The code above imports the Excel file `Countries` into the data frame `Countries`. Then we filter out the countries that are in the data frame `Tidy_Data`. As we join the two data frames, **R** coerces the factors `country` and `continent` into strings because `country` has many more levels in the data frame `Countries` than in the data frame `Tidy_Data`. The last line turns `country` and `continent` back into factors. 
+
+Let us see how many countries for each continent the data frame `Tidy_Data` contains. 
+
+```{r}
+library(knitr)
+kable(t(as.matrix(summary(filter(Tidy_Data, year == 2005)$continent))), 
+      align = c('r', 'r', 'r', 'r', 'r'))
+```
+
+
+We will concentrate on the two continents with the most countries represented: Asia and Europe. We  use the factor `continent` to facet the plots, that is to produce separate spagetti plots for each continent. 
+
+```{r, fig.width=5, fig.asp=0.5, fig.align="center",message=FALSE, eval=FALSE}
+Sub_Data <- filter(Tidy_Data, continent %in% c("Asia", "Europe"))
+ggplot(Sub_Data, aes(x = year, y = compensation, group = country)) + 
+  geom_line() +  labs( x = "Year", y = "Hourly compensation cost", 
+                       subtitle = "Data source: www.gapminder.org") + 
+  geom_smooth(se = FALSE, colour = "green", method = "loess", group = 1) +
+  facet_wrap( ~ continent)
+```
+
+\newpage
+
+```{r, fig.width=4, fig.asp=0.6, fig.align="center",message=FALSE, fig.cap="\\label{fig:line3} A comparison of the hourly compensation cost between Asia and Europe.", echo=FALSE }
+Sub_Data <- filter(Tidy_Data, continent %in% c("Asia", "Europe"))
+ggplot(Sub_Data, aes(x = year, y = compensation, group = country)) + 
+  geom_line() +  labs( x = "Year", y = "Hourly compensation cost", 
+                       subtitle = "Data source: www.gapminder.org") + 
+  geom_smooth(se = FALSE, colour = "green", method = "loess", group = 1) +
+  facet_wrap( ~ continent)
+```
+For the European countries we see that compensation costs increased rapidly in the 80s and early 90s but this turned into a downward trend in the mid 90s. At the start of the millenium compensation costs tended to increase again. To bring the period in which the compensation costs dipped to the attention of the reader, we might add a shaded rectangle as follows. 
+
+```{r, fig.width=4, fig.asp=0.6, fig.align="center",message=FALSE, fig.cap="\\label{fig:line4} After a steady increase the hourly compensation cost in Europe dipped in the late 1990's."}
+ggplot(filter(Sub_Data, continent == "Europe"), 
+       aes(x = year, y = compensation, group = country)) +  
+  geom_line() +  labs( x = "Year", y = "Hourly compensation cost", 
+                       subtitle = "Data source: www.gapminder.org") + 
+  geom_smooth(se = FALSE, colour = "green", method="loess", group=1) +
+  annotate("rect", xmin = 1995, xmax = 2002, ymin = 0, ymax = 40, alpha = .1, 
+           fill="blue")
+```
+
+Note in Figure \ref{fig:line4} how the relative scale of the x-axis influences the appearence of the downward turn in the late 90's. 
+
+The increase in compensation costs was much less rapid for most countries in Asia compared to Europe. One particular Asian country had a much more rapid increase of cost than the others. To look at this in more detail we change the colour coding to distinguish the line plots of the various countries.
+
+```{r, fig.width=4, fig.asp=0.6, fig.pos='h', fig.align="center",message=FALSE, fig.cap="\\label{fig:line5} The hourly compensation cost across Asia.", eval=FALSE}
+Sub_Data <- filter(Tidy_Data, continent == "Asia")
+ggplot(Sub_Data, aes(x = year, y = compensation)) + 
+  labs( x = "Year", y = "Hourly compensation cost", 
+                       subtitle = "Data source: www.gapminder.org") +
+  scale_colour_brewer(palette = "Set1") + geom_line() + 
+  aes(colour = country) 
+```
+
+
+```{r, fig.width=5, fig.asp=0.5, fig.pos='h', fig.align="center",message=FALSE, echo=FALSE, fig.cap="\\label{fig:line5} The hourly compensation cost across Asia. Data source: www.gapminder.org"}
+Sub_Data <- filter(Tidy_Data, continent == "Asia")
+ggplot(Sub_Data, aes(x = year, y = compensation)) + 
+  labs( x = "Year", y = "Hourly compensation cost", 
+                       subtitle = "Data source: www.gapminder.org") +
+  scale_colour_brewer(palette = "Set1") + geom_line() + 
+  aes(colour = country) 
+```
+
+Figure \ref{fig:line5} shows that in Japan the hourly compensation cost  increased much more strongly than in the other Asian countries within the data set. The lowest compensation costs are observed in Sri Lanka and the Philippines.
+
+*Hint:* A useful cheat sheet for visualisations with ggplot2 can be found [here](https://github.com/rstudio/cheatsheets/raw/master/data-visualization-2.1.pdf).
+
+
+### Step 4: Interpret and discuss the graphics that you have produced. 
+
+In the previous steps you should have downloaded data from Gapminder, tidied it and then produced two plots using `ggplot`. Now, write a short paragraph for each of the two graphics, putting the data into context and discussing any interesting features.
+
+### Step 5: Make a Practice Lab report (not submitted)
+
+Once you completed Steps 1 to 4 make a Lab Report of Practical week 4  as a pdf file.
+
+\newpage
+
+### Use this marking scheme [Total 5 marks]:
+
+* high quality plots which effectively illustrate key features of the chosen data [2 marks];
+* clear discussion and interpretation of the plots that is concise, but statistially sound as well as meaningful to the reader [2 marks];
+* professional presentation and interest created [1 mark].
+
+
+
+## Reference
+

@@ -70,7 +70,7 @@ summary(StopS)
 library(lubridate)
  StopS$dayDate = date(StopS$Date)
 StopS$hourDay = as.numeric(substring(StopS$Date,12,13)) # Find a better way?
-save(StopS, file='myStopSearch.rda') # save for future use.
+save(StopS, file="StopSearch.rda") # save for future use.
 ```
 
 
@@ -109,10 +109,506 @@ knitr::kable(100*proportions(table(StopS$Gender,StopS$AgeRange),1),
 ```
 
 
-```{r}
+```{r, echo=FALSE}
 knitr::opts_chunk$set(echo = TRUE, fig.width = 8, fig.height = 5)
 ```
 
+
+```{r, echo=FALSE}
+ svg(file = "JLH.svg", width = 8, height = 5)
+ print( plot(table(StopS$Legislation,StopS$AgeRange),
+      main="Distribution of age by legislation for 401 people stopped"))
+```
+
+
+```{r, echo=FALSE}
+ ##  This writes the graph to the file
+ invisible(dev.off())          ##  This is essential, to close the file
+```
+
+
+```{r importGGplot, echo=FALSE}
+library(ggplot2)
+```
+
+
+```{r}
+age_Legislation <- StopS %>%
+  group_by(AgeRange, Legislation)
+age_Legislation
+```
+
+
+
+```{r age_legislation_distn_figure, echo=FALSE}
+summary_table <- StopS %>%
+  group_by(AgeRange, Legislation) %>%
+  summarise(count = n(),.groups = "drop") %>%
+  ungroup()
+
+colnames(summary_table) <- c("AgeRange", "Legislation", "Count")
+
+ggplot(data = summary_table, aes(x = Legislation, y = AgeRange, fill = Count)) +
+  geom_tile() +
+  scale_fill_gradient(low = "lightblue", high = "darkblue") +
+  labs(title = "Distribution of age for 401 people stopped by legislation", x = "Types of Legislation", y = "Age range")
+
+```
+This heatmap visualizes the distribution of 401 individuals stopped under various legislations, highlighting the prevalence of stops due to "DrugMisuse", especially among those aged 18-24, with over 80 individuals. In contrast, stops under "JusticeFirearms" are comparatively rare, all below 20. The heatmap also indicates a small number of individuals did not disclose their age range, categorized under "Drug Misuse" and "Evidence". Darker colors on the heatmap represent higher numbers of stops, providing a clear visual representation of the data.(79words)
+
+```{r ageLegislationTab, echo=FALSE}
+legisType <-  unique(StopS$Legislation)
+ageRange <-  unique(StopS$AgeRange)
+gender <- unique(StopS$Gender)
+
+legislation_table <- data.frame( 
+  Column1 = c(1,2,3,4,5,6,7,8,9),
+  Column2 = c(1,2,3,4,5,6,7,8,9),
+  Column3 = c(1,2,3,4,5,6,7,8,9),
+  Column4 = c(1,2,3,4,5,6,7,8,9),
+  Column5 = c(1,2,3,4,5,6,7,8,9))
+colnames(legislation_table) <- c(levels(legisType),"All",'proportion')
+rownames(legislation_table) <- c('male','female','All','arrest',levels(ageRange))
+
+```
+
+```{r countFrequencies, echo=FALSE}
+#count frequencies for each row and column
+
+#count male
+select_male_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & Gender == "Male")
+male_count_Justi <- nrow(select_male_Justi)
+legislation_table[1,1] <- male_count_Justi
+
+select_male_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & Gender == "Male")
+male_count_Drug <- nrow(select_male_Drug)
+legislation_table[1,2] <- male_count_Drug
+
+select_male_Evi <- subset(StopS, StopS$Legislation == "Evidence" & Gender == "Male")
+male_count_Evi <- nrow(select_male_Evi)
+legislation_table[1,3] <- male_count_Evi
+legislation_table[1,4] <- sum(male_count_Justi,male_count_Drug,male_count_Evi)
+
+
+#count female
+select_female_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & Gender == "Female")
+female_count_Justi <- nrow(select_female_Justi)
+legislation_table[2,1] <- female_count_Justi
+
+select_female_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & Gender == "Female")
+female_count_Drug <- nrow(select_female_Drug)
+legislation_table[2,2] <- female_count_Drug
+
+select_female_Evi <- subset(StopS, StopS$Legislation == "Evidence" & Gender == "Female")
+female_count_Evi <- nrow(select_female_Evi)
+legislation_table[2,3] <- female_count_Evi
+legislation_table[2,4] <- sum(female_count_Justi,female_count_Drug,female_count_Evi)
+
+
+#count arrest
+
+select_arrest_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & Outcome == "Arrest")
+arrest_count_Justi <- nrow(select_arrest_Justi)
+legislation_table[4,1] <- arrest_count_Justi
+
+select_arrest_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & Outcome == "Arrest")
+arrest_count_Drug <- nrow(select_arrest_Drug)
+legislation_table[4,2] <- female_count_Drug
+
+select_arrest_Evi <- subset(StopS, StopS$Legislation == "Evidence" & Outcome == "Arrest")
+arrest_count_Evi <- nrow(select_arrest_Evi)
+legislation_table[4,3] <- arrest_count_Evi
+legislation_table[4,4] <- sum(arrest_count_Justi,arrest_count_Drug,arrest_count_Evi)
+
+#count 1-7
+
+select_1t7_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & AgeRange == "1-7")
+t7_count_Justi <- nrow(select_1t7_Justi)
+legislation_table[5,1] <- t7_count_Justi
+
+select_1t7_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & AgeRange == "1-7")
+t7_count_Drug <- nrow(select_1t7_Drug)
+legislation_table[5,2] <- t7_count_Drug
+
+select_1t7_Evi <- subset(StopS, StopS$Legislation == "Evidence" & AgeRange == "1-7")
+t7_count_Evi <- nrow(select_1t7_Evi)
+legislation_table[5,3] <- t7_count_Evi
+legislation_table[5,4] <- sum(t7_count_Justi,t7_count_Drug,t7_count_Evi)
+
+
+#count 10-17
+
+select_10t17_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & AgeRange == "10-17")
+t17_count_Justi <- nrow(select_10t17_Justi)
+legislation_table[6,1] <- t17_count_Justi
+
+select_10t17_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & AgeRange == "10-17")
+t17_count_Drug <- nrow(select_10t17_Drug)
+legislation_table[6,2] <- t17_count_Drug
+
+select_10t17_Evi <- subset(StopS, StopS$Legislation == "Evidence" & AgeRange == "10-17")
+t17_count_Evi <- nrow(select_10t17_Evi)
+legislation_table[6,3] <- t17_count_Evi
+legislation_table[6,4] <- sum(t17_count_Justi,t17_count_Drug,t17_count_Evi)
+
+
+#count 18-24
+
+select_18t24_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & AgeRange == "18-24")
+t24_count_Justi <- nrow(select_18t24_Justi)
+legislation_table[7,1] <- t24_count_Justi
+
+select_18t24_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & AgeRange == "18-24")
+t24_count_Drug <- nrow(select_18t24_Drug)
+legislation_table[7,2] <- t24_count_Drug
+
+select_18t24_Evi <- subset(StopS, StopS$Legislation == "Evidence" & AgeRange == "18-24")
+t24_count_Evi <- nrow(select_18t24_Evi)
+legislation_table[7,3] <- t24_count_Evi
+legislation_table[7,4] <- sum(t24_count_Justi,t24_count_Drug,t24_count_Evi)
+
+
+#count 25-34
+
+select_25t34_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & AgeRange == "25-34")
+t34_count_Justi <- nrow(select_25t34_Justi)
+legislation_table[8,1] <- t34_count_Justi
+
+select_25t34_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & AgeRange == "25-34")
+t34_count_Drug <- nrow(select_25t34_Drug)
+legislation_table[8,2] <- t34_count_Drug
+
+select_25t34_Evi <- subset(StopS, StopS$Legislation == "Evidence" & AgeRange == "25-34")
+t34_count_Evi <- nrow(select_25t34_Evi)
+legislation_table[8,3] <- t34_count_Evi
+legislation_table[8,4] <- sum(t34_count_Justi,t34_count_Drug,t34_count_Evi)
+
+
+#count over 34
+
+select_o34_Justi <- subset(StopS, StopS$Legislation == "JusticeFirearms" & AgeRange == "over 34")
+o34_count_Justi <- nrow(select_o34_Justi)
+legislation_table[9,1] <- o34_count_Justi
+
+select_o34_Drug <- subset(StopS, StopS$Legislation == "DrugsMisuse" & AgeRange == "over 34")
+o34_count_Drug <- nrow(select_o34_Drug)
+legislation_table[9,2] <- o34_count_Drug
+
+select_o34_Evi <- subset(StopS, StopS$Legislation == "Evidence" & AgeRange == "over 34")
+o34_count_Evi <- nrow(select_o34_Evi)
+legislation_table[9,3] <- o34_count_Evi
+legislation_table[9,4] <- sum(o34_count_Justi,o34_count_Drug,o34_count_Evi)
+
+prop_male <- round(legislation_table[1,4]/401,2)
+legislation_table[1,5] <- prop_male
+
+prop_female <- round(legislation_table[2,4]/401,2)
+legislation_table[2,5] <- prop_female
+
+legislation_table[3,5] <- round(legislation_table[3,4]/401,2)
+
+prop_arrest <- round(legislation_table[4,4]/401,2)
+legislation_table[4,5] <- prop_arrest
+
+prop_1t7 <- round(legislation_table[5,4]/401,2)
+legislation_table[5,5] <- prop_1t7
+
+prop_10t17 <- round(legislation_table[6,4]/401,2)
+legislation_table[6,5] <- prop_10t17
+
+prop_18t24 <- round(legislation_table[7,4]/401,2)
+legislation_table[7,5] <- prop_18t24
+
+prop_25t34 <- round(legislation_table[8,4]/401,2)
+legislation_table[8,5] <- prop_25t34
+
+prop_o34 <- round(legislation_table[9,4]/401,2)
+legislation_table[9,5] <- prop_o34
+
+
+#count all
+legislation_table[3,1] <- legislation_table[1,1]+legislation_table[2,1]
+legislation_table[3,2] <- legislation_table[1,2]+legislation_table[2,2]
+legislation_table[3,3] <- legislation_table[1,3]+legislation_table[2,3]
+legislation_table[3,4] <- legislation_table[1,4]+legislation_table[2,4]
+legislation_table[3,5] <- legislation_table[1,5]+legislation_table[2,5]
+
+```
+
+```{r creatTab, echo=FALSE}
+knitr::kable(legislation_table, format = 'html',caption = "Legislation stops, categorized by gender and age.",align = "c")
+cat("\nThis table shows the number of individuals stopped in each group, predominantly males at 355, making up 89% of the total. Only 20% are under arrest. A unique case involves a child aged 1-7 stopped for evidence. The 18-24 age range sees the most stops at 133, around one-third of the total, with 83 due to drug misuse. Determining crime susceptibility across age ranges is challenging, especially for those over 34, due to the broad age range and lack of sufficient data.(82words)")
+```
+
+
+```{r ageEthnicity, echo=FALSE}
+Ethinicity <- levels(StopS$OfficerDefEthnic)
+ethinic_tab <- data.frame(Column1 = c(1,2,3,4,5,6,7,8,9,0,1),
+  Column2 = c(1,2,3,4,5,6,7,8,9,0,1),
+  Column3 = c(1,2,3,4,5,6,7,8,9,0,1),
+  Column4 = c(1,2,3,4,5,6,7,8,9,0,1),
+  Column5 = c(1,2,3,4,5,6,7,8,9,0,1)
+)
+colnames(ethinic_tab) <- Ethinicity
+rownames(ethinic_tab) <- c('male','female','arrest',levels(ageRange),"min AgeRange","All","Proportion")
+```
+
+
+```{r fillDataInEthiTab, echo=FALSE}
+#Fill data into Ethinitic table
+
+#count male
+select_male_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & Gender == "Male")
+male_count_As <- nrow(select_male_As)
+ethinic_tab[1,1] <- male_count_As
+
+select_male_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & Gender == "Male")
+male_count_Bk <- nrow(select_male_Bk)
+ethinic_tab[1,2] <- male_count_Bk
+
+select_male_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & Gender == "Male")
+male_count_Mx <- nrow(select_male_Mx)
+ethinic_tab[1,3] <- male_count_Mx
+
+select_male_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & Gender == "Male")
+male_count_Ot <- nrow(select_male_Ot)
+ethinic_tab[1,4] <- male_count_Ot
+
+select_male_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & Gender == "Male")
+male_count_Wt <- nrow(select_male_Wt)
+ethinic_tab[1,5] <- male_count_Wt
+
+
+#count female
+
+select_female_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & Gender == "Female")
+female_count_As <- nrow(select_female_As)
+ethinic_tab[2,1] <- female_count_As
+
+select_female_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & Gender == "Female")
+female_count_Bk <- nrow(select_female_Bk)
+ethinic_tab[2,2] <- female_count_Bk
+
+select_female_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & Gender == "Female")
+female_count_Mx <- nrow(select_female_Mx)
+ethinic_tab[2,3] <- female_count_Mx
+
+select_female_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & Gender == "Female")
+female_count_Ot <- nrow(select_female_Ot)
+ethinic_tab[2,4] <- female_count_Ot
+
+select_female_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & Gender == "Female")
+female_count_Wt <- nrow(select_female_Wt)
+ethinic_tab[2,5] <- female_count_Wt
+
+
+#count arrest
+
+select_arrest_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & Outcome == "Arrest")
+arrest_count_As <- nrow(select_arrest_As)
+ethinic_tab[3,1] <- arrest_count_As
+
+select_arrest_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & Outcome == "Arrest")
+arrest_count_Bk <- nrow(select_arrest_Bk)
+ethinic_tab[3,2] <- arrest_count_Bk
+
+select_arrest_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & Outcome == "Arrest")
+arrest_count_Mx <- nrow(select_arrest_Mx)
+ethinic_tab[3,3] <- arrest_count_Mx
+
+select_arrest_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & Outcome == "Arrest")
+arrest_count_Ot <- nrow(select_arrest_Ot)
+ethinic_tab[3,4] <- arrest_count_Ot
+
+select_arrest_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & Outcome == "Arrest")
+arrest_count_Wt <- nrow(select_arrest_Wt)
+ethinic_tab[3,5] <- arrest_count_Wt
+
+
+#count 1-7
+
+select_1t7_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & AgeRange == "1-7")
+t7_count_As <- nrow(select_1t7_As)
+ethinic_tab[4,1] <- t7_count_As
+
+select_1t7_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & AgeRange == "1-7")
+t7_count_Bk <- nrow(select_1t7_Bk)
+ethinic_tab[4,2] <- t7_count_Bk
+
+select_1t7_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & AgeRange == "1-7")
+t7_count_Mx <- nrow(select_1t7_Mx)
+ethinic_tab[4,3] <- t7_count_Mx
+
+select_1t7_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & AgeRange == "1-7")
+t7_count_Ot <- nrow(select_1t7_Ot)
+ethinic_tab[4,4] <- t7_count_Ot
+
+select_1t7_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & AgeRange == "1-7")
+t7_count_Wt <- nrow(select_1t7_Wt)
+ethinic_tab[4,5] <- t7_count_Wt
+
+
+#count 10-17
+
+select_10t17_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & AgeRange == "10-17")
+t17_count_As <- nrow(select_10t17_As)
+ethinic_tab[5,1] <- t17_count_As
+
+select_10t17_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & AgeRange == "10-17")
+t17_count_Bk <- nrow(select_10t17_Bk)
+ethinic_tab[5,2] <- t17_count_Bk
+
+select_10t17_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & AgeRange == "10-17")
+t17_count_Mx <- nrow(select_10t17_Mx)
+ethinic_tab[5,3] <- t17_count_Mx
+
+select_10t17_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & AgeRange == "10-17")
+t17_count_Ot <- nrow(select_10t17_Ot)
+ethinic_tab[5,4] <- t17_count_Ot
+
+select_10t17_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & AgeRange == "10-17")
+t17_count_Wt <- nrow(select_10t17_Wt)
+ethinic_tab[5,5] <- t17_count_Wt
+
+
+#count 18-24
+
+select_18t24_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & AgeRange == "18-24")
+t24_count_As <- nrow(select_18t24_As)
+ethinic_tab[6,1] <- t24_count_As
+
+select_18t24_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & AgeRange == "18-24")
+t24_count_Bk <- nrow(select_18t24_Bk)
+ethinic_tab[6,2] <- t24_count_Bk
+
+select_18t24_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & AgeRange == "18-24")
+t24_count_Mx <- nrow(select_18t24_Mx)
+ethinic_tab[6,3] <- t24_count_Mx
+
+select_18t24_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & AgeRange == "18-24")
+t24_count_Ot <- nrow(select_18t24_Ot)
+ethinic_tab[6,4] <- t24_count_Ot
+
+select_18t24_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & AgeRange == "18-24")
+t24_count_Wt <- nrow(select_18t24_Wt)
+ethinic_tab[6,5] <- t24_count_Wt
+
+
+#count 25-34
+
+select_25t34_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & AgeRange == "25-34")
+t34_count_As <- nrow(select_25t34_As)
+ethinic_tab[7,1] <- t34_count_As
+
+select_25t34_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & AgeRange == "25-34")
+t34_count_Bk <- nrow(select_25t34_Bk)
+ethinic_tab[7,2] <- t34_count_Bk
+
+select_25t34_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & AgeRange == "25-34")
+t34_count_Mx <- nrow(select_25t34_Mx)
+ethinic_tab[7,3] <- t34_count_Mx
+
+select_25t34_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & AgeRange == "25-34")
+t34_count_Ot <- nrow(select_25t34_Ot)
+ethinic_tab[7,4] <- t34_count_Ot
+
+select_25t34_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & AgeRange == "25-34")
+t34_count_Wt <- nrow(select_25t34_Wt)
+ethinic_tab[7,5] <- t34_count_Wt
+
+
+#count over 34
+
+select_o34_As <- subset(StopS, StopS$OfficerDefEthnic == "Asian" & AgeRange == "over 34")
+o34_count_As <- nrow(select_o34_As)
+ethinic_tab[8,1] <- o34_count_As
+
+select_o34_Bk <- subset(StopS, StopS$OfficerDefEthnic == "Black" & AgeRange == "over 34")
+o34_count_Bk <- nrow(select_o34_Bk)
+ethinic_tab[8,2] <- o34_count_Bk
+
+select_o34_Mx <- subset(StopS, StopS$OfficerDefEthnic == "Mixed" & AgeRange == "over 34")
+o34_count_Mx <- nrow(select_o34_Mx)
+ethinic_tab[8,3] <- o34_count_Mx
+
+select_o34_Ot <- subset(StopS, StopS$OfficerDefEthnic == "Other" & AgeRange == "over 34")
+o34_count_Ot <- nrow(select_o34_Ot)
+ethinic_tab[8,4] <- o34_count_Ot
+
+select_o34_Wt <- subset(StopS, StopS$OfficerDefEthnic == "White" & AgeRange == "over 34")
+o34_count_Wt <- nrow(select_o34_Wt)
+ethinic_tab[8,5] <- o34_count_Wt
+
+
+#count all
+all_as <- male_count_As + female_count_As
+all_bk <- male_count_Bk + female_count_Bk
+all_mx <- male_count_Mx + female_count_Mx
+all_ot <- male_count_Ot + female_count_Ot
+all_wt <- male_count_Wt + female_count_Wt
+
+
+#count proportion
+prop_as <- round(all_as/401,2)
+prop_bk <- round(all_bk/401,2)
+prop_mx <- round(all_mx/401,2)
+prop_ot <- round(all_ot/401,2)
+prop_wt <- round(all_wt/401,2)
+```
+
+```{r selectMinAge, echo=FALSE}
+#min AgeRange
+
+ethinic_tab[9,1] <- "10-17"
+
+ethinic_tab[9,2] <- "10-17"
+
+ethinic_tab[9,3] <- "10-17"
+
+ethinic_tab[9,4] <- "18-24"
+
+ethinic_tab[9,5] <- "1-7"
+
+ethinic_tab[10,1] <- all_as
+ethinic_tab[10,2] <- all_bk
+ethinic_tab[10,3] <- all_mx
+ethinic_tab[10,4] <- all_ot
+ethinic_tab[10,5] <- all_wt
+
+ethinic_tab[11,1] <- prop_as
+ethinic_tab[11,2] <- prop_bk
+ethinic_tab[11,3] <- prop_mx
+ethinic_tab[11,4] <- prop_ot
+ethinic_tab[11,5] <- prop_wt
+
+
+```
+
+
+```{r createEthicTab,echo=FALSE}
+knitr::kable(ethinic_tab,caption = "Stopped People Ethinicity, by AgeRange,Gender",align = "c")
+cat("\nThis table presents the ethnicity of individuals stopped, with White being the majority at 70% (282 people), likely due to data collection in the UK. Black and Asian follow at 13% and 11%, respectively. The minimum AgeRange for White is 1-7, the lowest overall, while for Asian, Black, and Mixed, it is 10-17. The 'Other' category starts from 18-24, but the data may not accurately reflect the real situation due to its small size of only four entries. (78words)")
+```
+
+
+
+```{r summaryTable, echo=FALSE}
+library("kableExtra")
+summary(StopS)
+
+summary_table <- data.frame(
+  Male = 1:26,
+  Female = 1:26,
+  All = 1:26
+)
+colnames(summary_table) <- c("Male","Female","All")
+levels(StopS$Type)
+levels(StopS$AgeRange)
+levels(StopS$OfficerDefEthnic)
+levels(StopS$Legislation)
+outcome_type <- unique(StopS$Outcome)
+levels(outcome_type)
+```
 
 
 

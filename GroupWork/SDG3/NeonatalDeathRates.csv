@@ -1,0 +1,4705 @@
+Country,Code,year,NeonatalDeathRate
+Afghanistan,AFG,1998,63.3
+Afghanistan,AFG,1999,62.2
+Afghanistan,AFG,2000,61
+Afghanistan,AFG,2001,59.7
+Afghanistan,AFG,2002,58.5
+Afghanistan,AFG,2003,57.2
+Afghanistan,AFG,2004,55.9
+Afghanistan,AFG,2005,54.5
+Afghanistan,AFG,2006,53.2
+Afghanistan,AFG,2007,51.8
+Afghanistan,AFG,2008,50.4
+Afghanistan,AFG,2009,48.9
+Afghanistan,AFG,2010,47.4
+Afghanistan,AFG,2011,46
+Afghanistan,AFG,2012,44.5
+Afghanistan,AFG,2013,43.1
+Afghanistan,AFG,2014,41.8
+Afghanistan,AFG,2015,40.4
+Afghanistan,AFG,2016,39.2
+Afghanistan,AFG,2017,38
+Afghanistan,AFG,2018,37
+Afghanistan,AFG,2019,36
+Afghanistan,AFG,2020,35
+Afghanistan,AFG,2021,34.1
+Albania,ALB,1998,12.5
+Albania,ALB,1999,12.4
+Albania,ALB,2000,12.2
+Albania,ALB,2001,11.8
+Albania,ALB,2002,11.5
+Albania,ALB,2003,11.2
+Albania,ALB,2004,10.9
+Albania,ALB,2005,10.5
+Albania,ALB,2006,10
+Albania,ALB,2007,9.3
+Albania,ALB,2008,8.3
+Albania,ALB,2009,7.4
+Albania,ALB,2010,6.7
+Albania,ALB,2011,6.3
+Albania,ALB,2012,6.1
+Albania,ALB,2013,5.9
+Albania,ALB,2014,5.9
+Albania,ALB,2015,6
+Albania,ALB,2016,6.3
+Albania,ALB,2017,6.7
+Albania,ALB,2018,7
+Albania,ALB,2019,7.1
+Albania,ALB,2020,7.2
+Albania,ALB,2021,7.1
+Algeria,DZA,1998,23
+Algeria,DZA,1999,22.7
+Algeria,DZA,2000,22.3
+Algeria,DZA,2001,21.9
+Algeria,DZA,2002,21.5
+Algeria,DZA,2003,21.1
+Algeria,DZA,2004,20.5
+Algeria,DZA,2005,19.9
+Algeria,DZA,2006,19.3
+Algeria,DZA,2007,18.8
+Algeria,DZA,2008,18.4
+Algeria,DZA,2009,18
+Algeria,DZA,2010,17.8
+Algeria,DZA,2011,17.5
+Algeria,DZA,2012,17
+Algeria,DZA,2013,16.5
+Algeria,DZA,2014,15.9
+Algeria,DZA,2015,15.4
+Algeria,DZA,2016,15.2
+Algeria,DZA,2017,15.5
+Algeria,DZA,2018,15.9
+Algeria,DZA,2019,16.1
+Algeria,DZA,2020,16
+Algeria,DZA,2021,15.6
+Andorra,AND,1998,4
+Andorra,AND,1999,3.8
+Andorra,AND,2000,3.5
+Andorra,AND,2001,3.3
+Andorra,AND,2002,3.2
+Andorra,AND,2003,3
+Andorra,AND,2004,2.9
+Andorra,AND,2005,2.8
+Andorra,AND,2006,2.6
+Andorra,AND,2007,2.5
+Andorra,AND,2008,2.4
+Andorra,AND,2009,2.3
+Andorra,AND,2010,2.2
+Andorra,AND,2011,2.1
+Andorra,AND,2012,2
+Andorra,AND,2013,2
+Andorra,AND,2014,1.9
+Andorra,AND,2015,1.8
+Andorra,AND,2016,1.7
+Andorra,AND,2017,1.6
+Andorra,AND,2018,1.6
+Andorra,AND,2019,1.5
+Andorra,AND,2020,1.4
+Andorra,AND,2021,1.4
+Angola,AGO,1998,52.3
+Angola,AGO,1999,51.4
+Angola,AGO,2000,50.5
+Angola,AGO,2001,49.4
+Angola,AGO,2002,48.1
+Angola,AGO,2003,46.7
+Angola,AGO,2004,45.2
+Angola,AGO,2005,43.7
+Angola,AGO,2006,42.2
+Angola,AGO,2007,40.6
+Angola,AGO,2008,39.1
+Angola,AGO,2009,37.8
+Angola,AGO,2010,36.6
+Angola,AGO,2011,35.3
+Angola,AGO,2012,34
+Angola,AGO,2013,32.8
+Angola,AGO,2014,31.7
+Angola,AGO,2015,30.7
+Angola,AGO,2016,30
+Angola,AGO,2017,29.2
+Angola,AGO,2018,28.5
+Angola,AGO,2019,27.9
+Angola,AGO,2020,27.3
+Angola,AGO,2021,26.6
+Antigua and Barbuda,ATG,1998,9.9
+Antigua and Barbuda,ATG,1999,9.8
+Antigua and Barbuda,ATG,2000,9.7
+Antigua and Barbuda,ATG,2001,9.5
+Antigua and Barbuda,ATG,2002,9.3
+Antigua and Barbuda,ATG,2003,9
+Antigua and Barbuda,ATG,2004,8.6
+Antigua and Barbuda,ATG,2005,8.2
+Antigua and Barbuda,ATG,2006,7.7
+Antigua and Barbuda,ATG,2007,7.2
+Antigua and Barbuda,ATG,2008,6.7
+Antigua and Barbuda,ATG,2009,6.3
+Antigua and Barbuda,ATG,2010,5.8
+Antigua and Barbuda,ATG,2011,5.4
+Antigua and Barbuda,ATG,2012,5
+Antigua and Barbuda,ATG,2013,4.7
+Antigua and Barbuda,ATG,2014,4.4
+Antigua and Barbuda,ATG,2015,4.2
+Antigua and Barbuda,ATG,2016,4
+Antigua and Barbuda,ATG,2017,3.9
+Antigua and Barbuda,ATG,2018,3.7
+Antigua and Barbuda,ATG,2019,3.6
+Antigua and Barbuda,ATG,2020,3.4
+Antigua and Barbuda,ATG,2021,3.3
+Argentina,ARG,1998,10.9
+Argentina,ARG,1999,10.9
+Argentina,ARG,2000,11.1
+Argentina,ARG,2001,11
+Argentina,ARG,2002,10.7
+Argentina,ARG,2003,10.3
+Argentina,ARG,2004,9.7
+Argentina,ARG,2005,9.2
+Argentina,ARG,2006,8.7
+Argentina,ARG,2007,8.4
+Argentina,ARG,2008,8.1
+Argentina,ARG,2009,7.8
+Argentina,ARG,2010,7.6
+Argentina,ARG,2011,7.5
+Argentina,ARG,2012,7.5
+Argentina,ARG,2013,7.4
+Argentina,ARG,2014,7
+Argentina,ARG,2015,6.6
+Argentina,ARG,2016,6.4
+Argentina,ARG,2017,6.2
+Argentina,ARG,2018,6.1
+Argentina,ARG,2019,5.9
+Argentina,ARG,2020,5.6
+Argentina,ARG,2021,5.1
+Armenia,ARM,1998,17.7
+Armenia,ARM,1999,16.8
+Armenia,ARM,2000,16
+Armenia,ARM,2001,15.3
+Armenia,ARM,2002,14.6
+Armenia,ARM,2003,13.9
+Armenia,ARM,2004,13.2
+Armenia,ARM,2005,12.6
+Armenia,ARM,2006,11.9
+Armenia,ARM,2007,11.3
+Armenia,ARM,2008,10.8
+Armenia,ARM,2009,10.2
+Armenia,ARM,2010,9.7
+Armenia,ARM,2011,9.3
+Armenia,ARM,2012,8.8
+Armenia,ARM,2013,8.4
+Armenia,ARM,2014,8
+Armenia,ARM,2015,7.6
+Armenia,ARM,2016,7.2
+Armenia,ARM,2017,6.9
+Armenia,ARM,2018,6.6
+Armenia,ARM,2019,6.2
+Armenia,ARM,2020,5.9
+Armenia,ARM,2021,5.6
+Australia,AUS,1998,3.6
+Australia,AUS,1999,3.5
+Australia,AUS,2000,3.5
+Australia,AUS,2001,3.5
+Australia,AUS,2002,3.4
+Australia,AUS,2003,3.4
+Australia,AUS,2004,3.3
+Australia,AUS,2005,3.3
+Australia,AUS,2006,3.2
+Australia,AUS,2007,3.1
+Australia,AUS,2008,3
+Australia,AUS,2009,2.9
+Australia,AUS,2010,2.8
+Australia,AUS,2011,2.6
+Australia,AUS,2012,2.5
+Australia,AUS,2013,2.4
+Australia,AUS,2014,2.4
+Australia,AUS,2015,2.3
+Australia,AUS,2016,2.3
+Australia,AUS,2017,2.3
+Australia,AUS,2018,2.3
+Australia,AUS,2019,2.4
+Australia,AUS,2020,2.4
+Australia,AUS,2021,2.4
+Austria,AUT,1998,3.2
+Austria,AUT,1999,3.1
+Austria,AUT,2000,3.1
+Austria,AUT,2001,3.1
+Austria,AUT,2002,3
+Austria,AUT,2003,3
+Austria,AUT,2004,2.9
+Austria,AUT,2005,2.8
+Austria,AUT,2006,2.7
+Austria,AUT,2007,2.7
+Austria,AUT,2008,2.6
+Austria,AUT,2009,2.6
+Austria,AUT,2010,2.5
+Austria,AUT,2011,2.5
+Austria,AUT,2012,2.4
+Austria,AUT,2013,2.3
+Austria,AUT,2014,2.3
+Austria,AUT,2015,2.2
+Austria,AUT,2016,2.2
+Austria,AUT,2017,2.2
+Austria,AUT,2018,2.2
+Austria,AUT,2019,2.3
+Austria,AUT,2020,2.3
+Austria,AUT,2021,2.3
+Azerbaijan,AZE,1998,36.4
+Azerbaijan,AZE,1999,35.5
+Azerbaijan,AZE,2000,34.3
+Azerbaijan,AZE,2001,32.8
+Azerbaijan,AZE,2002,31.3
+Azerbaijan,AZE,2003,29.7
+Azerbaijan,AZE,2004,28.2
+Azerbaijan,AZE,2005,26.8
+Azerbaijan,AZE,2006,25.4
+Azerbaijan,AZE,2007,24.1
+Azerbaijan,AZE,2008,22.9
+Azerbaijan,AZE,2009,21.6
+Azerbaijan,AZE,2010,20.4
+Azerbaijan,AZE,2011,18.9
+Azerbaijan,AZE,2012,17.4
+Azerbaijan,AZE,2013,16
+Azerbaijan,AZE,2014,14.7
+Azerbaijan,AZE,2015,13.6
+Azerbaijan,AZE,2016,12.6
+Azerbaijan,AZE,2017,11.8
+Azerbaijan,AZE,2018,11.1
+Azerbaijan,AZE,2019,10.4
+Azerbaijan,AZE,2020,10
+Azerbaijan,AZE,2021,9.5
+"Bahamas, The",BHS,1998,8.2
+"Bahamas, The",BHS,1999,8
+"Bahamas, The",BHS,2000,8
+"Bahamas, The",BHS,2001,8.2
+"Bahamas, The",BHS,2002,8.4
+"Bahamas, The",BHS,2003,8.5
+"Bahamas, The",BHS,2004,8.7
+"Bahamas, The",BHS,2005,8.7
+"Bahamas, The",BHS,2006,8.7
+"Bahamas, The",BHS,2007,8.6
+"Bahamas, The",BHS,2008,8.5
+"Bahamas, The",BHS,2009,8.3
+"Bahamas, The",BHS,2010,8
+"Bahamas, The",BHS,2011,7.8
+"Bahamas, The",BHS,2012,7.6
+"Bahamas, The",BHS,2013,7.5
+"Bahamas, The",BHS,2014,7.4
+"Bahamas, The",BHS,2015,7.4
+"Bahamas, The",BHS,2016,7.4
+"Bahamas, The",BHS,2017,7.4
+"Bahamas, The",BHS,2018,7.3
+"Bahamas, The",BHS,2019,7.5
+"Bahamas, The",BHS,2020,7.2
+"Bahamas, The",BHS,2021,7.2
+Bahrain,BHR,1998,5.9
+Bahrain,BHR,1999,5.2
+Bahrain,BHR,2000,4.7
+Bahrain,BHR,2001,4.4
+Bahrain,BHR,2002,4.1
+Bahrain,BHR,2003,3.9
+Bahrain,BHR,2004,3.7
+Bahrain,BHR,2005,3.6
+Bahrain,BHR,2006,3.4
+Bahrain,BHR,2007,3.3
+Bahrain,BHR,2008,3.2
+Bahrain,BHR,2009,3.2
+Bahrain,BHR,2010,3.1
+Bahrain,BHR,2011,3.1
+Bahrain,BHR,2012,3.2
+Bahrain,BHR,2013,3.2
+Bahrain,BHR,2014,3.2
+Bahrain,BHR,2015,3.2
+Bahrain,BHR,2016,3.1
+Bahrain,BHR,2017,3.1
+Bahrain,BHR,2018,3.1
+Bahrain,BHR,2019,3.1
+Bahrain,BHR,2020,3
+Bahrain,BHR,2021,3
+Bangladesh,BGD,1998,48
+Bangladesh,BGD,1999,46
+Bangladesh,BGD,2000,44.1
+Bangladesh,BGD,2001,42.2
+Bangladesh,BGD,2002,40.5
+Bangladesh,BGD,2003,38.8
+Bangladesh,BGD,2004,37.3
+Bangladesh,BGD,2005,35.9
+Bangladesh,BGD,2006,34.5
+Bangladesh,BGD,2007,33.2
+Bangladesh,BGD,2008,31.9
+Bangladesh,BGD,2009,30.6
+Bangladesh,BGD,2010,29.4
+Bangladesh,BGD,2011,28.2
+Bangladesh,BGD,2012,27.1
+Bangladesh,BGD,2013,25.9
+Bangladesh,BGD,2014,24.7
+Bangladesh,BGD,2015,23.5
+Bangladesh,BGD,2016,22.1
+Bangladesh,BGD,2017,20.6
+Bangladesh,BGD,2018,19.3
+Bangladesh,BGD,2019,18
+Bangladesh,BGD,2020,17
+Bangladesh,BGD,2021,16
+Barbados,BRB,1998,9.2
+Barbados,BRB,1999,9.2
+Barbados,BRB,2000,9.2
+Barbados,BRB,2001,9.3
+Barbados,BRB,2002,9.4
+Barbados,BRB,2003,9.6
+Barbados,BRB,2004,9.8
+Barbados,BRB,2005,9.9
+Barbados,BRB,2006,10
+Barbados,BRB,2007,10.1
+Barbados,BRB,2008,10.1
+Barbados,BRB,2009,10
+Barbados,BRB,2010,10
+Barbados,BRB,2011,9.9
+Barbados,BRB,2012,9.8
+Barbados,BRB,2013,9.7
+Barbados,BRB,2014,9.5
+Barbados,BRB,2015,9.3
+Barbados,BRB,2016,9.1
+Barbados,BRB,2017,8.9
+Barbados,BRB,2018,8.6
+Barbados,BRB,2019,8.4
+Barbados,BRB,2020,8.1
+Barbados,BRB,2021,7.9
+Belarus,BLR,1998,7.5
+Belarus,BLR,1999,6.4
+Belarus,BLR,2000,5.2
+Belarus,BLR,2001,4.4
+Belarus,BLR,2002,3.9
+Belarus,BLR,2003,3.6
+Belarus,BLR,2004,3.4
+Belarus,BLR,2005,3.2
+Belarus,BLR,2006,2.9
+Belarus,BLR,2007,2.6
+Belarus,BLR,2008,2.2
+Belarus,BLR,2009,2
+Belarus,BLR,2010,1.8
+Belarus,BLR,2011,1.7
+Belarus,BLR,2012,1.7
+Belarus,BLR,2013,1.7
+Belarus,BLR,2014,1.6
+Belarus,BLR,2015,1.6
+Belarus,BLR,2016,1.5
+Belarus,BLR,2017,1.4
+Belarus,BLR,2018,1.2
+Belarus,BLR,2019,1.1
+Belarus,BLR,2020,1
+Belarus,BLR,2021,0.9
+Belgium,BEL,1998,3.3
+Belgium,BEL,1999,3.1
+Belgium,BEL,2000,3
+Belgium,BEL,2001,2.9
+Belgium,BEL,2002,2.8
+Belgium,BEL,2003,2.7
+Belgium,BEL,2004,2.7
+Belgium,BEL,2005,2.6
+Belgium,BEL,2006,2.6
+Belgium,BEL,2007,2.5
+Belgium,BEL,2008,2.5
+Belgium,BEL,2009,2.4
+Belgium,BEL,2010,2.3
+Belgium,BEL,2011,2.3
+Belgium,BEL,2012,2.3
+Belgium,BEL,2013,2.3
+Belgium,BEL,2014,2.3
+Belgium,BEL,2015,2.3
+Belgium,BEL,2016,2.3
+Belgium,BEL,2017,2.3
+Belgium,BEL,2018,2.4
+Belgium,BEL,2019,2.4
+Belgium,BEL,2020,2.4
+Belgium,BEL,2021,2.4
+Belize,BLZ,1998,12.9
+Belize,BLZ,1999,12.4
+Belize,BLZ,2000,12
+Belize,BLZ,2001,11.6
+Belize,BLZ,2002,11.2
+Belize,BLZ,2003,10.8
+Belize,BLZ,2004,10.3
+Belize,BLZ,2005,9.9
+Belize,BLZ,2006,9.6
+Belize,BLZ,2007,9.4
+Belize,BLZ,2008,9.5
+Belize,BLZ,2009,9.8
+Belize,BLZ,2010,10.2
+Belize,BLZ,2011,10.6
+Belize,BLZ,2012,10.8
+Belize,BLZ,2013,10.8
+Belize,BLZ,2014,10.5
+Belize,BLZ,2015,10.2
+Belize,BLZ,2016,9.7
+Belize,BLZ,2017,9.2
+Belize,BLZ,2018,8.7
+Belize,BLZ,2019,8.2
+Belize,BLZ,2020,7.8
+Belize,BLZ,2021,7.4
+Benin,BEN,1998,40.4
+Benin,BEN,1999,39.8
+Benin,BEN,2000,39.1
+Benin,BEN,2001,38.3
+Benin,BEN,2002,37.6
+Benin,BEN,2003,36.9
+Benin,BEN,2004,36.3
+Benin,BEN,2005,35.8
+Benin,BEN,2006,35.4
+Benin,BEN,2007,35
+Benin,BEN,2008,34.7
+Benin,BEN,2009,34.4
+Benin,BEN,2010,34
+Benin,BEN,2011,33.7
+Benin,BEN,2012,33.3
+Benin,BEN,2013,32.8
+Benin,BEN,2014,32.3
+Benin,BEN,2015,31.9
+Benin,BEN,2016,31.5
+Benin,BEN,2017,31.1
+Benin,BEN,2018,30.7
+Benin,BEN,2019,30.2
+Benin,BEN,2020,29.7
+Benin,BEN,2021,29.2
+Bhutan,BTN,1998,33.8
+Bhutan,BTN,1999,32.7
+Bhutan,BTN,2000,31.8
+Bhutan,BTN,2001,30.8
+Bhutan,BTN,2002,29.9
+Bhutan,BTN,2003,29
+Bhutan,BTN,2004,28.1
+Bhutan,BTN,2005,27.2
+Bhutan,BTN,2006,26.2
+Bhutan,BTN,2007,25.3
+Bhutan,BTN,2008,24.4
+Bhutan,BTN,2009,23.4
+Bhutan,BTN,2010,22.5
+Bhutan,BTN,2011,21.7
+Bhutan,BTN,2012,20.9
+Bhutan,BTN,2013,20.1
+Bhutan,BTN,2014,19.3
+Bhutan,BTN,2015,18.5
+Bhutan,BTN,2016,17.8
+Bhutan,BTN,2017,17.1
+Bhutan,BTN,2018,16.5
+Bhutan,BTN,2019,15.9
+Bhutan,BTN,2020,15.4
+Bhutan,BTN,2021,14.8
+Bolivia,BOL,1998,31.9
+Bolivia,BOL,1999,30.6
+Bolivia,BOL,2000,29.5
+Bolivia,BOL,2001,28.6
+Bolivia,BOL,2002,27.9
+Bolivia,BOL,2003,27.4
+Bolivia,BOL,2004,26.9
+Bolivia,BOL,2005,26.3
+Bolivia,BOL,2006,25.6
+Bolivia,BOL,2007,24.8
+Bolivia,BOL,2008,23.9
+Bolivia,BOL,2009,23
+Bolivia,BOL,2010,21.9
+Bolivia,BOL,2011,21
+Bolivia,BOL,2012,20
+Bolivia,BOL,2013,18.9
+Bolivia,BOL,2014,17.9
+Bolivia,BOL,2015,16.9
+Bolivia,BOL,2016,16.1
+Bolivia,BOL,2017,15.5
+Bolivia,BOL,2018,14.8
+Bolivia,BOL,2019,14.2
+Bolivia,BOL,2020,13.7
+Bolivia,BOL,2021,13.2
+Bosnia and Herzegovina,BIH,1998,7.8
+Bosnia and Herzegovina,BIH,1999,7.3
+Bosnia and Herzegovina,BIH,2000,6.9
+Bosnia and Herzegovina,BIH,2001,6.5
+Bosnia and Herzegovina,BIH,2002,6.2
+Bosnia and Herzegovina,BIH,2003,5.9
+Bosnia and Herzegovina,BIH,2004,5.7
+Bosnia and Herzegovina,BIH,2005,5.5
+Bosnia and Herzegovina,BIH,2006,5.4
+Bosnia and Herzegovina,BIH,2007,5.3
+Bosnia and Herzegovina,BIH,2008,5.3
+Bosnia and Herzegovina,BIH,2009,5.2
+Bosnia and Herzegovina,BIH,2010,5.1
+Bosnia and Herzegovina,BIH,2011,5
+Bosnia and Herzegovina,BIH,2012,4.9
+Bosnia and Herzegovina,BIH,2013,4.8
+Bosnia and Herzegovina,BIH,2014,4.7
+Bosnia and Herzegovina,BIH,2015,4.6
+Bosnia and Herzegovina,BIH,2016,4.6
+Bosnia and Herzegovina,BIH,2017,4.5
+Bosnia and Herzegovina,BIH,2018,4.4
+Bosnia and Herzegovina,BIH,2019,4.3
+Bosnia and Herzegovina,BIH,2020,4.2
+Bosnia and Herzegovina,BIH,2021,4.1
+Botswana,BWA,1998,7.3
+Botswana,BWA,1999,7.4
+Botswana,BWA,2000,8.1
+Botswana,BWA,2001,9.3
+Botswana,BWA,2002,11.3
+Botswana,BWA,2003,13.8
+Botswana,BWA,2004,17
+Botswana,BWA,2005,20.2
+Botswana,BWA,2006,22.4
+Botswana,BWA,2007,24.2
+Botswana,BWA,2008,25.2
+Botswana,BWA,2009,25.7
+Botswana,BWA,2010,25.7
+Botswana,BWA,2011,25.1
+Botswana,BWA,2012,24.4
+Botswana,BWA,2013,23.3
+Botswana,BWA,2014,22.4
+Botswana,BWA,2015,21.6
+Botswana,BWA,2016,21
+Botswana,BWA,2017,20.4
+Botswana,BWA,2018,19.9
+Botswana,BWA,2019,19.2
+Botswana,BWA,2020,18.5
+Botswana,BWA,2021,18
+Brazil,BRA,1998,20.4
+Brazil,BRA,1999,19.7
+Brazil,BRA,2000,18.8
+Brazil,BRA,2001,17.8
+Brazil,BRA,2002,16.9
+Brazil,BRA,2003,16
+Brazil,BRA,2004,15.1
+Brazil,BRA,2005,14.2
+Brazil,BRA,2006,13.5
+Brazil,BRA,2007,12.8
+Brazil,BRA,2008,12.2
+Brazil,BRA,2009,11.6
+Brazil,BRA,2010,11.1
+Brazil,BRA,2011,10.7
+Brazil,BRA,2012,10.3
+Brazil,BRA,2013,10
+Brazil,BRA,2014,9.7
+Brazil,BRA,2015,9.5
+Brazil,BRA,2016,10
+Brazil,BRA,2017,9.3
+Brazil,BRA,2018,9.1
+Brazil,BRA,2019,8.9
+Brazil,BRA,2020,8.7
+Brazil,BRA,2021,8.5
+British Virgin Islands,VGB,1998,8.6
+British Virgin Islands,VGB,1999,8.5
+British Virgin Islands,VGB,2000,8.4
+British Virgin Islands,VGB,2001,8.4
+British Virgin Islands,VGB,2002,8.3
+British Virgin Islands,VGB,2003,8.3
+British Virgin Islands,VGB,2004,8.2
+British Virgin Islands,VGB,2005,8.2
+British Virgin Islands,VGB,2006,8.2
+British Virgin Islands,VGB,2007,8.1
+British Virgin Islands,VGB,2008,8
+British Virgin Islands,VGB,2009,7.8
+British Virgin Islands,VGB,2010,7.6
+British Virgin Islands,VGB,2011,7.4
+British Virgin Islands,VGB,2012,7.3
+British Virgin Islands,VGB,2013,7
+British Virgin Islands,VGB,2014,6.8
+British Virgin Islands,VGB,2015,6.6
+British Virgin Islands,VGB,2016,6.4
+British Virgin Islands,VGB,2017,6.2
+British Virgin Islands,VGB,2018,6
+British Virgin Islands,VGB,2019,5.8
+British Virgin Islands,VGB,2020,5.6
+British Virgin Islands,VGB,2021,5.4
+Brunei Darussalam,BRN,1998,5
+Brunei Darussalam,BRN,1999,5
+Brunei Darussalam,BRN,2000,5
+Brunei Darussalam,BRN,2001,5
+Brunei Darussalam,BRN,2002,5.1
+Brunei Darussalam,BRN,2003,5.1
+Brunei Darussalam,BRN,2004,5
+Brunei Darussalam,BRN,2005,5
+Brunei Darussalam,BRN,2006,4.9
+Brunei Darussalam,BRN,2007,4.9
+Brunei Darussalam,BRN,2008,4.9
+Brunei Darussalam,BRN,2009,4.8
+Brunei Darussalam,BRN,2010,4.8
+Brunei Darussalam,BRN,2011,4.8
+Brunei Darussalam,BRN,2012,4.8
+Brunei Darussalam,BRN,2013,4.9
+Brunei Darussalam,BRN,2014,5
+Brunei Darussalam,BRN,2015,5.2
+Brunei Darussalam,BRN,2016,5.4
+Brunei Darussalam,BRN,2017,5.6
+Brunei Darussalam,BRN,2018,5.8
+Brunei Darussalam,BRN,2019,6
+Brunei Darussalam,BRN,2020,6.2
+Brunei Darussalam,BRN,2021,6.2
+Bulgaria,BGR,1998,8.3
+Bulgaria,BGR,1999,8.1
+Bulgaria,BGR,2000,7.9
+Bulgaria,BGR,2001,7.6
+Bulgaria,BGR,2002,7.2
+Bulgaria,BGR,2003,6.8
+Bulgaria,BGR,2004,6.4
+Bulgaria,BGR,2005,6
+Bulgaria,BGR,2006,5.6
+Bulgaria,BGR,2007,5.3
+Bulgaria,BGR,2008,5.2
+Bulgaria,BGR,2009,5.2
+Bulgaria,BGR,2010,5.1
+Bulgaria,BGR,2011,5
+Bulgaria,BGR,2012,4.7
+Bulgaria,BGR,2013,4.5
+Bulgaria,BGR,2014,4.3
+Bulgaria,BGR,2015,4.1
+Bulgaria,BGR,2016,3.9
+Bulgaria,BGR,2017,3.7
+Bulgaria,BGR,2018,3.5
+Bulgaria,BGR,2019,3.3
+Bulgaria,BGR,2020,3.1
+Bulgaria,BGR,2021,3
+Burkina Faso,BFA,1998,42.1
+Burkina Faso,BFA,1999,41.4
+Burkina Faso,BFA,2000,40.6
+Burkina Faso,BFA,2001,39.8
+Burkina Faso,BFA,2002,39
+Burkina Faso,BFA,2003,38.1
+Burkina Faso,BFA,2004,37.1
+Burkina Faso,BFA,2005,35.9
+Burkina Faso,BFA,2006,34.7
+Burkina Faso,BFA,2007,33.6
+Burkina Faso,BFA,2008,32.6
+Burkina Faso,BFA,2009,31.8
+Burkina Faso,BFA,2010,31.1
+Burkina Faso,BFA,2011,30.5
+Burkina Faso,BFA,2012,29.9
+Burkina Faso,BFA,2013,29.3
+Burkina Faso,BFA,2014,28.8
+Burkina Faso,BFA,2015,28.3
+Burkina Faso,BFA,2016,27.8
+Burkina Faso,BFA,2017,27.2
+Burkina Faso,BFA,2018,26.8
+Burkina Faso,BFA,2019,26.3
+Burkina Faso,BFA,2020,25.7
+Burkina Faso,BFA,2021,25.3
+Burundi,BDI,1998,37.7
+Burundi,BDI,1999,37.2
+Burundi,BDI,2000,36.7
+Burundi,BDI,2001,36
+Burundi,BDI,2002,35.4
+Burundi,BDI,2003,34.7
+Burundi,BDI,2004,34
+Burundi,BDI,2005,33.2
+Burundi,BDI,2006,32.2
+Burundi,BDI,2007,31.2
+Burundi,BDI,2008,30.1
+Burundi,BDI,2009,29.1
+Burundi,BDI,2010,28.2
+Burundi,BDI,2011,27.2
+Burundi,BDI,2012,26.2
+Burundi,BDI,2013,25.2
+Burundi,BDI,2014,24.4
+Burundi,BDI,2015,23.6
+Burundi,BDI,2016,23
+Burundi,BDI,2017,22.4
+Burundi,BDI,2018,21.9
+Burundi,BDI,2019,21.3
+Burundi,BDI,2020,20.9
+Burundi,BDI,2021,20.4
+Cabo Verde,CPV,1998,20.1
+Cabo Verde,CPV,1999,19.6
+Cabo Verde,CPV,2000,18.9
+Cabo Verde,CPV,2001,17.9
+Cabo Verde,CPV,2002,17
+Cabo Verde,CPV,2003,16.5
+Cabo Verde,CPV,2004,16.3
+Cabo Verde,CPV,2005,16.4
+Cabo Verde,CPV,2006,16.5
+Cabo Verde,CPV,2007,16.6
+Cabo Verde,CPV,2008,16.6
+Cabo Verde,CPV,2009,16.4
+Cabo Verde,CPV,2010,16
+Cabo Verde,CPV,2011,15.4
+Cabo Verde,CPV,2012,14.8
+Cabo Verde,CPV,2013,13.9
+Cabo Verde,CPV,2014,13.1
+Cabo Verde,CPV,2015,12.2
+Cabo Verde,CPV,2016,11.3
+Cabo Verde,CPV,2017,10.5
+Cabo Verde,CPV,2018,9.8
+Cabo Verde,CPV,2019,9.3
+Cabo Verde,CPV,2020,8.8
+Cabo Verde,CPV,2021,8.4
+Cambodia,KHM,1998,37.6
+Cambodia,KHM,1999,36.6
+Cambodia,KHM,2000,35.2
+Cambodia,KHM,2001,33.4
+Cambodia,KHM,2002,31.6
+Cambodia,KHM,2003,29.8
+Cambodia,KHM,2004,28.3
+Cambodia,KHM,2005,26.9
+Cambodia,KHM,2006,25.7
+Cambodia,KHM,2007,24.5
+Cambodia,KHM,2008,23.4
+Cambodia,KHM,2009,22.4
+Cambodia,KHM,2010,21.3
+Cambodia,KHM,2011,20.3
+Cambodia,KHM,2012,19.3
+Cambodia,KHM,2013,18.3
+Cambodia,KHM,2014,17.2
+Cambodia,KHM,2015,16.4
+Cambodia,KHM,2016,15.6
+Cambodia,KHM,2017,15
+Cambodia,KHM,2018,14.4
+Cambodia,KHM,2019,13.8
+Cambodia,KHM,2020,13.3
+Cambodia,KHM,2021,12.8
+Cameroon,CMR,1998,37.3
+Cameroon,CMR,1999,36.4
+Cameroon,CMR,2000,35.4
+Cameroon,CMR,2001,34.6
+Cameroon,CMR,2002,34
+Cameroon,CMR,2003,33.6
+Cameroon,CMR,2004,33.4
+Cameroon,CMR,2005,33.1
+Cameroon,CMR,2006,32.9
+Cameroon,CMR,2007,32.7
+Cameroon,CMR,2008,32.3
+Cameroon,CMR,2009,31.9
+Cameroon,CMR,2010,31.5
+Cameroon,CMR,2011,31.2
+Cameroon,CMR,2012,30.7
+Cameroon,CMR,2013,30.3
+Cameroon,CMR,2014,29.8
+Cameroon,CMR,2015,29.2
+Cameroon,CMR,2016,28.7
+Cameroon,CMR,2017,28
+Cameroon,CMR,2018,27.4
+Cameroon,CMR,2019,26.8
+Cameroon,CMR,2020,26.2
+Cameroon,CMR,2021,25.6
+Canada,CAN,1998,3.8
+Canada,CAN,1999,3.7
+Canada,CAN,2000,3.8
+Canada,CAN,2001,3.8
+Canada,CAN,2002,3.9
+Canada,CAN,2003,3.9
+Canada,CAN,2004,4
+Canada,CAN,2005,3.9
+Canada,CAN,2006,3.9
+Canada,CAN,2007,3.8
+Canada,CAN,2008,3.8
+Canada,CAN,2009,3.8
+Canada,CAN,2010,3.7
+Canada,CAN,2011,3.7
+Canada,CAN,2012,3.7
+Canada,CAN,2013,3.7
+Canada,CAN,2014,3.6
+Canada,CAN,2015,3.6
+Canada,CAN,2016,3.5
+Canada,CAN,2017,3.5
+Canada,CAN,2018,3.5
+Canada,CAN,2019,3.4
+Canada,CAN,2020,3.4
+Canada,CAN,2021,3.4
+Central African Republic,CAF,1998,44.7
+Central African Republic,CAF,1999,43.9
+Central African Republic,CAF,2000,43.1
+Central African Republic,CAF,2001,42.4
+Central African Republic,CAF,2002,41.7
+Central African Republic,CAF,2003,41
+Central African Republic,CAF,2004,40.4
+Central African Republic,CAF,2005,39.7
+Central African Republic,CAF,2006,39
+Central African Republic,CAF,2007,38.2
+Central African Republic,CAF,2008,37.5
+Central African Republic,CAF,2009,36.8
+Central African Republic,CAF,2010,36.2
+Central African Republic,CAF,2011,35.7
+Central African Republic,CAF,2012,35.3
+Central African Republic,CAF,2013,34.9
+Central African Republic,CAF,2014,34.6
+Central African Republic,CAF,2015,34.3
+Central African Republic,CAF,2016,33.9
+Central African Republic,CAF,2017,33.6
+Central African Republic,CAF,2018,33.2
+Central African Republic,CAF,2019,32.8
+Central African Republic,CAF,2020,32.4
+Central African Republic,CAF,2021,31.9
+Chad,TCD,1998,46.2
+Chad,TCD,1999,45.2
+Chad,TCD,2000,44.2
+Chad,TCD,2001,43.2
+Chad,TCD,2002,42.2
+Chad,TCD,2003,41.4
+Chad,TCD,2004,40.7
+Chad,TCD,2005,40
+Chad,TCD,2006,39.5
+Chad,TCD,2007,39
+Chad,TCD,2008,38.6
+Chad,TCD,2009,38.3
+Chad,TCD,2010,38
+Chad,TCD,2011,37.6
+Chad,TCD,2012,37.2
+Chad,TCD,2013,36.7
+Chad,TCD,2014,36.2
+Chad,TCD,2015,35.6
+Chad,TCD,2016,35.1
+Chad,TCD,2017,34.5
+Chad,TCD,2018,34
+Chad,TCD,2019,33.4
+Chad,TCD,2020,32.9
+Chad,TCD,2021,32.3
+Chile,CHL,1998,6.2
+Chile,CHL,1999,6
+Chile,CHL,2000,5.7
+Chile,CHL,2001,5.4
+Chile,CHL,2002,5.3
+Chile,CHL,2003,5.3
+Chile,CHL,2004,5.4
+Chile,CHL,2005,5.4
+Chile,CHL,2006,5.5
+Chile,CHL,2007,5.4
+Chile,CHL,2008,5.3
+Chile,CHL,2009,5.3
+Chile,CHL,2010,5.3
+Chile,CHL,2011,5.3
+Chile,CHL,2012,5.3
+Chile,CHL,2013,5.3
+Chile,CHL,2014,5.2
+Chile,CHL,2015,5.1
+Chile,CHL,2016,5.1
+Chile,CHL,2017,5
+Chile,CHL,2018,4.8
+Chile,CHL,2019,4.7
+Chile,CHL,2020,4.5
+Chile,CHL,2021,4.3
+China,CHN,1998,23.4
+China,CHN,1999,22.4
+China,CHN,2000,21.3
+China,CHN,2001,19.9
+China,CHN,2002,18.4
+China,CHN,2003,16.9
+China,CHN,2004,15.4
+China,CHN,2005,13.9
+China,CHN,2006,12.5
+China,CHN,2007,11.3
+China,CHN,2008,10.2
+China,CHN,2009,9.2
+China,CHN,2010,8.4
+China,CHN,2011,7.6
+China,CHN,2012,7
+China,CHN,2013,6.4
+China,CHN,2014,5.8
+China,CHN,2015,5.3
+China,CHN,2016,4.9
+China,CHN,2017,4.4
+China,CHN,2018,4.1
+China,CHN,2019,3.7
+China,CHN,2020,3.4
+China,CHN,2021,3.2
+Colombia,COL,1998,14.4
+Colombia,COL,1999,14
+Colombia,COL,2000,13.5
+Colombia,COL,2001,13.1
+Colombia,COL,2002,12.7
+Colombia,COL,2003,12.4
+Colombia,COL,2004,12
+Colombia,COL,2005,11.7
+Colombia,COL,2006,11.4
+Colombia,COL,2007,11
+Colombia,COL,2008,10.7
+Colombia,COL,2009,10.4
+Colombia,COL,2010,10
+Colombia,COL,2011,9.7
+Colombia,COL,2012,9.4
+Colombia,COL,2013,9.1
+Colombia,COL,2014,8.8
+Colombia,COL,2015,8.5
+Colombia,COL,2016,8.2
+Colombia,COL,2017,8
+Colombia,COL,2018,7.7
+Colombia,COL,2019,7.5
+Colombia,COL,2020,7.2
+Colombia,COL,2021,7
+Comoros,COM,1998,40.6
+Comoros,COM,1999,40.1
+Comoros,COM,2000,39.7
+Comoros,COM,2001,39.1
+Comoros,COM,2002,38.5
+Comoros,COM,2003,38
+Comoros,COM,2004,37.5
+Comoros,COM,2005,36.9
+Comoros,COM,2006,36.2
+Comoros,COM,2007,35.6
+Comoros,COM,2008,34.8
+Comoros,COM,2009,34.1
+Comoros,COM,2010,33.4
+Comoros,COM,2011,32.8
+Comoros,COM,2012,32
+Comoros,COM,2013,31.2
+Comoros,COM,2014,30.5
+Comoros,COM,2015,29.8
+Comoros,COM,2016,29.1
+Comoros,COM,2017,28.4
+Comoros,COM,2018,27.7
+Comoros,COM,2019,27.1
+Comoros,COM,2020,26.5
+Comoros,COM,2021,25.8
+"Congo, Dem. Rep.",COD,1998,39.3
+"Congo, Dem. Rep.",COD,1999,38.9
+"Congo, Dem. Rep.",COD,2000,38.6
+"Congo, Dem. Rep.",COD,2001,38.2
+"Congo, Dem. Rep.",COD,2002,37.9
+"Congo, Dem. Rep.",COD,2003,37.4
+"Congo, Dem. Rep.",COD,2004,36.9
+"Congo, Dem. Rep.",COD,2005,36.3
+"Congo, Dem. Rep.",COD,2006,35.5
+"Congo, Dem. Rep.",COD,2007,34.7
+"Congo, Dem. Rep.",COD,2008,34
+"Congo, Dem. Rep.",COD,2009,33.2
+"Congo, Dem. Rep.",COD,2010,32.5
+"Congo, Dem. Rep.",COD,2011,31.9
+"Congo, Dem. Rep.",COD,2012,31.3
+"Congo, Dem. Rep.",COD,2013,30.7
+"Congo, Dem. Rep.",COD,2014,30.1
+"Congo, Dem. Rep.",COD,2015,29.6
+"Congo, Dem. Rep.",COD,2016,29.1
+"Congo, Dem. Rep.",COD,2017,28.5
+"Congo, Dem. Rep.",COD,2018,28
+"Congo, Dem. Rep.",COD,2019,27.5
+"Congo, Dem. Rep.",COD,2020,27
+"Congo, Dem. Rep.",COD,2021,26.5
+"Congo, Rep.",COG,1998,30.7
+"Congo, Rep.",COG,1999,30.7
+"Congo, Rep.",COG,2000,30.5
+"Congo, Rep.",COG,2001,30
+"Congo, Rep.",COG,2002,29.3
+"Congo, Rep.",COG,2003,28.4
+"Congo, Rep.",COG,2004,27.4
+"Congo, Rep.",COG,2005,26.4
+"Congo, Rep.",COG,2006,25.4
+"Congo, Rep.",COG,2007,24.6
+"Congo, Rep.",COG,2008,23.7
+"Congo, Rep.",COG,2009,23.2
+"Congo, Rep.",COG,2010,22.7
+"Congo, Rep.",COG,2011,22.3
+"Congo, Rep.",COG,2012,22
+"Congo, Rep.",COG,2013,21.6
+"Congo, Rep.",COG,2014,21.3
+"Congo, Rep.",COG,2015,20.9
+"Congo, Rep.",COG,2016,20.4
+"Congo, Rep.",COG,2017,20
+"Congo, Rep.",COG,2018,19.6
+"Congo, Rep.",COG,2019,19.2
+"Congo, Rep.",COG,2020,18.7
+"Congo, Rep.",COG,2021,18.4
+Costa Rica,CRI,1998,7.9
+Costa Rica,CRI,1999,7.8
+Costa Rica,CRI,2000,7.7
+Costa Rica,CRI,2001,7.5
+Costa Rica,CRI,2002,7.3
+Costa Rica,CRI,2003,7.2
+Costa Rica,CRI,2004,7.1
+Costa Rica,CRI,2005,7.1
+Costa Rica,CRI,2006,7
+Costa Rica,CRI,2007,6.9
+Costa Rica,CRI,2008,6.8
+Costa Rica,CRI,2009,6.7
+Costa Rica,CRI,2010,6.6
+Costa Rica,CRI,2011,6.5
+Costa Rica,CRI,2012,6.5
+Costa Rica,CRI,2013,6.4
+Costa Rica,CRI,2014,6.3
+Costa Rica,CRI,2015,6.3
+Costa Rica,CRI,2016,6.2
+Costa Rica,CRI,2017,6.1
+Costa Rica,CRI,2018,6
+Costa Rica,CRI,2019,5.8
+Costa Rica,CRI,2020,5.6
+Costa Rica,CRI,2021,5.4
+Cote d'Ivoire,CIV,1998,47.3
+Cote d'Ivoire,CIV,1999,46.7
+Cote d'Ivoire,CIV,2000,46.2
+Cote d'Ivoire,CIV,2001,45.7
+Cote d'Ivoire,CIV,2002,45.1
+Cote d'Ivoire,CIV,2003,44.4
+Cote d'Ivoire,CIV,2004,43.8
+Cote d'Ivoire,CIV,2005,43.1
+Cote d'Ivoire,CIV,2006,42.4
+Cote d'Ivoire,CIV,2007,41.7
+Cote d'Ivoire,CIV,2008,40.9
+Cote d'Ivoire,CIV,2009,40.2
+Cote d'Ivoire,CIV,2010,39.5
+Cote d'Ivoire,CIV,2011,38.8
+Cote d'Ivoire,CIV,2012,38.1
+Cote d'Ivoire,CIV,2013,37.5
+Cote d'Ivoire,CIV,2014,36.8
+Cote d'Ivoire,CIV,2015,36.2
+Cote d'Ivoire,CIV,2016,35.6
+Cote d'Ivoire,CIV,2017,34.9
+Cote d'Ivoire,CIV,2018,34.2
+Cote d'Ivoire,CIV,2019,33.6
+Cote d'Ivoire,CIV,2020,32.9
+Cote d'Ivoire,CIV,2021,32.3
+Croatia,HRV,1998,5.7
+Croatia,HRV,1999,5.7
+Croatia,HRV,2000,5.6
+Croatia,HRV,2001,5.3
+Croatia,HRV,2002,5
+Croatia,HRV,2003,4.7
+Croatia,HRV,2004,4.5
+Croatia,HRV,2005,4.2
+Croatia,HRV,2006,4
+Croatia,HRV,2007,3.9
+Croatia,HRV,2008,3.8
+Croatia,HRV,2009,3.7
+Croatia,HRV,2010,3.6
+Croatia,HRV,2011,3.4
+Croatia,HRV,2012,3.3
+Croatia,HRV,2013,3.2
+Croatia,HRV,2014,3.2
+Croatia,HRV,2015,3.1
+Croatia,HRV,2016,3
+Croatia,HRV,2017,3
+Croatia,HRV,2018,2.9
+Croatia,HRV,2019,2.9
+Croatia,HRV,2020,2.9
+Croatia,HRV,2021,2.8
+Cuba,CUB,1998,4.5
+Cuba,CUB,1999,4.4
+Cuba,CUB,2000,4.3
+Cuba,CUB,2001,4.2
+Cuba,CUB,2002,4
+Cuba,CUB,2003,3.8
+Cuba,CUB,2004,3.6
+Cuba,CUB,2005,3.4
+Cuba,CUB,2006,3.3
+Cuba,CUB,2007,3.2
+Cuba,CUB,2008,3.1
+Cuba,CUB,2009,3
+Cuba,CUB,2010,2.9
+Cuba,CUB,2011,2.8
+Cuba,CUB,2012,2.7
+Cuba,CUB,2013,2.5
+Cuba,CUB,2014,2.4
+Cuba,CUB,2015,2.4
+Cuba,CUB,2016,2.3
+Cuba,CUB,2017,2.3
+Cuba,CUB,2018,2.3
+Cuba,CUB,2019,2.3
+Cuba,CUB,2020,2.4
+Cuba,CUB,2021,2.4
+Cyprus,CYP,1998,4.2
+Cyprus,CYP,1999,3.9
+Cyprus,CYP,2000,3.7
+Cyprus,CYP,2001,3.5
+Cyprus,CYP,2002,3.2
+Cyprus,CYP,2003,3
+Cyprus,CYP,2004,2.8
+Cyprus,CYP,2005,2.6
+Cyprus,CYP,2006,2.5
+Cyprus,CYP,2007,2.3
+Cyprus,CYP,2008,2.2
+Cyprus,CYP,2009,2.1
+Cyprus,CYP,2010,2
+Cyprus,CYP,2011,1.9
+Cyprus,CYP,2012,1.8
+Cyprus,CYP,2013,1.7
+Cyprus,CYP,2014,1.7
+Cyprus,CYP,2015,1.6
+Cyprus,CYP,2016,1.6
+Cyprus,CYP,2017,1.6
+Cyprus,CYP,2018,1.6
+Cyprus,CYP,2019,1.6
+Cyprus,CYP,2020,1.6
+Cyprus,CYP,2021,1.6
+Czechia,CZE,1998,3.2
+Czechia,CZE,1999,2.9
+Czechia,CZE,2000,2.7
+Czechia,CZE,2001,2.6
+Czechia,CZE,2002,2.4
+Czechia,CZE,2003,2.4
+Czechia,CZE,2004,2.3
+Czechia,CZE,2005,2.2
+Czechia,CZE,2006,2.1
+Czechia,CZE,2007,2
+Czechia,CZE,2008,1.9
+Czechia,CZE,2009,1.8
+Czechia,CZE,2010,1.7
+Czechia,CZE,2011,1.6
+Czechia,CZE,2012,1.6
+Czechia,CZE,2013,1.6
+Czechia,CZE,2014,1.6
+Czechia,CZE,2015,1.6
+Czechia,CZE,2016,1.6
+Czechia,CZE,2017,1.6
+Czechia,CZE,2018,1.6
+Czechia,CZE,2019,1.6
+Czechia,CZE,2020,1.5
+Czechia,CZE,2021,1.4
+Denmark,DNK,1998,3.7
+Denmark,DNK,1999,3.6
+Denmark,DNK,2000,3.5
+Denmark,DNK,2001,3.3
+Denmark,DNK,2002,3.2
+Denmark,DNK,2003,3.2
+Denmark,DNK,2004,3.1
+Denmark,DNK,2005,3.1
+Denmark,DNK,2006,3
+Denmark,DNK,2007,2.9
+Denmark,DNK,2008,2.8
+Denmark,DNK,2009,2.8
+Denmark,DNK,2010,2.9
+Denmark,DNK,2011,2.9
+Denmark,DNK,2012,3
+Denmark,DNK,2013,3
+Denmark,DNK,2014,3.1
+Denmark,DNK,2015,3
+Denmark,DNK,2016,2.9
+Denmark,DNK,2017,2.8
+Denmark,DNK,2018,2.7
+Denmark,DNK,2019,2.6
+Denmark,DNK,2020,2.5
+Denmark,DNK,2021,2.5
+Djibouti,DJI,1998,44.9
+Djibouti,DJI,1999,44.4
+Djibouti,DJI,2000,43.8
+Djibouti,DJI,2001,43.1
+Djibouti,DJI,2002,42.5
+Djibouti,DJI,2003,41.8
+Djibouti,DJI,2004,41.2
+Djibouti,DJI,2005,40.7
+Djibouti,DJI,2006,40.1
+Djibouti,DJI,2007,39.5
+Djibouti,DJI,2008,38.9
+Djibouti,DJI,2009,38.2
+Djibouti,DJI,2010,37.5
+Djibouti,DJI,2011,36.7
+Djibouti,DJI,2012,35.9
+Djibouti,DJI,2013,35.2
+Djibouti,DJI,2014,34.5
+Djibouti,DJI,2015,33.9
+Djibouti,DJI,2016,33.2
+Djibouti,DJI,2017,32.4
+Djibouti,DJI,2018,31.7
+Djibouti,DJI,2019,31
+Djibouti,DJI,2020,30.4
+Djibouti,DJI,2021,29.6
+Dominica,DMA,1998,11.8
+Dominica,DMA,1999,12.3
+Dominica,DMA,2000,12.7
+Dominica,DMA,2001,13.2
+Dominica,DMA,2002,13.7
+Dominica,DMA,2003,14.3
+Dominica,DMA,2004,14.8
+Dominica,DMA,2005,15.5
+Dominica,DMA,2006,16.2
+Dominica,DMA,2007,16.9
+Dominica,DMA,2008,17.7
+Dominica,DMA,2009,18.6
+Dominica,DMA,2010,19.6
+Dominica,DMA,2011,20.6
+Dominica,DMA,2012,21.6
+Dominica,DMA,2013,22.7
+Dominica,DMA,2014,23.7
+Dominica,DMA,2015,24.7
+Dominica,DMA,2016,25.7
+Dominica,DMA,2017,26.5
+Dominica,DMA,2018,27.2
+Dominica,DMA,2019,27.7
+Dominica,DMA,2020,28.1
+Dominica,DMA,2021,28.3
+Dominican Republic,DOM,1998,23.3
+Dominican Republic,DOM,1999,23.4
+Dominican Republic,DOM,2000,23.3
+Dominican Republic,DOM,2001,23.2
+Dominican Republic,DOM,2002,23.2
+Dominican Republic,DOM,2003,23.1
+Dominican Republic,DOM,2004,23.2
+Dominican Republic,DOM,2005,23.4
+Dominican Republic,DOM,2006,23.7
+Dominican Republic,DOM,2007,23.9
+Dominican Republic,DOM,2008,24.2
+Dominican Republic,DOM,2009,24.3
+Dominican Republic,DOM,2010,24.4
+Dominican Republic,DOM,2011,24.5
+Dominican Republic,DOM,2012,24.5
+Dominican Republic,DOM,2013,24.5
+Dominican Republic,DOM,2014,24.5
+Dominican Republic,DOM,2015,24.5
+Dominican Republic,DOM,2016,24.5
+Dominican Republic,DOM,2017,24.5
+Dominican Republic,DOM,2018,24.2
+Dominican Republic,DOM,2019,23.9
+Dominican Republic,DOM,2020,23.4
+Dominican Republic,DOM,2021,22.9
+Ecuador,ECU,1998,16.1
+Ecuador,ECU,1999,15
+Ecuador,ECU,2000,14.2
+Ecuador,ECU,2001,13.4
+Ecuador,ECU,2002,12.7
+Ecuador,ECU,2003,12.1
+Ecuador,ECU,2004,11.6
+Ecuador,ECU,2005,11.1
+Ecuador,ECU,2006,10.7
+Ecuador,ECU,2007,10.2
+Ecuador,ECU,2008,9.7
+Ecuador,ECU,2009,9.3
+Ecuador,ECU,2010,8.9
+Ecuador,ECU,2011,8.5
+Ecuador,ECU,2012,8.1
+Ecuador,ECU,2013,7.8
+Ecuador,ECU,2014,7.5
+Ecuador,ECU,2015,7.3
+Ecuador,ECU,2016,7.1
+Ecuador,ECU,2017,6.9
+Ecuador,ECU,2018,6.8
+Ecuador,ECU,2019,6.8
+Ecuador,ECU,2020,6.7
+Ecuador,ECU,2021,6.7
+"Egypt, Arab Rep.",EGY,1998,24.1
+"Egypt, Arab Rep.",EGY,1999,23.2
+"Egypt, Arab Rep.",EGY,2000,22.5
+"Egypt, Arab Rep.",EGY,2001,21.7
+"Egypt, Arab Rep.",EGY,2002,21
+"Egypt, Arab Rep.",EGY,2003,20.4
+"Egypt, Arab Rep.",EGY,2004,19.8
+"Egypt, Arab Rep.",EGY,2005,19.1
+"Egypt, Arab Rep.",EGY,2006,18.3
+"Egypt, Arab Rep.",EGY,2007,17.5
+"Egypt, Arab Rep.",EGY,2008,16.7
+"Egypt, Arab Rep.",EGY,2009,16
+"Egypt, Arab Rep.",EGY,2010,15.3
+"Egypt, Arab Rep.",EGY,2011,14.6
+"Egypt, Arab Rep.",EGY,2012,14
+"Egypt, Arab Rep.",EGY,2013,13.4
+"Egypt, Arab Rep.",EGY,2014,12.9
+"Egypt, Arab Rep.",EGY,2015,12.4
+"Egypt, Arab Rep.",EGY,2016,12
+"Egypt, Arab Rep.",EGY,2017,11.5
+"Egypt, Arab Rep.",EGY,2018,11.1
+"Egypt, Arab Rep.",EGY,2019,10.7
+"Egypt, Arab Rep.",EGY,2020,10.4
+"Egypt, Arab Rep.",EGY,2021,10
+El Salvador,SLV,1998,16.7
+El Salvador,SLV,1999,15.8
+El Salvador,SLV,2000,14.9
+El Salvador,SLV,2001,14.1
+El Salvador,SLV,2002,13.4
+El Salvador,SLV,2003,12.7
+El Salvador,SLV,2004,12.1
+El Salvador,SLV,2005,11.5
+El Salvador,SLV,2006,11
+El Salvador,SLV,2007,10.6
+El Salvador,SLV,2008,10.1
+El Salvador,SLV,2009,9.7
+El Salvador,SLV,2010,9.4
+El Salvador,SLV,2011,9
+El Salvador,SLV,2012,8.6
+El Salvador,SLV,2013,8.2
+El Salvador,SLV,2014,7.9
+El Salvador,SLV,2015,7.6
+El Salvador,SLV,2016,7.3
+El Salvador,SLV,2017,7
+El Salvador,SLV,2018,6.8
+El Salvador,SLV,2019,6.5
+El Salvador,SLV,2020,6.3
+El Salvador,SLV,2021,6.1
+Equatorial Guinea,GNQ,1998,47.3
+Equatorial Guinea,GNQ,1999,46.8
+Equatorial Guinea,GNQ,2000,46.2
+Equatorial Guinea,GNQ,2001,45.7
+Equatorial Guinea,GNQ,2002,45.2
+Equatorial Guinea,GNQ,2003,44.4
+Equatorial Guinea,GNQ,2004,43.3
+Equatorial Guinea,GNQ,2005,42.1
+Equatorial Guinea,GNQ,2006,40.7
+Equatorial Guinea,GNQ,2007,39.3
+Equatorial Guinea,GNQ,2008,37.8
+Equatorial Guinea,GNQ,2009,36.6
+Equatorial Guinea,GNQ,2010,35.7
+Equatorial Guinea,GNQ,2011,34.9
+Equatorial Guinea,GNQ,2012,34.2
+Equatorial Guinea,GNQ,2013,33.5
+Equatorial Guinea,GNQ,2014,32.9
+Equatorial Guinea,GNQ,2015,32.1
+Equatorial Guinea,GNQ,2016,31.5
+Equatorial Guinea,GNQ,2017,30.9
+Equatorial Guinea,GNQ,2018,30.2
+Equatorial Guinea,GNQ,2019,29.7
+Equatorial Guinea,GNQ,2020,29.1
+Equatorial Guinea,GNQ,2021,28.5
+Eritrea,ERI,1998,28.2
+Eritrea,ERI,1999,27.6
+Eritrea,ERI,2000,27.1
+Eritrea,ERI,2001,26.6
+Eritrea,ERI,2002,26.1
+Eritrea,ERI,2003,25.7
+Eritrea,ERI,2004,25.2
+Eritrea,ERI,2005,24.7
+Eritrea,ERI,2006,24.3
+Eritrea,ERI,2007,23.7
+Eritrea,ERI,2008,23.2
+Eritrea,ERI,2009,22.6
+Eritrea,ERI,2010,22
+Eritrea,ERI,2011,21.5
+Eritrea,ERI,2012,21
+Eritrea,ERI,2013,20.6
+Eritrea,ERI,2014,20.2
+Eritrea,ERI,2015,19.7
+Eritrea,ERI,2016,19.3
+Eritrea,ERI,2017,18.9
+Eritrea,ERI,2018,18.5
+Eritrea,ERI,2019,18.1
+Eritrea,ERI,2020,17.7
+Eritrea,ERI,2021,17.3
+Estonia,EST,1998,6.3
+Estonia,EST,1999,5.8
+Estonia,EST,2000,5.3
+Estonia,EST,2001,4.8
+Estonia,EST,2002,4.4
+Estonia,EST,2003,4
+Estonia,EST,2004,3.7
+Estonia,EST,2005,3.4
+Estonia,EST,2006,3.1
+Estonia,EST,2007,2.8
+Estonia,EST,2008,2.5
+Estonia,EST,2009,2.3
+Estonia,EST,2010,2.1
+Estonia,EST,2011,1.9
+Estonia,EST,2012,1.8
+Estonia,EST,2013,1.6
+Estonia,EST,2014,1.5
+Estonia,EST,2015,1.4
+Estonia,EST,2016,1.3
+Estonia,EST,2017,1.2
+Estonia,EST,2018,1.1
+Estonia,EST,2019,1
+Estonia,EST,2020,0.9
+Estonia,EST,2021,0.9
+Eswatini,SWZ,1998,27.2
+Eswatini,SWZ,1999,28
+Eswatini,SWZ,2000,28.5
+Eswatini,SWZ,2001,28.7
+Eswatini,SWZ,2002,28.6
+Eswatini,SWZ,2003,28.2
+Eswatini,SWZ,2004,27.6
+Eswatini,SWZ,2005,26.9
+Eswatini,SWZ,2006,26.3
+Eswatini,SWZ,2007,25.9
+Eswatini,SWZ,2008,25.7
+Eswatini,SWZ,2009,25.8
+Eswatini,SWZ,2010,25.9
+Eswatini,SWZ,2011,26.1
+Eswatini,SWZ,2012,26.2
+Eswatini,SWZ,2013,26.2
+Eswatini,SWZ,2014,26
+Eswatini,SWZ,2015,25.7
+Eswatini,SWZ,2016,25.3
+Eswatini,SWZ,2017,25
+Eswatini,SWZ,2018,24.6
+Eswatini,SWZ,2019,24.2
+Eswatini,SWZ,2020,23.7
+Eswatini,SWZ,2021,23.2
+Ethiopia,ETH,1998,50.3
+Ethiopia,ETH,1999,49.4
+Ethiopia,ETH,2000,48.5
+Ethiopia,ETH,2001,47.5
+Ethiopia,ETH,2002,46.5
+Ethiopia,ETH,2003,45.6
+Ethiopia,ETH,2004,44.6
+Ethiopia,ETH,2005,43.6
+Ethiopia,ETH,2006,42.6
+Ethiopia,ETH,2007,41.5
+Ethiopia,ETH,2008,40.4
+Ethiopia,ETH,2009,39.2
+Ethiopia,ETH,2010,38
+Ethiopia,ETH,2011,36.8
+Ethiopia,ETH,2012,35.6
+Ethiopia,ETH,2013,34.4
+Ethiopia,ETH,2014,33.1
+Ethiopia,ETH,2015,32
+Ethiopia,ETH,2016,30.8
+Ethiopia,ETH,2017,29.7
+Ethiopia,ETH,2018,28.7
+Ethiopia,ETH,2019,27.8
+Ethiopia,ETH,2020,27
+Ethiopia,ETH,2021,26.2
+Fiji,FJI,1998,10.2
+Fiji,FJI,1999,10
+Fiji,FJI,2000,10
+Fiji,FJI,2001,10.1
+Fiji,FJI,2002,10.5
+Fiji,FJI,2003,10.9
+Fiji,FJI,2004,11.4
+Fiji,FJI,2005,11.7
+Fiji,FJI,2006,11.5
+Fiji,FJI,2007,11
+Fiji,FJI,2008,10.3
+Fiji,FJI,2009,9.8
+Fiji,FJI,2010,9.3
+Fiji,FJI,2011,9.1
+Fiji,FJI,2012,9
+Fiji,FJI,2013,9.2
+Fiji,FJI,2014,9.6
+Fiji,FJI,2015,10.1
+Fiji,FJI,2016,10.7
+Fiji,FJI,2017,11.5
+Fiji,FJI,2018,12.2
+Fiji,FJI,2019,12.9
+Fiji,FJI,2020,13.5
+Fiji,FJI,2021,13.7
+Finland,FIN,1998,2.7
+Finland,FIN,1999,2.6
+Finland,FIN,2000,2.5
+Finland,FIN,2001,2.4
+Finland,FIN,2002,2.3
+Finland,FIN,2003,2.2
+Finland,FIN,2004,2.1
+Finland,FIN,2005,2.1
+Finland,FIN,2006,2
+Finland,FIN,2007,1.9
+Finland,FIN,2008,1.8
+Finland,FIN,2009,1.8
+Finland,FIN,2010,1.7
+Finland,FIN,2011,1.6
+Finland,FIN,2012,1.5
+Finland,FIN,2013,1.4
+Finland,FIN,2014,1.4
+Finland,FIN,2015,1.4
+Finland,FIN,2016,1.4
+Finland,FIN,2017,1.4
+Finland,FIN,2018,1.4
+Finland,FIN,2019,1.3
+Finland,FIN,2020,1.3
+Finland,FIN,2021,1.3
+France,FRA,1998,2.9
+France,FRA,1999,2.8
+France,FRA,2000,2.8
+France,FRA,2001,2.7
+France,FRA,2002,2.7
+France,FRA,2003,2.6
+France,FRA,2004,2.5
+France,FRA,2005,2.4
+France,FRA,2006,2.4
+France,FRA,2007,2.4
+France,FRA,2008,2.4
+France,FRA,2009,2.4
+France,FRA,2010,2.3
+France,FRA,2011,2.3
+France,FRA,2012,2.3
+France,FRA,2013,2.3
+France,FRA,2014,2.4
+France,FRA,2015,2.4
+France,FRA,2016,2.5
+France,FRA,2017,2.6
+France,FRA,2018,2.6
+France,FRA,2019,2.6
+France,FRA,2020,2.6
+France,FRA,2021,2.5
+Gabon,GAB,1998,28.3
+Gabon,GAB,1999,28
+Gabon,GAB,2000,27.7
+Gabon,GAB,2001,27.4
+Gabon,GAB,2002,27.1
+Gabon,GAB,2003,26.8
+Gabon,GAB,2004,26.5
+Gabon,GAB,2005,26.1
+Gabon,GAB,2006,25.8
+Gabon,GAB,2007,25.4
+Gabon,GAB,2008,25
+Gabon,GAB,2009,24.6
+Gabon,GAB,2010,24.2
+Gabon,GAB,2011,23.7
+Gabon,GAB,2012,23.2
+Gabon,GAB,2013,22.7
+Gabon,GAB,2014,22.3
+Gabon,GAB,2015,21.9
+Gabon,GAB,2016,21.4
+Gabon,GAB,2017,20.9
+Gabon,GAB,2018,20.4
+Gabon,GAB,2019,19.9
+Gabon,GAB,2020,19.5
+Gabon,GAB,2021,18.9
+"Gambia, The",GMB,1998,42.1
+"Gambia, The",GMB,1999,41.1
+"Gambia, The",GMB,2000,40.2
+"Gambia, The",GMB,2001,39.4
+"Gambia, The",GMB,2002,38.8
+"Gambia, The",GMB,2003,38.2
+"Gambia, The",GMB,2004,37.6
+"Gambia, The",GMB,2005,37
+"Gambia, The",GMB,2006,36.3
+"Gambia, The",GMB,2007,35.6
+"Gambia, The",GMB,2008,34.8
+"Gambia, The",GMB,2009,34.1
+"Gambia, The",GMB,2010,33.3
+"Gambia, The",GMB,2011,32.6
+"Gambia, The",GMB,2012,31.8
+"Gambia, The",GMB,2013,31
+"Gambia, The",GMB,2014,30.2
+"Gambia, The",GMB,2015,29.5
+"Gambia, The",GMB,2016,28.7
+"Gambia, The",GMB,2017,27.9
+"Gambia, The",GMB,2018,27.2
+"Gambia, The",GMB,2019,26.5
+"Gambia, The",GMB,2020,25.9
+"Gambia, The",GMB,2021,25.3
+Georgia,GEO,1998,24
+Georgia,GEO,1999,23.6
+Georgia,GEO,2000,22.9
+Georgia,GEO,2001,21.8
+Georgia,GEO,2002,20.4
+Georgia,GEO,2003,19
+Georgia,GEO,2004,17.4
+Georgia,GEO,2005,16
+Georgia,GEO,2006,14.5
+Georgia,GEO,2007,13.2
+Georgia,GEO,2008,12
+Georgia,GEO,2009,11
+Georgia,GEO,2010,10.1
+Georgia,GEO,2011,9.3
+Georgia,GEO,2012,8.6
+Georgia,GEO,2013,7.9
+Georgia,GEO,2014,7.3
+Georgia,GEO,2015,6.7
+Georgia,GEO,2016,6.2
+Georgia,GEO,2017,5.8
+Georgia,GEO,2018,5.6
+Georgia,GEO,2019,5.4
+Georgia,GEO,2020,5.4
+Georgia,GEO,2021,5.4
+Germany,DEU,1998,2.8
+Germany,DEU,1999,2.8
+Germany,DEU,2000,2.8
+Germany,DEU,2001,2.7
+Germany,DEU,2002,2.7
+Germany,DEU,2003,2.7
+Germany,DEU,2004,2.6
+Germany,DEU,2005,2.6
+Germany,DEU,2006,2.6
+Germany,DEU,2007,2.5
+Germany,DEU,2008,2.4
+Germany,DEU,2009,2.4
+Germany,DEU,2010,2.3
+Germany,DEU,2011,2.3
+Germany,DEU,2012,2.3
+Germany,DEU,2013,2.3
+Germany,DEU,2014,2.3
+Germany,DEU,2015,2.3
+Germany,DEU,2016,2.3
+Germany,DEU,2017,2.3
+Germany,DEU,2018,2.3
+Germany,DEU,2019,2.3
+Germany,DEU,2020,2.2
+Germany,DEU,2021,2.2
+Ghana,GHA,1998,37.4
+Ghana,GHA,1999,36.7
+Ghana,GHA,2000,35.9
+Ghana,GHA,2001,35
+Ghana,GHA,2002,34.3
+Ghana,GHA,2003,33.7
+Ghana,GHA,2004,33.2
+Ghana,GHA,2005,32.8
+Ghana,GHA,2006,32.4
+Ghana,GHA,2007,32
+Ghana,GHA,2008,31.5
+Ghana,GHA,2009,30.8
+Ghana,GHA,2010,30.1
+Ghana,GHA,2011,29.4
+Ghana,GHA,2012,28.6
+Ghana,GHA,2013,27.9
+Ghana,GHA,2014,27.2
+Ghana,GHA,2015,26.5
+Ghana,GHA,2016,25.8
+Ghana,GHA,2017,25.2
+Ghana,GHA,2018,24.6
+Ghana,GHA,2019,24
+Ghana,GHA,2020,23.4
+Ghana,GHA,2021,22.8
+Greece,GRC,1998,4.6
+Greece,GRC,1999,4.3
+Greece,GRC,2000,3.9
+Greece,GRC,2001,3.6
+Greece,GRC,2002,3.3
+Greece,GRC,2003,3
+Greece,GRC,2004,2.7
+Greece,GRC,2005,2.5
+Greece,GRC,2006,2.4
+Greece,GRC,2007,2.2
+Greece,GRC,2008,2.1
+Greece,GRC,2009,2.1
+Greece,GRC,2010,2.1
+Greece,GRC,2011,2.2
+Greece,GRC,2012,2.3
+Greece,GRC,2013,2.5
+Greece,GRC,2014,2.6
+Greece,GRC,2015,2.6
+Greece,GRC,2016,2.6
+Greece,GRC,2017,2.6
+Greece,GRC,2018,2.5
+Greece,GRC,2019,2.4
+Greece,GRC,2020,2.3
+Greece,GRC,2021,2.2
+Grenada,GRD,1998,7.8
+Grenada,GRD,1999,7.8
+Grenada,GRD,2000,7.9
+Grenada,GRD,2001,8
+Grenada,GRD,2002,8.1
+Grenada,GRD,2003,8.2
+Grenada,GRD,2004,8.2
+Grenada,GRD,2005,8.2
+Grenada,GRD,2006,8.2
+Grenada,GRD,2007,8.3
+Grenada,GRD,2008,8.5
+Grenada,GRD,2009,8.7
+Grenada,GRD,2010,9
+Grenada,GRD,2011,9.4
+Grenada,GRD,2012,9.7
+Grenada,GRD,2013,10
+Grenada,GRD,2014,10.3
+Grenada,GRD,2015,10.4
+Grenada,GRD,2016,10.5
+Grenada,GRD,2017,10.5
+Grenada,GRD,2018,10.5
+Grenada,GRD,2019,10.5
+Grenada,GRD,2020,10.4
+Grenada,GRD,2021,10.3
+Guatemala,GTM,1998,22.5
+Guatemala,GTM,1999,21.9
+Guatemala,GTM,2000,21.3
+Guatemala,GTM,2001,20.7
+Guatemala,GTM,2002,20.2
+Guatemala,GTM,2003,19.7
+Guatemala,GTM,2004,19.1
+Guatemala,GTM,2005,18.6
+Guatemala,GTM,2006,18.2
+Guatemala,GTM,2007,17.7
+Guatemala,GTM,2008,17.3
+Guatemala,GTM,2009,16.8
+Guatemala,GTM,2010,16.2
+Guatemala,GTM,2011,15.6
+Guatemala,GTM,2012,15
+Guatemala,GTM,2013,14.4
+Guatemala,GTM,2014,13.9
+Guatemala,GTM,2015,13.4
+Guatemala,GTM,2016,12.9
+Guatemala,GTM,2017,12.4
+Guatemala,GTM,2018,12
+Guatemala,GTM,2019,11.6
+Guatemala,GTM,2020,11.2
+Guatemala,GTM,2021,10.8
+Guinea,GIN,1998,50.9
+Guinea,GIN,1999,48.3
+Guinea,GIN,2000,46
+Guinea,GIN,2001,44
+Guinea,GIN,2002,42.5
+Guinea,GIN,2003,41.3
+Guinea,GIN,2004,40.3
+Guinea,GIN,2005,39.2
+Guinea,GIN,2006,38.3
+Guinea,GIN,2007,37.5
+Guinea,GIN,2008,36.9
+Guinea,GIN,2009,36.4
+Guinea,GIN,2010,35.9
+Guinea,GIN,2011,35.4
+Guinea,GIN,2012,34.9
+Guinea,GIN,2013,34.3
+Guinea,GIN,2014,33.8
+Guinea,GIN,2015,33.4
+Guinea,GIN,2016,32.9
+Guinea,GIN,2017,32.6
+Guinea,GIN,2018,32.3
+Guinea,GIN,2019,31.9
+Guinea,GIN,2020,31.5
+Guinea,GIN,2021,31.1
+Guinea-Bissau,GNB,1998,57.4
+Guinea-Bissau,GNB,1999,56.2
+Guinea-Bissau,GNB,2000,55.1
+Guinea-Bissau,GNB,2001,54.1
+Guinea-Bissau,GNB,2002,53.2
+Guinea-Bissau,GNB,2003,52.4
+Guinea-Bissau,GNB,2004,51.7
+Guinea-Bissau,GNB,2005,50.9
+Guinea-Bissau,GNB,2006,50
+Guinea-Bissau,GNB,2007,49
+Guinea-Bissau,GNB,2008,47.8
+Guinea-Bissau,GNB,2009,46.5
+Guinea-Bissau,GNB,2010,45.1
+Guinea-Bissau,GNB,2011,43.8
+Guinea-Bissau,GNB,2012,42.5
+Guinea-Bissau,GNB,2013,41.4
+Guinea-Bissau,GNB,2014,40.2
+Guinea-Bissau,GNB,2015,39.2
+Guinea-Bissau,GNB,2016,38.4
+Guinea-Bissau,GNB,2017,37.5
+Guinea-Bissau,GNB,2018,36.7
+Guinea-Bissau,GNB,2019,35.9
+Guinea-Bissau,GNB,2020,35
+Guinea-Bissau,GNB,2021,34.3
+Guyana,GUY,1998,28.2
+Guyana,GUY,1999,27.7
+Guyana,GUY,2000,27.1
+Guyana,GUY,2001,26.5
+Guyana,GUY,2002,26.1
+Guyana,GUY,2003,25.6
+Guyana,GUY,2004,25.2
+Guyana,GUY,2005,24.7
+Guyana,GUY,2006,24.3
+Guyana,GUY,2007,23.9
+Guyana,GUY,2008,23.5
+Guyana,GUY,2009,23.1
+Guyana,GUY,2010,22.8
+Guyana,GUY,2011,22.4
+Guyana,GUY,2012,21.9
+Guyana,GUY,2013,21.3
+Guyana,GUY,2014,20.8
+Guyana,GUY,2015,20.2
+Guyana,GUY,2016,19.6
+Guyana,GUY,2017,19
+Guyana,GUY,2018,18.5
+Guyana,GUY,2019,17.9
+Guyana,GUY,2020,17.4
+Guyana,GUY,2021,16.9
+Haiti,HTI,1998,30.9
+Haiti,HTI,1999,30.3
+Haiti,HTI,2000,29.8
+Haiti,HTI,2001,29.4
+Haiti,HTI,2002,29.3
+Haiti,HTI,2003,29.3
+Haiti,HTI,2004,29.3
+Haiti,HTI,2005,29.3
+Haiti,HTI,2006,29.3
+Haiti,HTI,2007,29.1
+Haiti,HTI,2008,28.9
+Haiti,HTI,2009,28.7
+Haiti,HTI,2010,29.3
+Haiti,HTI,2011,28.3
+Haiti,HTI,2012,28.1
+Haiti,HTI,2013,27.8
+Haiti,HTI,2014,27.5
+Haiti,HTI,2015,27.1
+Haiti,HTI,2016,26.7
+Haiti,HTI,2017,26.3
+Haiti,HTI,2018,25.8
+Haiti,HTI,2019,25.2
+Haiti,HTI,2020,24.7
+Haiti,HTI,2021,24.3
+Honduras,HND,1998,18.9
+Honduras,HND,1999,18.3
+Honduras,HND,2000,18
+Honduras,HND,2001,17.5
+Honduras,HND,2002,16.9
+Honduras,HND,2003,16.5
+Honduras,HND,2004,16
+Honduras,HND,2005,15.7
+Honduras,HND,2006,15.4
+Honduras,HND,2007,15.1
+Honduras,HND,2008,14.8
+Honduras,HND,2009,14.4
+Honduras,HND,2010,14
+Honduras,HND,2011,13.6
+Honduras,HND,2012,13.2
+Honduras,HND,2013,12.7
+Honduras,HND,2014,12.3
+Honduras,HND,2015,11.8
+Honduras,HND,2016,11.4
+Honduras,HND,2017,11
+Honduras,HND,2018,10.6
+Honduras,HND,2019,10.2
+Honduras,HND,2020,9.8
+Honduras,HND,2021,9.5
+Hungary,HUN,1998,6.4
+Hungary,HUN,1999,6
+Hungary,HUN,2000,5.8
+Hungary,HUN,2001,5.5
+Hungary,HUN,2002,5.1
+Hungary,HUN,2003,4.8
+Hungary,HUN,2004,4.4
+Hungary,HUN,2005,4.1
+Hungary,HUN,2006,3.9
+Hungary,HUN,2007,3.8
+Hungary,HUN,2008,3.6
+Hungary,HUN,2009,3.5
+Hungary,HUN,2010,3.4
+Hungary,HUN,2011,3.3
+Hungary,HUN,2012,3.2
+Hungary,HUN,2013,3
+Hungary,HUN,2014,2.9
+Hungary,HUN,2015,2.7
+Hungary,HUN,2016,2.5
+Hungary,HUN,2017,2.4
+Hungary,HUN,2018,2.3
+Hungary,HUN,2019,2.2
+Hungary,HUN,2020,2.1
+Hungary,HUN,2021,2.1
+Iceland,ISL,1998,2.4
+Iceland,ISL,1999,2.3
+Iceland,ISL,2000,2.1
+Iceland,ISL,2001,2
+Iceland,ISL,2002,1.9
+Iceland,ISL,2003,1.8
+Iceland,ISL,2004,1.7
+Iceland,ISL,2005,1.6
+Iceland,ISL,2006,1.5
+Iceland,ISL,2007,1.5
+Iceland,ISL,2008,1.4
+Iceland,ISL,2009,1.4
+Iceland,ISL,2010,1.3
+Iceland,ISL,2011,1.3
+Iceland,ISL,2012,1.3
+Iceland,ISL,2013,1.3
+Iceland,ISL,2014,1.3
+Iceland,ISL,2015,1.3
+Iceland,ISL,2016,1.4
+Iceland,ISL,2017,1.4
+Iceland,ISL,2018,1.4
+Iceland,ISL,2019,1.4
+Iceland,ISL,2020,1.4
+Iceland,ISL,2021,1.4
+India,IND,1998,47.4
+India,IND,1999,46
+India,IND,2000,44.7
+India,IND,2001,43.3
+India,IND,2002,41.8
+India,IND,2003,40.4
+India,IND,2004,39
+India,IND,2005,37.7
+India,IND,2006,36.5
+India,IND,2007,35.4
+India,IND,2008,34.2
+India,IND,2009,33
+India,IND,2010,31.8
+India,IND,2011,30.6
+India,IND,2012,29.4
+India,IND,2013,28.2
+India,IND,2014,27.1
+India,IND,2015,26
+India,IND,2016,24.9
+India,IND,2017,23.8
+India,IND,2018,22.7
+India,IND,2019,21.4
+India,IND,2020,20.2
+India,IND,2021,19.1
+Indonesia,IDN,1998,24.6
+Indonesia,IDN,1999,23.7
+Indonesia,IDN,2000,22.8
+Indonesia,IDN,2001,22.1
+Indonesia,IDN,2002,21.4
+Indonesia,IDN,2003,20.8
+Indonesia,IDN,2004,20.4
+Indonesia,IDN,2005,19.9
+Indonesia,IDN,2006,19.5
+Indonesia,IDN,2007,19.1
+Indonesia,IDN,2008,18.7
+Indonesia,IDN,2009,18.1
+Indonesia,IDN,2010,17.4
+Indonesia,IDN,2011,16.8
+Indonesia,IDN,2012,16.1
+Indonesia,IDN,2013,15.4
+Indonesia,IDN,2014,14.8
+Indonesia,IDN,2015,14.2
+Indonesia,IDN,2016,13.6
+Indonesia,IDN,2017,13.1
+Indonesia,IDN,2018,12.6
+Indonesia,IDN,2019,12.1
+Indonesia,IDN,2020,11.7
+Indonesia,IDN,2021,11.3
+"Iran, Islamic Rep.",IRN,1998,20.4
+"Iran, Islamic Rep.",IRN,1999,19.9
+"Iran, Islamic Rep.",IRN,2000,19.4
+"Iran, Islamic Rep.",IRN,2001,18.7
+"Iran, Islamic Rep.",IRN,2002,18.1
+"Iran, Islamic Rep.",IRN,2003,17.4
+"Iran, Islamic Rep.",IRN,2004,16.7
+"Iran, Islamic Rep.",IRN,2005,16
+"Iran, Islamic Rep.",IRN,2006,15.3
+"Iran, Islamic Rep.",IRN,2007,14.7
+"Iran, Islamic Rep.",IRN,2008,13.9
+"Iran, Islamic Rep.",IRN,2009,13.2
+"Iran, Islamic Rep.",IRN,2010,12.6
+"Iran, Islamic Rep.",IRN,2011,11.9
+"Iran, Islamic Rep.",IRN,2012,11.4
+"Iran, Islamic Rep.",IRN,2013,10.9
+"Iran, Islamic Rep.",IRN,2014,10.5
+"Iran, Islamic Rep.",IRN,2015,10.1
+"Iran, Islamic Rep.",IRN,2016,9.7
+"Iran, Islamic Rep.",IRN,2017,9.3
+"Iran, Islamic Rep.",IRN,2018,9
+"Iran, Islamic Rep.",IRN,2019,8.7
+"Iran, Islamic Rep.",IRN,2020,8.3
+"Iran, Islamic Rep.",IRN,2021,8.1
+Iraq,IRQ,1998,24.5
+Iraq,IRQ,1999,24.2
+Iraq,IRQ,2000,24
+Iraq,IRQ,2001,23.7
+Iraq,IRQ,2002,23.4
+Iraq,IRQ,2003,23
+Iraq,IRQ,2004,22.7
+Iraq,IRQ,2005,22.3
+Iraq,IRQ,2006,21.9
+Iraq,IRQ,2007,21.5
+Iraq,IRQ,2008,21
+Iraq,IRQ,2009,20.5
+Iraq,IRQ,2010,19.9
+Iraq,IRQ,2011,19.3
+Iraq,IRQ,2012,18.7
+Iraq,IRQ,2013,18.2
+Iraq,IRQ,2014,17.6
+Iraq,IRQ,2015,17
+Iraq,IRQ,2016,16.5
+Iraq,IRQ,2017,16
+Iraq,IRQ,2018,15.5
+Iraq,IRQ,2019,15
+Iraq,IRQ,2020,14.5
+Iraq,IRQ,2021,14.1
+Ireland,IRL,1998,4.1
+Ireland,IRL,1999,4.1
+Ireland,IRL,2000,4
+Ireland,IRL,2001,3.9
+Ireland,IRL,2002,3.7
+Ireland,IRL,2003,3.5
+Ireland,IRL,2004,3.3
+Ireland,IRL,2005,3
+Ireland,IRL,2006,2.8
+Ireland,IRL,2007,2.6
+Ireland,IRL,2008,2.5
+Ireland,IRL,2009,2.5
+Ireland,IRL,2010,2.5
+Ireland,IRL,2011,2.5
+Ireland,IRL,2012,2.5
+Ireland,IRL,2013,2.5
+Ireland,IRL,2014,2.5
+Ireland,IRL,2015,2.4
+Ireland,IRL,2016,2.3
+Ireland,IRL,2017,2.3
+Ireland,IRL,2018,2.2
+Ireland,IRL,2019,2.2
+Ireland,IRL,2020,2.1
+Ireland,IRL,2021,2.1
+Israel,ISR,1998,3.8
+Israel,ISR,1999,3.7
+Israel,ISR,2000,3.6
+Israel,ISR,2001,3.5
+Israel,ISR,2002,3.3
+Israel,ISR,2003,3.1
+Israel,ISR,2004,2.9
+Israel,ISR,2005,2.7
+Israel,ISR,2006,2.6
+Israel,ISR,2007,2.5
+Israel,ISR,2008,2.4
+Israel,ISR,2009,2.4
+Israel,ISR,2010,2.4
+Israel,ISR,2011,2.3
+Israel,ISR,2012,2.3
+Israel,ISR,2013,2.2
+Israel,ISR,2014,2.2
+Israel,ISR,2015,2.1
+Israel,ISR,2016,2
+Israel,ISR,2017,2
+Israel,ISR,2018,1.9
+Israel,ISR,2019,1.9
+Israel,ISR,2020,1.8
+Israel,ISR,2021,1.7
+Italy,ITA,1998,3.9
+Italy,ITA,1999,3.7
+Italy,ITA,2000,3.5
+Italy,ITA,2001,3.3
+Italy,ITA,2002,3.1
+Italy,ITA,2003,2.9
+Italy,ITA,2004,2.8
+Italy,ITA,2005,2.7
+Italy,ITA,2006,2.6
+Italy,ITA,2007,2.5
+Italy,ITA,2008,2.5
+Italy,ITA,2009,2.4
+Italy,ITA,2010,2.4
+Italy,ITA,2011,2.4
+Italy,ITA,2012,2.3
+Italy,ITA,2013,2.2
+Italy,ITA,2014,2.2
+Italy,ITA,2015,2.1
+Italy,ITA,2016,2.1
+Italy,ITA,2017,2
+Italy,ITA,2018,1.9
+Italy,ITA,2019,1.7
+Italy,ITA,2020,1.6
+Italy,ITA,2021,1.5
+Jamaica,JAM,1998,17.1
+Jamaica,JAM,1999,17.2
+Jamaica,JAM,2000,17.2
+Jamaica,JAM,2001,17
+Jamaica,JAM,2002,16.9
+Jamaica,JAM,2003,16.6
+Jamaica,JAM,2004,16.4
+Jamaica,JAM,2005,16.1
+Jamaica,JAM,2006,15.9
+Jamaica,JAM,2007,15.6
+Jamaica,JAM,2008,15.3
+Jamaica,JAM,2009,15
+Jamaica,JAM,2010,14.6
+Jamaica,JAM,2011,14.2
+Jamaica,JAM,2012,13.8
+Jamaica,JAM,2013,13.4
+Jamaica,JAM,2014,13
+Jamaica,JAM,2015,12.6
+Jamaica,JAM,2016,12.2
+Jamaica,JAM,2017,11.8
+Jamaica,JAM,2018,11.4
+Jamaica,JAM,2019,11
+Jamaica,JAM,2020,10.7
+Jamaica,JAM,2021,10.3
+Japan,JPN,1998,1.9
+Japan,JPN,1999,1.8
+Japan,JPN,2000,1.8
+Japan,JPN,2001,1.7
+Japan,JPN,2002,1.7
+Japan,JPN,2003,1.6
+Japan,JPN,2004,1.5
+Japan,JPN,2005,1.4
+Japan,JPN,2006,1.3
+Japan,JPN,2007,1.3
+Japan,JPN,2008,1.2
+Japan,JPN,2009,1.2
+Japan,JPN,2010,1.1
+Japan,JPN,2011,1
+Japan,JPN,2012,1
+Japan,JPN,2013,1
+Japan,JPN,2014,0.9
+Japan,JPN,2015,0.9
+Japan,JPN,2016,0.9
+Japan,JPN,2017,0.9
+Japan,JPN,2018,0.9
+Japan,JPN,2019,0.9
+Japan,JPN,2020,0.8
+Japan,JPN,2021,0.8
+Jordan,JOR,1998,16.6
+Jordan,JOR,1999,16.4
+Jordan,JOR,2000,16.1
+Jordan,JOR,2001,15.7
+Jordan,JOR,2002,15.2
+Jordan,JOR,2003,14.8
+Jordan,JOR,2004,14.3
+Jordan,JOR,2005,13.8
+Jordan,JOR,2006,13.4
+Jordan,JOR,2007,13
+Jordan,JOR,2008,12.6
+Jordan,JOR,2009,12.2
+Jordan,JOR,2010,11.8
+Jordan,JOR,2011,11.5
+Jordan,JOR,2012,11.2
+Jordan,JOR,2013,10.9
+Jordan,JOR,2014,10.6
+Jordan,JOR,2015,10.3
+Jordan,JOR,2016,10
+Jordan,JOR,2017,9.7
+Jordan,JOR,2018,9.4
+Jordan,JOR,2019,9.1
+Jordan,JOR,2020,8.8
+Jordan,JOR,2021,8.5
+Kazakhstan,KAZ,1998,24.7
+Kazakhstan,KAZ,1999,24.3
+Kazakhstan,KAZ,2000,23.7
+Kazakhstan,KAZ,2001,23
+Kazakhstan,KAZ,2002,22.4
+Kazakhstan,KAZ,2003,21.5
+Kazakhstan,KAZ,2004,20.5
+Kazakhstan,KAZ,2005,19.5
+Kazakhstan,KAZ,2006,18.3
+Kazakhstan,KAZ,2007,16.9
+Kazakhstan,KAZ,2008,15.3
+Kazakhstan,KAZ,2009,13.5
+Kazakhstan,KAZ,2010,11.8
+Kazakhstan,KAZ,2011,10.1
+Kazakhstan,KAZ,2012,8.7
+Kazakhstan,KAZ,2013,7.3
+Kazakhstan,KAZ,2014,6.3
+Kazakhstan,KAZ,2015,5.5
+Kazakhstan,KAZ,2016,5
+Kazakhstan,KAZ,2017,4.8
+Kazakhstan,KAZ,2018,4.7
+Kazakhstan,KAZ,2019,4.7
+Kazakhstan,KAZ,2020,4.8
+Kazakhstan,KAZ,2021,5
+Kenya,KEN,1998,27.4
+Kenya,KEN,1999,27.4
+Kenya,KEN,2000,27.3
+Kenya,KEN,2001,27.1
+Kenya,KEN,2002,26.8
+Kenya,KEN,2003,26.5
+Kenya,KEN,2004,26.1
+Kenya,KEN,2005,25.7
+Kenya,KEN,2006,25.3
+Kenya,KEN,2007,24.7
+Kenya,KEN,2008,24.2
+Kenya,KEN,2009,23.7
+Kenya,KEN,2010,23.2
+Kenya,KEN,2011,22.7
+Kenya,KEN,2012,22.3
+Kenya,KEN,2013,21.9
+Kenya,KEN,2014,21.5
+Kenya,KEN,2015,21.1
+Kenya,KEN,2016,20.6
+Kenya,KEN,2017,20.2
+Kenya,KEN,2018,19.8
+Kenya,KEN,2019,19.4
+Kenya,KEN,2020,19
+Kenya,KEN,2021,18.4
+Kiribati,KIR,1998,29.2
+Kiribati,KIR,1999,28.5
+Kiribati,KIR,2000,27.9
+Kiribati,KIR,2001,27.3
+Kiribati,KIR,2002,26.8
+Kiribati,KIR,2003,26.3
+Kiribati,KIR,2004,26
+Kiribati,KIR,2005,25.8
+Kiribati,KIR,2006,25.7
+Kiribati,KIR,2007,25.6
+Kiribati,KIR,2008,25.6
+Kiribati,KIR,2009,25.4
+Kiribati,KIR,2010,25.2
+Kiribati,KIR,2011,25
+Kiribati,KIR,2012,24.7
+Kiribati,KIR,2013,24.3
+Kiribati,KIR,2014,24
+Kiribati,KIR,2015,23.5
+Kiribati,KIR,2016,23.1
+Kiribati,KIR,2017,22.6
+Kiribati,KIR,2018,22.2
+Kiribati,KIR,2019,21.7
+Kiribati,KIR,2020,21.2
+Kiribati,KIR,2021,20.8
+"Korea, Dem. People's Rep.",PRK,1998,31
+"Korea, Dem. People's Rep.",PRK,1999,29.5
+"Korea, Dem. People's Rep.",PRK,2000,27.4
+"Korea, Dem. People's Rep.",PRK,2001,25
+"Korea, Dem. People's Rep.",PRK,2002,22.6
+"Korea, Dem. People's Rep.",PRK,2003,20.6
+"Korea, Dem. People's Rep.",PRK,2004,18.9
+"Korea, Dem. People's Rep.",PRK,2005,17.7
+"Korea, Dem. People's Rep.",PRK,2006,17.4
+"Korea, Dem. People's Rep.",PRK,2007,17.3
+"Korea, Dem. People's Rep.",PRK,2008,17.1
+"Korea, Dem. People's Rep.",PRK,2009,16.7
+"Korea, Dem. People's Rep.",PRK,2010,15.9
+"Korea, Dem. People's Rep.",PRK,2011,14.8
+"Korea, Dem. People's Rep.",PRK,2012,13.8
+"Korea, Dem. People's Rep.",PRK,2013,12.8
+"Korea, Dem. People's Rep.",PRK,2014,12
+"Korea, Dem. People's Rep.",PRK,2015,11.3
+"Korea, Dem. People's Rep.",PRK,2016,10.7
+"Korea, Dem. People's Rep.",PRK,2017,10.2
+"Korea, Dem. People's Rep.",PRK,2018,9.7
+"Korea, Dem. People's Rep.",PRK,2019,9.3
+"Korea, Dem. People's Rep.",PRK,2020,8.8
+"Korea, Dem. People's Rep.",PRK,2021,8.2
+"Korea, Rep.",KOR,1998,3.9
+"Korea, Rep.",KOR,1999,3.6
+"Korea, Rep.",KOR,2000,3.4
+"Korea, Rep.",KOR,2001,3.2
+"Korea, Rep.",KOR,2002,3
+"Korea, Rep.",KOR,2003,2.8
+"Korea, Rep.",KOR,2004,2.6
+"Korea, Rep.",KOR,2005,2.4
+"Korea, Rep.",KOR,2006,2.2
+"Korea, Rep.",KOR,2007,2
+"Korea, Rep.",KOR,2008,1.9
+"Korea, Rep.",KOR,2009,1.8
+"Korea, Rep.",KOR,2010,1.8
+"Korea, Rep.",KOR,2011,1.7
+"Korea, Rep.",KOR,2012,1.7
+"Korea, Rep.",KOR,2013,1.7
+"Korea, Rep.",KOR,2014,1.7
+"Korea, Rep.",KOR,2015,1.6
+"Korea, Rep.",KOR,2016,1.6
+"Korea, Rep.",KOR,2017,1.6
+"Korea, Rep.",KOR,2018,1.5
+"Korea, Rep.",KOR,2019,1.5
+"Korea, Rep.",KOR,2020,1.4
+"Korea, Rep.",KOR,2021,1.4
+Kosovo,XKX,1998,30.3
+Kosovo,XKX,1999,29
+Kosovo,XKX,2000,27.6
+Kosovo,XKX,2001,26.2
+Kosovo,XKX,2002,24.8
+Kosovo,XKX,2003,23.3
+Kosovo,XKX,2004,21.6
+Kosovo,XKX,2005,19.9
+Kosovo,XKX,2006,18.4
+Kosovo,XKX,2007,17.1
+Kosovo,XKX,2008,15.9
+Kosovo,XKX,2009,14.9
+Kosovo,XKX,2010,14
+Kosovo,XKX,2011,13.1
+Kosovo,XKX,2012,12.2
+Kosovo,XKX,2013,11.5
+Kosovo,XKX,2014,10.7
+Kosovo,XKX,2015,10.1
+Kosovo,XKX,2016,9.6
+Kosovo,XKX,2017,9.1
+Kosovo,XKX,2018,8.7
+Kosovo,XKX,2019,8.3
+Kosovo,XKX,2020,7.9
+Kosovo,XKX,2021,7.5
+Kuwait,KWT,1998,7.1
+Kuwait,KWT,1999,6.8
+Kuwait,KWT,2000,6.6
+Kuwait,KWT,2001,6.4
+Kuwait,KWT,2002,6.2
+Kuwait,KWT,2003,6.1
+Kuwait,KWT,2004,5.9
+Kuwait,KWT,2005,5.8
+Kuwait,KWT,2006,5.8
+Kuwait,KWT,2007,5.7
+Kuwait,KWT,2008,5.7
+Kuwait,KWT,2009,5.6
+Kuwait,KWT,2010,5.5
+Kuwait,KWT,2011,5.3
+Kuwait,KWT,2012,5.2
+Kuwait,KWT,2013,5.1
+Kuwait,KWT,2014,5
+Kuwait,KWT,2015,4.9
+Kuwait,KWT,2016,4.9
+Kuwait,KWT,2017,4.9
+Kuwait,KWT,2018,4.9
+Kuwait,KWT,2019,4.9
+Kuwait,KWT,2020,4.9
+Kuwait,KWT,2021,4.9
+Kyrgyz Republic,KGZ,1998,22.1
+Kyrgyz Republic,KGZ,1999,21
+Kyrgyz Republic,KGZ,2000,20.3
+Kyrgyz Republic,KGZ,2001,19.9
+Kyrgyz Republic,KGZ,2002,19.7
+Kyrgyz Republic,KGZ,2003,19.6
+Kyrgyz Republic,KGZ,2004,19.5
+Kyrgyz Republic,KGZ,2005,19.5
+Kyrgyz Republic,KGZ,2006,19.4
+Kyrgyz Republic,KGZ,2007,19.1
+Kyrgyz Republic,KGZ,2008,18.4
+Kyrgyz Republic,KGZ,2009,17.7
+Kyrgyz Republic,KGZ,2010,17
+Kyrgyz Republic,KGZ,2011,16.4
+Kyrgyz Republic,KGZ,2012,15.9
+Kyrgyz Republic,KGZ,2013,15.6
+Kyrgyz Republic,KGZ,2014,15.3
+Kyrgyz Republic,KGZ,2015,14.9
+Kyrgyz Republic,KGZ,2016,14.3
+Kyrgyz Republic,KGZ,2017,13.6
+Kyrgyz Republic,KGZ,2018,13
+Kyrgyz Republic,KGZ,2019,12.5
+Kyrgyz Republic,KGZ,2020,12.2
+Kyrgyz Republic,KGZ,2021,11.9
+Lao PDR,LAO,1998,40.2
+Lao PDR,LAO,1999,39.2
+Lao PDR,LAO,2000,38.3
+Lao PDR,LAO,2001,37.4
+Lao PDR,LAO,2002,36.5
+Lao PDR,LAO,2003,35.6
+Lao PDR,LAO,2004,34.6
+Lao PDR,LAO,2005,33.6
+Lao PDR,LAO,2006,32.7
+Lao PDR,LAO,2007,31.7
+Lao PDR,LAO,2008,30.7
+Lao PDR,LAO,2009,29.8
+Lao PDR,LAO,2010,28.8
+Lao PDR,LAO,2011,28
+Lao PDR,LAO,2012,27.1
+Lao PDR,LAO,2013,26.2
+Lao PDR,LAO,2014,25.4
+Lao PDR,LAO,2015,24.6
+Lao PDR,LAO,2016,23.9
+Lao PDR,LAO,2017,23.3
+Lao PDR,LAO,2018,22.7
+Lao PDR,LAO,2019,22.1
+Lao PDR,LAO,2020,21.6
+Lao PDR,LAO,2021,21
+Latvia,LVA,1998,8.7
+Latvia,LVA,1999,7.9
+Latvia,LVA,2000,7.2
+Latvia,LVA,2001,6.6
+Latvia,LVA,2002,6.2
+Latvia,LVA,2003,5.8
+Latvia,LVA,2004,5.6
+Latvia,LVA,2005,5.4
+Latvia,LVA,2006,5.2
+Latvia,LVA,2007,5
+Latvia,LVA,2008,4.8
+Latvia,LVA,2009,4.5
+Latvia,LVA,2010,4.2
+Latvia,LVA,2011,3.9
+Latvia,LVA,2012,3.5
+Latvia,LVA,2013,3.2
+Latvia,LVA,2014,2.9
+Latvia,LVA,2015,2.7
+Latvia,LVA,2016,2.6
+Latvia,LVA,2017,2.4
+Latvia,LVA,2018,2.3
+Latvia,LVA,2019,2.2
+Latvia,LVA,2020,2.1
+Latvia,LVA,2021,2.1
+Lebanon,LBN,1998,13.1
+Lebanon,LBN,1999,12.4
+Lebanon,LBN,2000,11.8
+Lebanon,LBN,2001,11.1
+Lebanon,LBN,2002,10.4
+Lebanon,LBN,2003,9.8
+Lebanon,LBN,2004,9.2
+Lebanon,LBN,2005,8.6
+Lebanon,LBN,2006,8.1
+Lebanon,LBN,2007,7.6
+Lebanon,LBN,2008,7.2
+Lebanon,LBN,2009,6.8
+Lebanon,LBN,2010,6.5
+Lebanon,LBN,2011,6.3
+Lebanon,LBN,2012,6
+Lebanon,LBN,2013,5.8
+Lebanon,LBN,2014,5.6
+Lebanon,LBN,2015,5.5
+Lebanon,LBN,2016,5.4
+Lebanon,LBN,2017,5.3
+Lebanon,LBN,2018,5.1
+Lebanon,LBN,2019,5
+Lebanon,LBN,2020,4.9
+Lebanon,LBN,2021,4.8
+Lesotho,LSO,1998,36.1
+Lesotho,LSO,1999,35.7
+Lesotho,LSO,2000,35.5
+Lesotho,LSO,2001,35.6
+Lesotho,LSO,2002,35.6
+Lesotho,LSO,2003,35.7
+Lesotho,LSO,2004,35.9
+Lesotho,LSO,2005,36.2
+Lesotho,LSO,2006,36.7
+Lesotho,LSO,2007,37.1
+Lesotho,LSO,2008,37.5
+Lesotho,LSO,2009,37.7
+Lesotho,LSO,2010,37.9
+Lesotho,LSO,2011,38.1
+Lesotho,LSO,2012,38.1
+Lesotho,LSO,2013,38.1
+Lesotho,LSO,2014,38
+Lesotho,LSO,2015,37.9
+Lesotho,LSO,2016,37.7
+Lesotho,LSO,2017,37.4
+Lesotho,LSO,2018,37
+Lesotho,LSO,2019,36.5
+Lesotho,LSO,2020,35.9
+Lesotho,LSO,2021,35.3
+Liberia,LBR,1998,51.7
+Liberia,LBR,1999,50
+Liberia,LBR,2000,48
+Liberia,LBR,2001,46
+Liberia,LBR,2002,43.9
+Liberia,LBR,2003,41.9
+Liberia,LBR,2004,40.1
+Liberia,LBR,2005,38.3
+Liberia,LBR,2006,36.9
+Liberia,LBR,2007,35.6
+Liberia,LBR,2008,34.5
+Liberia,LBR,2009,33.6
+Liberia,LBR,2010,32.9
+Liberia,LBR,2011,32.5
+Liberia,LBR,2012,32.3
+Liberia,LBR,2013,32.3
+Liberia,LBR,2014,32.3
+Liberia,LBR,2015,32.2
+Liberia,LBR,2016,32.1
+Liberia,LBR,2017,31.8
+Liberia,LBR,2018,31.4
+Liberia,LBR,2019,31
+Liberia,LBR,2020,30.5
+Liberia,LBR,2021,29.9
+Libya,LBY,1998,16
+Libya,LBY,1999,15.6
+Libya,LBY,2000,15.1
+Libya,LBY,2001,14.7
+Libya,LBY,2002,14.2
+Libya,LBY,2003,13.7
+Libya,LBY,2004,13.2
+Libya,LBY,2005,12.5
+Libya,LBY,2006,11.7
+Libya,LBY,2007,10.9
+Libya,LBY,2008,10.1
+Libya,LBY,2009,9.5
+Libya,LBY,2010,8.9
+Libya,LBY,2011,8.5
+Libya,LBY,2012,8.1
+Libya,LBY,2013,7.7
+Libya,LBY,2014,7.4
+Libya,LBY,2015,7.1
+Libya,LBY,2016,6.9
+Libya,LBY,2017,6.6
+Libya,LBY,2018,6.4
+Libya,LBY,2019,6.2
+Libya,LBY,2020,6
+Libya,LBY,2021,5.8
+Lithuania,LTU,1998,5.1
+Lithuania,LTU,1999,4.8
+Lithuania,LTU,2000,4.5
+Lithuania,LTU,2001,4.4
+Lithuania,LTU,2002,4.3
+Lithuania,LTU,2003,4.3
+Lithuania,LTU,2004,4.4
+Lithuania,LTU,2005,4.3
+Lithuania,LTU,2006,4
+Lithuania,LTU,2007,3.7
+Lithuania,LTU,2008,3.4
+Lithuania,LTU,2009,3.1
+Lithuania,LTU,2010,2.8
+Lithuania,LTU,2011,2.7
+Lithuania,LTU,2012,2.5
+Lithuania,LTU,2013,2.4
+Lithuania,LTU,2014,2.4
+Lithuania,LTU,2015,2.3
+Lithuania,LTU,2016,2.3
+Lithuania,LTU,2017,2.2
+Lithuania,LTU,2018,2.2
+Lithuania,LTU,2019,2.1
+Lithuania,LTU,2020,2
+Lithuania,LTU,2021,1.9
+Luxembourg,LUX,1998,2.6
+Luxembourg,LUX,1999,2.4
+Luxembourg,LUX,2000,2.3
+Luxembourg,LUX,2001,2.1
+Luxembourg,LUX,2002,2
+Luxembourg,LUX,2003,1.9
+Luxembourg,LUX,2004,1.8
+Luxembourg,LUX,2005,1.7
+Luxembourg,LUX,2006,1.7
+Luxembourg,LUX,2007,1.6
+Luxembourg,LUX,2008,1.6
+Luxembourg,LUX,2009,1.6
+Luxembourg,LUX,2010,1.5
+Luxembourg,LUX,2011,1.5
+Luxembourg,LUX,2012,1.5
+Luxembourg,LUX,2013,1.6
+Luxembourg,LUX,2014,1.6
+Luxembourg,LUX,2015,1.6
+Luxembourg,LUX,2016,1.6
+Luxembourg,LUX,2017,1.7
+Luxembourg,LUX,2018,1.7
+Luxembourg,LUX,2019,1.7
+Luxembourg,LUX,2020,1.7
+Luxembourg,LUX,2021,1.7
+Madagascar,MDG,1998,32.8
+Madagascar,MDG,1999,31.9
+Madagascar,MDG,2000,31.1
+Madagascar,MDG,2001,30.3
+Madagascar,MDG,2002,29.6
+Madagascar,MDG,2003,29
+Madagascar,MDG,2004,28.3
+Madagascar,MDG,2005,27.7
+Madagascar,MDG,2006,27.1
+Madagascar,MDG,2007,26.5
+Madagascar,MDG,2008,26
+Madagascar,MDG,2009,25.5
+Madagascar,MDG,2010,25.1
+Madagascar,MDG,2011,24.8
+Madagascar,MDG,2012,24.6
+Madagascar,MDG,2013,24.3
+Madagascar,MDG,2014,24.2
+Madagascar,MDG,2015,24.1
+Madagascar,MDG,2016,24.1
+Madagascar,MDG,2017,24
+Madagascar,MDG,2018,24
+Madagascar,MDG,2019,24.1
+Madagascar,MDG,2020,24.1
+Madagascar,MDG,2021,24.1
+Malawi,MWI,1998,42.1
+Malawi,MWI,1999,40.6
+Malawi,MWI,2000,38.7
+Malawi,MWI,2001,36.6
+Malawi,MWI,2002,34.5
+Malawi,MWI,2003,32.4
+Malawi,MWI,2004,30.7
+Malawi,MWI,2005,29.4
+Malawi,MWI,2006,28.6
+Malawi,MWI,2007,28.1
+Malawi,MWI,2008,27.6
+Malawi,MWI,2009,27.1
+Malawi,MWI,2010,26.5
+Malawi,MWI,2011,25.6
+Malawi,MWI,2012,24.8
+Malawi,MWI,2013,23.9
+Malawi,MWI,2014,23.1
+Malawi,MWI,2015,22.4
+Malawi,MWI,2016,21.8
+Malawi,MWI,2017,21.2
+Malawi,MWI,2018,20.7
+Malawi,MWI,2019,20.2
+Malawi,MWI,2020,19.8
+Malawi,MWI,2021,19.3
+Malaysia,MYS,1998,5.8
+Malaysia,MYS,1999,5.4
+Malaysia,MYS,2000,5.1
+Malaysia,MYS,2001,4.8
+Malaysia,MYS,2002,4.5
+Malaysia,MYS,2003,4.4
+Malaysia,MYS,2004,4.3
+Malaysia,MYS,2005,4.3
+Malaysia,MYS,2006,4.3
+Malaysia,MYS,2007,4.3
+Malaysia,MYS,2008,4.3
+Malaysia,MYS,2009,4.3
+Malaysia,MYS,2010,4.3
+Malaysia,MYS,2011,4.2
+Malaysia,MYS,2012,4.2
+Malaysia,MYS,2013,4.1
+Malaysia,MYS,2014,4.1
+Malaysia,MYS,2015,4.2
+Malaysia,MYS,2016,4.2
+Malaysia,MYS,2017,4.2
+Malaysia,MYS,2018,4.2
+Malaysia,MYS,2019,4.3
+Malaysia,MYS,2020,4.2
+Malaysia,MYS,2021,4.2
+Maldives,MDV,1998,26.8
+Maldives,MDV,1999,24.6
+Maldives,MDV,2000,22.5
+Maldives,MDV,2001,20
+Maldives,MDV,2002,17.5
+Maldives,MDV,2003,15.3
+Maldives,MDV,2004,13.5
+Maldives,MDV,2005,12
+Maldives,MDV,2006,10.8
+Maldives,MDV,2007,9.9
+Maldives,MDV,2008,9
+Maldives,MDV,2009,8.3
+Maldives,MDV,2010,7.6
+Maldives,MDV,2011,7
+Maldives,MDV,2012,6.5
+Maldives,MDV,2013,6.1
+Maldives,MDV,2014,5.9
+Maldives,MDV,2015,5.8
+Maldives,MDV,2016,5.6
+Maldives,MDV,2017,5.4
+Maldives,MDV,2018,5.1
+Maldives,MDV,2019,4.7
+Maldives,MDV,2020,4.4
+Maldives,MDV,2021,4.1
+Mali,MLI,1998,54.3
+Mali,MLI,1999,52.7
+Mali,MLI,2000,51
+Mali,MLI,2001,49.3
+Mali,MLI,2002,47.7
+Mali,MLI,2003,46.2
+Mali,MLI,2004,44.9
+Mali,MLI,2005,43.9
+Mali,MLI,2006,43
+Mali,MLI,2007,42.2
+Mali,MLI,2008,41.4
+Mali,MLI,2009,40.7
+Mali,MLI,2010,39.9
+Mali,MLI,2011,39.1
+Mali,MLI,2012,38.5
+Mali,MLI,2013,37.9
+Mali,MLI,2014,37.4
+Mali,MLI,2015,36.9
+Mali,MLI,2016,36.3
+Mali,MLI,2017,35.8
+Mali,MLI,2018,35.2
+Mali,MLI,2019,34.7
+Mali,MLI,2020,34.1
+Mali,MLI,2021,33.4
+Malta,MLT,1998,5.5
+Malta,MLT,1999,5.3
+Malta,MLT,2000,5.1
+Malta,MLT,2001,4.9
+Malta,MLT,2002,4.8
+Malta,MLT,2003,4.7
+Malta,MLT,2004,4.6
+Malta,MLT,2005,4.5
+Malta,MLT,2006,4.5
+Malta,MLT,2007,4.5
+Malta,MLT,2008,4.5
+Malta,MLT,2009,4.6
+Malta,MLT,2010,4.6
+Malta,MLT,2011,4.5
+Malta,MLT,2012,4.5
+Malta,MLT,2013,4.5
+Malta,MLT,2014,4.4
+Malta,MLT,2015,4.4
+Malta,MLT,2016,4.3
+Malta,MLT,2017,4.3
+Malta,MLT,2018,4.2
+Malta,MLT,2019,4.1
+Malta,MLT,2020,4
+Malta,MLT,2021,3.9
+Marshall Islands,MHL,1998,18.4
+Marshall Islands,MHL,1999,18.7
+Marshall Islands,MHL,2000,18.9
+Marshall Islands,MHL,2001,19
+Marshall Islands,MHL,2002,18.9
+Marshall Islands,MHL,2003,18.8
+Marshall Islands,MHL,2004,18.7
+Marshall Islands,MHL,2005,18.6
+Marshall Islands,MHL,2006,18.4
+Marshall Islands,MHL,2007,18.3
+Marshall Islands,MHL,2008,18.2
+Marshall Islands,MHL,2009,18
+Marshall Islands,MHL,2010,17.9
+Marshall Islands,MHL,2011,17.8
+Marshall Islands,MHL,2012,17.6
+Marshall Islands,MHL,2013,17.4
+Marshall Islands,MHL,2014,17
+Marshall Islands,MHL,2015,16.6
+Marshall Islands,MHL,2016,16.2
+Marshall Islands,MHL,2017,15.7
+Marshall Islands,MHL,2018,15.2
+Marshall Islands,MHL,2019,14.8
+Marshall Islands,MHL,2020,14.3
+Marshall Islands,MHL,2021,13.8
+Mauritania,MRT,1998,41.4
+Mauritania,MRT,1999,40.3
+Mauritania,MRT,2000,39
+Mauritania,MRT,2001,37.6
+Mauritania,MRT,2002,36.2
+Mauritania,MRT,2003,34.8
+Mauritania,MRT,2004,33.5
+Mauritania,MRT,2005,32.4
+Mauritania,MRT,2006,31.3
+Mauritania,MRT,2007,30.3
+Mauritania,MRT,2008,29.5
+Mauritania,MRT,2009,28.9
+Mauritania,MRT,2010,28.3
+Mauritania,MRT,2011,27.8
+Mauritania,MRT,2012,27.3
+Mauritania,MRT,2013,26.9
+Mauritania,MRT,2014,26.4
+Mauritania,MRT,2015,25.9
+Mauritania,MRT,2016,25.3
+Mauritania,MRT,2017,24.8
+Mauritania,MRT,2018,24.2
+Mauritania,MRT,2019,23.7
+Mauritania,MRT,2020,23.1
+Mauritania,MRT,2021,22.6
+Mauritius,MUS,1998,14.8
+Mauritius,MUS,1999,13.7
+Mauritius,MUS,2000,12.4
+Mauritius,MUS,2001,11.3
+Mauritius,MUS,2002,10.6
+Mauritius,MUS,2003,10.2
+Mauritius,MUS,2004,10.1
+Mauritius,MUS,2005,10.2
+Mauritius,MUS,2006,10.2
+Mauritius,MUS,2007,10
+Mauritius,MUS,2008,9.7
+Mauritius,MUS,2009,9.4
+Mauritius,MUS,2010,9.4
+Mauritius,MUS,2011,9.4
+Mauritius,MUS,2012,9.4
+Mauritius,MUS,2013,9.4
+Mauritius,MUS,2014,9.3
+Mauritius,MUS,2015,9.1
+Mauritius,MUS,2016,9.1
+Mauritius,MUS,2017,9.3
+Mauritius,MUS,2018,9.7
+Mauritius,MUS,2019,10.1
+Mauritius,MUS,2020,10.4
+Mauritius,MUS,2021,10.6
+Mexico,MEX,1998,16.2
+Mexico,MEX,1999,15.2
+Mexico,MEX,2000,14.3
+Mexico,MEX,2001,13.3
+Mexico,MEX,2002,12.3
+Mexico,MEX,2003,11.4
+Mexico,MEX,2004,10.5
+Mexico,MEX,2005,9.8
+Mexico,MEX,2006,9.4
+Mexico,MEX,2007,9.2
+Mexico,MEX,2008,9.2
+Mexico,MEX,2009,9.1
+Mexico,MEX,2010,9
+Mexico,MEX,2011,8.9
+Mexico,MEX,2012,8.7
+Mexico,MEX,2013,8.5
+Mexico,MEX,2014,8.3
+Mexico,MEX,2015,8.3
+Mexico,MEX,2016,8.4
+Mexico,MEX,2017,8.6
+Mexico,MEX,2018,8.7
+Mexico,MEX,2019,8.6
+Mexico,MEX,2020,8.4
+Mexico,MEX,2021,8.1
+"Micronesia, Fed. Sts.",FSM,1998,21.1
+"Micronesia, Fed. Sts.",FSM,1999,20.7
+"Micronesia, Fed. Sts.",FSM,2000,20.2
+"Micronesia, Fed. Sts.",FSM,2001,19.9
+"Micronesia, Fed. Sts.",FSM,2002,19.7
+"Micronesia, Fed. Sts.",FSM,2003,19.3
+"Micronesia, Fed. Sts.",FSM,2004,19.1
+"Micronesia, Fed. Sts.",FSM,2005,19
+"Micronesia, Fed. Sts.",FSM,2006,19
+"Micronesia, Fed. Sts.",FSM,2007,18.9
+"Micronesia, Fed. Sts.",FSM,2008,18.8
+"Micronesia, Fed. Sts.",FSM,2009,18.5
+"Micronesia, Fed. Sts.",FSM,2010,18.1
+"Micronesia, Fed. Sts.",FSM,2011,17.7
+"Micronesia, Fed. Sts.",FSM,2012,17.3
+"Micronesia, Fed. Sts.",FSM,2013,16.9
+"Micronesia, Fed. Sts.",FSM,2014,16.3
+"Micronesia, Fed. Sts.",FSM,2015,15.9
+"Micronesia, Fed. Sts.",FSM,2016,15.3
+"Micronesia, Fed. Sts.",FSM,2017,14.9
+"Micronesia, Fed. Sts.",FSM,2018,14.3
+"Micronesia, Fed. Sts.",FSM,2019,13.8
+"Micronesia, Fed. Sts.",FSM,2020,13.4
+"Micronesia, Fed. Sts.",FSM,2021,12.9
+Moldova,MDA,1998,23.3
+Moldova,MDA,1999,22.3
+Moldova,MDA,2000,20.7
+Moldova,MDA,2001,18.8
+Moldova,MDA,2002,17.1
+Moldova,MDA,2003,15.7
+Moldova,MDA,2004,14.6
+Moldova,MDA,2005,13.8
+Moldova,MDA,2006,13.3
+Moldova,MDA,2007,13.1
+Moldova,MDA,2008,12.9
+Moldova,MDA,2009,12.8
+Moldova,MDA,2010,12.7
+Moldova,MDA,2011,12.6
+Moldova,MDA,2012,12.4
+Moldova,MDA,2013,12.2
+Moldova,MDA,2014,12
+Moldova,MDA,2015,11.8
+Moldova,MDA,2016,11.6
+Moldova,MDA,2017,11.4
+Moldova,MDA,2018,11.2
+Moldova,MDA,2019,11
+Moldova,MDA,2020,10.8
+Moldova,MDA,2021,10.5
+Monaco,MCO,1998,3
+Monaco,MCO,1999,2.9
+Monaco,MCO,2000,2.8
+Monaco,MCO,2001,2.7
+Monaco,MCO,2002,2.6
+Monaco,MCO,2003,2.5
+Monaco,MCO,2004,2.5
+Monaco,MCO,2005,2.4
+Monaco,MCO,2006,2.4
+Monaco,MCO,2007,2.3
+Monaco,MCO,2008,2.2
+Monaco,MCO,2009,2.2
+Monaco,MCO,2010,2.1
+Monaco,MCO,2011,2.1
+Monaco,MCO,2012,2
+Monaco,MCO,2013,2
+Monaco,MCO,2014,1.9
+Monaco,MCO,2015,1.9
+Monaco,MCO,2016,1.8
+Monaco,MCO,2017,1.8
+Monaco,MCO,2018,1.7
+Monaco,MCO,2019,1.6
+Monaco,MCO,2020,1.6
+Monaco,MCO,2021,1.5
+Mongolia,MNG,1998,26
+Mongolia,MNG,1999,24.7
+Mongolia,MNG,2000,23.5
+Mongolia,MNG,2001,22.2
+Mongolia,MNG,2002,21
+Mongolia,MNG,2003,19.8
+Mongolia,MNG,2004,18.7
+Mongolia,MNG,2005,17.5
+Mongolia,MNG,2006,16.4
+Mongolia,MNG,2007,15
+Mongolia,MNG,2008,13.6
+Mongolia,MNG,2009,12.4
+Mongolia,MNG,2010,11.5
+Mongolia,MNG,2011,10.8
+Mongolia,MNG,2012,10.3
+Mongolia,MNG,2013,10
+Mongolia,MNG,2014,9.8
+Mongolia,MNG,2015,9.6
+Mongolia,MNG,2016,9.3
+Mongolia,MNG,2017,9
+Mongolia,MNG,2018,8.7
+Mongolia,MNG,2019,8.3
+Mongolia,MNG,2020,7.9
+Mongolia,MNG,2021,7.5
+Montenegro,MNE,1998,8.8
+Montenegro,MNE,1999,8.6
+Montenegro,MNE,2000,8.5
+Montenegro,MNE,2001,8.4
+Montenegro,MNE,2002,8.2
+Montenegro,MNE,2003,7.9
+Montenegro,MNE,2004,7.5
+Montenegro,MNE,2005,7
+Montenegro,MNE,2006,6.4
+Montenegro,MNE,2007,5.9
+Montenegro,MNE,2008,5.4
+Montenegro,MNE,2009,5
+Montenegro,MNE,2010,4.5
+Montenegro,MNE,2011,4
+Montenegro,MNE,2012,3.5
+Montenegro,MNE,2013,3.1
+Montenegro,MNE,2014,2.6
+Montenegro,MNE,2015,2.3
+Montenegro,MNE,2016,1.9
+Montenegro,MNE,2017,1.6
+Montenegro,MNE,2018,1.4
+Montenegro,MNE,2019,1.2
+Montenegro,MNE,2020,1.1
+Montenegro,MNE,2021,1
+Morocco,MAR,1998,30
+Morocco,MAR,1999,29.2
+Morocco,MAR,2000,28.4
+Morocco,MAR,2001,27.7
+Morocco,MAR,2002,26.9
+Morocco,MAR,2003,26.2
+Morocco,MAR,2004,25.4
+Morocco,MAR,2005,24.6
+Morocco,MAR,2006,23.7
+Morocco,MAR,2007,22.8
+Morocco,MAR,2008,21.6
+Morocco,MAR,2009,20.5
+Morocco,MAR,2010,19.4
+Morocco,MAR,2011,18.3
+Morocco,MAR,2012,17.3
+Morocco,MAR,2013,16.3
+Morocco,MAR,2014,15.4
+Morocco,MAR,2015,14.6
+Morocco,MAR,2016,13.8
+Morocco,MAR,2017,13.2
+Morocco,MAR,2018,12.6
+Morocco,MAR,2019,12.1
+Morocco,MAR,2020,11.5
+Morocco,MAR,2021,11.1
+Mozambique,MOZ,1998,51.6
+Mozambique,MOZ,1999,49.6
+Mozambique,MOZ,2000,47.5
+Mozambique,MOZ,2001,45.4
+Mozambique,MOZ,2002,43.5
+Mozambique,MOZ,2003,41.9
+Mozambique,MOZ,2004,40.4
+Mozambique,MOZ,2005,39
+Mozambique,MOZ,2006,37.7
+Mozambique,MOZ,2007,36.6
+Mozambique,MOZ,2008,35.6
+Mozambique,MOZ,2009,34.8
+Mozambique,MOZ,2010,34.2
+Mozambique,MOZ,2011,33.5
+Mozambique,MOZ,2012,32.9
+Mozambique,MOZ,2013,32.4
+Mozambique,MOZ,2014,31.8
+Mozambique,MOZ,2015,31.2
+Mozambique,MOZ,2016,30.5
+Mozambique,MOZ,2017,29.9
+Mozambique,MOZ,2018,29.4
+Mozambique,MOZ,2019,28.7
+Mozambique,MOZ,2020,28.1
+Mozambique,MOZ,2021,27.5
+Myanmar,MMR,1998,39.5
+Myanmar,MMR,1999,38.4
+Myanmar,MMR,2000,37.4
+Myanmar,MMR,2001,36.4
+Myanmar,MMR,2002,35.3
+Myanmar,MMR,2003,34.4
+Myanmar,MMR,2004,33.4
+Myanmar,MMR,2005,32.5
+Myanmar,MMR,2006,31.6
+Myanmar,MMR,2007,30.7
+Myanmar,MMR,2008,30.4
+Myanmar,MMR,2009,29.1
+Myanmar,MMR,2010,28.4
+Myanmar,MMR,2011,27.7
+Myanmar,MMR,2012,27
+Myanmar,MMR,2013,26.4
+Myanmar,MMR,2014,25.7
+Myanmar,MMR,2015,25
+Myanmar,MMR,2016,24.4
+Myanmar,MMR,2017,23.8
+Myanmar,MMR,2018,23.2
+Myanmar,MMR,2019,22.6
+Myanmar,MMR,2020,22.2
+Myanmar,MMR,2021,21.7
+Namibia,NAM,1998,24.6
+Namibia,NAM,1999,24.2
+Namibia,NAM,2000,23.6
+Namibia,NAM,2001,23
+Namibia,NAM,2002,22.4
+Namibia,NAM,2003,21.8
+Namibia,NAM,2004,21.4
+Namibia,NAM,2005,21
+Namibia,NAM,2006,20.8
+Namibia,NAM,2007,20.8
+Namibia,NAM,2008,20.9
+Namibia,NAM,2009,21.1
+Namibia,NAM,2010,21.3
+Namibia,NAM,2011,21.5
+Namibia,NAM,2012,21.6
+Namibia,NAM,2013,21.7
+Namibia,NAM,2014,21.7
+Namibia,NAM,2015,21.5
+Namibia,NAM,2016,21.3
+Namibia,NAM,2017,21
+Namibia,NAM,2018,20.6
+Namibia,NAM,2019,20.3
+Namibia,NAM,2020,19.9
+Namibia,NAM,2021,19.5
+Nauru,NRU,1998,26.6
+Nauru,NRU,1999,26.1
+Nauru,NRU,2000,25.6
+Nauru,NRU,2001,25.2
+Nauru,NRU,2002,25
+Nauru,NRU,2003,24.8
+Nauru,NRU,2004,24.7
+Nauru,NRU,2005,24.6
+Nauru,NRU,2006,24.5
+Nauru,NRU,2007,24.5
+Nauru,NRU,2008,24.4
+Nauru,NRU,2009,24.2
+Nauru,NRU,2010,24
+Nauru,NRU,2011,23.7
+Nauru,NRU,2012,23.1
+Nauru,NRU,2013,22.6
+Nauru,NRU,2014,22
+Nauru,NRU,2015,21.4
+Nauru,NRU,2016,20.8
+Nauru,NRU,2017,20.1
+Nauru,NRU,2018,19.5
+Nauru,NRU,2019,18.9
+Nauru,NRU,2020,18.3
+Nauru,NRU,2021,17.7
+Nepal,NPL,1998,42.4
+Nepal,NPL,1999,40.7
+Nepal,NPL,2000,39.2
+Nepal,NPL,2001,37.7
+Nepal,NPL,2002,36.2
+Nepal,NPL,2003,34.8
+Nepal,NPL,2004,33.4
+Nepal,NPL,2005,32.1
+Nepal,NPL,2006,30.9
+Nepal,NPL,2007,29.7
+Nepal,NPL,2008,28.6
+Nepal,NPL,2009,27.5
+Nepal,NPL,2010,26.4
+Nepal,NPL,2011,25.3
+Nepal,NPL,2012,24.2
+Nepal,NPL,2013,23.2
+Nepal,NPL,2014,22.3
+Nepal,NPL,2015,21.2
+Nepal,NPL,2016,20.1
+Nepal,NPL,2017,19.1
+Nepal,NPL,2018,18.3
+Nepal,NPL,2019,17.5
+Nepal,NPL,2020,16.8
+Nepal,NPL,2021,16.2
+Netherlands,NLD,1998,3.7
+Netherlands,NLD,1999,3.8
+Netherlands,NLD,2000,3.8
+Netherlands,NLD,2001,3.8
+Netherlands,NLD,2002,3.7
+Netherlands,NLD,2003,3.6
+Netherlands,NLD,2004,3.5
+Netherlands,NLD,2005,3.4
+Netherlands,NLD,2006,3.3
+Netherlands,NLD,2007,3.2
+Netherlands,NLD,2008,3
+Netherlands,NLD,2009,2.9
+Netherlands,NLD,2010,2.8
+Netherlands,NLD,2011,2.7
+Netherlands,NLD,2012,2.7
+Netherlands,NLD,2013,2.7
+Netherlands,NLD,2014,2.7
+Netherlands,NLD,2015,2.6
+Netherlands,NLD,2016,2.6
+Netherlands,NLD,2017,2.6
+Netherlands,NLD,2018,2.6
+Netherlands,NLD,2019,2.6
+Netherlands,NLD,2020,2.7
+Netherlands,NLD,2021,2.7
+New Zealand,NZL,1998,3.5
+New Zealand,NZL,1999,3.5
+New Zealand,NZL,2000,3.5
+New Zealand,NZL,2001,3.5
+New Zealand,NZL,2002,3.5
+New Zealand,NZL,2003,3.4
+New Zealand,NZL,2004,3.3
+New Zealand,NZL,2005,3.1
+New Zealand,NZL,2006,3
+New Zealand,NZL,2007,2.9
+New Zealand,NZL,2008,2.9
+New Zealand,NZL,2009,3.1
+New Zealand,NZL,2010,3.2
+New Zealand,NZL,2011,3.3
+New Zealand,NZL,2012,3.3
+New Zealand,NZL,2013,3.3
+New Zealand,NZL,2014,3.2
+New Zealand,NZL,2015,3.1
+New Zealand,NZL,2016,3
+New Zealand,NZL,2017,2.8
+New Zealand,NZL,2018,2.7
+New Zealand,NZL,2019,2.7
+New Zealand,NZL,2020,2.6
+New Zealand,NZL,2021,2.5
+Nicaragua,NIC,1998,18.1
+Nicaragua,NIC,1999,17.4
+Nicaragua,NIC,2000,16.9
+Nicaragua,NIC,2001,16.4
+Nicaragua,NIC,2002,15.8
+Nicaragua,NIC,2003,15.3
+Nicaragua,NIC,2004,14.9
+Nicaragua,NIC,2005,14.6
+Nicaragua,NIC,2006,14.4
+Nicaragua,NIC,2007,14.2
+Nicaragua,NIC,2008,14
+Nicaragua,NIC,2009,13.8
+Nicaragua,NIC,2010,13.6
+Nicaragua,NIC,2011,13.3
+Nicaragua,NIC,2012,13
+Nicaragua,NIC,2013,12.7
+Nicaragua,NIC,2014,12.2
+Nicaragua,NIC,2015,11.6
+Nicaragua,NIC,2016,10.9
+Nicaragua,NIC,2017,10.1
+Nicaragua,NIC,2018,9.3
+Nicaragua,NIC,2019,8.6
+Nicaragua,NIC,2020,7.9
+Nicaragua,NIC,2021,7.4
+Niger,NER,1998,46.7
+Niger,NER,1999,45.5
+Niger,NER,2000,44.1
+Niger,NER,2001,42.7
+Niger,NER,2002,41.3
+Niger,NER,2003,40
+Niger,NER,2004,38.8
+Niger,NER,2005,37.7
+Niger,NER,2006,36.8
+Niger,NER,2007,36
+Niger,NER,2008,35.2
+Niger,NER,2009,34.6
+Niger,NER,2010,34.2
+Niger,NER,2011,33.9
+Niger,NER,2012,33.7
+Niger,NER,2013,33.7
+Niger,NER,2014,33.7
+Niger,NER,2015,33.8
+Niger,NER,2016,33.8
+Niger,NER,2017,33.9
+Niger,NER,2018,33.9
+Niger,NER,2019,33.9
+Niger,NER,2020,33.9
+Niger,NER,2021,33.7
+Nigeria,NGA,1998,48.2
+Nigeria,NGA,1999,47.4
+Nigeria,NGA,2000,46.4
+Nigeria,NGA,2001,45.4
+Nigeria,NGA,2002,44.2
+Nigeria,NGA,2003,43
+Nigeria,NGA,2004,41.9
+Nigeria,NGA,2005,40.9
+Nigeria,NGA,2006,40.1
+Nigeria,NGA,2007,39.4
+Nigeria,NGA,2008,38.9
+Nigeria,NGA,2009,38.5
+Nigeria,NGA,2010,38.1
+Nigeria,NGA,2011,37.8
+Nigeria,NGA,2012,37.6
+Nigeria,NGA,2013,37.4
+Nigeria,NGA,2014,37.4
+Nigeria,NGA,2015,37.2
+Nigeria,NGA,2016,37
+Nigeria,NGA,2017,36.7
+Nigeria,NGA,2018,36.4
+Nigeria,NGA,2019,35.9
+Nigeria,NGA,2020,35.5
+Nigeria,NGA,2021,34.9
+North Macedonia,MKD,1998,10.5
+North Macedonia,MKD,1999,10.1
+North Macedonia,MKD,2000,9.4
+North Macedonia,MKD,2001,8.9
+North Macedonia,MKD,2002,8.8
+North Macedonia,MKD,2003,9
+North Macedonia,MKD,2004,9.1
+North Macedonia,MKD,2005,9
+North Macedonia,MKD,2006,8.6
+North Macedonia,MKD,2007,8.2
+North Macedonia,MKD,2008,7.8
+North Macedonia,MKD,2009,7.3
+North Macedonia,MKD,2010,6.9
+North Macedonia,MKD,2011,6.7
+North Macedonia,MKD,2012,6.8
+North Macedonia,MKD,2013,7.3
+North Macedonia,MKD,2014,7.9
+North Macedonia,MKD,2015,8.1
+North Macedonia,MKD,2016,7.8
+North Macedonia,MKD,2017,6.8
+North Macedonia,MKD,2018,5.5
+North Macedonia,MKD,2019,4.5
+North Macedonia,MKD,2020,3.9
+North Macedonia,MKD,2021,3.4
+Norway,NOR,1998,2.8
+Norway,NOR,1999,2.7
+Norway,NOR,2000,2.7
+Norway,NOR,2001,2.6
+Norway,NOR,2002,2.5
+Norway,NOR,2003,2.4
+Norway,NOR,2004,2.4
+Norway,NOR,2005,2.3
+Norway,NOR,2006,2.2
+Norway,NOR,2007,2.1
+Norway,NOR,2008,2
+Norway,NOR,2009,2
+Norway,NOR,2010,1.9
+Norway,NOR,2011,1.8
+Norway,NOR,2012,1.8
+Norway,NOR,2013,1.7
+Norway,NOR,2014,1.7
+Norway,NOR,2015,1.6
+Norway,NOR,2016,1.6
+Norway,NOR,2017,1.5
+Norway,NOR,2018,1.4
+Norway,NOR,2019,1.4
+Norway,NOR,2020,1.3
+Norway,NOR,2021,1.3
+Oman,OMN,1998,8.5
+Oman,OMN,1999,7.9
+Oman,OMN,2000,7.3
+Oman,OMN,2001,6.9
+Oman,OMN,2002,6.5
+Oman,OMN,2003,6.2
+Oman,OMN,2004,5.9
+Oman,OMN,2005,5.7
+Oman,OMN,2006,5.6
+Oman,OMN,2007,5.5
+Oman,OMN,2008,5.4
+Oman,OMN,2009,5.3
+Oman,OMN,2010,5.3
+Oman,OMN,2011,5.2
+Oman,OMN,2012,5.2
+Oman,OMN,2013,5.1
+Oman,OMN,2014,5
+Oman,OMN,2015,5
+Oman,OMN,2016,5
+Oman,OMN,2017,4.9
+Oman,OMN,2018,4.8
+Oman,OMN,2019,4.8
+Oman,OMN,2020,4.7
+Oman,OMN,2021,4.6
+Pakistan,PAK,1998,59.1
+Pakistan,PAK,1999,58
+Pakistan,PAK,2000,57
+Pakistan,PAK,2001,56
+Pakistan,PAK,2002,55.1
+Pakistan,PAK,2003,54.3
+Pakistan,PAK,2004,53.5
+Pakistan,PAK,2005,52.8
+Pakistan,PAK,2006,52.2
+Pakistan,PAK,2007,51.6
+Pakistan,PAK,2008,51.1
+Pakistan,PAK,2009,50.5
+Pakistan,PAK,2010,49.8
+Pakistan,PAK,2011,49
+Pakistan,PAK,2012,48.2
+Pakistan,PAK,2013,47.2
+Pakistan,PAK,2014,46.2
+Pakistan,PAK,2015,45.2
+Pakistan,PAK,2016,44.3
+Pakistan,PAK,2017,43.3
+Pakistan,PAK,2018,42.3
+Pakistan,PAK,2019,41.3
+Pakistan,PAK,2020,40.4
+Pakistan,PAK,2021,39.4
+Palau,PLW,1998,16
+Palau,PLW,1999,15.6
+Palau,PLW,2000,15.2
+Palau,PLW,2001,15
+Palau,PLW,2002,14.7
+Palau,PLW,2003,14.5
+Palau,PLW,2004,14.2
+Palau,PLW,2005,13.9
+Palau,PLW,2006,13.6
+Palau,PLW,2007,13.3
+Palau,PLW,2008,12.9
+Palau,PLW,2009,12.6
+Palau,PLW,2010,12.2
+Palau,PLW,2011,11.9
+Palau,PLW,2012,11.5
+Palau,PLW,2013,11.2
+Palau,PLW,2014,10.8
+Palau,PLW,2015,10.5
+Palau,PLW,2016,10.1
+Palau,PLW,2017,9.8
+Palau,PLW,2018,9.4
+Palau,PLW,2019,9.1
+Palau,PLW,2020,8.8
+Palau,PLW,2021,8.5
+Panama,PAN,1998,15.2
+Panama,PAN,1999,15
+Panama,PAN,2000,14.7
+Panama,PAN,2001,14.3
+Panama,PAN,2002,14
+Panama,PAN,2003,13.6
+Panama,PAN,2004,13.2
+Panama,PAN,2005,12.9
+Panama,PAN,2006,12.6
+Panama,PAN,2007,12.2
+Panama,PAN,2008,11.8
+Panama,PAN,2009,11.5
+Panama,PAN,2010,11.1
+Panama,PAN,2011,10.8
+Panama,PAN,2012,10.4
+Panama,PAN,2013,10.1
+Panama,PAN,2014,9.8
+Panama,PAN,2015,9.5
+Panama,PAN,2016,9.1
+Panama,PAN,2017,8.9
+Panama,PAN,2018,8.6
+Panama,PAN,2019,8.3
+Panama,PAN,2020,8
+Panama,PAN,2021,7.8
+Papua New Guinea,PNG,1998,31.2
+Papua New Guinea,PNG,1999,30.7
+Papua New Guinea,PNG,2000,30.2
+Papua New Guinea,PNG,2001,29.6
+Papua New Guinea,PNG,2002,29.1
+Papua New Guinea,PNG,2003,28.6
+Papua New Guinea,PNG,2004,28.2
+Papua New Guinea,PNG,2005,27.9
+Papua New Guinea,PNG,2006,27.7
+Papua New Guinea,PNG,2007,27.4
+Papua New Guinea,PNG,2008,27.1
+Papua New Guinea,PNG,2009,26.6
+Papua New Guinea,PNG,2010,26.2
+Papua New Guinea,PNG,2011,25.7
+Papua New Guinea,PNG,2012,25.2
+Papua New Guinea,PNG,2013,24.8
+Papua New Guinea,PNG,2014,24.3
+Papua New Guinea,PNG,2015,23.8
+Papua New Guinea,PNG,2016,23.4
+Papua New Guinea,PNG,2017,23
+Papua New Guinea,PNG,2018,22.6
+Papua New Guinea,PNG,2019,22.1
+Papua New Guinea,PNG,2020,21.6
+Papua New Guinea,PNG,2021,21.2
+Paraguay,PRY,1998,18.8
+Paraguay,PRY,1999,18.5
+Paraguay,PRY,2000,18.1
+Paraguay,PRY,2001,17.7
+Paraguay,PRY,2002,17.2
+Paraguay,PRY,2003,16.8
+Paraguay,PRY,2004,16.4
+Paraguay,PRY,2005,16
+Paraguay,PRY,2006,15.6
+Paraguay,PRY,2007,15.2
+Paraguay,PRY,2008,14.7
+Paraguay,PRY,2009,14.3
+Paraguay,PRY,2010,13.8
+Paraguay,PRY,2011,13.4
+Paraguay,PRY,2012,13
+Paraguay,PRY,2013,12.6
+Paraguay,PRY,2014,12.2
+Paraguay,PRY,2015,11.8
+Paraguay,PRY,2016,11.4
+Paraguay,PRY,2017,11.1
+Paraguay,PRY,2018,10.7
+Paraguay,PRY,2019,10.3
+Paraguay,PRY,2020,10
+Paraguay,PRY,2021,9.7
+Peru,PER,1998,18.6
+Peru,PER,1999,17.5
+Peru,PER,2000,16.5
+Peru,PER,2001,15.4
+Peru,PER,2002,14.4
+Peru,PER,2003,13.5
+Peru,PER,2004,12.8
+Peru,PER,2005,12.2
+Peru,PER,2006,11.6
+Peru,PER,2007,11.1
+Peru,PER,2008,10.5
+Peru,PER,2009,10.1
+Peru,PER,2010,9.7
+Peru,PER,2011,9.3
+Peru,PER,2012,9
+Peru,PER,2013,8.7
+Peru,PER,2014,8.5
+Peru,PER,2015,8.2
+Peru,PER,2016,8.1
+Peru,PER,2017,7.9
+Peru,PER,2018,7.7
+Peru,PER,2019,7.5
+Peru,PER,2020,7.3
+Peru,PER,2021,7.1
+Philippines,PHL,1998,16.6
+Philippines,PHL,1999,16.6
+Philippines,PHL,2000,16.5
+Philippines,PHL,2001,16.5
+Philippines,PHL,2002,16.3
+Philippines,PHL,2003,16.2
+Philippines,PHL,2004,16
+Philippines,PHL,2005,15.8
+Philippines,PHL,2006,15.6
+Philippines,PHL,2007,15.4
+Philippines,PHL,2008,15.2
+Philippines,PHL,2009,15.1
+Philippines,PHL,2010,14.9
+Philippines,PHL,2011,14.8
+Philippines,PHL,2012,14.6
+Philippines,PHL,2013,14.5
+Philippines,PHL,2014,14.4
+Philippines,PHL,2015,14.2
+Philippines,PHL,2016,14
+Philippines,PHL,2017,13.7
+Philippines,PHL,2018,13.3
+Philippines,PHL,2019,13
+Philippines,PHL,2020,12.7
+Philippines,PHL,2021,12.3
+Poland,POL,1998,6.9
+Poland,POL,1999,6.2
+Poland,POL,2000,5.8
+Poland,POL,2001,5.4
+Poland,POL,2002,5.2
+Poland,POL,2003,5
+Poland,POL,2004,4.8
+Poland,POL,2005,4.6
+Poland,POL,2006,4.4
+Poland,POL,2007,4.2
+Poland,POL,2008,4
+Poland,POL,2009,3.8
+Poland,POL,2010,3.6
+Poland,POL,2011,3.4
+Poland,POL,2012,3.2
+Poland,POL,2013,3.1
+Poland,POL,2014,3
+Poland,POL,2015,2.9
+Poland,POL,2016,2.9
+Poland,POL,2017,2.8
+Poland,POL,2018,2.8
+Poland,POL,2019,2.7
+Poland,POL,2020,2.7
+Poland,POL,2021,2.8
+Portugal,PRT,1998,3.8
+Portugal,PRT,1999,3.6
+Portugal,PRT,2000,3.4
+Portugal,PRT,2001,3.2
+Portugal,PRT,2002,3
+Portugal,PRT,2003,2.8
+Portugal,PRT,2004,2.6
+Portugal,PRT,2005,2.3
+Portugal,PRT,2006,2.2
+Portugal,PRT,2007,2.1
+Portugal,PRT,2008,2.1
+Portugal,PRT,2009,2.1
+Portugal,PRT,2010,2.1
+Portugal,PRT,2011,2.1
+Portugal,PRT,2012,2.1
+Portugal,PRT,2013,2.1
+Portugal,PRT,2014,2.1
+Portugal,PRT,2015,2.1
+Portugal,PRT,2016,2.1
+Portugal,PRT,2017,2
+Portugal,PRT,2018,2
+Portugal,PRT,2019,1.9
+Portugal,PRT,2020,1.8
+Portugal,PRT,2021,1.7
+Qatar,QAT,1998,7.3
+Qatar,QAT,1999,7
+Qatar,QAT,2000,6.6
+Qatar,QAT,2001,6.3
+Qatar,QAT,2002,6.1
+Qatar,QAT,2003,5.9
+Qatar,QAT,2004,5.8
+Qatar,QAT,2005,5.5
+Qatar,QAT,2006,5.3
+Qatar,QAT,2007,5.1
+Qatar,QAT,2008,4.9
+Qatar,QAT,2009,4.7
+Qatar,QAT,2010,4.5
+Qatar,QAT,2011,4.4
+Qatar,QAT,2012,4.2
+Qatar,QAT,2013,4.1
+Qatar,QAT,2014,4
+Qatar,QAT,2015,3.9
+Qatar,QAT,2016,3.9
+Qatar,QAT,2017,3.8
+Qatar,QAT,2018,3.7
+Qatar,QAT,2019,3.6
+Qatar,QAT,2020,3.5
+Qatar,QAT,2021,3.3
+Romania,ROU,1998,12.1
+Romania,ROU,1999,11.2
+Romania,ROU,2000,10.5
+Romania,ROU,2001,10
+Romania,ROU,2002,9.7
+Romania,ROU,2003,9.5
+Romania,ROU,2004,9.1
+Romania,ROU,2005,8.5
+Romania,ROU,2006,7.7
+Romania,ROU,2007,6.9
+Romania,ROU,2008,6.2
+Romania,ROU,2009,5.8
+Romania,ROU,2010,5.4
+Romania,ROU,2011,5.3
+Romania,ROU,2012,5.1
+Romania,ROU,2013,4.9
+Romania,ROU,2014,4.7
+Romania,ROU,2015,4.3
+Romania,ROU,2016,3.9
+Romania,ROU,2017,3.6
+Romania,ROU,2018,3.4
+Romania,ROU,2019,3.3
+Romania,ROU,2020,3.2
+Romania,ROU,2021,3.2
+Russian Federation,RUS,1998,9.6
+Russian Federation,RUS,1999,9.3
+Russian Federation,RUS,2000,9
+Russian Federation,RUS,2001,8.6
+Russian Federation,RUS,2002,8
+Russian Federation,RUS,2003,7.4
+Russian Federation,RUS,2004,6.8
+Russian Federation,RUS,2005,6.4
+Russian Federation,RUS,2006,5.9
+Russian Federation,RUS,2007,5.4
+Russian Federation,RUS,2008,4.9
+Russian Federation,RUS,2009,4.6
+Russian Federation,RUS,2010,4.6
+Russian Federation,RUS,2011,4.7
+Russian Federation,RUS,2012,4.7
+Russian Federation,RUS,2013,4.6
+Russian Federation,RUS,2014,4.4
+Russian Federation,RUS,2015,4
+Russian Federation,RUS,2016,3.5
+Russian Federation,RUS,2017,3.2
+Russian Federation,RUS,2018,2.9
+Russian Federation,RUS,2019,2.6
+Russian Federation,RUS,2020,2.3
+Russian Federation,RUS,2021,2
+Rwanda,RWA,1998,48.5
+Rwanda,RWA,1999,46.3
+Rwanda,RWA,2000,43.6
+Rwanda,RWA,2001,40.6
+Rwanda,RWA,2002,37.6
+Rwanda,RWA,2003,34.9
+Rwanda,RWA,2004,32.4
+Rwanda,RWA,2005,30.2
+Rwanda,RWA,2006,28.3
+Rwanda,RWA,2007,26.7
+Rwanda,RWA,2008,25.4
+Rwanda,RWA,2009,24.2
+Rwanda,RWA,2010,23.2
+Rwanda,RWA,2011,22.3
+Rwanda,RWA,2012,21.5
+Rwanda,RWA,2013,20.8
+Rwanda,RWA,2014,20.3
+Rwanda,RWA,2015,19.8
+Rwanda,RWA,2016,19.4
+Rwanda,RWA,2017,19
+Rwanda,RWA,2018,18.6
+Rwanda,RWA,2019,18.3
+Rwanda,RWA,2020,17.9
+Rwanda,RWA,2021,17.5
+Samoa,WSM,1998,9.5
+Samoa,WSM,1999,9.1
+Samoa,WSM,2000,8.8
+Samoa,WSM,2001,8.5
+Samoa,WSM,2002,8.2
+Samoa,WSM,2003,8
+Samoa,WSM,2004,7.8
+Samoa,WSM,2005,7.7
+Samoa,WSM,2006,7.7
+Samoa,WSM,2007,7.7
+Samoa,WSM,2008,7.8
+Samoa,WSM,2009,7.9
+Samoa,WSM,2010,7.8
+Samoa,WSM,2011,7.8
+Samoa,WSM,2012,7.7
+Samoa,WSM,2013,7.6
+Samoa,WSM,2014,7.5
+Samoa,WSM,2015,7.4
+Samoa,WSM,2016,7.3
+Samoa,WSM,2017,7.2
+Samoa,WSM,2018,7
+Samoa,WSM,2019,6.9
+Samoa,WSM,2020,6.7
+Samoa,WSM,2021,6.6
+San Marino,SMR,1998,3.4
+San Marino,SMR,1999,3.1
+San Marino,SMR,2000,2.8
+San Marino,SMR,2001,2.6
+San Marino,SMR,2002,2.4
+San Marino,SMR,2003,2.2
+San Marino,SMR,2004,2
+San Marino,SMR,2005,1.9
+San Marino,SMR,2006,1.7
+San Marino,SMR,2007,1.6
+San Marino,SMR,2008,1.5
+San Marino,SMR,2009,1.4
+San Marino,SMR,2010,1.3
+San Marino,SMR,2011,1.3
+San Marino,SMR,2012,1.2
+San Marino,SMR,2013,1.1
+San Marino,SMR,2014,1.1
+San Marino,SMR,2015,1
+San Marino,SMR,2016,1
+San Marino,SMR,2017,0.9
+San Marino,SMR,2018,0.9
+San Marino,SMR,2019,0.9
+San Marino,SMR,2020,0.8
+San Marino,SMR,2021,0.8
+Sao Tome and Principe,STP,1998,22.8
+Sao Tome and Principe,STP,1999,22.5
+Sao Tome and Principe,STP,2000,22.2
+Sao Tome and Principe,STP,2001,21.8
+Sao Tome and Principe,STP,2002,21.3
+Sao Tome and Principe,STP,2003,20.6
+Sao Tome and Principe,STP,2004,19.9
+Sao Tome and Principe,STP,2005,19.2
+Sao Tome and Principe,STP,2006,18.5
+Sao Tome and Principe,STP,2007,18
+Sao Tome and Principe,STP,2008,17.4
+Sao Tome and Principe,STP,2009,16.9
+Sao Tome and Principe,STP,2010,16.3
+Sao Tome and Principe,STP,2011,15.3
+Sao Tome and Principe,STP,2012,14.3
+Sao Tome and Principe,STP,2013,13.3
+Sao Tome and Principe,STP,2014,12.3
+Sao Tome and Principe,STP,2015,11.3
+Sao Tome and Principe,STP,2016,10.4
+Sao Tome and Principe,STP,2017,9.6
+Sao Tome and Principe,STP,2018,9
+Sao Tome and Principe,STP,2019,8.4
+Sao Tome and Principe,STP,2020,8
+Sao Tome and Principe,STP,2021,7.6
+Saudi Arabia,SAU,1998,13.2
+Saudi Arabia,SAU,1999,12.4
+Saudi Arabia,SAU,2000,11.6
+Saudi Arabia,SAU,2001,11
+Saudi Arabia,SAU,2002,10.3
+Saudi Arabia,SAU,2003,9.7
+Saudi Arabia,SAU,2004,9.2
+Saudi Arabia,SAU,2005,8.6
+Saudi Arabia,SAU,2006,8.1
+Saudi Arabia,SAU,2007,7.7
+Saudi Arabia,SAU,2008,7.2
+Saudi Arabia,SAU,2009,6.8
+Saudi Arabia,SAU,2010,6.4
+Saudi Arabia,SAU,2011,6
+Saudi Arabia,SAU,2012,5.6
+Saudi Arabia,SAU,2013,5.3
+Saudi Arabia,SAU,2014,4.9
+Saudi Arabia,SAU,2015,4.6
+Saudi Arabia,SAU,2016,4.3
+Saudi Arabia,SAU,2017,4
+Saudi Arabia,SAU,2018,3.8
+Saudi Arabia,SAU,2019,3.6
+Saudi Arabia,SAU,2020,3.4
+Saudi Arabia,SAU,2021,3.3
+Senegal,SEN,1998,39.6
+Senegal,SEN,1999,39
+Senegal,SEN,2000,38.1
+Senegal,SEN,2001,37.1
+Senegal,SEN,2002,35.9
+Senegal,SEN,2003,34.7
+Senegal,SEN,2004,33.4
+Senegal,SEN,2005,32.1
+Senegal,SEN,2006,30.8
+Senegal,SEN,2007,29.7
+Senegal,SEN,2008,28.6
+Senegal,SEN,2009,27.7
+Senegal,SEN,2010,27
+Senegal,SEN,2011,26.3
+Senegal,SEN,2012,25.8
+Senegal,SEN,2013,25.3
+Senegal,SEN,2014,24.9
+Senegal,SEN,2015,24.5
+Senegal,SEN,2016,24.1
+Senegal,SEN,2017,23.5
+Senegal,SEN,2018,23
+Senegal,SEN,2019,22.3
+Senegal,SEN,2020,21.7
+Senegal,SEN,2021,21.1
+Serbia,SRB,1998,8.8
+Serbia,SRB,1999,8.2
+Serbia,SRB,2000,7.7
+Serbia,SRB,2001,7.4
+Serbia,SRB,2002,7
+Serbia,SRB,2003,6.5
+Serbia,SRB,2004,6
+Serbia,SRB,2005,5.6
+Serbia,SRB,2006,5.3
+Serbia,SRB,2007,5.1
+Serbia,SRB,2008,4.9
+Serbia,SRB,2009,4.9
+Serbia,SRB,2010,4.8
+Serbia,SRB,2011,4.6
+Serbia,SRB,2012,4.5
+Serbia,SRB,2013,4.4
+Serbia,SRB,2014,4.2
+Serbia,SRB,2015,4
+Serbia,SRB,2016,3.8
+Serbia,SRB,2017,3.7
+Serbia,SRB,2018,3.7
+Serbia,SRB,2019,3.6
+Serbia,SRB,2020,3.6
+Serbia,SRB,2021,3.6
+Seychelles,SYC,1998,8.8
+Seychelles,SYC,1999,8.8
+Seychelles,SYC,2000,8.8
+Seychelles,SYC,2001,8.8
+Seychelles,SYC,2002,8.8
+Seychelles,SYC,2003,8.8
+Seychelles,SYC,2004,8.8
+Seychelles,SYC,2005,8.7
+Seychelles,SYC,2006,8.7
+Seychelles,SYC,2007,8.7
+Seychelles,SYC,2008,8.8
+Seychelles,SYC,2009,8.8
+Seychelles,SYC,2010,8.8
+Seychelles,SYC,2011,8.9
+Seychelles,SYC,2012,8.9
+Seychelles,SYC,2013,8.9
+Seychelles,SYC,2014,9
+Seychelles,SYC,2015,9
+Seychelles,SYC,2016,9
+Seychelles,SYC,2017,9
+Seychelles,SYC,2018,9
+Seychelles,SYC,2019,9
+Seychelles,SYC,2020,8.8
+Seychelles,SYC,2021,8.6
+Sierra Leone,SLE,1998,49.6
+Sierra Leone,SLE,1999,49
+Sierra Leone,SLE,2000,48.4
+Sierra Leone,SLE,2001,47.8
+Sierra Leone,SLE,2002,47.2
+Sierra Leone,SLE,2003,46.6
+Sierra Leone,SLE,2004,46
+Sierra Leone,SLE,2005,45.2
+Sierra Leone,SLE,2006,44.2
+Sierra Leone,SLE,2007,43.2
+Sierra Leone,SLE,2008,42
+Sierra Leone,SLE,2009,40.8
+Sierra Leone,SLE,2010,39.6
+Sierra Leone,SLE,2011,38.5
+Sierra Leone,SLE,2012,37.5
+Sierra Leone,SLE,2013,36.6
+Sierra Leone,SLE,2014,35.8
+Sierra Leone,SLE,2015,35.1
+Sierra Leone,SLE,2016,34.2
+Sierra Leone,SLE,2017,33.5
+Sierra Leone,SLE,2018,32.9
+Sierra Leone,SLE,2019,32.2
+Sierra Leone,SLE,2020,31.6
+Sierra Leone,SLE,2021,30.9
+Singapore,SGP,1998,1.9
+Singapore,SGP,1999,1.8
+Singapore,SGP,2000,1.6
+Singapore,SGP,2001,1.5
+Singapore,SGP,2002,1.4
+Singapore,SGP,2003,1.3
+Singapore,SGP,2004,1.3
+Singapore,SGP,2005,1.3
+Singapore,SGP,2006,1.2
+Singapore,SGP,2007,1.2
+Singapore,SGP,2008,1.2
+Singapore,SGP,2009,1.2
+Singapore,SGP,2010,1.1
+Singapore,SGP,2011,1.1
+Singapore,SGP,2012,1.1
+Singapore,SGP,2013,1.1
+Singapore,SGP,2014,1.1
+Singapore,SGP,2015,1.1
+Singapore,SGP,2016,1.1
+Singapore,SGP,2017,1
+Singapore,SGP,2018,1
+Singapore,SGP,2019,0.9
+Singapore,SGP,2020,0.8
+Singapore,SGP,2021,0.7
+Slovak Republic,SVK,1998,5.6
+Slovak Republic,SVK,1999,5.3
+Slovak Republic,SVK,2000,5
+Slovak Republic,SVK,2001,4.8
+Slovak Republic,SVK,2002,4.6
+Slovak Republic,SVK,2003,4.3
+Slovak Republic,SVK,2004,4
+Slovak Republic,SVK,2005,3.8
+Slovak Republic,SVK,2006,3.6
+Slovak Republic,SVK,2007,3.5
+Slovak Republic,SVK,2008,3.4
+Slovak Republic,SVK,2009,3.4
+Slovak Republic,SVK,2010,3.3
+Slovak Republic,SVK,2011,3.3
+Slovak Republic,SVK,2012,3.3
+Slovak Republic,SVK,2013,3.2
+Slovak Republic,SVK,2014,3.1
+Slovak Republic,SVK,2015,3.1
+Slovak Republic,SVK,2016,3
+Slovak Republic,SVK,2017,3
+Slovak Republic,SVK,2018,2.9
+Slovak Republic,SVK,2019,2.9
+Slovak Republic,SVK,2020,2.9
+Slovak Republic,SVK,2021,2.8
+Slovenia,SVN,1998,3.5
+Slovenia,SVN,1999,3.4
+Slovenia,SVN,2000,3.2
+Slovenia,SVN,2001,3.1
+Slovenia,SVN,2002,2.9
+Slovenia,SVN,2003,2.8
+Slovenia,SVN,2004,2.6
+Slovenia,SVN,2005,2.5
+Slovenia,SVN,2006,2.3
+Slovenia,SVN,2007,2.2
+Slovenia,SVN,2008,2.1
+Slovenia,SVN,2009,1.9
+Slovenia,SVN,2010,1.9
+Slovenia,SVN,2011,1.8
+Slovenia,SVN,2012,1.7
+Slovenia,SVN,2013,1.7
+Slovenia,SVN,2014,1.6
+Slovenia,SVN,2015,1.6
+Slovenia,SVN,2016,1.5
+Slovenia,SVN,2017,1.4
+Slovenia,SVN,2018,1.4
+Slovenia,SVN,2019,1.4
+Slovenia,SVN,2020,1.3
+Slovenia,SVN,2021,1.3
+Solomon Islands,SLB,1998,13
+Solomon Islands,SLB,1999,12.9
+Solomon Islands,SLB,2000,12.8
+Solomon Islands,SLB,2001,12.7
+Solomon Islands,SLB,2002,12.6
+Solomon Islands,SLB,2003,12.5
+Solomon Islands,SLB,2004,12.3
+Solomon Islands,SLB,2005,12.1
+Solomon Islands,SLB,2006,11.9
+Solomon Islands,SLB,2007,11.7
+Solomon Islands,SLB,2008,11.4
+Solomon Islands,SLB,2009,11.1
+Solomon Islands,SLB,2010,10.7
+Solomon Islands,SLB,2011,10.4
+Solomon Islands,SLB,2012,10.1
+Solomon Islands,SLB,2013,9.8
+Solomon Islands,SLB,2014,9.5
+Solomon Islands,SLB,2015,9.2
+Solomon Islands,SLB,2016,8.9
+Solomon Islands,SLB,2017,8.6
+Solomon Islands,SLB,2018,8.4
+Solomon Islands,SLB,2019,8.1
+Solomon Islands,SLB,2020,7.8
+Solomon Islands,SLB,2021,7.6
+Somalia,SOM,1998,44.2
+Somalia,SOM,1999,44.4
+Somalia,SOM,2000,44.7
+Somalia,SOM,2001,45.1
+Somalia,SOM,2002,45.4
+Somalia,SOM,2003,45.8
+Somalia,SOM,2004,45.9
+Somalia,SOM,2005,45.9
+Somalia,SOM,2006,45.8
+Somalia,SOM,2007,45.5
+Somalia,SOM,2008,45
+Somalia,SOM,2009,44.4
+Somalia,SOM,2010,43.7
+Somalia,SOM,2011,42.8
+Somalia,SOM,2012,42.1
+Somalia,SOM,2013,41.3
+Somalia,SOM,2014,40.7
+Somalia,SOM,2015,40
+Somalia,SOM,2016,39.3
+Somalia,SOM,2017,38.5
+Somalia,SOM,2018,37.8
+Somalia,SOM,2019,37.2
+Somalia,SOM,2020,36.6
+Somalia,SOM,2021,36
+South Africa,ZAF,1998,18.7
+South Africa,ZAF,1999,18.1
+South Africa,ZAF,2000,17.5
+South Africa,ZAF,2001,16.9
+South Africa,ZAF,2002,16.4
+South Africa,ZAF,2003,15.8
+South Africa,ZAF,2004,15.2
+South Africa,ZAF,2005,14.7
+South Africa,ZAF,2006,14.2
+South Africa,ZAF,2007,13.7
+South Africa,ZAF,2008,13.2
+South Africa,ZAF,2009,12.7
+South Africa,ZAF,2010,12.2
+South Africa,ZAF,2011,11.7
+South Africa,ZAF,2012,11.3
+South Africa,ZAF,2013,11.1
+South Africa,ZAF,2014,11
+South Africa,ZAF,2015,11
+South Africa,ZAF,2016,11.1
+South Africa,ZAF,2017,11.1
+South Africa,ZAF,2018,11.2
+South Africa,ZAF,2019,11.1
+South Africa,ZAF,2020,11.1
+South Africa,ZAF,2021,11
+South Sudan,SSD,1998,58.3
+South Sudan,SSD,1999,57.3
+South Sudan,SSD,2000,56
+South Sudan,SSD,2001,54.8
+South Sudan,SSD,2002,53.5
+South Sudan,SSD,2003,52.2
+South Sudan,SSD,2004,50.9
+South Sudan,SSD,2005,49.7
+South Sudan,SSD,2006,48.4
+South Sudan,SSD,2007,47.1
+South Sudan,SSD,2008,45.7
+South Sudan,SSD,2009,44.3
+South Sudan,SSD,2010,43
+South Sudan,SSD,2011,41.8
+South Sudan,SSD,2012,40.9
+South Sudan,SSD,2013,40.5
+South Sudan,SSD,2014,40.3
+South Sudan,SSD,2015,40.1
+South Sudan,SSD,2016,40
+South Sudan,SSD,2017,39.9
+South Sudan,SSD,2018,39.8
+South Sudan,SSD,2019,39.8
+South Sudan,SSD,2020,39.8
+South Sudan,SSD,2021,39.6
+Spain,ESP,1998,3
+Spain,ESP,1999,2.9
+Spain,ESP,2000,2.8
+Spain,ESP,2001,2.8
+Spain,ESP,2002,2.7
+Spain,ESP,2003,2.6
+Spain,ESP,2004,2.5
+Spain,ESP,2005,2.4
+Spain,ESP,2006,2.3
+Spain,ESP,2007,2.2
+Spain,ESP,2008,2.2
+Spain,ESP,2009,2.1
+Spain,ESP,2010,2.1
+Spain,ESP,2011,2.1
+Spain,ESP,2012,2.1
+Spain,ESP,2013,2
+Spain,ESP,2014,2
+Spain,ESP,2015,1.9
+Spain,ESP,2016,1.9
+Spain,ESP,2017,1.9
+Spain,ESP,2018,1.9
+Spain,ESP,2019,1.8
+Spain,ESP,2020,1.8
+Spain,ESP,2021,1.8
+Sri Lanka,LKA,1998,11.2
+Sri Lanka,LKA,1999,10.5
+Sri Lanka,LKA,2000,9.8
+Sri Lanka,LKA,2001,9.1
+Sri Lanka,LKA,2002,8.5
+Sri Lanka,LKA,2003,7.9
+Sri Lanka,LKA,2004,7.6
+Sri Lanka,LKA,2005,6.9
+Sri Lanka,LKA,2006,6.7
+Sri Lanka,LKA,2007,6.7
+Sri Lanka,LKA,2008,6.7
+Sri Lanka,LKA,2009,6.7
+Sri Lanka,LKA,2010,6.3
+Sri Lanka,LKA,2011,6.2
+Sri Lanka,LKA,2012,6.1
+Sri Lanka,LKA,2013,5.9
+Sri Lanka,LKA,2014,5.5
+Sri Lanka,LKA,2015,5.1
+Sri Lanka,LKA,2016,4.8
+Sri Lanka,LKA,2017,4.5
+Sri Lanka,LKA,2018,4.3
+Sri Lanka,LKA,2019,4.1
+Sri Lanka,LKA,2020,4
+Sri Lanka,LKA,2021,3.9
+St. Kitts and Nevis,KNA,1998,17.7
+St. Kitts and Nevis,KNA,1999,17.2
+St. Kitts and Nevis,KNA,2000,16.6
+St. Kitts and Nevis,KNA,2001,16
+St. Kitts and Nevis,KNA,2002,15.3
+St. Kitts and Nevis,KNA,2003,14.6
+St. Kitts and Nevis,KNA,2004,13.9
+St. Kitts and Nevis,KNA,2005,13.3
+St. Kitts and Nevis,KNA,2006,12.8
+St. Kitts and Nevis,KNA,2007,12.4
+St. Kitts and Nevis,KNA,2008,12.1
+St. Kitts and Nevis,KNA,2009,11.9
+St. Kitts and Nevis,KNA,2010,11.7
+St. Kitts and Nevis,KNA,2011,11.7
+St. Kitts and Nevis,KNA,2012,11.6
+St. Kitts and Nevis,KNA,2013,11.6
+St. Kitts and Nevis,KNA,2014,11.5
+St. Kitts and Nevis,KNA,2015,11.4
+St. Kitts and Nevis,KNA,2016,11.2
+St. Kitts and Nevis,KNA,2017,10.9
+St. Kitts and Nevis,KNA,2018,10.7
+St. Kitts and Nevis,KNA,2019,10.4
+St. Kitts and Nevis,KNA,2020,10.1
+St. Kitts and Nevis,KNA,2021,9.8
+St. Lucia,LCA,1998,11.1
+St. Lucia,LCA,1999,11.3
+St. Lucia,LCA,2000,11.6
+St. Lucia,LCA,2001,11.9
+St. Lucia,LCA,2002,12.1
+St. Lucia,LCA,2003,12.4
+St. Lucia,LCA,2004,12.6
+St. Lucia,LCA,2005,12.7
+St. Lucia,LCA,2006,12.8
+St. Lucia,LCA,2007,12.8
+St. Lucia,LCA,2008,12.8
+St. Lucia,LCA,2009,12.9
+St. Lucia,LCA,2010,12.9
+St. Lucia,LCA,2011,13
+St. Lucia,LCA,2012,12.9
+St. Lucia,LCA,2013,12.8
+St. Lucia,LCA,2014,12.6
+St. Lucia,LCA,2015,12.4
+St. Lucia,LCA,2016,12.3
+St. Lucia,LCA,2017,12.3
+St. Lucia,LCA,2018,12.4
+St. Lucia,LCA,2019,12.6
+St. Lucia,LCA,2020,12.8
+St. Lucia,LCA,2021,13
+St. Vincent and the Grenadines,VCT,1998,13.2
+St. Vincent and the Grenadines,VCT,1999,13.2
+St. Vincent and the Grenadines,VCT,2000,13.2
+St. Vincent and the Grenadines,VCT,2001,13.2
+St. Vincent and the Grenadines,VCT,2002,13.1
+St. Vincent and the Grenadines,VCT,2003,13.1
+St. Vincent and the Grenadines,VCT,2004,13
+St. Vincent and the Grenadines,VCT,2005,12.9
+St. Vincent and the Grenadines,VCT,2006,12.9
+St. Vincent and the Grenadines,VCT,2007,12.8
+St. Vincent and the Grenadines,VCT,2008,12.8
+St. Vincent and the Grenadines,VCT,2009,12.7
+St. Vincent and the Grenadines,VCT,2010,12.6
+St. Vincent and the Grenadines,VCT,2011,12.3
+St. Vincent and the Grenadines,VCT,2012,11.9
+St. Vincent and the Grenadines,VCT,2013,11.5
+St. Vincent and the Grenadines,VCT,2014,11.1
+St. Vincent and the Grenadines,VCT,2015,10.6
+St. Vincent and the Grenadines,VCT,2016,10.1
+St. Vincent and the Grenadines,VCT,2017,9.8
+St. Vincent and the Grenadines,VCT,2018,9.4
+St. Vincent and the Grenadines,VCT,2019,9.1
+St. Vincent and the Grenadines,VCT,2020,8.8
+St. Vincent and the Grenadines,VCT,2021,8.5
+Sudan,SDN,1998,38.4
+Sudan,SDN,1999,37.8
+Sudan,SDN,2000,37.2
+Sudan,SDN,2001,36.5
+Sudan,SDN,2002,35.9
+Sudan,SDN,2003,35.2
+Sudan,SDN,2004,34.7
+Sudan,SDN,2005,34.2
+Sudan,SDN,2006,33.7
+Sudan,SDN,2007,33.3
+Sudan,SDN,2008,32.9
+Sudan,SDN,2009,32.6
+Sudan,SDN,2010,32.3
+Sudan,SDN,2011,31.9
+Sudan,SDN,2012,31.5
+Sudan,SDN,2013,31
+Sudan,SDN,2014,30.6
+Sudan,SDN,2015,30
+Sudan,SDN,2016,29.4
+Sudan,SDN,2017,28.9
+Sudan,SDN,2018,28.3
+Sudan,SDN,2019,27.8
+Sudan,SDN,2020,27.3
+Sudan,SDN,2021,26.7
+Suriname,SUR,1998,17.5
+Suriname,SUR,1999,17.2
+Suriname,SUR,2000,17
+Suriname,SUR,2001,17
+Suriname,SUR,2002,17.2
+Suriname,SUR,2003,17.2
+Suriname,SUR,2004,17.2
+Suriname,SUR,2005,17.1
+Suriname,SUR,2006,16.8
+Suriname,SUR,2007,16.4
+Suriname,SUR,2008,15.9
+Suriname,SUR,2009,15.5
+Suriname,SUR,2010,15
+Suriname,SUR,2011,14.5
+Suriname,SUR,2012,14.1
+Suriname,SUR,2013,13.7
+Suriname,SUR,2014,13.3
+Suriname,SUR,2015,12.9
+Suriname,SUR,2016,12.4
+Suriname,SUR,2017,12
+Suriname,SUR,2018,11.7
+Suriname,SUR,2019,11.3
+Suriname,SUR,2020,11
+Suriname,SUR,2021,10.7
+Sweden,SWE,1998,2.4
+Sweden,SWE,1999,2.3
+Sweden,SWE,2000,2.3
+Sweden,SWE,2001,2.3
+Sweden,SWE,2002,2.2
+Sweden,SWE,2003,2.1
+Sweden,SWE,2004,2
+Sweden,SWE,2005,1.9
+Sweden,SWE,2006,1.8
+Sweden,SWE,2007,1.8
+Sweden,SWE,2008,1.7
+Sweden,SWE,2009,1.6
+Sweden,SWE,2010,1.6
+Sweden,SWE,2011,1.6
+Sweden,SWE,2012,1.6
+Sweden,SWE,2013,1.6
+Sweden,SWE,2014,1.6
+Sweden,SWE,2015,1.6
+Sweden,SWE,2016,1.6
+Sweden,SWE,2017,1.5
+Sweden,SWE,2018,1.5
+Sweden,SWE,2019,1.4
+Sweden,SWE,2020,1.4
+Sweden,SWE,2021,1.4
+Switzerland,CHE,1998,3.4
+Switzerland,CHE,1999,3.5
+Switzerland,CHE,2000,3.5
+Switzerland,CHE,2001,3.5
+Switzerland,CHE,2002,3.4
+Switzerland,CHE,2003,3.4
+Switzerland,CHE,2004,3.3
+Switzerland,CHE,2005,3.3
+Switzerland,CHE,2006,3.3
+Switzerland,CHE,2007,3.2
+Switzerland,CHE,2008,3.2
+Switzerland,CHE,2009,3.2
+Switzerland,CHE,2010,3.2
+Switzerland,CHE,2011,3.1
+Switzerland,CHE,2012,3.1
+Switzerland,CHE,2013,3
+Switzerland,CHE,2014,3
+Switzerland,CHE,2015,3
+Switzerland,CHE,2016,2.9
+Switzerland,CHE,2017,2.9
+Switzerland,CHE,2018,2.8
+Switzerland,CHE,2019,2.8
+Switzerland,CHE,2020,2.7
+Switzerland,CHE,2021,2.7
+Syrian Arab Republic,SYR,1998,12.8
+Syrian Arab Republic,SYR,1999,12.5
+Syrian Arab Republic,SYR,2000,12.1
+Syrian Arab Republic,SYR,2001,11.8
+Syrian Arab Republic,SYR,2002,11.5
+Syrian Arab Republic,SYR,2003,11.2
+Syrian Arab Republic,SYR,2004,10.9
+Syrian Arab Republic,SYR,2005,10.7
+Syrian Arab Republic,SYR,2006,10.5
+Syrian Arab Republic,SYR,2007,10.3
+Syrian Arab Republic,SYR,2008,10.2
+Syrian Arab Republic,SYR,2009,10.1
+Syrian Arab Republic,SYR,2010,10.1
+Syrian Arab Republic,SYR,2011,10.2
+Syrian Arab Republic,SYR,2012,10.5
+Syrian Arab Republic,SYR,2013,10.7
+Syrian Arab Republic,SYR,2014,10.9
+Syrian Arab Republic,SYR,2015,10.9
+Syrian Arab Republic,SYR,2016,11.1
+Syrian Arab Republic,SYR,2017,11
+Syrian Arab Republic,SYR,2018,11.1
+Syrian Arab Republic,SYR,2019,11.1
+Syrian Arab Republic,SYR,2020,11
+Syrian Arab Republic,SYR,2021,10.8
+Tajikistan,TJK,1998,29.9
+Tajikistan,TJK,1999,29.3
+Tajikistan,TJK,2000,28.4
+Tajikistan,TJK,2001,27.2
+Tajikistan,TJK,2002,26
+Tajikistan,TJK,2003,24.8
+Tajikistan,TJK,2004,23.9
+Tajikistan,TJK,2005,23.1
+Tajikistan,TJK,2006,22.5
+Tajikistan,TJK,2007,22
+Tajikistan,TJK,2008,21.5
+Tajikistan,TJK,2009,20.9
+Tajikistan,TJK,2010,20.1
+Tajikistan,TJK,2011,19.2
+Tajikistan,TJK,2012,18.3
+Tajikistan,TJK,2013,17.5
+Tajikistan,TJK,2014,16.8
+Tajikistan,TJK,2015,16.3
+Tajikistan,TJK,2016,15.8
+Tajikistan,TJK,2017,15.3
+Tajikistan,TJK,2018,14.9
+Tajikistan,TJK,2019,14.4
+Tajikistan,TJK,2020,14
+Tajikistan,TJK,2021,13.6
+Tanzania,TZA,1998,35.5
+Tanzania,TZA,1999,34.7
+Tanzania,TZA,2000,33.7
+Tanzania,TZA,2001,32.6
+Tanzania,TZA,2002,31.5
+Tanzania,TZA,2003,30.4
+Tanzania,TZA,2004,29.3
+Tanzania,TZA,2005,28.4
+Tanzania,TZA,2006,27.6
+Tanzania,TZA,2007,26.9
+Tanzania,TZA,2008,26.3
+Tanzania,TZA,2009,25.7
+Tanzania,TZA,2010,25.2
+Tanzania,TZA,2011,24.6
+Tanzania,TZA,2012,24.1
+Tanzania,TZA,2013,23.6
+Tanzania,TZA,2014,23.1
+Tanzania,TZA,2015,22.6
+Tanzania,TZA,2016,22.1
+Tanzania,TZA,2017,21.7
+Tanzania,TZA,2018,21.3
+Tanzania,TZA,2019,20.8
+Tanzania,TZA,2020,20.4
+Tanzania,TZA,2021,20
+Thailand,THA,1998,13.7
+Thailand,THA,1999,13
+Thailand,THA,2000,12.4
+Thailand,THA,2001,11.8
+Thailand,THA,2002,11.2
+Thailand,THA,2003,10.6
+Thailand,THA,2004,10.1
+Thailand,THA,2005,9.7
+Thailand,THA,2006,9.2
+Thailand,THA,2007,8.8
+Thailand,THA,2008,8.4
+Thailand,THA,2009,8
+Thailand,THA,2010,7.7
+Thailand,THA,2011,7.3
+Thailand,THA,2012,7
+Thailand,THA,2013,6.7
+Thailand,THA,2014,6.4
+Thailand,THA,2015,6.1
+Thailand,THA,2016,5.9
+Thailand,THA,2017,5.6
+Thailand,THA,2018,5.4
+Thailand,THA,2019,5.1
+Thailand,THA,2020,4.9
+Thailand,THA,2021,4.7
+Timor-Leste,TLS,1998,42.4
+Timor-Leste,TLS,1999,40.8
+Timor-Leste,TLS,2000,39.1
+Timor-Leste,TLS,2001,37.5
+Timor-Leste,TLS,2002,35.8
+Timor-Leste,TLS,2003,34.2
+Timor-Leste,TLS,2004,32.9
+Timor-Leste,TLS,2005,31.6
+Timor-Leste,TLS,2006,30.5
+Timor-Leste,TLS,2007,29.6
+Timor-Leste,TLS,2008,28.8
+Timor-Leste,TLS,2009,28.1
+Timor-Leste,TLS,2010,27.6
+Timor-Leste,TLS,2011,27
+Timor-Leste,TLS,2012,26.5
+Timor-Leste,TLS,2013,25.9
+Timor-Leste,TLS,2014,25.4
+Timor-Leste,TLS,2015,25
+Timor-Leste,TLS,2016,24.5
+Timor-Leste,TLS,2017,24.1
+Timor-Leste,TLS,2018,23.6
+Timor-Leste,TLS,2019,23.2
+Timor-Leste,TLS,2020,22.8
+Timor-Leste,TLS,2021,22.2
+Togo,TGO,1998,38.6
+Togo,TGO,1999,37.7
+Togo,TGO,2000,36.9
+Togo,TGO,2001,36
+Togo,TGO,2002,35.2
+Togo,TGO,2003,34.4
+Togo,TGO,2004,33.7
+Togo,TGO,2005,32.9
+Togo,TGO,2006,32.2
+Togo,TGO,2007,31.6
+Togo,TGO,2008,30.9
+Togo,TGO,2009,30.2
+Togo,TGO,2010,29.6
+Togo,TGO,2011,29
+Togo,TGO,2012,28.5
+Togo,TGO,2013,28
+Togo,TGO,2014,27.5
+Togo,TGO,2015,27
+Togo,TGO,2016,26.5
+Togo,TGO,2017,26
+Togo,TGO,2018,25.5
+Togo,TGO,2019,25
+Togo,TGO,2020,24.5
+Togo,TGO,2021,24
+Tonga,TON,1998,7.5
+Tonga,TON,1999,7.4
+Tonga,TON,2000,7.2
+Tonga,TON,2001,7
+Tonga,TON,2002,6.8
+Tonga,TON,2003,6.6
+Tonga,TON,2004,6.4
+Tonga,TON,2005,6.2
+Tonga,TON,2006,6
+Tonga,TON,2007,5.9
+Tonga,TON,2008,5.7
+Tonga,TON,2009,5.6
+Tonga,TON,2010,5.5
+Tonga,TON,2011,5.4
+Tonga,TON,2012,5.4
+Tonga,TON,2013,5.4
+Tonga,TON,2014,5.4
+Tonga,TON,2015,5.4
+Tonga,TON,2016,5.3
+Tonga,TON,2017,5.3
+Tonga,TON,2018,5.2
+Tonga,TON,2019,5.1
+Tonga,TON,2020,5
+Tonga,TON,2021,4.9
+Trinidad and Tobago,TTO,1998,18.2
+Trinidad and Tobago,TTO,1999,18.2
+Trinidad and Tobago,TTO,2000,18.1
+Trinidad and Tobago,TTO,2001,18
+Trinidad and Tobago,TTO,2002,17.8
+Trinidad and Tobago,TTO,2003,17.5
+Trinidad and Tobago,TTO,2004,17.2
+Trinidad and Tobago,TTO,2005,16.8
+Trinidad and Tobago,TTO,2006,16.4
+Trinidad and Tobago,TTO,2007,16
+Trinidad and Tobago,TTO,2008,15.5
+Trinidad and Tobago,TTO,2009,15.1
+Trinidad and Tobago,TTO,2010,14.6
+Trinidad and Tobago,TTO,2011,14.2
+Trinidad and Tobago,TTO,2012,13.7
+Trinidad and Tobago,TTO,2013,13.3
+Trinidad and Tobago,TTO,2014,12.9
+Trinidad and Tobago,TTO,2015,12.5
+Trinidad and Tobago,TTO,2016,12.1
+Trinidad and Tobago,TTO,2017,11.7
+Trinidad and Tobago,TTO,2018,11.4
+Trinidad and Tobago,TTO,2019,11
+Trinidad and Tobago,TTO,2020,10.7
+Trinidad and Tobago,TTO,2021,10.3
+Tunisia,TUN,1998,20.9
+Tunisia,TUN,1999,19.6
+Tunisia,TUN,2000,18.4
+Tunisia,TUN,2001,17.3
+Tunisia,TUN,2002,16.4
+Tunisia,TUN,2003,15.5
+Tunisia,TUN,2004,14.8
+Tunisia,TUN,2005,14.1
+Tunisia,TUN,2006,13.6
+Tunisia,TUN,2007,13.2
+Tunisia,TUN,2008,12.8
+Tunisia,TUN,2009,12.5
+Tunisia,TUN,2010,12.3
+Tunisia,TUN,2011,12.2
+Tunisia,TUN,2012,12.1
+Tunisia,TUN,2013,12.1
+Tunisia,TUN,2014,12
+Tunisia,TUN,2015,12
+Tunisia,TUN,2016,12.1
+Tunisia,TUN,2017,12.1
+Tunisia,TUN,2018,12.1
+Tunisia,TUN,2019,12
+Tunisia,TUN,2020,11.8
+Tunisia,TUN,2021,11.5
+Turkiye,TUR,1998,20.9
+Turkiye,TUR,1999,19.8
+Turkiye,TUR,2000,18.8
+Turkiye,TUR,2001,17.6
+Turkiye,TUR,2002,16.4
+Turkiye,TUR,2003,15.2
+Turkiye,TUR,2004,14.2
+Turkiye,TUR,2005,13.2
+Turkiye,TUR,2006,12.3
+Turkiye,TUR,2007,11.4
+Turkiye,TUR,2008,10.6
+Turkiye,TUR,2009,9.8
+Turkiye,TUR,2010,9.1
+Turkiye,TUR,2011,8.5
+Turkiye,TUR,2012,8
+Turkiye,TUR,2013,7.4
+Turkiye,TUR,2014,7
+Turkiye,TUR,2015,6.6
+Turkiye,TUR,2016,6.2
+Turkiye,TUR,2017,5.9
+Turkiye,TUR,2018,5.6
+Turkiye,TUR,2019,5.3
+Turkiye,TUR,2020,5
+Turkiye,TUR,2021,4.7
+Turkmenistan,TKM,1998,30.7
+Turkmenistan,TKM,1999,30.4
+Turkmenistan,TKM,2000,30
+Turkmenistan,TKM,2001,29.4
+Turkmenistan,TKM,2002,28.6
+Turkmenistan,TKM,2003,27.8
+Turkmenistan,TKM,2004,26.9
+Turkmenistan,TKM,2005,25.9
+Turkmenistan,TKM,2006,25.1
+Turkmenistan,TKM,2007,24.3
+Turkmenistan,TKM,2008,23.8
+Turkmenistan,TKM,2009,23.4
+Turkmenistan,TKM,2010,23.1
+Turkmenistan,TKM,2011,22.9
+Turkmenistan,TKM,2012,22.8
+Turkmenistan,TKM,2013,22.9
+Turkmenistan,TKM,2014,23.1
+Turkmenistan,TKM,2015,23.4
+Turkmenistan,TKM,2016,23.8
+Turkmenistan,TKM,2017,24
+Turkmenistan,TKM,2018,24.2
+Turkmenistan,TKM,2019,24.1
+Turkmenistan,TKM,2020,23.8
+Turkmenistan,TKM,2021,23.5
+Turks and Caicos Islands,TCA,1998,5.1
+Turks and Caicos Islands,TCA,1999,4.9
+Turks and Caicos Islands,TCA,2000,4.6
+Turks and Caicos Islands,TCA,2001,4.4
+Turks and Caicos Islands,TCA,2002,4.3
+Turks and Caicos Islands,TCA,2003,4.1
+Turks and Caicos Islands,TCA,2004,3.9
+Turks and Caicos Islands,TCA,2005,3.8
+Turks and Caicos Islands,TCA,2006,3.6
+Turks and Caicos Islands,TCA,2007,3.5
+Turks and Caicos Islands,TCA,2008,3.4
+Turks and Caicos Islands,TCA,2009,3.3
+Turks and Caicos Islands,TCA,2010,3.2
+Turks and Caicos Islands,TCA,2011,3.1
+Turks and Caicos Islands,TCA,2012,3
+Turks and Caicos Islands,TCA,2013,3
+Turks and Caicos Islands,TCA,2014,2.9
+Turks and Caicos Islands,TCA,2015,2.8
+Turks and Caicos Islands,TCA,2016,2.7
+Turks and Caicos Islands,TCA,2017,2.7
+Turks and Caicos Islands,TCA,2018,2.6
+Turks and Caicos Islands,TCA,2019,2.5
+Turks and Caicos Islands,TCA,2020,2.4
+Turks and Caicos Islands,TCA,2021,2.4
+Tuvalu,TUV,1998,25.2
+Tuvalu,TUV,1999,24.7
+Tuvalu,TUV,2000,24.3
+Tuvalu,TUV,2001,24.1
+Tuvalu,TUV,2002,23.8
+Tuvalu,TUV,2003,23.5
+Tuvalu,TUV,2004,23
+Tuvalu,TUV,2005,22.3
+Tuvalu,TUV,2006,21.3
+Tuvalu,TUV,2007,20
+Tuvalu,TUV,2008,18.7
+Tuvalu,TUV,2009,17.4
+Tuvalu,TUV,2010,16.2
+Tuvalu,TUV,2011,15.1
+Tuvalu,TUV,2012,14.2
+Tuvalu,TUV,2013,13.4
+Tuvalu,TUV,2014,12.8
+Tuvalu,TUV,2015,12.1
+Tuvalu,TUV,2016,11.6
+Tuvalu,TUV,2017,11.1
+Tuvalu,TUV,2018,10.7
+Tuvalu,TUV,2019,10.3
+Tuvalu,TUV,2020,10
+Tuvalu,TUV,2021,9.6
+Uganda,UGA,1998,34.1
+Uganda,UGA,1999,33.5
+Uganda,UGA,2000,32.7
+Uganda,UGA,2001,31.8
+Uganda,UGA,2002,30.9
+Uganda,UGA,2003,30
+Uganda,UGA,2004,29.1
+Uganda,UGA,2005,28.4
+Uganda,UGA,2006,27.8
+Uganda,UGA,2007,27.2
+Uganda,UGA,2008,26.5
+Uganda,UGA,2009,26
+Uganda,UGA,2010,25.4
+Uganda,UGA,2011,24.9
+Uganda,UGA,2012,24.3
+Uganda,UGA,2013,23.7
+Uganda,UGA,2014,23
+Uganda,UGA,2015,22.3
+Uganda,UGA,2016,21.6
+Uganda,UGA,2017,21
+Uganda,UGA,2018,20.5
+Uganda,UGA,2019,20
+Uganda,UGA,2020,19.5
+Uganda,UGA,2021,19
+Ukraine,UKR,1998,11.8
+Ukraine,UKR,1999,11.4
+Ukraine,UKR,2000,11
+Ukraine,UKR,2001,10.5
+Ukraine,UKR,2002,9.9
+Ukraine,UKR,2003,9.4
+Ukraine,UKR,2004,9
+Ukraine,UKR,2005,8.6
+Ukraine,UKR,2006,8.2
+Ukraine,UKR,2007,7.9
+Ukraine,UKR,2008,7.6
+Ukraine,UKR,2009,7.2
+Ukraine,UKR,2010,6.9
+Ukraine,UKR,2011,6.5
+Ukraine,UKR,2012,6.2
+Ukraine,UKR,2013,6
+Ukraine,UKR,2014,5.7
+Ukraine,UKR,2015,5.5
+Ukraine,UKR,2016,5.4
+Ukraine,UKR,2017,5.2
+Ukraine,UKR,2018,5.1
+Ukraine,UKR,2019,5
+Ukraine,UKR,2020,4.9
+Ukraine,UKR,2021,4.8
+United Arab Emirates,ARE,1998,6.2
+United Arab Emirates,ARE,1999,6
+United Arab Emirates,ARE,2000,5.9
+United Arab Emirates,ARE,2001,5.7
+United Arab Emirates,ARE,2002,5.6
+United Arab Emirates,ARE,2003,5.5
+United Arab Emirates,ARE,2004,5.3
+United Arab Emirates,ARE,2005,5.2
+United Arab Emirates,ARE,2006,5.1
+United Arab Emirates,ARE,2007,5
+United Arab Emirates,ARE,2008,4.9
+United Arab Emirates,ARE,2009,4.8
+United Arab Emirates,ARE,2010,4.6
+United Arab Emirates,ARE,2011,4.5
+United Arab Emirates,ARE,2012,4.4
+United Arab Emirates,ARE,2013,4.3
+United Arab Emirates,ARE,2014,4.2
+United Arab Emirates,ARE,2015,4.1
+United Arab Emirates,ARE,2016,4
+United Arab Emirates,ARE,2017,3.9
+United Arab Emirates,ARE,2018,3.8
+United Arab Emirates,ARE,2019,3.7
+United Arab Emirates,ARE,2020,3.6
+United Arab Emirates,ARE,2021,3.5
+United Kingdom,GBR,1998,3.9
+United Kingdom,GBR,1999,3.8
+United Kingdom,GBR,2000,3.8
+United Kingdom,GBR,2001,3.7
+United Kingdom,GBR,2002,3.6
+United Kingdom,GBR,2003,3.6
+United Kingdom,GBR,2004,3.5
+United Kingdom,GBR,2005,3.5
+United Kingdom,GBR,2006,3.4
+United Kingdom,GBR,2007,3.3
+United Kingdom,GBR,2008,3.2
+United Kingdom,GBR,2009,3.1
+United Kingdom,GBR,2010,3
+United Kingdom,GBR,2011,3
+United Kingdom,GBR,2012,2.9
+United Kingdom,GBR,2013,2.8
+United Kingdom,GBR,2014,2.7
+United Kingdom,GBR,2015,2.7
+United Kingdom,GBR,2016,2.8
+United Kingdom,GBR,2017,2.8
+United Kingdom,GBR,2018,2.8
+United Kingdom,GBR,2019,2.8
+United Kingdom,GBR,2020,2.8
+United Kingdom,GBR,2021,2.8
+United States,USA,1998,4.8
+United States,USA,1999,4.7
+United States,USA,2000,4.6
+United States,USA,2001,4.6
+United States,USA,2002,4.6
+United States,USA,2003,4.6
+United States,USA,2004,4.6
+United States,USA,2005,4.5
+United States,USA,2006,4.4
+United States,USA,2007,4.3
+United States,USA,2008,4.3
+United States,USA,2009,4.2
+United States,USA,2010,4.1
+United States,USA,2011,4.1
+United States,USA,2012,4.1
+United States,USA,2013,4
+United States,USA,2014,4
+United States,USA,2015,3.9
+United States,USA,2016,3.8
+United States,USA,2017,3.8
+United States,USA,2018,3.7
+United States,USA,2019,3.5
+United States,USA,2020,3.4
+United States,USA,2021,3.3
+Uruguay,URY,1998,8.8
+Uruguay,URY,1999,8.6
+Uruguay,URY,2000,8.5
+Uruguay,URY,2001,8.4
+Uruguay,URY,2002,8.2
+Uruguay,URY,2003,8
+Uruguay,URY,2004,7.8
+Uruguay,URY,2005,7.3
+Uruguay,URY,2006,6.7
+Uruguay,URY,2007,6
+Uruguay,URY,2008,5.4
+Uruguay,URY,2009,5
+Uruguay,URY,2010,4.8
+Uruguay,URY,2011,4.8
+Uruguay,URY,2012,5
+Uruguay,URY,2013,5.1
+Uruguay,URY,2014,5.1
+Uruguay,URY,2015,5
+Uruguay,URY,2016,4.8
+Uruguay,URY,2017,4.4
+Uruguay,URY,2018,4.1
+Uruguay,URY,2019,4
+Uruguay,URY,2020,4
+Uruguay,URY,2021,4
+Uzbekistan,UZB,1998,29.3
+Uzbekistan,UZB,1999,28.6
+Uzbekistan,UZB,2000,27.8
+Uzbekistan,UZB,2001,26.7
+Uzbekistan,UZB,2002,25.6
+Uzbekistan,UZB,2003,24.4
+Uzbekistan,UZB,2004,23.2
+Uzbekistan,UZB,2005,21.9
+Uzbekistan,UZB,2006,20.7
+Uzbekistan,UZB,2007,19.4
+Uzbekistan,UZB,2008,17.8
+Uzbekistan,UZB,2009,16.3
+Uzbekistan,UZB,2010,14.9
+Uzbekistan,UZB,2011,13.8
+Uzbekistan,UZB,2012,12.8
+Uzbekistan,UZB,2013,11.8
+Uzbekistan,UZB,2014,11.1
+Uzbekistan,UZB,2015,10.4
+Uzbekistan,UZB,2016,9.8
+Uzbekistan,UZB,2017,9.3
+Uzbekistan,UZB,2018,8.8
+Uzbekistan,UZB,2019,8.4
+Uzbekistan,UZB,2020,8
+Uzbekistan,UZB,2021,7.7
+Vanuatu,VUT,1998,12.7
+Vanuatu,VUT,1999,12.4
+Vanuatu,VUT,2000,12.2
+Vanuatu,VUT,2001,12
+Vanuatu,VUT,2002,12
+Vanuatu,VUT,2003,12
+Vanuatu,VUT,2004,12
+Vanuatu,VUT,2005,12.1
+Vanuatu,VUT,2006,12.1
+Vanuatu,VUT,2007,12.2
+Vanuatu,VUT,2008,12.2
+Vanuatu,VUT,2009,12.3
+Vanuatu,VUT,2010,12.3
+Vanuatu,VUT,2011,12.3
+Vanuatu,VUT,2012,12.2
+Vanuatu,VUT,2013,12.1
+Vanuatu,VUT,2014,11.9
+Vanuatu,VUT,2015,11.7
+Vanuatu,VUT,2016,11.4
+Vanuatu,VUT,2017,11.1
+Vanuatu,VUT,2018,10.8
+Vanuatu,VUT,2019,10.5
+Vanuatu,VUT,2020,10.2
+Vanuatu,VUT,2021,9.9
+"Venezuela, RB",VEN,1998,11.3
+"Venezuela, RB",VEN,1999,11.2
+"Venezuela, RB",VEN,2000,10.9
+"Venezuela, RB",VEN,2001,10.4
+"Venezuela, RB",VEN,2002,10
+"Venezuela, RB",VEN,2003,10
+"Venezuela, RB",VEN,2004,10.3
+"Venezuela, RB",VEN,2005,10.5
+"Venezuela, RB",VEN,2006,10.4
+"Venezuela, RB",VEN,2007,10.3
+"Venezuela, RB",VEN,2008,10.1
+"Venezuela, RB",VEN,2009,10.2
+"Venezuela, RB",VEN,2010,10.5
+"Venezuela, RB",VEN,2011,11
+"Venezuela, RB",VEN,2012,11.4
+"Venezuela, RB",VEN,2013,11.4
+"Venezuela, RB",VEN,2014,11.3
+"Venezuela, RB",VEN,2015,14.7
+"Venezuela, RB",VEN,2016,15
+"Venezuela, RB",VEN,2017,15
+"Venezuela, RB",VEN,2018,15
+"Venezuela, RB",VEN,2019,15
+"Venezuela, RB",VEN,2020,15
+"Venezuela, RB",VEN,2021,15
+Vietnam,VNM,1998,16.8
+Vietnam,VNM,1999,15.9
+Vietnam,VNM,2000,15.1
+Vietnam,VNM,2001,14.4
+Vietnam,VNM,2002,13.8
+Vietnam,VNM,2003,13.3
+Vietnam,VNM,2004,12.9
+Vietnam,VNM,2005,12.6
+Vietnam,VNM,2006,12.3
+Vietnam,VNM,2007,12.1
+Vietnam,VNM,2008,12
+Vietnam,VNM,2009,11.8
+Vietnam,VNM,2010,11.7
+Vietnam,VNM,2011,11.7
+Vietnam,VNM,2012,11.5
+Vietnam,VNM,2013,11.4
+Vietnam,VNM,2014,11.3
+Vietnam,VNM,2015,11.2
+Vietnam,VNM,2016,11.1
+Vietnam,VNM,2017,11
+Vietnam,VNM,2018,10.9
+Vietnam,VNM,2019,10.8
+Vietnam,VNM,2020,10.7
+Vietnam,VNM,2021,10.5
+West Bank and Gaza,PSE,1998,17.8
+West Bank and Gaza,PSE,1999,17.4
+West Bank and Gaza,PSE,2000,17.1
+West Bank and Gaza,PSE,2001,16.8
+West Bank and Gaza,PSE,2002,16.5
+West Bank and Gaza,PSE,2003,16.2
+West Bank and Gaza,PSE,2004,15.8
+West Bank and Gaza,PSE,2005,15.4
+West Bank and Gaza,PSE,2006,15
+West Bank and Gaza,PSE,2007,14.5
+West Bank and Gaza,PSE,2008,14.1
+West Bank and Gaza,PSE,2009,13.6
+West Bank and Gaza,PSE,2010,13.2
+West Bank and Gaza,PSE,2011,12.9
+West Bank and Gaza,PSE,2012,12.5
+West Bank and Gaza,PSE,2013,12.1
+West Bank and Gaza,PSE,2014,11.8
+West Bank and Gaza,PSE,2015,11.4
+West Bank and Gaza,PSE,2016,11.1
+West Bank and Gaza,PSE,2017,10.7
+West Bank and Gaza,PSE,2018,10.3
+West Bank and Gaza,PSE,2019,10
+West Bank and Gaza,PSE,2020,9.6
+West Bank and Gaza,PSE,2021,9.3
+"Yemen, Rep.",YEM,1998,39
+"Yemen, Rep.",YEM,1999,38.1
+"Yemen, Rep.",YEM,2000,37.2
+"Yemen, Rep.",YEM,2001,36.1
+"Yemen, Rep.",YEM,2002,35.1
+"Yemen, Rep.",YEM,2003,34.1
+"Yemen, Rep.",YEM,2004,33
+"Yemen, Rep.",YEM,2005,32.1
+"Yemen, Rep.",YEM,2006,31
+"Yemen, Rep.",YEM,2007,30
+"Yemen, Rep.",YEM,2008,29.2
+"Yemen, Rep.",YEM,2009,28.5
+"Yemen, Rep.",YEM,2010,28.2
+"Yemen, Rep.",YEM,2011,28.2
+"Yemen, Rep.",YEM,2012,28.2
+"Yemen, Rep.",YEM,2013,28.3
+"Yemen, Rep.",YEM,2014,28.3
+"Yemen, Rep.",YEM,2015,28.3
+"Yemen, Rep.",YEM,2016,28.3
+"Yemen, Rep.",YEM,2017,28.3
+"Yemen, Rep.",YEM,2018,28.3
+"Yemen, Rep.",YEM,2019,28.3
+"Yemen, Rep.",YEM,2020,28.2
+"Yemen, Rep.",YEM,2021,28.3
+Zambia,ZMB,1998,36
+Zambia,ZMB,1999,35.8
+Zambia,ZMB,2000,35.3
+Zambia,ZMB,2001,34.3
+Zambia,ZMB,2002,32.9
+Zambia,ZMB,2003,31.5
+Zambia,ZMB,2004,30.1
+Zambia,ZMB,2005,28.9
+Zambia,ZMB,2006,28.1
+Zambia,ZMB,2007,27.6
+Zambia,ZMB,2008,27.3
+Zambia,ZMB,2009,27.1
+Zambia,ZMB,2010,26.9
+Zambia,ZMB,2011,26.7
+Zambia,ZMB,2012,26.6
+Zambia,ZMB,2013,26.4
+Zambia,ZMB,2014,26.3
+Zambia,ZMB,2015,26.2
+Zambia,ZMB,2016,26.1
+Zambia,ZMB,2017,25.9
+Zambia,ZMB,2018,25.7
+Zambia,ZMB,2019,25.4
+Zambia,ZMB,2020,25
+Zambia,ZMB,2021,24.6
+Zimbabwe,ZWE,1998,26.3
+Zimbabwe,ZWE,1999,26.8
+Zimbabwe,ZWE,2000,27.6
+Zimbabwe,ZWE,2001,28.6
+Zimbabwe,ZWE,2002,29.9
+Zimbabwe,ZWE,2003,31.1
+Zimbabwe,ZWE,2004,32
+Zimbabwe,ZWE,2005,32.6
+Zimbabwe,ZWE,2006,33
+Zimbabwe,ZWE,2007,33.3
+Zimbabwe,ZWE,2008,33.4
+Zimbabwe,ZWE,2009,32.9
+Zimbabwe,ZWE,2010,32.1
+Zimbabwe,ZWE,2011,31.1
+Zimbabwe,ZWE,2012,30.1
+Zimbabwe,ZWE,2013,29.2
+Zimbabwe,ZWE,2014,28.5
+Zimbabwe,ZWE,2015,27.9
+Zimbabwe,ZWE,2016,27.5
+Zimbabwe,ZWE,2017,27.1
+Zimbabwe,ZWE,2018,26.6
+Zimbabwe,ZWE,2019,26.1
+Zimbabwe,ZWE,2020,25.5
+Zimbabwe,ZWE,2021,25
