@@ -1,0 +1,155 @@
+---
+title: "SDG2Data"
+author: '2140365'
+date: "2023-11-03"
+output: html_document
+---
+
+```{r loadLib}
+library(dplyr)
+library(rio)
+library(magrittr)
+library(readxl)
+library(ggplot2)
+```
+
+```{r loadStuntingOview}
+load("StuntingCountryOview.Rda")
+```
+record of the detailds of Stunting data, identified by Code,
+
+
+```{r metaData-country,echo=FALSE,include=FALSE}
+metadata_country <- read.csv("Metadata-Country-Stunting.csv")
+metadata_country <- metadata_country%>%mutate(
+  CountryCode = factor(CountryCode),
+  CountryName = factor(CountryName),
+  Region = factor(Region),
+  IncomeGroup = factor(IncomeGroup)
+)
+```
+we should mainly read the Special notes, find the relation between regions and IncomeGroup?
+
+
+```{r countryCode}
+selectedCountry <- filter(metadata_country, CountryName %in% c("Zambia","Fiji","United Kingdom","Egypt, Arab Rep.","Nigeria","Australia","India","Russian Federation","Japan","Brazil"))
+selectedCountryCode <- selectedCountry$CountryCode
+```
+
+
+```{r metadata-underfed,echo=FALSE,include=FALSE}
+country_underFed<- read.csv("Metadata-Country-UnderFed.csv")
+country_underFed <- country_underFed%>%mutate(
+  CountryCode = factor(CountryCode),
+  CountryName = factor(CountryName),
+  Region = factor(Region),
+  IncomeGroup = factor(IncomeGroup)
+)
+selected_country_underFed <- filter(country_underFed, CountryCode %in% selectedCountryCode)
+```
+I dont understand this actually
+
+
+```{r metadata-region,echo=FALSE,include=FALSE}
+metadata_region <- read.csv("Metadata-Regions-Stunting.csv")
+colnames(metadata_region) <- c("Code","IncomeGroup","Region","SpecialNotes")
+metadata_region <- metadata_region%>%mutate(
+  Code = factor(Code),
+  IncomeGroup = factor(IncomeGroup),
+  Region = factor(Region)
+)
+selected_metadata_region <- filter(metadata_region, Code %in% selectedCountryCode)
+selected_metadata_country <- filter(metadata_country, CountryCode %in% selectedCountryCode)
+```
+just read the special notes i think
+
+
+```{r StuntingU5, echo=FALSE, include=FALSE}
+StuntingU5yrs <- read.csv("StuntingU5yrs2023.csv")
+StuntingU5yrs <- StuntingU5yrs%>%mutate(
+  Country = factor(Country),
+  Code = factor(Code),
+  year = factor(year)
+)
+selected_StuntingU5 <- filter(StuntingU5yrs,Code %in% selectedCountryCode)
+```
+Talk about the rate of StuntingU5yrs wrt years, but idk why there is no UK
+
+
+```{r UnderFed, echo=FALSE, include=FALSE}
+Underfed <- read.csv("Underfed.csv")
+selected_Underfed <- filter(Underfed, Entity %in% c("Zambia","Fiji","United Kingdom of Great Britain and Northern Ireland","Egypt","Nigeria","Australia","India","Russian Federation","Japan","Brazil","World"))
+```
+Underfed.csv considered whole continent as a entity. we may need to consider the comparison between countries with Continent. 
+
+
+```{r countryStuntingData,echo=FALSE,include=FALSE}
+Selected_Stunting_Oview <- filter(StuntedOview, Code %in% selectedCountryCode)
+```
+
+
+```{r fillInNAFunc}
+fillNAValue <- function(StuntingData,UnderfedData){
+  for (i in 1:nrow(UnderfedData)) {
+    if (is.na(UnderfedData$PrevUnderfed[i])){
+      entity <- UnderfedData$Entity[i]
+      meanValue <- which(Entity == entity)
+      UnderfedData$prevUnderfed[i] <- meanValue
+    }
+  }
+  
+  return(UnderfedData)
+}
+
+```
+
+
+```{r lineChartForUnderfed}
+ggplot(selected_Underfed, aes(x = year, y = PrevUnderfed)) + 
+  labs( x = "Year", y = "percentage of Previous Underfed", 
+                       subtitle = "Trend of Underfed against year") +
+  scale_colour_brewer(palette = "Set3") + geom_line() + 
+  aes(colour = Entity) 
+
+cat("\nThe trend in Zambia and India are the most two prominent countries among these 10countries. The proportion of people with underfed was the hightest in 2000 among 10 Entities, was about 50% and about 20% respectively, and this trend grew to about 55% in around 2004 for Zambia, and 22% for India these must be the hardest time for them. But then this situation got improved and finally decreased to 30% and 15% in about 2022. \n\nUnderfed situation in other countries had no much to each other and the World Situation, they all around. However, this situation got worse in Nigeria, the proportion in 2000 was below 10%, but things went wrose in 2010 and reached 15% in 2022. Same situation for Fiji, had highest proportion of Underfed in 2011 and got improved in 2019.\n\nHowever, from the dataset, we missed all data for Australia and United Kingdom which can not perform all 10 countries well. For Japan, Brazil and Russia, we missed some data but still can notice a improved trend in 20 years.  ")
+
+```
+
+
+```{r summaryUnderfed}
+SummaryUnderfed <- filter(Underfed, Entity %in% c("Zambia","Fiji","United Kingdom of Great Britain and Northern Ireland","Egypt","Nigeria","Australia","India","Russian Federation","Japan","Brazil","World","Africa","Oceania","Americas","Australia and New Zealand","Asia","Europe"))
+SummaryUnderfed <- SummaryUnderfed %>%
+  mutate(Entity = factor(Entity))
+meanUnderfed <- aggregate(PrevUnderfed ~ Entity, data = SummaryUnderfed, FUN = mean)
+meanUnderfed <- meanUnderfed[order(match(meanUnderfed$Entity, SummaryUnderfed$Entity)), ]
+summaryTab <- data.frame(Column1 = c(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14,15,16,17))
+colnames(summaryTab) <- c("Entity")
+summaryTab$Entity <- c("World","Africa","Americas","Australia and New Zealand","Asia","Europe","Oceania","Zambia","Fiji","United Kingdom of Great Britain and Northern Ireland","Egypt","Nigeria","Australia","India","Russian Federation","Japan","Brazil")
+summaryTab <- left_join(summaryTab, meanUnderfed, by = "Entity")
+maxUnderfed <- aggregate(PrevUnderfed ~ Entity, data = SummaryUnderfed, FUN = max)
+maxUnderfed <- maxUnderfed[order(match(maxUnderfed$Entity, SummaryUnderfed$Entity)), ]
+summaryTab <- left_join(summaryTab, maxUnderfed, by = "Entity")
+minUnderfed <- aggregate(PrevUnderfed ~ Entity, data = SummaryUnderfed, FUN = min)
+minUnderfed <- minUnderfed[order(match(minUnderfed$Entity, SummaryUnderfed$Entity)), ]
+summaryTab <- left_join(summaryTab, minUnderfed, by = "Entity")
+
+colnames(summaryTab) <- c("Entity","MeanPrevUnderfed","MaxPrevUnderfed","MinPrevunderfed")
+knitr::kable(summaryTab)
+```
+
+
+```{r countrySpecialNotes}
+selected_metadata_country$SpecialNotes
+```
+
+
+```{r countryUnderfed}
+selected_country_underFed <- selected_country_underFed%>%mutate(IncomeGroup = factor(IncomeGroup))
+summary(selected_country_underFed)
+```
+
+```{r test}
+
+```
+
+

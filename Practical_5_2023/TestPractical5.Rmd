@@ -93,4 +93,101 @@ print(early_plot_log_confirmed_date)
 ```
 
 
+```{r}
+library(MASS)
+negative_binomial_fit <- glm.nb(daily_confirmed ~ 1 + date, data = FirstStageUKCaseData)
+summary(negative_binomial_fit)
+```
+
+
+```{r NextStageOfUKData}
+NextStageCaseData <- {UKCaseData %>%
+    filter( (date > as.Date("2020-04-18") & (date < as.Date("2020-07-11"))))}
+
+next_plot_confirmed_date <- {NextStageCaseData %>% ggplot(aes(x = date, y = daily_confirmed))} + geom_point() + scale_x_date(date_breaks = "months", date_labels = "%b-%y")
+
+print(next_plot_confirmed_date)
+
+NextStageCaseData <- NextStageCaseData %>%
+  mutate(date = yday(date))
+
+negative_binomial_fit <- glm.nb(daily_confirmed ~ 1 + date, data = NextStageCaseData)
+
+summary(negative_binomial_fit)
+
+```
+
+
+```{r NextStageLogPoltOfUKData}
+
+NextStageCaseData$pred_negative_binomial = predict(negative_binomial_fit)
+
+next_plot_log_confirmed_date <- {NextStageCaseData %>% ggplot(aes(x = date, y = log(daily_confirmed)))} + 
+  geom_point() + 
+  geom_line(aes(y = pred_negative_binomial), size = 1)
+
+print(next_plot_log_confirmed_date)
+
+```
+
+
+```{r RegresForFirstWave}
+FirstWaveUKCaseData <- {UKCaseData %>%
+    filter( (date > as.Date("2020-02-23")) & (date < as.Date("2020-07-11")) )}
+
+first_wave_plot_confirmed_date <- {FirstWaveUKCaseData %>% ggplot(aes(x = date, y = daily_confirmed))} + 
+  geom_point() + 
+  scale_x_date(date_breaks = "months", date_labels = "%b-%y")
+print(first_wave_plot_confirmed_date)
+
+
+```
+
+
+```{r fitPlot}
+FirstWaveUKCaseData <- FirstWaveUKCaseData %>%
+  mutate(date = yday(date))
+
+skewed_fit <- glm.nb(daily_confirmed ~ 1 + date + I(date^2) + I(log(date)), data = FirstWaveUKCaseData)
+
+summary(skewed_fit)
+
+FirstWaveUKCaseData$pred_skewed = predict(skewed_fit)
+skewed_plot_log_confirmed_date <- {FirstWaveUKCaseData %>% ggplot(aes(x = date, y = daily_confirmed))} +
+  geom_point() +
+  geom_line(aes(y = exp(pred_skewed)), size = 1)
+
+print(skewed_plot_log_confirmed_date)
+
+```
+
+
+```{r splines}
+library(splines)
+splines_fit <- glm.nb(daily_confirmed ~ 1 + ns(date, knots = c(60,100,140,180)), data = FirstWaveUKCaseData)
+
+FirstWaveUKCaseData$pred_splines = predict(splines_fit)
+
+summary(splines_fit)
+```
+
+
+```{r splinesPlot}
+splines_plot_log_confirmed_date <- {FirstWaveUKCaseData %>% ggplot(aes(x = date, y = (daily_confirmed)))} + 
+  geom_point() + 
+  geom_line(aes(y = exp(pred_splines)), size = 1)
+
+print(splines_plot_log_confirmed_date)
+
+PredictUKCaseData = tibble(date = 55:262, fit_confirmed = predict(skewed_fit, newdata = data.frame(date = 55:262)))
+print({PredictUKCaseData %>% ggplot((aes(x = date, y = (fit_confirmed))))} + geom_line(aes(y = exp(fit_confirmed)), size = 1))
+```
+
+
+```{r}
+library(MASS)
+local_r <- function(cases, window_width) {
+  
+}
+```
 

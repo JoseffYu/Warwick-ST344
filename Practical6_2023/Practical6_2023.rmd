@@ -1,0 +1,309 @@
+---
+title: "Practical 6 2023"
+output:
+  html_document: default
+  pdf_document: default
+urlcolor: blue
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE, message = FALSE)
+```
+
+---------------
+
+Please note that practical 6 requires no lab report. Instead it suggests further exploration of the type of data for the individual assignment that is due in Term 2. Throughout this report, there are some "Suggested tasks" to help you engage more with the data during the practical. 
+
+---------------
+
+## Stop-and-Search UK Data
+
+For the week 6 practical, on the Moodle page, you will find some data under `Initial Data on Stop and Search` which we will use for today's practical. This data is saved as an R data file named `stopSearch_assignment.rda`.
+
+Outlook on individual project: This data set will prepare you for the individual project where 
+you will be working with the [stop-and-search](https://www.gov.uk/police-powers-to-stop-and-search-your-rights) data provided on the UK Police [data hosting website](https://data.police.uk/).  Further information will be available on the Moodle from week 8, under "Individual coursework".  For the project, you will be assigned 3 police forces and you will need to download updated data. 
+
+### Loading the data and the required packages
+
+First we load all the packages we will require for this practical. Remark: You might find that you will still need to install the package "maps" as we have not worked with it on this module before.
+
+```{r package loading}
+library(dplyr)
+library(tibble) 
+library(tidyr)
+library(knitr)
+#library(kableExtra)
+library(ggplot2)
+library(maps)
+library(rio)
+```
+For importing a `.rda` file, we use the `load()` function. Do not assign a name to the left of this function as `data <- load(filename.rda)` as this won't load the data correctly. The R data object in the `.rda` file already has an associated name.
+
+```{r data loading}
+load("stopSearch_assignment.rda") # be patient as this takes a few seconds
+stopSearch <- as_tibble(stopSearch)
+names(stopSearch)
+```
+
+### Some basic exploration
+
+The `stopSearch` data has the same variables as in the smaller data set used in week 3, and one additional variable, 'Force'. There are 44 police forces.
+
+```{r data print}
+ table(stopSearch$Force)
+``` 
+Some of the variables names have spaces in them and some are also very long, so we rename these for ease of use.
+```{r, echo=FALSE}
+names(stopSearch)[c(4,5,9,10,11,13,15,16)] <- c('PartPoliceOp',
+                                             'PolicingOp',
+                                             'AgeRange',
+                                             'SelfEthnicity',
+                                             'OfficerDefEthnicity',
+                                             'AimSearch',
+                                             'OutcomeLinkAim',
+                                             'RemovalMoreClothing')
+summary(stopSearch)
+```
+From the summary, we can see that some of the variables have missing values. Variables with the mode 'character' might have missing values which are empty strings. First, let's look at the extent of missingness `NA` in this dataset in a bit more detail:
+
+```{r, echo=FALSE}
+NAs <- as.data.frame(colSums(is.na(stopSearch)))
+total <- nrow(stopSearch)
+NAs <- NAs %>%
+  mutate(percNA = round(NAs/total*100,2))
+kable(NAs, col.names = c("Number of NAs", "% NAs"))
+```
+
+This dataset contains quite a few missing values (and most likely, the one you will use for your project will do too!). In fact, in the `stopSearch` dataset, all the entries for the `Policing operation` variable are missing. Drop this variable. In general, be careful with how you handle the missing data and don't forget to comment on it in your analysis. 
+
+**Here is a suggested task:**  Read S Soutar's slides providing a crash course on missingness (based on Rubin's classification of missingness) in the 'Week 5' section of the moodle: 'Notes on missing data'.
+You can read more about Rubin's classification of missingness [here -- under Types](https://en.wikipedia.org/wiki/Missing_data) and try to think about whether any of the above missingness might be missing not at random (MNAR). You might also find it useful to read about methods in R for exploration and imputation of missing values [here](https://cran.r-project.org/web/views/MissingData.html).
+
+### Some Exploratory Analysis (with more missing data)
+
+Next, let's make a stacked percentage plot which gives us the percentage of people of different ethnicities who got stopped for `Controlled drugs`. We use the Officer-defined ethnicity here. You explored both ethnicity variables for report 2, in  practical 3.  You can also choose to use the Self-defined ethnicity or combine the information from the two in a meaningful way to fill in some missing values. 
+
+```{r stacked plot data1}
+miniStopSearch <- stopSearch %>%
+  filter(`AimSearch` == "Controlled drugs") %>%
+  select(`OfficerDefEthnicity`) %>%
+  add_count(`OfficerDefEthnicity`) %>%
+  distinct()
+
+kable(miniStopSearch)
+```
+There is a category for NA and a separate only with an empty string. We change the latter so it also shows as NA. Additionally, we notice that the `Other` and `Mixed` categories are much smaller than the others. So for our plot, we choose to combine these two categories into a new category called `Mixed/Other`.
+
+```{r stacked plot data2}
+stopSearchNew <- mutate(stopSearch, `OfficerDefEthnicity` = case_when(
+    `OfficerDefEthnicity` == "" ~ as.character(NA),
+    `OfficerDefEthnicity` == "Mixed" ~ "Mixed/Other",
+    `OfficerDefEthnicity` == "Other" ~ "Mixed/Other",
+    TRUE ~  `OfficerDefEthnicity`
+  ))
+
+miniStopSearch <- stopSearchNew %>%
+  filter(`AimSearch` == "Controlled drugs") %>%
+  select(`OfficerDefEthnicity`) %>%
+  add_count(`OfficerDefEthnicity`) %>%
+  distinct()
+
+kable(miniStopSearch)
+```
+
+This looks fine. Now we can make our stacked percentage plot.
+
+```{r stacked plot, fig.width=7.5, fig.height=1, fig.align='center'}
+
+
+totalControlled <- sum(miniStopSearch$n) 
+miniStopSearch <- miniStopSearch %>% 
+  mutate(perc = round(n/totalControlled*100))
+miniStopSearch$year <- "2020" #dummy variable for x-axis in the stacked plot
+
+
+ggplot(miniStopSearch, aes(x = year, y = perc, fill = `OfficerDefEthnicity`)) +
+  geom_col() + 
+  theme_void() + 
+  theme(legend.position="top") +
+  scale_fill_brewer(palette = "Set3", na.value = "blue") +
+# Change order of categories in legend
+  guides(fill = guide_legend("OfficerDefEthnicity:", reverse = TRUE)) +
+# Remove tick marks and arrange bare horizontally
+  scale_x_discrete(breaks = NULL) + scale_y_discrete(breaks = NULL) + coord_flip() +
+# Add labels
+  geom_text(aes(label = paste0(round(perc), "%")), position = position_stack(vjust=0.5)) +
+labs(caption = "Data Source: data.police.uk")
+
+```
+
+**Suggested task:** Make a stacked percentage plot for the different categories under `Object of search` and write a short discussion to interpret the plots. 
+
+Select a subset of forces. Note: in your individual project you will be assigned 3 forces.
+```{r}
+myForces = c('north-wales', 'bedfordshire', 'south-yorkshire')
+myStop = stopSearch %>% filter(Force %in% myForces)
+```
+Some variables need to be set as factors, for instance. We also define a new variable, dateDay, which contains the date of the stop-and-search, without the time of the day. 
+```{r revise_date, warning=FALSE, message=FALSE}
+library(lubridate)
+myStop<- myStop%>% mutate(Legislation = factor(Legislation),
+             Outcome = factor(Outcome),Type=factor(Type),
+            dateDay=date(Date),AimSearch=factor(AimSearch),
+            hourDay = as.numeric(substring(Date,12,13)),
+           SelfEthnicity=factor(SelfEthnicity),OfficerDefEthnic=factor(OfficerDefEthnicity),
+           PartPoliceOp=factor(PartPoliceOp))
+```
+
+Let us now look at the number of stop-and-searches. First, we plot the number of searches per month. Note: we take care to plot the data points (not just lines), in this way we can better inspect how much data is observed (lines without such data points do not show this and moreover can be misleading about sample size as to an untrained eye they give the impression of data everywhere along the line)
+
+```{r}
+myStop %>% 
+    group_by(Force,  month=floor_date(dateDay, 'month')) %>% 
+        summarise(number=n()) %>%
+        ggplot(aes(x=month, y=number, color=Force)) +
+        geom_point() +
+        labs(title=paste0("Monthly number of stop-and-searches"), 
+             subtitle=paste0(myForces))  +
+        geom_line()
+```
+We can see that there are many more stop-and-searches for the South Yorkshire force. What are possible explanations? Also, the number of stop-and-searches from the South Yorkshire force seem to have increased over the last 3 years. The patterns for North Wales and Bedford are different. 
+How would you model the variation by month and force in the number of cases of stop and search which are for controlled drugs, out of all stop and search cases? You might consider the material on the moodle for the Week 5 lecture on regression modeling and the regression model used in the model answer to a previous lab report 3 provided on the moodle for Week 5' 
+
+Let us now look at the same plot, but restricted to the searches for “controlled drugs”.
+
+```{r}
+myStop %>% 
+    filter(AimSearch == 'Controlled drugs') %>%
+    group_by(Force,  month=floor_date(dateDay, 'month')) %>% 
+        summarise(number=n()) %>%
+        ggplot(aes(x=month, y=number, color=Force)) +
+        geom_point() +
+        labs(title=paste0("Monthly number of stop-and-searches for controlled drugs"),
+             subtitle=paste0('South Yorkshire Force'))  +
+        geom_line()
+```
+How do the patterns of the two graphs compare? How would you model the variation by month and force in the proportion of cases of stop and search which are for controlled drugs, out of all stop and search cases? You might consider the material on the moodle for Week 5 'Another view of regression modeling, with solution File' 
+
+Now let us look at the weekly number of stop-and-searches from the South Yorkshire force, related to controlled drugs.
+
+```{r}
+myStop %>% 
+    filter(Force=="south-yorkshire") %>%
+    filter(AimSearch == 'Controlled drugs') %>%
+    group_by(week=floor_date(dateDay, 'week')) %>% 
+        summarise(number=n()) %>%
+        ggplot(aes(x=week, y=number)) +
+        geom_point() +
+        labs(title=paste0("Weekly number of stop-and-searches related to controlled drugs"), 
+             subtitle=paste0("South Yorkshire Force"))  +
+        geom_line()
+```
+What are the advantages and disadvantages of consider daily, weekly or monthly numbers? 
+
+Now consider the hour of the day.
+```{r}
+myStop %>% 
+    group_by(Force, hourDay) %>% 
+        summarise(number=n()) %>%
+        ggplot(aes(x=hourDay, y=number, color=Force)) +
+        geom_point() +
+        labs(title=paste0("Number of stop-and-searches by hour of the day"), 
+             subtitle=paste0("South Yorkshire Force"))  +
+        geom_line()
+```
+How would you model the number of people stopped at each hour of the day, by force?
+```{r}
+myStop$Sex <- factor(myStop$Gender,labels=c("Missing","Female","Male","Missing"))
+table(myStop$Force,myStop$Sex)
+```
+Notice that in South Yorkshire, the number of people for whom Gender is missing is almost the same as the number of women. 
+
+```{r}
+myStop %>% 
+    group_by(Sex, hourDay) %>% 
+        summarise(number=n()) %>%
+        ggplot(aes(x=hourDay, y=number, color=Sex)) +
+        geom_point() +
+        labs(title=paste0("Number of stop-and-searches by hour of the day"), 
+             subtitle=paste0("Males"))  +
+        geom_line()
+```
+
+How would you model the proportion of women stopped at each hour of the day, and assess whether there is a difference between forces?
+
+### Combining datasets
+
+As part of your individual project, you will have to combine datasets.
+ The `dplyr` package gives us several ways of doing this (see more details [here](https://www.rdocumentation.org/packages/dplyr/versions/0.7.8/topics/join) and a summary of four of these in the table below.)
+
+| `dplyr` function | Method of combining datasets |
+|------------------|------------------------------|
+|  left_join(x, y, by = NULL, ...)     | Keeps all rows from x and all columns from x and y |
+|  right_join(x, y, by = NULL, ...)    | Keeps all rows from y and all columns from x and y |
+|  inner_join(x, y, by = NULL, ...)    | Only keeps the matched rows from x and , and all columns from x and y |
+|  full_join(x, y, by = NULL, ...)     | Keeps all rows and columns from x and y |
+
+The function we use to combine the datasets will depend on the desired outcome. 
+
+**Suggested task:** Consider the datasets x and y given as 
+`x <- tibble(col1 = c(1,2,3,4,5), col2 <- c("a", "b", "c", "d", "e"))` and
+`y <- tibble(col3 = c(3,4,5, 6,7,8,9), col4 <- c("x", "y", "z", "t", "u", "v", "w"))`
+Check that the above four functions for combining the datasets work as you expect them to by trying them out on x and y.
+
+
+### Dashboard
+
+As part of the final assignment you are asked to make a self-contained, static HTML page that contains a small number of visualisations for the stop-and-search data. This is meant to be a collection of graphics that tell a story about the data and so entice the viewer to read more about the data analysis. A package that you may use for this task is `flexdashboard`. It produces dashboards that are suitable for display on mobile devices, and that allow the viewer to examine the graphics using utilities such as zoom and pan. It also has an option to provide the source code. 
+
+Install the package `flexdashboard`, download the file `ExampleDashboard.Rmd` and examine its structure. Knit the file and have a look at the dashboard it produces. For more information on how to create a dashboard and for other flexdashboard examples see [this link](https://rmarkdown.rstudio.com/flexdashboard/). 
+
+**Suggested task:** Look through the sample flexdashboards: which one do you think works best for telling a story through figures without any text? Try making some simple plots using the `stopSearch` data and use `flexdashboard` to arrange them into an html file. 
+
+### Maps
+
+You might wish to use maps, either for a report for this module, or for other reasons. Here is an example of a map plot. 
+```{r}
+
+worldmap = map_data('world')
+
+ggplot() +
+  geom_polygon(data = worldmap,
+                        aes(x = long,
+                            y = lat,
+                            group = group,
+                            ),
+                        fill = 'gray90',
+                        color = 'black') +
+  geom_point(data = stopSearch,
+             aes(x = Longitude, y = Latitude, fill = "red", alpha = 0.8),
+             size = 1, shape = 21) +
+  coord_fixed(xlim = c(-10,3),
+              ylim = c(50.3, 59)) +
+  xlab("Longitude") +
+  ylab("Latitude") +
+  ggtitle("Stop and Search data plotted on the map of the UK") +
+  theme(legend.position="none")
+
+
+```
+
+
+Above we see all the data for which longitude and latitude data is not missing plotted on a map of the UK. Of course, this map doesn't tell us much except that majority of this data is for England and Wales. The cases plotted in Scotland are unexpected.
+
+Note from Barbel Nov 2023 Something more exciting may be produced by using  the package "leaflet". Check https://rstudio.github.io/leaflet/. Here is the Map Widget for the UK. You can now add a layer of spatial "Markers" that you may even design yourself.
+
+```{r}
+library(leaflet)
+m <- leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  fitBounds(-10, 50.3, 3,59) 
+
+m  # Print the map
+
+```
+
+
+You might consider whether stop and searches are concentrated in different areas at different times of year or day. 
+
+**Suggested task:** Try plotting the different types of offences with different markers displayed by ethnicity [see this page on facet_wrap](https://ggplot2.tidyverse.org/reference/facet_wrap.html).

@@ -1,0 +1,115 @@
+---
+title: "Example Flexdashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    self_contained: TRUE
+    source_code: embed
+---
+```{r setup, include=FALSE}
+library(dplyr)
+library(tibble) 
+library(tidyr)
+library(ggplot2)
+library(flexdashboard)
+library(plotly)
+library(scales)
+
+load("stopSearch_assignment.rda")
+stopSearch <- as_tibble(stopSearch)
+```
+
+
+```{r, include=FALSE}
+stopSearchNew <- mutate(stopSearch, `Officer-defined ethnicity` = case_when(
+    `Officer-defined ethnicity` == "" ~ as.character(NA),
+    `Officer-defined ethnicity` == "Mixed" ~ "Mixed/Other",
+    `Officer-defined ethnicity` == "Other" ~ "Mixed/Other",
+    TRUE ~  `Officer-defined ethnicity`
+  ))
+
+miniStopSearch <- stopSearchNew %>%
+  filter(`Object of search` == "Controlled drugs") %>%
+  select(`Officer-defined ethnicity`) %>%
+  add_count(`Officer-defined ethnicity`) %>%
+  distinct()
+
+totalControlled <- sum(miniStopSearch$n) 
+miniStopSearch <- miniStopSearch %>% 
+  mutate(perc = round(n/totalControlled*100))
+miniStopSearch$year <- "2020" #dummy variable for x-axis in the stacked plot
+
+
+```
+
+Column 1
+-----------------------------------------------------------------------
+
+### Bar chart
+
+```{r,fig.height=8, fig.align='center'}
+
+ggplotly(
+  ggplot(stopSearchNew, aes(x = factor(`Officer-defined ethnicity`, exclude = NULL))) +
+  geom_bar() +
+  scale_x_discrete(limits = c("Asian", "Black", "Mixed/Other", "White", NA),
+                      labels = c("Asian", "Black", "Mixed/Other", "White", "Unknown")) +
+  scale_y_continuous(labels = comma) +
+  labs(x = "Ethnicity as defined by the police officer",
+       y = "Frequency",
+       title = "Number of stop and search incidents by ethnicity") + 
+  theme(plot.title = element_text(size=14))
+)
+```
+
+
+Column 2
+-----------------------------------------------------------------------
+
+### Stacked percentage plot 
+
+```{r,fig.height=1, fig.width= 8, fig.align='left'}
+ggplotly(
+  ggplot(miniStopSearch, aes(x = year, y = perc, fill = `Officer-defined ethnicity`)) +
+    geom_col() + 
+    theme_void() + 
+    theme(legend.position="bottom", 
+          legend.title = element_text(size = 12),
+          legend.text = element_text(size = 10)
+          ) +
+    scale_fill_brewer(palette = "Set3", na.value = "blue") +
+    # Change order of categories in legend
+    guides(fill = guide_legend("Officer-defined ethnicity:", reverse = TRUE)) +
+    # Remove tick marks and arrange bar horizontally
+    scale_x_discrete(breaks = NULL) + scale_y_discrete(breaks = NULL) + coord_flip() +
+    geom_text(aes(label = paste0(round(perc), "%")), position = position_stack(vjust=0.5)) +
+  labs(caption = "Data Source: data.police.uk") 
+  ) %>%
+    layout(legend = list(
+        orientation = "h", x = 0, y =-1)
+        )
+```
+
+### Another Bar chart
+
+```{r, fig.align='center'}
+ggplotly(
+  ggplot(stopSearchNew, aes(x = `Type`, fill = `Officer-defined ethnicity`)) +
+  geom_bar(position = "fill") +
+  scale_fill_brewer(palette = "Set3", na.value = "blue") +
+  labs(x = "Type of search",
+       y = "Proportion",
+       title = "Number of types of stop and search incidents by ethnicity") +
+  guides(fill = "none") + 
+  theme(legend.title = element_text(size = 12), 
+        legend.text = element_text(size = 10),
+        plot.title = element_text(size=14))
+)
+
+```
+
+
+
+```
+
+

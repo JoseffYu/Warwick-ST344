@@ -1,0 +1,398 @@
+---
+title: "LabReport3"
+author: '2140365'
+date: "2023-11-06"
+output: pdf_document
+---
+## Introduction
+
+This report contains the analysis for FAOS FOOT & ANKLE SURVEY. The Survey is used for Therapists to keep track patients foot/ankle situation and activity performance, this can help them provide a good treatment.
+
+
+```{r loadDataAndLibrary, echo=FALSE, include=FALSE, warning=FALSE}
+library(rio)
+library(magrittr)
+library(readxl)
+library(ggplot2)
+library(dplyr)
+library(kableExtra)
+library(splines)
+library(MASS)
+library(gridExtra)
+
+CAST <- import("CAST-2023ST344.csv",setclass = "tibble")
+```
+
+
+
+```{r DataProcessing, echo=FALSE, include=FALSE}
+CAST <- CAST%>%mutate(
+  sex = factor(sex-1)
+)
+summary(CAST)
+```
+
+
+```{r identifySex, echo=FALSE, include=FALSE}
+meanHeight <- aggregate(height ~ sex, data = CAST, FUN = mean, na.action = na.pass)
+meanWeight <- aggregate(weight ~ sex, data = CAST, FUN = mean, na.action = na.pass)
+meanAge <- aggregate(age ~ sex, data = CAST,FUN = mean, na.action = na.pass)
+meanbfaosFDL <- aggregate(bfaosFDL ~ sex, data = CAST,FUN = mean, na.action = na.pass)
+
+minHeight <- aggregate(height ~ sex, data = CAST, FUN = min, na.action = na.pass)
+minWeight <- aggregate(weight ~ sex, data = CAST, FUN = min, na.action = na.pass)
+minAge <- aggregate(age ~ sex, data = CAST, FUN = min, na.action = na.pass)
+minbfaosFDL <- aggregate(bfaosFDL ~ sex, data = CAST, FUN = min, na.action = na.pass)
+
+maxHeight <- aggregate(height ~ sex, data = CAST, FUN = max, na.action = na.pass)
+maxWeight <- aggregate(weight ~ sex, data = CAST, FUN = max, na.action = na.pass)
+maxAge <- aggregate(age ~ sex, data = CAST, FUN = max, na.action = na.pass)
+maxbfaosFDL <- aggregate(bfaosFDL ~ sex, data = CAST, FUN = max, na.action = na.pass)
+
+varHeight <- aggregate(height ~ sex, data = CAST, FUN = var, na.action = na.pass)
+varWeight <- aggregate(weight ~ sex, data = CAST, FUN = var, na.action = na.pass)
+varbfaosFDL <- aggregate(bfaosFDL ~ sex, data = CAST, FUN = var, na.action = na.pass)
+
+```
+
+
+```{r summaryTab, echo=FALSE, warning=FALSE,out.height="30%",out.width="40"}
+summaryTab <- data.frame(
+  Female = 1:17,
+  Male = 1:17,
+  All = 1:17
+)
+count_miss9sport <- table(CAST$sex, CAST$miss9sport)[, "TRUE"]
+
+summaryTab[1,1:2] <- t(summary(CAST$sex))
+summaryTab[1,3] <- as.integer(summaryTab[1,1])+as.integer(summaryTab[1,2])
+summaryTab[17,1:2] <- t(count_miss9sport)
+summaryTab[17,3] <- as.integer(summaryTab[17,1])+as.integer(summaryTab[17,2])
+
+#Age
+summaryTab[2,1:2] <- t(maxAge[2])
+summaryTab[3,1:2] <- t(minAge[2])
+summaryTab[4,1:2] <- t(round(meanAge[2],2))
+summaryTab[2,3] <- max(CAST$age)
+summaryTab[3,3] <- min(CAST$age)
+summaryTab[4,3] <- round(mean(CAST$age),2)
+
+#Height
+summaryTab[5,1:2] <- t(maxHeight[2])
+summaryTab[6,1:2] <- t(minHeight[2])
+summaryTab[7,1:2] <- t(round(meanHeight[2],2))
+summaryTab[8,1:2] <- t(round(varHeight[2],2))
+summaryTab[5,3] <- max(CAST$height)
+summaryTab[6,3] <- min(CAST$height)
+summaryTab[7,3] <- round(mean(CAST$height),2)
+summaryTab[8,3] <- round(var(CAST$height),2)
+
+#Weight
+summaryTab[9,1:2] <- t(maxWeight[2])
+summaryTab[10,1:2] <- t(minWeight[2])
+summaryTab[11,1:2] <- t(round(meanWeight[2],2))
+summaryTab[12,1:2] <- t(round(varWeight[2],2))
+summaryTab[9,3] <- max(CAST$weight)
+summaryTab[10,3] <- min(CAST$weight)
+summaryTab[11,3] <- round(mean(CAST$weight),2)
+summaryTab[12,3] <- round(var(CAST$weight),2)
+
+#bfaosFDL
+summaryTab[13,1:2] <- t(maxbfaosFDL[2])
+summaryTab[14,1:2] <- t(minbfaosFDL[2])
+summaryTab[15,1:2] <- t(round(meanbfaosFDL[2],2))
+summaryTab[16,1:2] <- t(round(varbfaosFDL[2],2))
+summaryTab[13,3] <- max(CAST$bfaosFDL)
+summaryTab[14,3] <- min(CAST$bfaosFDL)
+summaryTab[15,3] <- round(mean(CAST$bfaosFDL),2)
+summaryTab[16,3] <- round(var(CAST$bfaosFDL),2)
+
+rownames(summaryTab) <- c("NumPatients","MaxAge","MinAge","MeanAge","MaxHeight","MinHeight","MeanHeight","VariancHeight","MaxWeight","MinWeight","MeanWeight","VarianceWeight","MaxbfasFDL","MinbfasFDL","MeanbfasFDL","VariancebfasFDL","Num")
+```
+
+## Data
+The data, collected via questionnaires from patients with ankle injuries at 1, 3, and 9 months, encompasses 6 variables: age, sex, height, weight, bfaosFDL (baseline function in daily living score), and miss9sport (indicating sports performance deterioration). Surveying 560 participants, including 235 females and 325 males, ages ranged from 16 to 72 years (mean age: 29.98 years). Among males, heights ranged from 160.02 cm to 200.66 cm, and among females, from 147.32 cm to 187.96 cm. The average height was 172.89 cm. Weights varied between 39.92 kg and 133.36 kg, with an overall average of 78.64 kg. 214 people of all missed sport performance after 9 months. See Table1.
+```{r creatTab1,echo=FALSE, out.height="5"}
+kable(summaryTab,
+      caption = "Summary Table for FAOS FOOT ANKLE SURVEY",
+      booktabs = TRUE)%>%
+      kable_styling(font_size = 8, latex_options = "HOLD_position")%>%
+      pack_rows(
+        index = c(
+          "Total number of patients" = 1,
+          "Age" = 3,
+          "Height" = 4,
+          "Weight" = 4,
+          "bfaosFDL" = 4,
+          "Num of people miss sport for 9months" = 1
+        )
+      )
+```
+
+
+
+
+
+
+
+
+
+## Method
+what method is used to get the result of analysis: glm, glm.nb 
+The model used in analysis, model1,2,3,description of models, what it is looks like, why use this model(final model,with step function, describe DF, residual deviance, p-value )
+
+
+To discover How does weight vary with age, sex and height, a generalised log-linear model is used here. can be written as $$ log(weight) = \beta_01 + \beta_2sex + \beta_3height + \beta_4age + \epsilon$$ Data will be fitted better when logarithm is applied to the explanatory variable. Notice that, here sex is considered as factor, it will consider data with respect to different gender.
+
+To know Does function in daily living at baseline vary with age, sex, weight or height, $cor()$ function is used to find out the correlation between bfasFDL and other 4 variables.
+
+To get the appropriate model, $step()$ function in R is applied,which is used find out which model would be the most appropriate model and Deviance and AIC value will be given in each step; 5 models are built to get the best one:
+
+- Model1: $miss9sport \sim weight + height+ age+sex+bfaosFDL$
+- Model2: $miss9sport \sim height+ age+sex+bfaosFDL$
+- Model3: $miss9sport \sim height+ age+sex$
+- Model4: $miss9sport \sim age+sex$
+- Model5: $miss9sport \sim age$
+
+
+
+
+## Result
+
+From methods, the result for How does weight vary with age, sex and height can be explainedas following. These coefficients for sex0 and sex1(2.504051 and 2.454716) indicate that, holding other variables constant, individuals of these two genders have a higher body weight compared to the reference gender. For instance, the average weight of sex1 will be higher than that of sex0 (when other factors remain constant), so that sex1 refers to males and sex0 refers to females.
+
+For height, the coefficient for height is 0.010262. This means that holding other variables constant, for every one-unit increase in height, weight will increase by 1.010315kg. Therefore, individuals with taller stature tend to have a higher body weight.
+
+Same for age. The coefficient for age is 0.003208. This signifies that holding other variables constant, for every one-unit increase in age, the weight will increase by 1.003213kg. This implies a slight upward trend in weight with increasing age.
+
+From function of $cor()$, the result shows that there is only slightly correlation between bfaosFDL and age, height and weight, -0.086,0.031 and -0.048 respectively.
+
+The most appropriate model is $miss9sport \sim age$, this is got from the $step()$ function from start from Model1. The formal form is,$$ miss9sport = \beta_0age + \epsilon$$ $\beta_0$here is -0.01742, can be explained as: with 1 year older, there is 1.7% to miss the sport performance. This result can also get from figure2, number of people miss9sport and number of people not miss9sport against Age.
+
+The summary table for 5 models shows the reason of why model5 is the most appropriate model. "Age" is always have p-value < 0.15, so it is contained in model. Then model4 have intercept have p-value < 0.15, but p-value for sex is too big. Same reason for other models, large p-value is always contained in model which is not aprropriate. Therefore $model \sim age$ is the most appropriate model.
+
+
+
+```{r Question1, echo=FALSE, warning=FALSE,fig.width=6, fig.height=4, fig.align='center'}
+plotAll <- ggplot(data = CAST, aes(x = height, y = weight, color = sex, size = age))+ geom_point()+geom_smooth()+labs(title = "plot for weight against height with smoother")
+plotAge <- ggplot(data = CAST, aes(x = age, y = weight, color = sex)) + geom_point()
+plotHeight <- ggplot(data = CAST, aes(x = height, y = weight)) + geom_point()
+plotSex <- ggplot(data = CAST, aes(y = sex, x = weight)) + geom_point()
+plotAll
+```
+
+
+```{r fitModel, echo=FALSE,warning=FALSE, include=FALSE}
+#Explain the summary table of model1
+model1_0 <- step(glm(log(weight) ~ 0 + sex + height + age, data = CAST))
+model1_0
+summary(model1_0)
+```
+
+
+```{r groupData, echo=FALSE,include=FALSE}
+CAST <- CAST%>%
+  mutate(bfaosFDL = as.integer(bfaosFDL))
+```
+
+
+```{r Question2, include=FALSE, warning=FALSE}
+plotBfaos <- ggplot(data = CAST, aes(x = age, y = bfaosFDL, color = sex, size = height)) + geom_point() + geom_smooth()
+plotBfaos
+plotBfaosAge <- ggplot(data = CAST, aes(x = age, y = bfaosFDL)) + geom_point()
+plotBfaosWeight <- ggplot(data = CAST,aes(x = weight, y = bfaosFDL))+geom_line()
+plotBfaosHeight <- ggplot(data = CAST,aes(x = height, y = bfaosFDL)) + geom_point()
+plotBfaosSex <- ggplot(data = CAST,aes(x = sex, y = bfaosFDL)) + geom_point()
+plotBfaosSex
+
+model2 <- lm(bfaosFDL ~ 0 + age + sex + weight + height, data = CAST)
+summary(model2)
+model2
+```
+
+
+```{r correlation, include=FALSE}
+cor(CAST$bfaosFDL,CAST$age)
+cor(CAST$bfaosFDL,CAST$height)
+cor(CAST$bfaosFDL,CAST$weight)
+
+step(model2)
+```
+
+
+```{r Question3, echo=FALSE, warning=FALSE, include=FALSE}
+ggplot(data = CAST, aes(x = bfaosFDL, y = miss9sport)) + geom_point()
+model3 <- glm.nb(miss9sport ~ weight+bfaosFDL+height+age+sex,
+       data = CAST)
+finalModel <- step(model3)
+
+summary(model3)
+summary(finalModel)
+step2mdl <- glm.nb(miss9sport ~ bfaosFDL+height+age+sex,
+       data = CAST)
+step3mdl <- glm.nb(miss9sport ~ bfaosFDL+age+sex,
+       data = CAST)
+step4mdl <- glm.nb(miss9sport ~ age+sex,
+       data = CAST)
+summary(step2mdl)
+summary(step3mdl)
+summary(step4mdl)
+```
+
+```{r plotMissSportAge, echo=FALSE, warning=FALSE}
+
+true_data <- CAST[CAST$miss9sport == TRUE, ]
+false_data <- CAST[CAST$miss9sport == FALSE, ]
+
+true_plot <- ggplot(true_data, aes(x = age)) +
+  geom_histogram(binwidth = 1, fill = "blue", color = "black", alpha = 0.7) +
+  labs(title = "Number of miss9sport Vs. Age",
+       x = "Age",
+       y = "Count True") +
+  geom_density(fill = "red") +
+  theme_minimal()
+
+false_plot <- ggplot(false_data, aes(x = age)) +
+  geom_histogram(binwidth = 1, fill = "green", color = "black", alpha = 0.7) +
+  labs(title = "Number of No miss9sport Vs. Age",
+       x = "Age",
+       y = "Count False") +
+  geom_density(fill = "red") +
+  theme_minimal()
+
+```
+
+
+```{r plot, echo=FALSE,warning=FALSE,background=FALSE, fig.width=6, fig.height=4, fig.align='center'}
+combined_plot <- grid.arrange(true_plot, false_plot, ncol = 2)
+```
+
+
+```{r modelTab, echo=FALSE,warning=FALSE,out.height="20%",out.extra="10"}
+modelTab <- data.frame(
+  Residual_DF = 1:20,
+  Residual_deviance = 1:20,
+  AIC_value = 1:20,
+  p_value = 1:20
+)
+
+rownames(modelTab) <- c(
+  "intercept1","weight1","height1","sex1","age1","bfaosFDL1",
+  "intercept2","height2","sex2","age2","bfaosFDL2",
+  "intercept3","sex3","age3","bfaosFDL3",
+  "intercept4","sex4","age4",
+  "intercept5","age5"
+  )
+
+modelTab[1,1] <- 554
+modelTab[2,1] <- 554
+modelTab[3,1] <- 554
+modelTab[4,1] <- 554
+modelTab[5,1] <- 554
+modelTab[6,1] <- 554
+modelTab[7,1] <- 555
+modelTab[8,1] <- 555
+modelTab[9,1] <- 555
+modelTab[10,1] <- 555
+modelTab[11,1] <- 555
+modelTab[12,1] <- 556
+modelTab[13,1] <- 556
+modelTab[14,1] <- 556
+modelTab[15,1] <- 556
+modelTab[16,1] <- 557
+modelTab[17,1] <- 557
+modelTab[18,1] <- 557
+modelTab[19,1] <- 558
+modelTab[20,1] <- 558
+
+modelTab[1,2] <- 403.01 
+modelTab[2,2] <- 403.01
+modelTab[3,2] <- 403.01
+modelTab[4,2] <- 403.01 
+modelTab[5,2] <- 403.01 
+modelTab[6,2] <- 403.01
+modelTab[7,2] <- 403.02
+modelTab[8,2] <- 403.02
+modelTab[9,2] <- 403.02
+modelTab[10,2] <- 403.02
+modelTab[11,2] <- 403.02
+modelTab[12,2] <- 404.07
+modelTab[13,2] <- 404.07
+modelTab[14,2] <- 404.07
+modelTab[15,2] <- 404.07
+modelTab[16,2] <-404.43
+modelTab[17,2] <- 404.43
+modelTab[18,2] <- 404.43
+modelTab[19,2] <- 404.95
+modelTab[20,2] <- 404.95
+
+modelTab[1,3] <- 843.03
+modelTab[2,3] <- 843.03
+modelTab[3,3] <- 843.03
+modelTab[4,3] <- 843.03
+modelTab[5,3] <- 843.03
+modelTab[6,3] <- 843.03
+modelTab[7,3] <- 841.04
+modelTab[8,3] <- 841.04
+modelTab[9,3] <- 841.04
+modelTab[10,3] <- 841.04
+modelTab[11,3] <- 841.04
+modelTab[12,3] <- 839.44
+modelTab[13,3] <- 839.44
+modelTab[14,3] <- 839.44
+modelTab[15,3] <- 839.44
+modelTab[16,3] <- 838.45
+modelTab[17,3] <- 838.45
+modelTab[18,3] <- 838.45
+modelTab[19,3] <- 836.96
+modelTab[20,3] <- 836.96
+
+modelTab[1,4] <- 0.4297
+modelTab[2,4] <- 0.9087
+modelTab[3,4] <- 0.3199
+modelTab[4,4] <- 0.2191
+modelTab[5,4] <- 0.0132
+modelTab[6,4] <- 0.5287
+modelTab[7,4] <- 0.4344
+modelTab[8,4] <- 0.3059
+modelTab[9,4] <- 0.2208
+modelTab[10,4] <- 0.0119
+modelTab[11,4] <- 0.5256
+modelTab[12,4] <- 0.325
+modelTab[13,4] <- 0.468
+modelTab[14,4] <- 0.017
+modelTab[15,4] <- 0.546
+modelTab[16,4] <- 0.0236
+modelTab[17,4] <- 0.4754
+modelTab[18,4] <- 0.0236
+modelTab[19,4] <- 0.0260
+modelTab[20,4] <- 0.0114
+
+
+kable(modelTab,
+      caption = "Summary Table for 5 models",
+      booktabs = TRUE)%>%
+      kable_styling(font_size = 8, latex_options = "HOLD_position")%>%
+      pack_rows(
+        index = c(
+          "Model1" = 6,
+          "Model2" = 5,
+          "Model3" = 4,
+          "Model4" = 3,
+          "Model5" = 2
+        )
+      )
+
+```
+
+
+
+## Conclusions
+From data provided, there is relationship between all variables.
+- weight gets larger when either age or height increase, and indeed, weight for male is larger than weight for female
+- There is correlation between bfaosFDL and age,height and weight, negative correlation with both age and height, positive correlation with weight. However, the correlation between these variable is very small.
+- The most appropriate model for whether sports scores are missing at nine months is $miss9sport \sim age$, this result got from $step()$ function, which get p-value, residuals and AIC value step by step to help identify the most appropriate model.
+
+
+## Limitations
+For finding the correlation, there might be other methods to find the correlation instead use $cor()$.Also, I did not fully present the correlation between sex and bfaosFDL.

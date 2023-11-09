@@ -1,0 +1,175 @@
+---
+title: 'Solutions for Practical week 2  '
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+#Marking scheme:
+
+The marks you give must be supported by brief comments on each of the numbered points. If the work is entirely clear and correct, the comment can be `good'.  The comments are likely to be more helpful to your colleagues. The marks give an indication of how easy it was for you to understand the work, as well as the accuracy of the work. 
+
+To get 5 points, the report must have
+
+* implemented the commands correctly (and reasonably efficiently) (2 points), 
+
+* given sufficient background for the reader to follow the code  (2 points),
+
+* used a professional presentation, structure and language (1 point).
+
+
+# The data
+
+1. The data, available from  [www.stat.columbia.edu/~gelman/arm/examples/speed.dating/](http://www.stat.columbia.edu/~gelman/arm/examples/speed.dating/), comprises responses of participants at speed dating events.
+# Data Import
+
+2. We import the speed dating raw data from the file `SpeedDatingRawData.csv` and assign it to the tibble 'SpeedData'. 
+```{r importing, warning=FALSE, echo=FALSE}
+# install_formats() # You might not need this
+library(rio)
+SpeedDatingRawData <- import("SpeedDatingRawData.csv", setclass = "tibble")
+```
+*Tip: To avoid a warning message when importing `rio` use the option `warning = FALSE` in the code chunk.*
+
+3. We print the first 3 rows of columns 41 to 60 of the data. 
+```{r printing}
+print(SpeedDatingRawData[,41:60], n = 3) # Works in knitr, not in console.
+```
+4.a The code prints the first 3 rows and 9 columns including the data type of each column *in the pdf output*. The remaining 11 columns do not fit onto the page and are not printed. Instead a list of column names and data types is provided.
+```{r printingJLH}
+print(SpeedDatingRawData[1:3,41:60]) # Works for me, JLH.
+```
+4.b The number of columns varies with the width of the window I (JLH) have open. 
+
+# Data Wrangling
+5. We subselect the data of interest, namely the variables:
+
+* id = unique id number for each speed dating participant, 
+* partner = id number of the speed dating partner.
+
+Participants were asked to rate themselves on the attributes attractiveness, sincerity, intelligence and ambition. The resulting scores are stored in the variables:
+
+* attr3_1 = attractiveness score;
+* sinc3_1 = sincerity score;
+* intel3_1 = intelligence score;
+* fun3_1 = fun score;
+* amb3_1 = ambition score.
+
+I had to read the Data Key carefully to find the correct set. I first used attr1_1, etc. If the report you are marking used attr_1 or attr_2, you will need to adapt your comments to allow for this. 
+```{r wrangling, warning = FALSE, message=FALSE}
+library(dplyr)
+SpeedData <- select(SpeedDatingRawData, iid, partner, attr3_1,
+                    sinc3_1, intel3_1, fun3_1, amb3_1)
+colnames(SpeedData)
+```
+*Tip: To avoid a message when importing `dplyr` use the option `message = FALSE` in the code chunk.*
+
+6. We filter `SpeedData` so that it contains only the first date of each individual.
+```{r filtering}
+SpeedData <- filter(SpeedData, (partner == 1))
+dim(SpeedData)
+```                    
+The resulting data has `r nrow(SpeedData)` rows and `r ncol(SpeedData)` columns.
+
+
+7. We then remove the variable `partner` from `SpeedData`, and consider a summary. 
+```{r wrangling2, warning = FALSE, message = FALSE,}
+SpeedData <- select(SpeedData, iid, attr3_1:amb3_1)
+summary(SpeedData)
+```
+The minimum scores for the attributes are either two or three, the maximum score 10. All attributes contain nine missing values. Attractiveness has the lowest median (7), while sincerity and intelligence have the highest means (8.3, 8.4). The summary for the participant id variable is irrelevant. The number of rows, 551, is the number of participants. (Notice that as the maximum ID is 552, one number between 1 and 552 is not used.)
+
+I wondered how the variables are distributed. I'll look at tables, in a 'quick and dirty' way. 
+```{r tables}
+table(SpeedData$attr3_1); table(SpeedData$sinc3_1)
+table(SpeedData$intel3_1); table(SpeedData$fun3_1)
+table(SpeedData$amb3_1)
+```
+People were most sure of their sincerity, and least sure of their attractiveness (scores of 9 & 10). Intelligence had fewer scores of 10 than sincerity.
+
+# Missing data
+I give two approaches here, 8.a and 9.a, 8.b and 9.b.
+
+8.a I used a count of missing values to check the pattern of missing data and the IDs for missing attributes.
+```{r missingJLH }
+SpeedData$MissNo <- is.na(SpeedData$attr3_1) +  is.na(SpeedData$sinc3_1) + 
+                    is.na(SpeedData$intel3_1) + is.na(SpeedData$fun3_1) + 
+                    is.na(SpeedData$amb3_1) # This counts how many are missing.
+table(SpeedData$MissNo)     # check pattern Either none or five.
+filter(SpeedData, MissNo>0) # look at data for these IDs
+```
+ It is not necessary in this case to look at the IDs: you might wish to convince yourself of this.
+ 
+8.b. We define a function `misind` which identifies the rows for which a missing value occurs. The function `apply` is a convenient way of applying the function `misind` to the relevant columns in one call.
+```{r missing1}
+misind <- function(x) which(is.na(x))
+apply(SpeedData[,-1],2, misind)
+```
+# Remove people with missing data.
+
+I give two approaches,  9.a and 9.b, which correspond to 8.a and 9.a.
+
+9.a As there are either no missing values or five, we can exclude the nine participants to have a complete data set.
+
+```{r completeJLH}
+SpeedData <- filter(SpeedData, MissNo==0) # Keep complete cases.
+SpeedData <- SpeedData[,1:6] # drop the variable 'MissNo'
+dim(SpeedData) 
+```
+
+9.b The missing attribute scores occur for the same 9 participants. We use `na.omit` for casewise deletion of observations with missing data.
+```{r complete, results = 'hide'}
+SpeedData <- na.omit(SpeedData) # Omit any cases with missing data.
+nrow(SpeedData)
+```
+This leaves us with `r nrow(SpeedData)` complete cases.
+
+10. Next we compute the total attribute scores for each candidate and provide a six point summary of the results.
+```{r total, message=FALSE, warning=FALSE}
+library(knitr)
+AttributeSums <- rowSums(select(SpeedData, attr3_1:amb3_1))
+SixPointSummary <- round(as.matrix(summary(AttributeSums)), 2)
+rownames(SixPointSummary) <- c("Minimum","First Quartile", "Median","Mean",
+                               "Third Quartile", "Maximum")
+kable(t(as.matrix(SixPointSummary)), 
+      align = c('c', 'c', 'c', 'c', 'c', 'c', 'c'), 
+      caption = "Summary of attribute sums")
+```
+
+*Tip: For a professional presentation format the summary in a table, rounding the results to appropriate accuracy and use meaningful column headings.*
+
+11. Finally, we normalise each attribute to ensure a sum of 100 for each participant. We check the result by adding a final column labelled `TotalScore` containing each row sum and printing the first 3 rows of the resulting tibble.
+
+```{r normalise}
+SpeedData<-mutate_at(SpeedData, .vars=vars(attr3_1:amb3_1), 
+                     .funs=(~.*100/AttributeSums))
+SpeedData<- mutate(SpeedData, rowSums(select(SpeedData, attr3_1:amb3_1)))
+names(SpeedData)[7] <- "TotalScore"
+print(SpeedData, n = 3)
+```
+
+12. Finally we save `SpeedData` in the file `Lab2Data.csv` in the subdirectory Data.
+```{r}
+export(SpeedData,"Lab2Data.csv")
+```
+# Tidying messy data 
+## Note: This section did not form part of the Practical Lab Report (and the peer-marking).
+
+Load the data from the file `MessyData.csv` into tibble `MessyData`. (Not part of the report)
+```{r,  eval=FALSE}
+MessyData<-import("MessyData.csv")
+kable(as.matrix(MessyData), align = c('l', 'r', 'r', 'r', 'r', 'r', 'r'), 
+      caption = "The messy data")
+```
+The variable describing various student groups using the field of study and career intentions is spread over several columns. We gather the variable into one column defining the student group (`Student Group`) and another column containing the number of students (`Student Number`).
+```{r, , eval=FALSE}
+library(tidyr)
+NewData<-gather(MessyData, key='Student Group', value='Number of Students', -Gender)
+```
+The data is still messy, as the variables describing the field of study and the career intention are displayed in the same column. We separate the field of study from the career intentions into two columns and then print the tidied data.
+```{r, eval=FALSE}
+TidyData<-separate(NewData, col='Student Group', into=c("Field","Career"))
+kable(as.matrix(TidyData), align = c('l', 'l', 'l', 'r'), 
+      caption = "The tidy data") 
+```
